@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escape Room – Der Testkäufer | LF 2, Module 1 bis 7</title>
+<style>
+  :root{
+    --blau:#1F4E79; --blauhell:#9DC3E6; --blauflaeche:#EAF1F8;
+    --rosa:#E5B8B7; --grau:#F2F2F2; --graulinie:#BFBFBF; --grautext:#595959;
+    --rot:#C00000; --gruen:#2E6B45; --gruenflaeche:#EAF3ED;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: Arial, Helvetica, sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:#fff; color:#111; font-family:var(--serif); font-size:17px; line-height:1.6}
+  .blatt{max-width:860px; margin:0 auto; padding:26px 20px 80px}
+
+  header.kopf{border:1px solid #000; display:flex; align-items:stretch; margin-bottom:26px}
+  header.kopf .li{flex:0 0 32%; padding:12px 14px; border-right:1px solid #000; font-family:var(--sans); font-size:14px}
+  header.kopf .mi{flex:1; padding:12px 14px; text-align:center}
+  header.kopf .mi .lf{font-family:var(--sans); font-weight:bold; font-size:17px}
+  header.kopf .mi .lftxt{font-family:var(--sans); font-size:14px; padding-bottom:8px; border-bottom:1px solid #000; margin-bottom:8px}
+  header.kopf .mi .mod{font-family:var(--sans); font-weight:bold; font-size:17px}
+
+  h1{font-family:var(--sans); color:var(--blau); font-size:27px; margin:0 0 6px; border-bottom:2px solid var(--blauhell); padding-bottom:8px}
+  .unter{font-family:var(--sans); font-size:14px; color:var(--grautext); margin:0 0 22px}
+  .story{background:var(--grau); border-left:5px solid var(--graulinie); padding:14px 18px; margin:0 0 22px}
+  .story p{margin:0 0 9px}
+  .story p:last-child{margin:0}
+
+  /* Fortschrittsleiste */
+  .leiste{display:flex; gap:8px; margin:0 0 26px; flex-wrap:wrap}
+  .leiste .feld{
+    flex:1 1 0; min-width:74px; text-align:center; border:2px solid var(--graulinie);
+    background:#fff; font-family:var(--sans); padding:9px 4px; border-radius:4px
+  }
+  .leiste .feld .nr{font-size:11px; color:var(--grautext); letter-spacing:.06em; text-transform:uppercase}
+  .leiste .feld .zi{font-size:26px; font-weight:bold; color:var(--graulinie); line-height:1.1}
+  .leiste .feld.auf{border-color:var(--gruen); background:var(--gruenflaeche)}
+  .leiste .feld.auf .zi{color:var(--gruen)}
+
+  section.station{border:1px solid var(--graulinie); border-left:5px solid var(--blauhell); margin:0 0 20px; padding:16px 20px}
+  section.station.geloest{border-left-color:var(--gruen); background:var(--gruenflaeche)}
+  section.station h2{font-family:var(--sans); color:var(--blau); font-size:19px; margin:0 0 4px}
+  section.station .ort{font-family:var(--sans); font-size:13px; color:var(--grautext); margin:0 0 12px; letter-spacing:.04em; text-transform:uppercase}
+  section.station .fall{margin:0 0 14px}
+  section.station .frage{font-family:var(--sans); font-weight:bold; font-size:16px; margin:0 0 10px}
+  label.opt{display:block; padding:6px 8px 6px 4px; cursor:pointer; border-radius:3px; font-size:16px}
+  label.opt:hover{background:var(--blauflaeche)}
+  label.opt input{margin-right:9px}
+  .knopf{
+    font-family:var(--sans); font-size:15px; font-weight:bold; color:#fff; background:var(--blau);
+    border:0; border-radius:4px; padding:10px 22px; cursor:pointer; margin-top:10px
+  }
+  .knopf:hover{background:#17395a}
+  .knopf:disabled{background:var(--graulinie); cursor:default}
+  .rueck{margin:12px 0 0; padding:10px 14px; font-size:16px; display:none}
+  .rueck.falsch{background:#FBEDED; border-left:4px solid var(--rot)}
+  .rueck.richtig{background:var(--gruenflaeche); border-left:4px solid var(--gruen)}
+  .rueck b{font-family:var(--sans)}
+  .ziffer{font-family:var(--sans); font-weight:bold; color:var(--gruen); font-size:19px}
+
+  /* Tresor */
+  .tresor{border:2px solid var(--blau); padding:20px 24px; margin-top:34px}
+  .tresor h2{font-family:var(--sans); color:var(--blau); font-size:21px; margin:0 0 10px}
+  .tresor input{
+    font-family:var(--sans); font-size:30px; letter-spacing:.35em; width:250px; text-align:center;
+    padding:8px 6px; border:2px solid var(--graulinie); border-radius:4px
+  }
+  .tresor .zeile{display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin-top:8px}
+  .tresor .hinw{font-family:var(--sans); font-size:14px; color:var(--grautext); margin:10px 0 0}
+  #tresorrueck{margin-top:14px; padding:12px 16px; display:none; font-size:16px}
+  #tresorrueck.zu{background:#FBEDED; border-left:4px solid var(--rot)}
+  #tresorrueck.auf{background:var(--gruenflaeche); border-left:4px solid var(--gruen)}
+
+  /* Ende */
+  #ende{display:none; margin-top:30px}
+  #ende .urkunde{border:3px double var(--blau); padding:26px 28px; text-align:center}
+  #ende .urkunde .gross{font-family:var(--sans); font-size:30px; font-weight:bold; color:var(--blau); margin-bottom:6px}
+  #ende .zahlen{font-family:var(--sans); font-size:17px; margin:14px 0 0}
+  #ende .namensfeld{font-family:var(--sans); font-size:15px; margin:18px 0 0}
+  #ende .namensfeld input{font-size:15px; padding:5px 6px; border:1px solid var(--graulinie); border-radius:3px; width:260px}
+  table.merk{border-collapse:collapse; width:100%; margin-top:22px; font-size:15px}
+  table.merk th{background:var(--rosa); font-family:var(--sans); font-size:14px; text-align:left; padding:8px 10px; border:1px solid var(--graulinie)}
+  table.merk td{border:1px solid var(--graulinie); padding:8px 10px; vertical-align:top}
+  table.merk td.b{font-family:var(--sans); font-weight:bold; width:34%}
+  @media print{ .knopf, .tresor input{display:none} }
+</style>
+</head>
+<body>
+<div class="blatt">
+
+  <header class="kopf">
+    <div class="li">Datum:<br><br>Name:</div>
+    <div class="mi">
+      <div class="lf">Lernfeld 2</div>
+      <div class="lftxt">Verkaufsgespräche kundenorientiert führen</div>
+      <div class="mod">Escape Room · Module 1 bis 7</div>
+    </div>
+  </header>
+
+  <h1>Der Testkäufer</h1>
+  <p class="unter">Sechs Szenen · sechs Ziffern · ein Tresor. Rechne mit etwa 25 Minuten. Allein oder zu zweit.</p>
+
+  <div class="story">
+    <p>Du bist Auszubildende oder Auszubildender bei der <b>Nordstadt-Kauf GmbH</b> in Bremerhaven, einem Warenhaus mit Vollsortiment.</p>
+    <p>Vorige Woche war ein <b>Testkäufer</b> im Haus – ein Mystery Shopper. Er hat sich sechs Verkaufsgespräche angesehen und zu jedem einen Notizzettel geschrieben. Sein Bericht liegt im Tresor der Filialleitung. Morgen früh wird er im Team besprochen, und Sie sollen die Besprechung vorbereiten.</p>
+    <p>Der Tresor hat ein <b>sechsstelliges Zahlenschloss</b>. Frau Ahlers, die Geschäftsführerin, ist auf einer Messe und hat die Zahl nicht hinterlassen. Auf ihrem Schreibtisch liegen aber die sechs Notizzettel des Testkäufers. Auf der Rückseite jedes Zettels steht eine Ziffer – sichtbar nur für den, der die Szene richtig einordnet. <b>Sechs richtige Einordnungen – und der Tresor geht auf.</b></p>
+  </div>
+
+  <div class="leiste" id="leiste"></div>
+
+  <div id="stationen"></div>
+
+  <div class="tresor">
+    <h2>Das Zahlenschloss</h2>
+    <p style="margin:0">Trage die sechs Ziffern in der Reihenfolge der Stationen ein.</p>
+    <div class="zeile">
+      <input type="text" id="code" maxlength="6" inputmode="numeric" placeholder="______" autocomplete="off">
+      <button type="button" class="knopf" id="oeffnen">Tresor öffnen</button>
+    </div>
+    <p class="hinw">Die Ziffern erscheinen automatisch in der Leiste oben, sobald du eine Station gelöst hast.</p>
+    <div id="tresorrueck"></div>
+  </div>
+
+  <div id="ende">
+    <div class="urkunde">
+      <div class="gross">Tresor geöffnet</div>
+      <div>Der Bericht des Testkäufers liegt vor Ihnen. Sechs Szenen, sechs Fehler – und zu jedem wissen Sie jetzt, wie es besser geht.</div>
+      <div class="zahlen">
+        Fehlversuche an den Stationen: <b id="fehler">0</b> &nbsp;·&nbsp; Fehlversuche am Schloss: <b id="fehlerschloss">0</b>
+      </div>
+      <div class="namensfeld">
+        Name (zum Vorzeigen bei der Lehrkraft): <input type="text" id="name" placeholder="Vor- und Nachname">
+      </div>
+    </div>
+
+    <h2 style="font-family:var(--sans); color:var(--blau); font-size:20px; margin:28px 0 6px">Das nimmst du mit</h2>
+    <table class="merk">
+      <thead><tr><th>Der Fall</th><th>Woran du ihn erkennst</th></tr></thead>
+      <tbody>
+        <tr><td class="b">Killerphrase</td><td>Eine abwertende Äußerung, die kommt, wenn Sachargumente fehlen: „Das verstehen Sie nicht!“</td></tr>
+        <tr><td class="b">Distanzzone</td><td>Zwischen Kunde und Verkäufer gilt die gesellschaftliche Distanz von 1,20 bis 3,00 Metern.</td></tr>
+        <tr><td class="b">Verkaufsform</td><td>Die Eigenschaften der Ware entscheiden: erklärungsbedürftig oder offen → Bedienung.</td></tr>
+        <tr><td class="b">Kontaktaufnahme</td><td>Nie von hinten ansprechen. Erst Blickkontakt, dann sprechen.</td></tr>
+        <tr><td class="b">Kaufmotiv</td><td>Rational ist vom Verstand geleitet, emotional vom Gefühl. Das emotionale wird selten ausgesprochen.</td></tr>
+        <tr><td class="b">Fragetechnik</td><td>Offene Fragen bringen Informationen, geschlossene Fragen bringen eine Entscheidung – und manchmal das Gesprächsende.</td></tr>
+      </tbody>
+    </table>
+    <p style="font-family:var(--sans); font-size:15px; color:var(--grautext); margin-top:18px">
+      Trag deine Punkte und die Zahl der Fehlversuche ins Punktekonto ein.
+    </p>
+    <button type="button" class="knopf" id="nochmal" style="background:#fff; color:var(--blau); border:1px solid var(--blau); font-weight:normal">Noch einmal spielen</button>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var STATIONEN = [
+    {
+      ort: "Notizzettel 1 · Elektroabteilung",
+      titel: "„Das verstehen Sie nicht“",
+      fall: "Ein Kunde fragt, warum der teurere Fernseher ein besseres Bild habe. Der Verkäufer antwortet: „Ich bin hier der Fachmann! Das verstehen Sie sowieso nicht. Nehmen Sie einfach den da, der ist gut.“ Der Kunde geht ohne Kauf.",
+      frage: "Wie ist diese Szene einzuordnen?",
+      optionen: [
+        "Der Verkäufer setzt eine Killerphrase ein – ein Gesprächsstörer.",
+        "Der Verkäufer verwendet den Sie-Stil – ein Gesprächsförderer.",
+        "Der Verkäufer stellt eine geschlossene Frage.",
+        "Der Verkäufer hält die gesellschaftliche Distanz nicht ein."
+      ],
+      richtig: 0,
+      ziffer: "5",
+      erklaerung: "„Ich bin hier der Fachmann!“ und „Das verstehen Sie nicht“ sind Killerphrasen: abwertende, verletzende Äußerungen, die oft dann kommen, wenn Sachargumente fehlen. Besser wäre: „Gerne erkläre ich Ihnen den Unterschied. Dieses Gerät hat …“",
+      tipp: "Schau in Modul 1 in die Tabelle der fünf Gesprächsstörer."
+    },
+    {
+      ort: "Notizzettel 2 · Parfümerie",
+      titel: "Einen Schritt zu nah",
+      fall: "Die Verkäuferin berät eine Kundin zu einem Duft. Der Testkäufer notiert: „Verkäuferin steht durchgehend etwa 40 Zentimeter vor der Kundin. Kundin weicht zweimal zurück, verschränkt dann die Arme.“",
+      frage: "Wie ist diese Szene einzuordnen?",
+      optionen: [
+        "Alles richtig – bei Düften muss man nah beieinander stehen.",
+        "Die Verkäuferin verletzt die Distanzzone; sie steht in der Intimdistanz.",
+        "Die Kundin zeigt mit den verschränkten Armen Zustimmung.",
+        "Die Verkäuferin setzt eine Suggestivfrage ein."
+      ],
+      richtig: 1,
+      ziffer: "1",
+      erklaerung: "40 Zentimeter ist Intimdistanz – die gilt für Familienmitglieder. Zwischen Kunde und Verkäufer gilt die gesellschaftliche Distanz von 1,20 bis 3,00 Metern. Das Zurückweichen und die verschränkten Arme sind die Antwort der Kundin darauf.",
+      tipp: "Wie weit reicht die Intimdistanz – und für wen gilt sie?"
+    },
+    {
+      ort: "Notizzettel 3 · Lebensmittelabteilung",
+      titel: "Käse ohne Theke",
+      fall: "Die Filialleitung überlegt, die Käsetheke abzuschaffen. Der offene Käse soll künftig unverpackt in einer offenen Kühlvitrine zur Selbstbedienung liegen. Der Testkäufer notiert: „Keine Fachkraft mehr vor Ort, kein Abwiegen nach Kundenwunsch, keine Zubereitungstipps.“",
+      frage: "Wie ist dieser Plan einzuordnen?",
+      optionen: [
+        "Richtig, denn Selbstbedienung spart immer Personalkosten.",
+        "Falsch, denn offene Ware gehört wegen der Hygiene und der Beratung in die Bedienung.",
+        "Richtig, denn Käse ist keine erklärungsbedürftige Ware.",
+        "Falsch, denn für Lebensmittel ist nur die Vorwahl zulässig."
+      ],
+      richtig: 1,
+      ziffer: "8",
+      erklaerung: "Die Eigenschaften der Ware bestimmen die Verkaufsform. Offene Ware muss vor dem direkten Zugriff des Kunden geschützt werden, die Menge wird individuell abgewogen, und die Beratung (Herkunft, Zubereitung, Haltbarkeit) fällt sonst weg. Verpackter Käse im Kühlregal dagegen ist Selbstbedienung.",
+      tipp: "Frag dich: Muss diese Ware vor dem direkten Zugriff geschützt werden?"
+    },
+    {
+      ort: "Notizzettel 4 · Sportabteilung",
+      titel: "Von hinten",
+      fall: "Eine Kundin steht vor dem Regal mit den Laufschuhen und nimmt ein Modell in die Hand. Der Verkäufer tritt von hinten an sie heran und sagt: „Suchen Sie etwas Bestimmtes?“ Die Kundin zuckt zusammen, sagt „Nein danke, ich schaue nur“ und legt den Schuh zurück.",
+      frage: "Wie viele Fehler macht der Verkäufer hier?",
+      optionen: [
+        "Keinen – er hat die Kundin ja angesprochen.",
+        "Einen: Er spricht sie von hinten an.",
+        "Zwei: Er spricht sie von hinten an, und er stellt eine geschlossene Frage.",
+        "Zwei: Er spricht sie zu spät an, und er hält die Distanz nicht ein."
+      ],
+      richtig: 2,
+      ziffer: "3",
+      erklaerung: "Erster Fehler: Ein Kunde wird niemals von hinten angesprochen – er könnte sich überfallen fühlen. Zuerst Blickkontakt aufbauen. Zweiter Fehler: „Suchen Sie etwas Bestimmtes?“ ist eine geschlossene Frage, auf die „nein“ die einfachste Antwort ist. Besser: „Guten Tag. Wofür möchten Sie die Laufschuhe denn vor allem verwenden?“",
+      tipp: "Zähle nach: Was ist an der Körperhaltung falsch, und was an der Frage?"
+    },
+    {
+      ort: "Notizzettel 5 · Uhren und Schmuck",
+      titel: "Kennt man die Marke?",
+      fall: "Ein Kunde lässt sich Uhren zeigen. Er fragt zuerst nach dem teuersten Modell und dann: „Und die Marke – die kennt man doch, oder?“ Auf Qualität, Ganggenauigkeit und Garantie geht er kaum ein. Der Verkäufer argumentiert die ganze Zeit mit der Wasserdichtigkeit.",
+      frage: "Welches Kaufmotiv steht hier im Vordergrund?",
+      optionen: [
+        "Qualität – ein rationales Kaufmotiv.",
+        "Geldersparnis – ein rationales Kaufmotiv.",
+        "Geltungsbedürfnis – ein emotionales Kaufmotiv.",
+        "Zeitersparnis – ein rationales Kaufmotiv."
+      ],
+      richtig: 2,
+      ziffer: "6",
+      erklaerung: "Der Kunde fragt nach Preis und Bekanntheit der Marke, nicht nach der Technik. Dahinter steht das Geltungsbedürfnis – ein emotionales Kaufmotiv, das unter der Wasserlinie des Eisbergs liegt und deshalb nicht ausgesprochen wird. Der Verkäufer argumentiert am Motiv vorbei.",
+      tipp: "Was will der Kunde wirklich – und sagt er es offen?"
+    },
+    {
+      ort: "Notizzettel 6 · Haushaltsabteilung",
+      titel: "Sonst noch etwas?",
+      fall: "Eine Kundin hat sich für eine Pfanne entschieden. Die Verkäuferin fragt: „Sonst brauchen Sie nichts?“ Die Kundin sagt „Nein danke“ und geht zur Kasse. Der passende Pfannenwender, den sie sich vorher zweimal angesehen hatte, bleibt im Regal.",
+      frage: "Wie ist diese Frage einzuordnen?",
+      optionen: [
+        "Richtig – so wird die Kundin nicht bedrängt.",
+        "Falsch: eine geschlossene und negativ formulierte Frage, die das Gespräch beendet.",
+        "Falsch: eine Alternativfrage, die zu früh gestellt wird.",
+        "Richtig – am Ende des Gesprächs gehören geschlossene Fragen hin."
+      ],
+      richtig: 1,
+      ziffer: "2",
+      erklaerung: "„Sonst brauchen Sie nichts?“ ist geschlossen und negativ formuliert – „nein“ ist die einfachste Antwort. Besser wäre: „Welchen Wunsch darf ich Ihnen noch erfüllen?“ oder warenbezogen: „Zu dieser Pfanne passt dieser Pfannenwender – darf ich ihn Ihnen zeigen?“",
+      tipp: "Achte auf das Wort „nichts“ – und darauf, ob die Kundin mit Ja oder Nein antworten kann."
+    }
+  ];
+
+  var CODE = STATIONEN.map(function(s){ return s.ziffer; }).join("");
+  var geloest = STATIONEN.map(function(){ return false; });
+  var fehler = 0, fehlerSchloss = 0;
+
+  function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+  // Leiste
+  var leiste = document.getElementById("leiste");
+  STATIONEN.forEach(function(s,i){
+    var d = document.createElement("div");
+    d.className = "feld"; d.id = "feld"+i;
+    d.innerHTML = '<div class="nr">Station '+(i+1)+'</div><div class="zi">?</div>';
+    leiste.appendChild(d);
+  });
+
+  // Stationen
+  var box = document.getElementById("stationen");
+  STATIONEN.forEach(function(s,i){
+    var sec = document.createElement("section");
+    sec.className = "station"; sec.id = "st"+i;
+    var h = '<div class="ort">'+esc(s.ort)+'</div>';
+    h += '<h2>Station '+(i+1)+': '+esc(s.titel)+'</h2>';
+    h += '<p class="fall">'+esc(s.fall)+'</p>';
+    h += '<p class="frage">'+esc(s.frage)+'</p>';
+    s.optionen.forEach(function(o,k){
+      h += '<label class="opt"><input type="radio" name="s'+i+'" value="'+k+'">'+esc(o)+'</label>';
+    });
+    h += '<button type="button" class="knopf" data-i="'+i+'">Akte prüfen</button>';
+    h += '<div class="rueck" id="r'+i+'"></div>';
+    sec.innerHTML = h;
+    box.appendChild(sec);
+  });
+
+  box.addEventListener("click", function(e){
+    var b = e.target.closest("button[data-i]");
+    if (!b) return;
+    var i = Number(b.getAttribute("data-i"));
+    if (geloest[i]) return;
+    var s = STATIONEN[i];
+    var sel = document.querySelector('input[name="s'+i+'"]:checked');
+    var r = document.getElementById("r"+i);
+    if (!sel){
+      r.className = "rueck falsch";
+      r.innerHTML = "<b>Noch nichts ausgewählt.</b> Entscheide dich für eine Einordnung.";
+      r.style.display = "block";
+      return;
+    }
+    if (Number(sel.value) === s.richtig){
+      geloest[i] = true;
+      r.className = "rueck richtig";
+      r.innerHTML = "<b>Richtig eingeordnet.</b> " + esc(s.erklaerung) +
+                    '<br><span class="ziffer">In der Akte steckt die Ziffer ' + esc(s.ziffer) + '.</span>';
+      r.style.display = "block";
+      document.getElementById("st"+i).classList.add("geloest");
+      var f = document.getElementById("feld"+i);
+      f.classList.add("auf");
+      f.querySelector(".zi").textContent = s.ziffer;
+      b.disabled = true;
+      b.textContent = "Akte geschlossen";
+      document.querySelectorAll('input[name="s'+i+'"]').forEach(function(x){ x.disabled = true; });
+    } else {
+      fehler++;
+      r.className = "rueck falsch";
+      r.innerHTML = "<b>Das passt noch nicht.</b> " + esc(s.tipp) + " Schau notfalls in Modul 8 nach und versuch es noch einmal.";
+      r.style.display = "block";
+    }
+  });
+
+  // Tresor
+  document.getElementById("oeffnen").addEventListener("click", function(){
+    var eing = document.getElementById("code").value.replace(/\D/g,"");
+    var tr = document.getElementById("tresorrueck");
+    var offen = geloest.filter(Boolean).length;
+    if (eing.length !== 6){
+      tr.className = "zu";
+      tr.innerHTML = "<b>Das Schloss braucht genau sechs Ziffern.</b> Bisher gelöst: " + offen + " von 6 Stationen.";
+      tr.style.display = "block";
+      return;
+    }
+    if (eing === CODE){
+      tr.className = "auf";
+      tr.innerHTML = "<b>Klick.</b> Der Tresor ist offen.";
+      tr.style.display = "block";
+      document.getElementById("fehler").textContent = fehler;
+      document.getElementById("fehlerschloss").textContent = fehlerSchloss;
+      document.getElementById("ende").style.display = "block";
+      document.getElementById("ende").scrollIntoView({behavior:"smooth"});
+    } else {
+      fehlerSchloss++;
+      tr.className = "zu";
+      tr.innerHTML = "<b>Das Schloss rührt sich nicht.</b> Prüfe die Reihenfolge: Station 1 ganz links, Station 6 ganz rechts. " +
+                     "Bisher gelöst: " + offen + " von 6 Stationen.";
+      tr.style.display = "block";
+    }
+  });
+
+  document.getElementById("nochmal").addEventListener("click", function(){ location.reload(); });
+})();
+</script>
+</body>
+</html>
