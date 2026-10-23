@@ -342,7 +342,7 @@
 "u": "materials/LF1_M_12_Selbsttest.html"
 },
 {
-"l": "index",
+"l": "Spiel: Organisations-Arena",
 "u": "materials/LF1_M_12_index.html"
 },
 {
@@ -1486,10 +1486,6 @@
 "u": "materials/LF5_Pruefungstraining.pdf"
 },
 {
-"l": "Prüfungstraining – Lösungen mit Erklärung (PDF)",
-"u": "materials/LF5_Pru_fungstraining_-_Lo_sungen_mit_Erkla_rung_2.pdf"
-},
-{
 "l": "Spiel: Countdown Hafenstraße",
 "u": "materials/LF5_-_Countdown_Hafenstrasse.html"
 }
@@ -2466,6 +2462,10 @@
 "u": "materials/WiSo1_M_1_Einstiegsmaterial.pdf"
 },
 {
+"l": "Einstieg digital: Wer bestimmt, was ich lerne?",
+"u": "materials/WiSo1_M_1_index.html"
+},
+{
 "l": "Modul 1 Portugiesich",
 "u": "materials/WiSo1_M_1_Modul_1_Portugiesich.html"
 },
@@ -2476,10 +2476,6 @@
 {
 "l": "Selbsttest",
 "u": "materials/WiSo1_M_1_Selbsttest.html"
-},
-{
-"l": "index",
-"u": "materials/WiSo1_M_1_index.html"
 }
 ]
 },
@@ -2503,7 +2499,7 @@
 "u": "materials/WiSo1_M_2_Selbsttest.html"
 },
 {
-"l": "index",
+"l": "Online-Fassung",
 "u": "materials/WiSo1_M_2_index.html"
 }
 ]
