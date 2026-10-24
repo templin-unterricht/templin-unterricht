@@ -3545,15 +3545,6 @@
    {
     "l": "Einstieg live",
     "u": "materials/Englisch_M_5_Einstieg_live.html"
-   }
-  ]
- },
- "ENG.E6": {
-  "pdf": "materials/Englisch_M_6.pdf",
-  "links": [
-   {
-    "l": "Einstieg live",
-    "u": "materials/Englisch_M_6_Einstieg_live.html"
    },
    {
     "l": "Übungsklausur 1 (PDF)",
@@ -3561,9 +3552,18 @@
    }
   ]
  },
+ "ENG.E6": {
+  "pdf": "materials/Englisch_M_6.pdf",
+  "links": []
+ },
  "ENG.E7": {
   "pdf": "materials/Englisch_M_7.pdf",
-  "links": []
+  "links": [
+   {
+    "l": "Einstieg live",
+    "u": "materials/Englisch_M_7_Einstieg_live.html"
+   }
+  ]
  },
  "ENG.E8": {
   "pdf": "materials/Englisch_M_8.pdf",
@@ -3598,15 +3598,16 @@
    {
     "l": "Einstieg live",
     "u": "materials/Englisch_M_11_Einstieg_live.html"
-   },
-   {
-    "l": "Übungsklausur 2 (PDF)",
-    "u": "materials/Englisch_Uebungsklausur_2.pdf"
    }
   ]
  },
  "ENG.E12": {
   "pdf": "materials/Englisch_M_12.pdf",
-  "links": []
+  "links": [
+   {
+    "l": "Einstieg live",
+    "u": "materials/Englisch_M_12_Einstieg_live.html"
+   }
+  ]
  }
 }
