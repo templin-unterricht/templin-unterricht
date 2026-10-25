@@ -847,12 +847,12 @@
     },
     "V26/2|Lernfelder": {
       "start": "2026-10-26",
-      "startKey": "LF1.M12",
+      "startKey": "LF2.X1",
       "startDs": 1,
       "parts": [
         {
           "pid": "LF1",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
