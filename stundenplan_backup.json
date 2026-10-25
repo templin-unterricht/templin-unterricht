@@ -137,15 +137,15 @@
               "ds": 2
             },
             "X1": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "X2": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "X3": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "M8": {
@@ -3995,18 +3995,6 @@
           "u": "materials/LF2_M_1_Selbsttest.html"
         },
         {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_1_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_1_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_1_Selbsttest_mehrsprachig.html"
-        },
-        {
           "l": "",
           "u": ""
         }
@@ -4026,18 +4014,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_2_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_2_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_2_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_2_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4055,18 +4031,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_3_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_3_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_3_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_3_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4084,18 +4048,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_4_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_4_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_4_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_4_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4113,18 +4065,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_5_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_5_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_5_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_5_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4142,18 +4082,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_6_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_6_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_6_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_6_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4175,18 +4103,6 @@
         {
           "l": "Escape Room: Der Testkäufer",
           "u": "materials/LF2_Escape_Room_1_-_Der_Testkaeufer.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_7_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_7_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_7_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4204,18 +4120,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_8_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_8_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_8_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_8_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4233,18 +4137,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_9_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_9_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_9_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_9_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4262,18 +4154,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_10_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_10_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_10_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_10_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4291,18 +4171,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_11_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_11_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_11_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_11_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4320,18 +4188,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_12_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_12_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_12_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_12_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4349,18 +4205,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_13_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_13_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_13_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_13_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4378,18 +4222,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_14_Selbsttest.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_14_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_14_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_14_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -4419,18 +4251,6 @@
         {
           "l": "Spiel: Stufe für Stufe",
           "u": "materials/LF2_Stufe_fuer_Stufe_-_Phasen_des_Verkaufsgespraechs.html"
-        },
-        {
-          "l": "Einstieg live übersetzt (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_15_Einstieg_live_uebersetzt.html"
-        },
-        {
-          "l": "Arbeitsblatt online (Deutsch · Arabisch · Vietnamesisch)",
-          "u": "materials/LF2_M_15_Arbeitsblatt_online_DE-AR-VI.html"
-        },
-        {
-          "l": "Selbsttest mehrsprachig (Arabisch/Vietnamesisch)",
-          "u": "materials/LF2_M_15_Selbsttest_mehrsprachig.html"
         }
       ]
     },
@@ -7366,6 +7186,21 @@
   "absences": [],
   "exams": [],
   "texts": {},
+  "trainer": {
+    "LF2": {
+      "on": true,
+      "days": 7,
+      "exakt": false,
+      "url": "materials/LF2_Klausurtrainer.html",
+      "fmt": {
+        "karten": true,
+        "quiz": true,
+        "luecke": true,
+        "reihe": true
+      },
+      "off": {}
+    }
+  },
   "seed2": true,
   "seed3": true,
   "seed4": true,
