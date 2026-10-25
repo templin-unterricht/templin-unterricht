@@ -177,7 +177,7 @@
               "ds": 1
             },
             "M13": {
-              "on": true,
+              "on": false,
               "ds": 3
             }
           },
@@ -538,6 +538,54 @@
             "M2": {
               "on": true,
               "ds": 7
+            },
+            "E1": {
+              "on": true,
+              "ds": 1
+            },
+            "E2": {
+              "on": true,
+              "ds": 1
+            },
+            "E3": {
+              "on": true,
+              "ds": 1
+            },
+            "E4": {
+              "on": true,
+              "ds": 1
+            },
+            "E5": {
+              "on": true,
+              "ds": 1
+            },
+            "E6": {
+              "on": true,
+              "ds": 1
+            },
+            "E7": {
+              "on": true,
+              "ds": 1
+            },
+            "E8": {
+              "on": true,
+              "ds": 1
+            },
+            "E9": {
+              "on": true,
+              "ds": 1
+            },
+            "E10": {
+              "on": true,
+              "ds": 1
+            },
+            "E11": {
+              "on": true,
+              "ds": 1
+            },
+            "E12": {
+              "on": true,
+              "ds": 1
             }
           },
           "extra": []
@@ -1236,6 +1284,54 @@
             "M2": {
               "on": true,
               "ds": 7
+            },
+            "E1": {
+              "on": true,
+              "ds": 1
+            },
+            "E2": {
+              "on": true,
+              "ds": 1
+            },
+            "E3": {
+              "on": true,
+              "ds": 1
+            },
+            "E4": {
+              "on": true,
+              "ds": 1
+            },
+            "E5": {
+              "on": true,
+              "ds": 1
+            },
+            "E6": {
+              "on": true,
+              "ds": 1
+            },
+            "E7": {
+              "on": true,
+              "ds": 1
+            },
+            "E8": {
+              "on": true,
+              "ds": 1
+            },
+            "E9": {
+              "on": true,
+              "ds": 1
+            },
+            "E10": {
+              "on": true,
+              "ds": 1
+            },
+            "E11": {
+              "on": true,
+              "ds": 1
+            },
+            "E12": {
+              "on": true,
+              "ds": 1
             }
           },
           "extra": []
@@ -1934,6 +2030,54 @@
             "M2": {
               "on": true,
               "ds": 7
+            },
+            "E1": {
+              "on": true,
+              "ds": 1
+            },
+            "E2": {
+              "on": true,
+              "ds": 1
+            },
+            "E3": {
+              "on": true,
+              "ds": 1
+            },
+            "E4": {
+              "on": true,
+              "ds": 1
+            },
+            "E5": {
+              "on": true,
+              "ds": 1
+            },
+            "E6": {
+              "on": true,
+              "ds": 1
+            },
+            "E7": {
+              "on": true,
+              "ds": 1
+            },
+            "E8": {
+              "on": true,
+              "ds": 1
+            },
+            "E9": {
+              "on": true,
+              "ds": 1
+            },
+            "E10": {
+              "on": true,
+              "ds": 1
+            },
+            "E11": {
+              "on": true,
+              "ds": 1
+            },
+            "E12": {
+              "on": true,
+              "ds": 1
             }
           },
           "extra": []
@@ -2491,7 +2635,7 @@
       "parts": [
         {
           "pid": "ENG",
-          "on": false,
+          "on": true,
           "mods": {
             "M1": {
               "on": true,
@@ -2500,6 +2644,54 @@
             "M2": {
               "on": true,
               "ds": 7
+            },
+            "E1": {
+              "on": true,
+              "ds": 1
+            },
+            "E2": {
+              "on": true,
+              "ds": 1
+            },
+            "E3": {
+              "on": true,
+              "ds": 1
+            },
+            "E4": {
+              "on": false,
+              "ds": 1
+            },
+            "E5": {
+              "on": true,
+              "ds": 1
+            },
+            "E6": {
+              "on": true,
+              "ds": 1
+            },
+            "E7": {
+              "on": true,
+              "ds": 1
+            },
+            "E8": {
+              "on": true,
+              "ds": 1
+            },
+            "E9": {
+              "on": true,
+              "ds": 1
+            },
+            "E10": {
+              "on": true,
+              "ds": 1
+            },
+            "E11": {
+              "on": true,
+              "ds": 1
+            },
+            "E12": {
+              "on": true,
+              "ds": 1
             }
           },
           "extra": []
@@ -2744,13 +2936,13 @@
       "jumps": []
     },
     "V25/3|Lernfelder": {
-      "start": "2026-10-26",
+      "start": "2026-11-09",
       "startKey": "",
       "startDs": 1,
       "parts": [
         {
           "pid": "LF6",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2821,7 +3013,7 @@
         },
         {
           "pid": "LF7",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2892,10 +3084,10 @@
         },
         {
           "pid": "LF9",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M2": {
@@ -2943,7 +3135,7 @@
         },
         {
           "pid": "LF10",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2998,7 +3190,7 @@
         },
         {
           "pid": "LF8",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -3035,7 +3227,7 @@
       "jumps": []
     },
     "V25/3|Englisch": {
-      "start": "2026-10-26",
+      "start": "2026-10-27",
       "startKey": "",
       "startDs": 1,
       "parts": [
@@ -3050,6 +3242,54 @@
             "M2": {
               "on": true,
               "ds": 7
+            },
+            "E1": {
+              "on": true,
+              "ds": 1
+            },
+            "E2": {
+              "on": true,
+              "ds": 1
+            },
+            "E3": {
+              "on": true,
+              "ds": 1
+            },
+            "E4": {
+              "on": true,
+              "ds": 1
+            },
+            "E5": {
+              "on": true,
+              "ds": 1
+            },
+            "E6": {
+              "on": true,
+              "ds": 1
+            },
+            "E7": {
+              "on": true,
+              "ds": 1
+            },
+            "E8": {
+              "on": true,
+              "ds": 1
+            },
+            "E9": {
+              "on": true,
+              "ds": 1
+            },
+            "E10": {
+              "on": true,
+              "ds": 1
+            },
+            "E11": {
+              "on": true,
+              "ds": 1
+            },
+            "E12": {
+              "on": true,
+              "ds": 1
             }
           },
           "extra": []
@@ -3064,7 +3304,7 @@
       "parts": [
         {
           "pid": "WISO2",
-          "on": true,
+          "on": false,
           "mods": {
             "X1": {
               "on": true,
@@ -3163,7 +3403,7 @@
       "parts": [
         {
           "pid": "WPF-M",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -3214,7 +3454,7 @@
         },
         {
           "pid": "WPF-R",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -3253,7 +3493,7 @@
         },
         {
           "pid": "WPF-G",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -3753,6 +3993,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_1_Selbsttest.html"
+        },
+        {
+          "l": "",
+          "u": ""
         }
       ]
     },
@@ -6774,6 +7018,10 @@
         {
           "l": "Lernfeld-Übersicht: Übersicht (PDF)",
           "u": "materials/LF2_Uebersicht_Uebersicht.pdf"
+        },
+        {
+          "l": "Einstiegsspiel",
+          "u": "https://templin-unterricht.github.io/templin-unterricht/materials/LF2%20Einstiegsspiel%20-%20Dein%20erster%20Verkauf.html"
         }
       ]
     },
@@ -6805,6 +7053,133 @@
           "u": "materials/WiSo1_Uebersicht_Uebersicht.pdf"
         }
       ]
+    },
+    "ENG.E1": {
+      "pdf": "materials/Englisch_M_1.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_1_Einstieg_live.html"
+        },
+        {
+          "l": "Werewolves: Arbeitsblatt (PDF)",
+          "u": "materials/Werewolves_Arbeitsblatt_Where_can_I_find.pdf"
+        },
+        {
+          "l": "Werewolves: Präsentation",
+          "u": "materials/Werewolves_in_the_Supermarket_Praesentation.pptx"
+        },
+        {
+          "l": "Plakat-Alternative (PDF)",
+          "u": "materials/Englisch_M_1_Plakat_Alternative.pdf"
+        },
+        {
+          "l": "Punktekonto (Lehrkraft)",
+          "u": "materials/Englisch_Punktekonto.html"
+        },
+        {
+          "l": "Punktekonto zum Ausdrucken (PDF)",
+          "u": "materials/Englisch_Punktekonto_Ausdruck.pdf"
+        }
+      ]
+    },
+    "ENG.E2": {
+      "pdf": "materials/Englisch_M_2.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_2_Einstieg_live.html"
+        }
+      ]
+    },
+    "ENG.E3": {
+      "pdf": "materials/Englisch_M_3.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_3_Einstieg_live.html"
+        }
+      ]
+    },
+    "ENG.E4": {
+      "pdf": "materials/Englisch_M_4.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_4_Einstieg_live.html"
+        }
+      ]
+    },
+    "ENG.E5": {
+      "pdf": "materials/Englisch_M_5.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_5_Einstieg_live.html"
+        },
+        {
+          "l": "Übungsklausur 1 (PDF)",
+          "u": "materials/Englisch_Uebungsklausur_1.pdf"
+        }
+      ]
+    },
+    "ENG.E6": {
+      "pdf": "materials/Englisch_M_6.pdf",
+      "links": []
+    },
+    "ENG.E7": {
+      "pdf": "materials/Englisch_M_7.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_7_Einstieg_live.html"
+        }
+      ]
+    },
+    "ENG.E8": {
+      "pdf": "materials/Englisch_M_8.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_8_Einstieg_live.html"
+        }
+      ]
+    },
+    "ENG.E9": {
+      "pdf": "materials/Englisch_M_9.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_9_Einstieg_live.html"
+        }
+      ]
+    },
+    "ENG.E10": {
+      "pdf": "materials/Englisch_M_10.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_10_Einstieg_live.html"
+        }
+      ]
+    },
+    "ENG.E11": {
+      "pdf": "materials/Englisch_M_11.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_11_Einstieg_live.html"
+        }
+      ]
+    },
+    "ENG.E12": {
+      "pdf": "materials/Englisch_M_12.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_12_Einstieg_live.html"
+        }
+      ]
     }
   },
   "customDays": [],
@@ -6812,5 +7187,7 @@
   "exams": [],
   "texts": {},
   "seed2": true,
-  "seed3": true
+  "seed3": true,
+  "seed4": true,
+  "seed5": true
 }
