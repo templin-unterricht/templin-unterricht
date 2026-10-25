@@ -269,6 +269,12 @@ function normalize(j){
   const e4=o.mat['LF2']||(o.mat['LF2']={pdf:'',links:[]});e4.links=e4.links||[];
   if(!e4.links.some(x=>/Klausurtrainer/.test(x.u||'')))e4.links.push({l:'Klausurtrainer (interaktiv, mehrsprachig)',u:'materials/LF2_Klausurtrainer.html'});
  }
+ if(!o.seed5){ /* LF 1: Klausurtrainer und mehrsprachige Online-Materialien M 7–M 12 einmalig eintragen */
+  o.seed5=true;
+  const e5=o.mat['LF1']||(o.mat['LF1']={pdf:'',links:[]});e5.links=(e5.links||[]).filter(l=>l.u||l.l);
+  if(!e5.links.some(x=>/Klausurtrainer/.test(x.u||'')))e5.links.push({l:'Klausurtrainer (interaktiv, mehrsprachig)',u:'materials/LF1_Klausurtrainer.html'});
+  [['LF1.M7','Einstieg live (mehrsprachig)','materials/LF1_M_7_Einstieg_live_uebersetzt.html'],['LF1.M7','Selbsttest (mehrsprachig)','materials/LF1_M_7_Selbsttest_mehrsprachig.html'],['LF1.M7','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_7_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M8','Einstieg live (mehrsprachig)','materials/LF1_M_8_Einstieg_live_uebersetzt.html'],['LF1.M8','Selbsttest (mehrsprachig)','materials/LF1_M_8_Selbsttest_mehrsprachig.html'],['LF1.M8','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_8_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M9','Einstieg live (mehrsprachig)','materials/LF1_M_9_Einstieg_live_uebersetzt.html'],['LF1.M9','Selbsttest (mehrsprachig)','materials/LF1_M_9_Selbsttest_mehrsprachig.html'],['LF1.M9','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_9_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M10','Einstieg live (mehrsprachig)','materials/LF1_M_10_Einstieg_live_uebersetzt.html'],['LF1.M10','Selbsttest (mehrsprachig)','materials/LF1_M_10_Selbsttest_mehrsprachig.html'],['LF1.M10','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_10_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M11','Einstieg live (mehrsprachig)','materials/LF1_M_11_Einstieg_live_uebersetzt.html'],['LF1.M11','Selbsttest (mehrsprachig)','materials/LF1_M_11_Selbsttest_mehrsprachig.html'],['LF1.M11','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_11_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M12','Einstieg live (mehrsprachig)','materials/LF1_M_12_Einstieg_live_uebersetzt.html'],['LF1.M12','Selbsttest (mehrsprachig)','materials/LF1_M_12_Selbsttest_mehrsprachig.html'],['LF1.M12','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_12_Arbeitsblatt_online_DE-UK-TI-PT-ES.html']].forEach(t=>{const e=o.mat[t[0]]||(o.mat[t[0]]={pdf:'',links:[]});e.links=(e.links||[]).filter(l=>l.u||l.l);if(!e.links.some(x=>x.u===t[2]))e.links.push({l:t[1],u:t[2]});});
+ }
  if(!o.seed3){ /* Englisch V25: neue Einträge ENG.E1–E12 einmalig ergänzen, nichts überschreiben */
   o.seed3=true;
   Object.keys(SEED_MAT).filter(k=>k.indexOf('ENG.E')===0).forEach(k=>{
@@ -470,39 +476,42 @@ function matButtons(u,lim,id){
   (lim&&dl.length>lim?`<button class="btn sm ghost" data-act="entry" data-id="${esc(id)}" title="Weitere Materialien im Eintrag">+${dl.length-lim} mehr</button>`:'');
 }
 /* ================= KLAUSURVORBEREITUNG · ÜBUNGEN · SPRACHE ================= */
-const KV_META={LF2:{tag:'LF 2',title:'Klausurtrainer LF 2 – Verkaufsgespräche kundenorientiert führen',daten:'materials/LF2_Klausurtrainer_Daten.js',klausurItems:{X5:1,X9:2},scopes:{1:'Klausur 1 (M 1–M 7)',2:'Klausur 2 (M 8–M 15)'}}};
-const KV_DEFAULT={LF2:{on:true,days:7,exakt:false,url:'materials/LF2_Klausurtrainer.html',fmt:{karten:true,quiz:true,luecke:true,reihe:true},off:{}}};
-const KV_LS='lf2_trainer_v1',KV_LANGKEY='ds_lang',KV_LANGS=['de','vi','ar'];
+const KV_META={LF2:{tag:'LF 2',title:'Klausurtrainer LF 2 – Verkaufsgespräche kundenorientiert führen',daten:'materials/LF2_Klausurtrainer_Daten.js',klausurItems:{X5:1,X9:2},scopes:{1:'Klausur 1 (M 1–M 7)',2:'Klausur 2 (M 8–M 15)'},ls:'lf2_trainer_v1',langs:'Deutsch · Vietnamesisch · Arabisch',lc:'de / vi / ar',ph:'Phasen des Kundengesprächs'},
+ LF1:{tag:'LF 1',title:'Klausurtrainer LF 1 – Das Einzelhandelsunternehmen repräsentieren',daten:'materials/LF1_Klausurtrainer_Daten.js',klausurItems:{X3:1,X5:2},scopes:{1:'Klausur 1 (M 1–M 7)',2:'Klausur 2 (M 8–M 12)'},ls:'lf1_trainer_v1',langs:'Deutsch · Ukrainisch · Tigrinja · Portugiesisch · Spanisch',lc:'de / uk / ti / pt / es',ph:'Themenkarten (M 1–M 12)'}};
+const KV_DEFAULT={LF2:{on:true,days:7,exakt:false,url:'materials/LF2_Klausurtrainer.html',fmt:{karten:true,quiz:true,luecke:true,reihe:true},off:{}},
+ LF1:{on:true,days:7,exakt:false,url:'materials/LF1_Klausurtrainer.html',fmt:{karten:true,quiz:true,luecke:true,reihe:true,profi:true},off:{}}};
+const KV_LANGKEY='ds_lang',KV_LANGS=['de','vi','ar','uk','ti','pt','es'];
 let KV_LANG='de',KV_EV=[];
 try{const l=localStorage.getItem(KV_LANGKEY);if(KV_LANGS.includes(l))KV_LANG=l;}catch(e){}
 function kvNorm(cur,def){const o={};Object.keys(def).forEach(p=>{const c=(cur&&cur[p])||{},d=def[p];o[p]=Object.assign({},d,c,{fmt:Object.assign({},d.fmt,c.fmt||{}),off:Object.assign({},c.off||{})});o[p].days=Math.max(1,parseInt(o[p].days)||7);});return o;}
 /* Oberflächentexte der Schüleransicht: [Deutsch, Vietnamesisch, Arabisch] */
 const KVT={
- title:['Stundenplan – Schüleransicht','Thời khóa biểu – dành cho học sinh','الجدول الدراسي – عرض الطلاب'],
- hinfo:['Schüleransicht – Stundenplan, Themen und Einträge zum Kopieren','Dành cho học sinh – thời khóa biểu, chủ đề và ghi chép để sao chép','عرض الطلاب – الجدول والمواضيع والمدخلات للنسخ'],
- woche:['Wochenplan','Kế hoạch tuần','الخطة الأسبوعية'],verlauf:['Verlauf & Einträge','Diễn biến & ghi chép','السجل والمدخلات'],
- heute:['Heute','Hôm nay','اليوم'],nextA:['Nächste A-Woche','Tuần A tới','الأسبوع A القادم'],nextB:['Nächste B-Woche','Tuần B tới','الأسبوع B القادم'],
- alle:['Alle Klassen','Tất cả các lớp','كل الصفوف'],material:['Material','Tài liệu','المواد'],kopieren:['Kopieren','Sao chép','نسخ'],eintrag:['Eintrag','Ghi chép','المدخل'],
- klausur:['Klausur','Bài kiểm tra','امتحان'],keinStoff:['Kein neuer Stoff – Themenkette rutscht weiter','Không có nội dung mới','لا توجد مادة جديدة'],
- entfaellt:['Unterricht entfällt','Không có tiết học','لا يوجد درس'],rutscht:['Stoff rutscht auf die nächste Stunde','Nội dung chuyển sang tiết sau','المادة تنتقل إلى الحصة التالية'],
- puffer:['Stoffplan abgeschlossen','Đã hết chương trình','اكتملت الخطة الدراسية'],wdh:['Puffer / Wiederholung','Dự phòng / ôn tập','احتياط / مراجعة'],
- frei:['Unterrichtsfrei','Nghỉ học','لا دراسة'],ferien:['Ferien','Nghỉ lễ','عطلة'],feiertag:['Feiertag','Ngày lễ','عيد رسمي'],schulfrei:['Schulfrei','Nghỉ học','لا دراسة'],
- datum:['Datum','Ngày','التاريخ'],std:['Std','Tiết','الحصة'],status:['Status','Trạng thái','الحالة'],unterricht:['Unterricht','Tiết học','درس'],
- thema:['Thema / Klassenbuch-Eintrag (zum Kopieren)','Chủ đề / ghi chép sổ lớp (để sao chép)','الموضوع / إدخال سجل الصف (للنسخ)'],
- alleKopieren:['Alle bisherigen Einträge kopieren','Sao chép tất cả ghi chép đến nay','نسخ كل المدخلات السابقة'],
- klausurKein:['Klausur – kein neuer Stoff','Bài kiểm tra – không có nội dung mới','امتحان – لا توجد مادة جديدة'],
- kvAktiv:['Klausurvorbereitung aktiv!','Ôn thi đã sẵn sàng!','التحضير للامتحان مفعّل!'],
- kvHeute:['Heute ist die Klausur – noch einmal üben!','Hôm nay thi – ôn lại lần nữa!','الامتحان اليوم – تدرّب مرة أخيرة!'],
- kvMorgen:['Klausur morgen – jetzt üben!','Ngày mai thi – luyện tập ngay!','الامتحان غدًا – تدرّب الآن!'],
- kvIn:['Klausur in {n} Tagen – jetzt üben!','Còn {n} ngày nữa thi – luyện tập ngay!','الامتحان بعد {n} أيام – تدرّب الآن!'],
- kvProg:['Klausurtraining zu {p} % gelernt','Đã học {p} % bài luyện thi','تم تعلّم {p}% من التدريب'],
- kvBanner:['📝 Klausur am {d} ({k})','📝 Bài kiểm tra ngày {d} ({k})','📝 امتحان بتاريخ {d} ({k})'],
- kvStart:['Jetzt üben','Luyện tập ngay','تدرّب الآن']
+ title:['Stundenplan – Schüleransicht','Thời khóa biểu – dành cho học sinh','الجدول الدراسي – عرض الطلاب','Розклад — вигляд для учнів','ሰሌዳ ሰዓታት – ርእይቶ ተማሃሮ','Horário – vista do aluno','Horario – vista del alumnado'],
+ hinfo:['Schüleransicht – Stundenplan, Themen und Einträge zum Kopieren','Dành cho học sinh – thời khóa biểu, chủ đề và ghi chép để sao chép','عرض الطلاب – الجدول والمواضيع والمدخلات للنسخ','Вигляд для учнів — розклад, теми та записи для копіювання','ርእይቶ ተማሃሮ – ሰሌዳ ሰዓታት፡ ኣርእስታትን ንምቕዳሕ ዝኸውን ጽሑፋትን','Vista do aluno – horário, temas e entradas para copiar','Vista del alumnado: horario, temas y entradas para copiar'],
+ woche:['Wochenplan','Kế hoạch tuần','الخطة الأسبوعية','Тижневий план','ናይ ሰሙን መደብ','Plano semanal','Plan semanal'],verlauf:['Verlauf & Einträge','Diễn biến & ghi chép','السجل والمدخلات','Хід занять і записи','ሂደትን ጽሑፋትን','Histórico e entradas','Historial y entradas'],
+ heute:['Heute','Hôm nay','اليوم','Сьогодні','ሎሚ','Hoje','Hoy'],nextA:['Nächste A-Woche','Tuần A tới','الأسبوع A القادم','Наступний тиждень A','ዝቕጽል ሰሙን A','Próxima semana A','Próxima semana A'],nextB:['Nächste B-Woche','Tuần B tới','الأسبوع B القادم','Наступний тиждень B','ዝቕጽል ሰሙን B','Próxima semana B','Próxima semana B'],
+ alle:['Alle Klassen','Tất cả các lớp','كل الصفوف','Усі класи','ኩሎም ክላሳት','Todas as turmas','Todas las clases'],material:['Material','Tài liệu','المواد','Матеріал','ንብረት ትምህርቲ','Material','Material'],kopieren:['Kopieren','Sao chép','نسخ','Копіювати','ቀድሕ','Copiar','Copiar'],eintrag:['Eintrag','Ghi chép','المدخل','Запис','ጽሑፍ','Entrada','Entrada'],
+ klausur:['Klausur','Bài kiểm tra','امتحان','Контрольна робота','ፈተና','Teste escrito','Examen'],keinStoff:['Kein neuer Stoff – Themenkette rutscht weiter','Không có nội dung mới','لا توجد مادة جديدة','Нового матеріалу немає — ланцюжок тем зсувається далі','ሓድሽ ትምህርቲ የለን – ሰንሰለት ኣርእስታት ይሰጋገር','Sem matéria nova – a sequência de temas avança','Sin materia nueva: la cadena de temas se desplaza'],
+ entfaellt:['Unterricht entfällt','Không có tiết học','لا يوجد درس','Занять немає','ትምህርቲ የለን','Não há aula','No hay clase'],rutscht:['Stoff rutscht auf die nächste Stunde','Nội dung chuyển sang tiết sau','المادة تنتقل إلى الحصة التالية','Матеріал переноситься на наступний урок','ትምህርቲ ናብ ዝቕጽል ሰዓት ይሰጋገር','A matéria passa para a aula seguinte','La materia pasa a la próxima hora'],
+ puffer:['Stoffplan abgeschlossen','Đã hết chương trình','اكتملت الخطة الدراسية','План матеріалу завершено','መደብ ትምህርቲ ተወዲኡ','Plano de matéria concluído','Plan de materia completado'],wdh:['Puffer / Wiederholung','Dự phòng / ôn tập','احتياط / مراجعة','Резерв / повторення','ዕቐብ ግዜ / ምድጋም','Margem / revisão','Margen / repaso'],
+ frei:['Unterrichtsfrei','Nghỉ học','لا دراسة','Без занять','ትምህርቲ የለን','Sem aulas','Sin clases'],ferien:['Ferien','Nghỉ lễ','عطلة','Канікули','ዕረፍቲ','Férias','Vacaciones'],feiertag:['Feiertag','Ngày lễ','عيد رسمي','Святковий день','ብዓል','Feriado','Día festivo'],schulfrei:['Schulfrei','Nghỉ học','لا دراسة','Вихідний у школі','ትምህርቲ ቤት ዕጹው','Sem escola','Sin escuela'],
+ datum:['Datum','Ngày','التاريخ','Дата','ዕለት','Data','Fecha'],std:['Std','Tiết','الحصة','Год.','ሰዓት','Hora','Hora'],status:['Status','Trạng thái','الحالة','Статус','ኩነት','Estado','Estado'],unterricht:['Unterricht','Tiết học','درس','Заняття','ትምህርቲ','Aula','Clase'],
+ thema:['Thema / Klassenbuch-Eintrag (zum Kopieren)','Chủ đề / ghi chép sổ lớp (để sao chép)','الموضوع / إدخال سجل الصف (للنسخ)','Тема / запис у класному журналі (для копіювання)','ኣርእስቲ / ጽሑፍ ኣብ መዝገብ ክላስ (ንምቕዳሕ)','Tema / entrada no livro de turma (para copiar)','Tema / entrada del libro de clase (para copiar)'],
+ alleKopieren:['Alle bisherigen Einträge kopieren','Sao chép tất cả ghi chép đến nay','نسخ كل المدخلات السابقة','Копіювати всі наявні записи','ኩሉ ዝነበረ ጽሑፋት ቀድሕ','Copiar todas as entradas até agora','Copiar todas las entradas anteriores'],
+ klausurKein:['Klausur – kein neuer Stoff','Bài kiểm tra – không có nội dung mới','امتحان – لا توجد مادة جديدة','Контрольна робота — нового матеріалу немає','ፈተና – ሓድሽ ትምህርቲ የለን','Teste escrito – sem matéria nova','Examen – sin materia nueva'],
+ kvAktiv:['Klausurvorbereitung aktiv!','Ôn thi đã sẵn sàng!','التحضير للامتحان مفعّل!','Підготовка до контрольної активна!','ድልውነት ንፈተና ንጡፍ እዩ!','Preparação para o teste ativa!','¡Preparación del examen activa!'],
+ kvHeute:['Heute ist die Klausur – noch einmal üben!','Hôm nay thi – ôn lại lần nữa!','الامتحان اليوم – تدرّب مرة أخيرة!','Сьогодні контрольна — потренуйся ще раз!','ሎሚ ፈተና እዩ – ደጊምካ ተለማመድ!','Hoje é o teste – pratica mais uma vez!','Hoy es el examen: ¡practica una vez más!'],
+ kvMorgen:['Klausur morgen – jetzt üben!','Ngày mai thi – luyện tập ngay!','الامتحان غدًا – تدرّب الآن!','Контрольна завтра — тренуйся зараз!','ፈተና ጽባሕ – ሕጂ ተለማመድ!','Teste amanhã – pratica agora!','Examen mañana: ¡practica ahora!'],
+ kvIn:['Klausur in {n} Tagen – jetzt üben!','Còn {n} ngày nữa thi – luyện tập ngay!','الامتحان بعد {n} أيام – تدرّب الآن!','Контрольна через {n} дн. — тренуйся зараз!','ፈተና ድሕሪ {n} መዓልቲ – ሕጂ ተለማመድ!','Teste daqui a {n} dias – pratica agora!','Examen en {n} días: ¡practica ahora!'],
+ kvProg:['Klausurtraining zu {p} % gelernt','Đã học {p} % bài luyện thi','تم تعلّم {p}% من التدريب','Підготовка до контрольної: вивчено {p} %','ተለማምዶ ፈተና {p} % ተማሂሩ','Treino para o teste: {p} % aprendido','Entrenamiento de examen aprendido al {p} %'],
+ kvBanner:['📝 Klausur am {d} ({k})','📝 Bài kiểm tra ngày {d} ({k})','📝 امتحان بتاريخ {d} ({k})','📝 Контрольна {d} ({k})','📝 ፈተና ኣብ {d} ({k})','📝 Teste em {d} ({k})','📝 Examen el {d} ({k})'],
+ kvStart:['Jetzt üben','Luyện tập ngay','تدرّب الآن','Тренуватися','ሕጂ ተለማመድ','Praticar agora','Practicar ahora']
 };
 const kt=(k,v)=>{const a=KVT[k];if(!a)return k;let s=STUDENT?(a[KV_LANGS.indexOf(KV_LANG)]||a[0]):a[0];if(v)Object.keys(v).forEach(x=>{s=s.split('{'+x+'}').join(v[x]);});return s;};
-const KV_DAYS={vi:['T2','T3','T4','T5','T6'],ar:['الإثنين','الثلاثاء','الأربعاء','الخميس','الجمعة']};
+const KV_DAYS={vi:['T2','T3','T4','T5','T6'],ar:['الإثنين','الثلاثاء','الأربعاء','الخميس','الجمعة'],uk:['Пн','Вт','Ср','Чт','Пт'],ti:['ሰኑይ','ሰሉስ','ረቡዕ','ሓሙስ','ዓርቢ'],pt:['Seg','Ter','Qua','Qui','Sex'],es:['Lun','Mar','Mié','Jue','Vie']};
 const kvDay=i=>STUDENT&&KV_LANG!=='de'?KV_DAYS[KV_LANG][i]:TAGE[i];
-const kvWoche=ab=>STUDENT&&KV_LANG==='vi'?'Tuần '+ab:STUDENT&&KV_LANG==='ar'?'أسبوع '+ab:ab+'-Woche';
+const KV_WK={vi:'Tuần ',ar:'أسبوع ',uk:'Тиждень ',ti:'ሰሙን ',pt:'Semana ',es:'Semana '};
+const kvWoche=ab=>STUDENT&&KV_WK[KV_LANG]?KV_WK[KV_LANG]+ab:ab+'-Woche';
 const kvStat=st=>STUDENT&&KVT[st==='frei'?'schulfrei':st]?kt(st==='frei'?'schulfrei':st):STAT[st];
 const kvDaysBetween=(a,b)=>Math.round((parse(b)-parse(a))/864e5);
 const kvToday=()=>{try{const h=new URLSearchParams(location.search).get('heute');if(/^\d{4}-\d{2}-\d{2}$/.test(h||''))return h;}catch(e){}return todayStr();};
@@ -538,7 +547,7 @@ function kvBuildEvents(){
 }
 function kvUrl(cfg,k){
  const f=Object.keys(cfg.fmt||{}).filter(x=>cfg.fmt[x]),off=Object.keys(cfg.off||{}).filter(x=>cfg.off[x]);
- return (cfg.url||'')+'?k='+k+'&lang='+KV_LANG+(f.length&&f.length<4?'&f='+f.join(','):'')+(off.length?'&x='+off.join(','):'');
+ return (cfg.url||'')+'?k='+k+'&lang='+KV_LANG+(f.length&&f.length<Object.keys(cfg.fmt||{}).length?'&f='+f.join(','):'')+(off.length?'&x='+off.join(','):'');
 }
 function kvFor(o){
  let best=null;
@@ -551,10 +560,10 @@ function kvFor(o){
  });
  return best;
 }
-function kvProg(k){try{const j=JSON.parse(localStorage.getItem(KV_LS)||'null');const s=j&&j.sum&&j.sum[k];return s?{a:s.pa||0,p:s.po||0}:{a:0,p:0};}catch(e){return {a:0,p:0};}}
+function kvProg(k,pid){try{const j=JSON.parse(localStorage.getItem((KV_META[pid]||{}).ls||'lf2_trainer_v1')||'null');const s=j&&j.sum&&j.sum[k];return s?{a:s.pa||0,p:s.po||0}:{a:0,p:0};}catch(e){return {a:0,p:0};}}
 const kvSub=d=>d===0?kt('kvHeute'):d===1?kt('kvMorgen'):d===2&&STUDENT&&KV_LANG==='ar'?'الامتحان بعد يومين – تدرّب الآن!':kt('kvIn',{n:d});
 function kvBox(o){
- const h=kvFor(o);if(!h)return '';const pr=kvProg(h.e.k),p=pr.p;
+ const h=kvFor(o);if(!h)return '';const pr=kvProg(h.e.k,h.e.pid),p=pr.p;
  return `<div class="kv-box"><a class="kv-btn" href="${esc(kvUrl(h.cfg,h.e.k))}"><span>🚨 ${esc(kt('kvAktiv'))}</span><small>${esc(kvSub(h.d))}</small></a><div class="kv-prog" role="progressbar" aria-valuenow="${p}" aria-valuemin="0" aria-valuemax="100"><i class="att" style="width:${pr.a}%"></i><i style="width:${p}%"></i></div><div class="kv-ptxt">${esc(kt('kvProg',{p}))}</div></div>`;
 }
 function kvBanner(){
@@ -570,24 +579,32 @@ function kvBanner(){
 function kvLangFab(){
  const el=document.getElementById('langfab');if(!el)return;
  if(!STUDENT){el.innerHTML='';return;}
- const N={de:['🇩🇪','Deutsch','DE'],vi:['🇻🇳','Tiếng Việt','VI'],ar:['🌐','العربية','ع']};
+ const N={de:['🇩🇪','Deutsch','DE'],vi:['🇻🇳','Tiếng Việt','VI'],ar:['🌐','العربية','ع'],uk:['🇺🇦','Українська','UK'],ti:['🌐','ትግርኛ','TI'],pt:['🇵🇹','Português','PT'],es:['🇪🇸','Español','ES']};
  document.documentElement.lang=KV_LANG;document.documentElement.dir=KV_LANG==='ar'?'rtl':'ltr';
- el.innerHTML=`<div class="menu ${ui.kvMenu?'on':''}" role="menu">${KV_LANGS.map(l=>`<button role="menuitem" data-act="kvLang" data-v="${l}" class="${KV_LANG===l?'on':''}"><span style="font-size:20px">${N[l][0]}</span> ${N[l][1]}</button>`).join('')}</div><button data-act="kvMenu" aria-haspopup="true" aria-expanded="${!!ui.kvMenu}" aria-label="Sprache / Ngôn ngữ / اللغة">${N[KV_LANG][0]} ${N[KV_LANG][2]} ▾</button>`;
+ el.innerHTML=`<div class="menu ${ui.kvMenu?'on':''}" role="menu">${KV_LANGS.map(l=>`<button role="menuitem" data-act="kvLang" data-v="${l}" class="${KV_LANG===l?'on':''}"><span style="font-size:20px">${N[l][0]}</span> ${N[l][1]}</button>`).join('')}</div><button data-act="kvMenu" aria-haspopup="true" aria-expanded="${!!ui.kvMenu}" aria-label="Sprache / Мова / ቋንቋ / Idioma">${N[KV_LANG][0]} ${N[KV_LANG][2]} ▾</button>`;
 }
 /* Inhalte des Trainers (gleiche Datei wie im Trainer) – für die Verwaltung im Admin-Bereich */
-let KV_DATA_STATE=0;
-function kvData(){
- if(window.KV_DATA)return window.KV_DATA;
- if(!KV_DATA_STATE){KV_DATA_STATE=1;const sc=document.createElement('script');sc.src=KV_META.LF2.daten;sc.charset='utf-8';sc.onload=()=>{if(ui.tab==='admin')renderAll();};sc.onerror=()=>{KV_DATA_STATE=2;if(ui.tab==='admin')renderAll();};document.head.appendChild(sc);}
+const KV_CACHE={},KV_STATE={},KV_QUEUE=[];let KV_BUSY=false;
+function kvData(pid){
+ if(KV_CACHE[pid])return KV_CACHE[pid];
+ if(!KV_STATE[pid]){KV_STATE[pid]=1;KV_QUEUE.push(pid);kvPump();}
  return null;
 }
+function kvPump(){
+ if(KV_BUSY||!KV_QUEUE.length)return;KV_BUSY=true;const pid=KV_QUEUE.shift();window.KV_DATA=undefined;
+ const sc=document.createElement('script');sc.src=KV_META[pid].daten;sc.charset='utf-8';
+ sc.onload=()=>{KV_CACHE[pid]=window.KV_DATA;KV_STATE[pid]=window.KV_DATA?3:2;KV_BUSY=false;if(ui.tab==='admin')renderAll();kvPump();};
+ sc.onerror=()=>{KV_STATE[pid]=2;KV_BUSY=false;if(ui.tab==='admin')renderAll();kvPump();};
+ document.head.appendChild(sc);
+}
+const kvOth=o=>Object.keys(o).filter(k=>k!=='de').map(k=>esc(o[k])).join(' · ');
 function kvAdminCard(pid){
  const meta=KV_META[pid];if(!meta)return '';
- const cfg=state.trainer[pid],B='trainer.'+pid+'.',data=kvData();
- const FN={karten:'Lernkarten',quiz:'Quiz (Multiple Choice)',luecke:'Lückentexte',reihe:'Phasen-Reihenfolge'};
- const cnt=data?{karten:data.TERMS.length,quiz:data.MC.length,luecke:data.LK.length,reihe:1}:{};
+ const cfg=state.trainer[pid],B='trainer.'+pid+'.',data=kvData(pid);
+ const FN=Object.assign({karten:'Lernkarten',quiz:'Quiz (Multiple Choice)',luecke:'Lückentexte',reihe:pid==='LF2'?'Phasen-Reihenfolge':'Reihenfolge-Übung'},('profi' in cfg.fmt)?{profi:'Für Profis (Begründungsfragen)'}:{});
+ const cnt=data?{karten:data.TERMS.length,quiz:data.MC.filter(x=>!x.p).length,profi:data.MC.filter(x=>x.p).length,luecke:data.LK.length,reihe:1}:{};
  let h=`<div class="card"><h2>📝 Übungen &amp; Klausurtrainer · ${esc(meta.tag)}</h2>
- <p class="small">Mehrsprachiger Selbsttest (Deutsch · Vietnamesisch · Arabisch) mit Piktogrammen, Hover-Übersetzung der Fachbegriffe, Umschalter je Frage und Fortschrittsbalken (wird im Browser des Schülers gespeichert). Der Knopf <b>„Klausurvorbereitung aktiv!“</b> erscheint im Stundenplan beim Fach der Klasse – blinkend – und führt direkt zum Trainer. Klausurtermine kommen aus <b>Admin → Klausuren</b> oder aus dem geplanten Modul „Klausur 1/2“ der Themenkette.</p>
+ <p class="small">Mehrsprachiger Selbsttest (${esc(meta.langs)}) mit Piktogrammen, Hover-Übersetzung der Fachbegriffe, Umschalter je Frage und Fortschrittsbalken (wird im Browser des Schülers gespeichert). Der Knopf <b>„Klausurvorbereitung aktiv!“</b> erscheint im Stundenplan beim Fach der Klasse – blinkend – und führt direkt zum Trainer. Klausurtermine kommen aus <b>Admin → Klausuren</b> oder aus dem geplanten Modul „Klausur 1/2“ der Themenkette.</p>
  <label style="display:flex;gap:8px;align-items:center;color:var(--ink)"><input type="checkbox" ${bind(B+'on','data-t="b"')} ${cfg.on?'checked':''}> Knopf „Klausurvorbereitung aktiv!“ im Stundenplan anzeigen</label>
  <div class="row" style="margin-top:8px"><div><label>Tage vor der Klausur</label><input type="number" min="1" style="width:80px" ${bind(B+'days','data-t="n"')} value="${cfg.days}"></div>
  <div style="flex:1;min-width:240px"><label>Adresse des Trainers (Pfad neben der index.html oder Weblink)</label><input type="text" style="width:100%" ${bind(B+'url')} value="${esc(cfg.url)}"></div></div>
@@ -595,16 +612,17 @@ function kvAdminCard(pid){
  <h3>Übungsformate</h3><div class="row">${Object.keys(FN).map(f=>`<label style="display:flex;gap:6px;align-items:center;color:var(--ink);margin:0"><input type="checkbox" ${bind(B+'fmt.'+f,'data-t="b"')} ${cfg.fmt[f]?'checked':''}> ${FN[f]}${cnt[f]?' <span class="pill">'+cnt[f]+'</span>':''}</label>`).join('')}</div>
  <div class="acts" style="margin-top:8px">${Object.keys(meta.scopes).map(k=>`<a class="btn sm" target="_blank" rel="noopener" href="${esc(kvUrl(cfg,k))}">Vorschau ${esc(meta.scopes[k])}</a>`).join('')}<button class="btn sm ghost" data-act="kvCopy" data-pid="${pid}">Link kopieren</button></div>
  <p class="small" style="margin:6px 0 0">Test des Stundenplan-Knopfs: <code>${esc(location.pathname.split('/').pop()||'index.html')}?mode=schueler&amp;heute=JJJJ-MM-TT</code> simuliert ein anderes Datum.</p>`;
- if(!data){h+=KV_DATA_STATE===2?`<div class="warn" style="margin-top:8px">Die Inhaltsdatei <code>${esc(meta.daten)}</code> wurde nicht gefunden – bitte neben die index.html in den Ordner materials/ legen.</div>`:'<p class="small">Inhalte werden geladen …</p>';return h+'</div>';}
+ if(!data){h+=KV_STATE[pid]===2?`<div class="warn" style="margin-top:8px">Die Inhaltsdatei <code>${esc(meta.daten)}</code> wurde nicht gefunden – bitte neben die index.html in den Ordner materials/ legen.</div>`:'<p class="small">Inhalte werden geladen …</p>';return h+'</div>';}
  const rows=(arr,pre,fn)=>arr.map(x=>`<label><input type="checkbox" data-kvoff="${pid}|${pre}${x.i}" ${cfg.off[pre+x.i]?'':'checked'}><span><span class="pill">${x.k===1?'Kl. 1':x.k===2?'Kl. 2':'beide'}</span> ${x.ic||''} ${fn(x)}</span></label>`).join('');
  const det=(title,body,n)=>`<details class="part" ${ui.open['kv'+title]?'open':''} data-open="kv${title}"><summary><b>${title}</b> <span class="pill">${n}</span></summary><div class="kvlist">${body}</div></details>`;
  h+=`<h3>Alle Übungen verwalten <span class="small">(Haken = für Schüler sichtbar)</span></h3>`
  +det('Lernkarten',rows(data.TERMS,'fc',x=>`<b>${esc(x.t.de)}</b> – ${esc(x.d.de)}`),data.TERMS.length)
- +det('Quiz (Multiple Choice)',rows(data.MC,'mc',x=>`${esc(x.q.de)} <span class="small">→ ${esc(x.o[x.r].de)}</span>`),data.MC.length)
+ +det('Quiz (Multiple Choice)',rows(data.MC.filter(x=>!x.p),'mc',x=>`${esc(x.q.de)} <span class="small">→ ${esc(x.o[x.r].de)}</span>`),data.MC.filter(x=>!x.p).length)
+ +(data.MC.some(x=>x.p)?det('Für Profis',rows(data.MC.filter(x=>x.p),'mc',x=>`${esc(x.q.de)} <span class="small">→ ${esc(x.o[x.r].de)}</span>`),data.MC.filter(x=>x.p).length):'')
  +det('Lückentexte',rows(data.LK,'lk',x=>`${esc(x.s.de)} <span class="small">→ ${esc(x.w[x.r].de)}</span>`),data.LK.length)
- +det('Phasen des Kundengesprächs',data.PH.map(p=>`<label><span><span class="pill">${p.k===1?'Kl. 1':'Kl. 2'}</span> ${p.ic} <b>${esc(p.n.de)}</b> · ${esc(p.n.vi)} · ${esc(p.n.ar)}</span></label>`).join(''),data.PH.length)
- +det('Hover-Wörterbuch (Fachbegriffe)',data.HV.map(x=>`<label><span><b>${esc(x[0])}</b> · 🇻🇳 ${esc(x[1])} · ع ${esc(x[2])}</span></label>`).join(''),data.HV.length);
- h+=`<p class="small" style="margin-top:8px">Neue Fragen, Begriffe oder Übersetzungen ergänzt du in der Datei <code>${esc(meta.daten)}</code> (ein Eintrag je Frage mit <code>de / vi / ar</code>) – sie erscheinen hier automatisch in der Liste. <b>Hinweis:</b> Die Übersetzungen sind maschinell erstellt; bitte vor dem Einsatz von Sprachmittler:innen oder Schüler:innen gegenlesen lassen.</p></div>`;
+ +det(meta.ph,data.PH.map(p=>`<label><span><span class="pill">${p.k===1?'Kl. 1':'Kl. 2'}</span> ${p.ic} <b>${esc(p.n.de)}</b> · ${kvOth(p.n)}</span></label>`).join(''),data.PH.length)
+ +det('Hover-Wörterbuch (Fachbegriffe)',data.HV.map(x=>`<label><span><b>${esc(x[0])}</b> · ${typeof x[1]==='object'?kvOth(Object.assign({de:''},x[1])):'🇻🇳 '+esc(x[1])+' · ع '+esc(x[2])}</span></label>`).join(''),data.HV.length);
+ h+=`<p class="small" style="margin-top:8px">Neue Fragen, Begriffe oder Übersetzungen ergänzt du in der Datei <code>${esc(meta.daten)}</code> (ein Eintrag je Frage mit <code>${esc(meta.lc)}</code>) – sie erscheinen hier automatisch in der Liste. <b>Hinweis:</b> Die Übersetzungen sind maschinell erstellt; bitte vor dem Einsatz von Sprachmittler:innen oder Schüler:innen gegenlesen lassen.</p></div>`;
  return h;
 }
 
@@ -792,8 +810,8 @@ if(ui.adminSec==='fehl'){
  }
  if(ui.adminSec==='klausur'){
   h+=`<div class="card"><h2>Klausuren</h2><p class="small">Ein Klausurtermin verbraucht keinen neuen Stoff; alle folgenden Themen dieses Fachs in dieser Klasse rutschen um eine Doppelstunde weiter. (Geht auch direkt im Wochenplan per „Klausur“-Knopf.)</p>
-  <div class="row"><div><label>Datum</label><input type="date" id="exDate"></div><div><label>Klasse</label>${klasseSelect('id="exK" data-role="exK"',ui.adminKlasse)}</div><div><label>Fach</label><select id="exF"></select></div><div><label>Klausurtrainer</label><select id="exT"><option value="">automatisch (nach Stoff)</option><option value="LF2.1">LF 2 – Klausur 1</option><option value="LF2.2">LF 2 – Klausur 2</option><option value="none">kein Trainer</option></select></div><div><label>Notiz</label><input type="text" id="exNote" placeholder="optional"></div><button class="btn pri" data-act="addExam">Hinzufügen</button></div>
-  ${listRows(state.exams.slice().sort((a,b)=>a.date.localeCompare(b.date)),e=>`${de(e.date)} · ${esc(e.klasse)} · ${esc(e.fach)} ${e.lf?'· Trainer: '+esc(e.lf==='none'?'keiner':e.lf.replace('LF2.','LF 2 – Klausur ')):''} ${e.note?'· '+esc(e.note):''}`,'delExam')}</div>`;
+  <div class="row"><div><label>Datum</label><input type="date" id="exDate"></div><div><label>Klasse</label>${klasseSelect('id="exK" data-role="exK"',ui.adminKlasse)}</div><div><label>Fach</label><select id="exF"></select></div><div><label>Klausurtrainer</label><select id="exT"><option value="">automatisch (nach Stoff)</option><option value="LF1.1">LF 1 – Klausur 1</option><option value="LF1.2">LF 1 – Klausur 2</option><option value="LF2.1">LF 2 – Klausur 1</option><option value="LF2.2">LF 2 – Klausur 2</option><option value="none">kein Trainer</option></select></div><div><label>Notiz</label><input type="text" id="exNote" placeholder="optional"></div><button class="btn pri" data-act="addExam">Hinzufügen</button></div>
+  ${listRows(state.exams.slice().sort((a,b)=>a.date.localeCompare(b.date)),e=>`${de(e.date)} · ${esc(e.klasse)} · ${esc(e.fach)} ${e.lf?'· Trainer: '+esc(e.lf==='none'?'keiner':e.lf.replace('LF1.','LF 1 – Klausur ').replace('LF2.','LF 2 – Klausur ')):''} ${e.note?'· '+esc(e.note):''}`,'delExam')}</div>`;
  }
  if(ui.adminSec==='frei'){
   h+=`<div class="card"><h2>Schulspezifische freie Tage</h2><p class="small">z. B. Studientage oder Zeugniskonferenzen – an diesen Tagen entfällt der Unterricht ohne Stoffverbrauch und ohne Verzug.</p>
