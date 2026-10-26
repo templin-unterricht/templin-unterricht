@@ -7,6 +7,17 @@
 <style>
 :root{--bg:#f3f5fa;--card:#fff;--ink:#1c2433;--mut:#5d6b82;--line:#dce2ee;--pri:#2457c5;--priink:#fff;--g:#14894c;--gbg:#e0f4e9;--y:#9a6a00;--ybg:#fff1cc;--r:#c9302c;--rbg:#fde4e3;--free:#eceff5;--a:#2457c5;--b:#8a3fc0}
 @media(prefers-color-scheme:dark){:root{--bg:#0f131b;--card:#192030;--ink:#e8ecf5;--mut:#9aa7bf;--line:#2b3548;--pri:#6c97f0;--priink:#0b1020;--g:#4cd08a;--gbg:#113423;--y:#f0b93a;--ybg:#3a2f0e;--r:#ff7b78;--rbg:#451a1b;--free:#222a3a;--a:#7da5ff;--b:#c99aff}}
+
+:root{--c-gr:#14894c;--c-grbg:#e0f4e9;--c-ye:#8a6200;--c-yebg:#fff3bf;--c-rd:#c9302c;--c-rdbg:#fde4e3;--c-bl:#1d4fb3;--c-blbg:#dfe9ff;--c-pk:#b0246f;--c-pkbg:#ffe0ef;--c-br:#7a4a1c;--c-brbg:#f1e0cc}
+@media(prefers-color-scheme:dark){:root{--c-gr:#4cd08a;--c-grbg:#113423;--c-ye:#f0cf5a;--c-yebg:#3a3010;--c-rd:#ff8f8c;--c-rdbg:#451a1b;--c-bl:#8fb2ff;--c-blbg:#14284f;--c-pk:#ff93c4;--c-pkbg:#4a1632;--c-br:#e0b27c;--c-brbg:#3d2a14}}
+.btn.c-gr{background:var(--c-grbg);color:var(--c-gr);border-color:var(--c-gr)}
+.btn.c-ye{background:var(--c-yebg);color:var(--c-ye);border-color:var(--c-ye)}
+.btn.c-rd{background:var(--c-rdbg);color:var(--c-rd);border-color:var(--c-rd)}
+.btn.c-bl{background:var(--c-blbg);color:var(--c-bl);border-color:var(--c-bl)}
+.btn.c-pk{background:var(--c-pkbg);color:var(--c-pk);border-color:var(--c-pk)}
+.btn.c-br{background:var(--c-brbg);color:var(--c-br);border-color:var(--c-br)}
+.btn[class*=" c-"]:hover{filter:brightness(.95);border-color:currentColor}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px;font-size:12px}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 header{background:var(--card);border-bottom:1px solid var(--line);padding:14px 16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between}
@@ -241,7 +252,7 @@ function defaultChain(klasse,fach){
 }
 function defaultState(){
  const chains={};KLASSEN.forEach(k=>FAECHER[k.typ].forEach(f=>chains[k.id+'|'+f]=defaultChain(k.id,f)));
- return {version:5,settings:{refA:'2026-10-26',skipHolidayWeeks:false,planStart:'2026-08-17',stichtag:'',periods:PERIODS,klassenEnde:{'V25/1':'2027-05-28','V25/3':'2027-05-28'},hoverLangs:{'V26/1':['uk','ti','pt','es'],'V26/2':['ar','vi']}},slots:presetSlots(),chains,mat:{},customDays:[],absences:[],exams:[],exkursionen:[],inserts:[],texts:{},trainer:kvNorm(null,KV_DEFAULT)};
+ return {version:6,settings:{refA:'2026-10-26',skipHolidayWeeks:false,planStart:'2026-08-17',stichtag:'',periods:PERIODS,klassenEnde:{'V25/1':'2027-05-28','V25/3':'2027-05-28'},hoverLangs:{'V26/1':['uk','ti','pt','es','ru'],'V26/2':['ar','vi','ru']}},slots:presetSlots(),chains,mat:{},customDays:[],absences:[],exams:[],exkursionen:[],inserts:[],texts:{},trainer:kvNorm(null,KV_DEFAULT)};
 }
 function repairChain(c){
  if(!c||typeof c!=='object')return;
@@ -273,7 +284,8 @@ function normalize(j){
  if(ver>=4&&ver<5){ /* Auftakt in LF 2 dauert nur eine Stunde (0,5 DS) */
   Object.keys(o.chains).forEach(k=>{const ch=o.chains[k];(ch&&ch.parts||[]).forEach(pt=>{if(pt&&pt.pid==='LF2'&&pt.mods&&pt.mods.X1&&parseFloat(pt.mods.X1.ds)===1)pt.mods.X1.ds=0.5;});});
  }
- o.version=5;o.trainer=kvNorm(o.trainer,KV_DEFAULT);
+ if(ver<6){['V26/1','V26/2'].forEach(k=>{const l=o.settings.hoverLangs[k];if(Array.isArray(l)&&!l.includes('ru'))l.push('ru');});}
+ o.version=6;o.trainer=kvNorm(o.trainer,KV_DEFAULT);
  Object.keys(o.chains).forEach(k=>repairChain(o.chains[k]));
  if(!o.seed2){ /* Dateien aus dem Ordner materials/ einmalig eintragen (vorhandene Eingaben bleiben erhalten) */
   o.seed2=true;
@@ -512,8 +524,8 @@ function renderTabs(){
 /* ================= HOVER-ÜBERSETZUNG (Schüleransicht) =================
    Die Übersetzungen stehen in stundenplan_uebersetzungen.js (neben der index.html). Welche Sprachen eine Klasse sieht,
    steht unter Admin → Einstellungen (V26/1: uk, ti, pt, es · V26/2: ar, vi). */
-const TRLANGS=['uk','ti','pt','es','ar','vi'];
-const TR_INFO={uk:['🇺🇦','Українська'],ti:['🌐','ትግርኛ'],pt:['🇵🇹','Português'],es:['🇪🇸','Español'],ar:['🌐','العربية'],vi:['🇻🇳','Tiếng Việt']};
+const TRLANGS=['uk','ti','pt','es','ar','vi','ru'];
+const TR_INFO={uk:['🇺🇦','Українська'],ti:['🌐','ትግርኛ'],pt:['🇵🇹','Português'],es:['🇪🇸','Español'],ar:['🌐','العربية'],vi:['🇻🇳','Tiếng Việt'],ru:['🇷🇺','Русский']};
 let TRD=null;
 const hoverLangs=k=>{const l=((state&&state.settings.hoverLangs)||{})[k];return STUDENT&&TRD&&Array.isArray(l)?l.filter(x=>TRLANGS.includes(x)&&TRD.l.includes(x)):[];};
 const ktl=(key,i)=>{const a=KVT[key];return a?(a[KV_LANGS.indexOf(TRD.l[i])]||a[0]):key;};
@@ -579,10 +591,21 @@ function unitSub(u,k){
  const t=thema(u);
  return (u.total>1?`Doppelstunde ${u.dsNo}/${u.total}`:'')+(t!==u.item.name?(u.total>1?' · ':'')+trSpan(t,k):'');
 }
+/* Farben der Material-Buttons: grün Material/Selbsttest · gelb Online-Fassung · rot Untis-Eintrag · blau Prüfungs-/Klausurtraining · rosa Einstiege · braun Escape Room/Live Adventure */
+const LIVEADV=/escape|spiel|adventure|imperium|phantom|weserfort|eiszeit|nebel über|kutter|zahlen-zentrale|hafenstore|kranich|kaje|ladenmacher|festival-kasse|countdown|kein bon|akte nordstadt|bremerhaven-experiment|inventur-krimi|ladenschluss|wett-quiz|blitzkasse|organisations-arena|nachtschicht|preis-tresor|rettet/i;
+function matCls(l){
+ l=l||'';
+ if(/online/i.test(l))return 'c-ye';
+ if(LIVEADV.test(l))return 'c-br';
+ if(/pr[üu]e?fungs?training|pruefungstraining|klausur|trainer|rechentest|trainingshefte/i.test(l))return 'c-bl';
+ if(/\\(pdf\\)/i.test(l))return 'c-gr';
+ if(/einstieg|live|popcorn|sockensortierer|verd[äa]e?chtigen|ladenwert|jahres-kassenbon/i.test(l))return 'c-pk';
+ return 'c-gr';
+}
 function matButtons(u,lim,id){
  const pl=pdfLink(u),dl=digLinks(u),sh=lim?dl.slice(0,lim):dl;
- return (pl?`<a class="btn sm" href="${esc(pl)}" target="_blank" rel="noopener" title="Arbeitsblatt (PDF)">${kt('material')}</a>`:'')+
-  sh.map(x=>`<a class="btn sm" href="${esc(x.u.trim())}" target="_blank" rel="noopener">${esc(x.l||'Link')}</a>`).join('')+
+ return (pl?`<a class="btn sm c-gr" href="${esc(pl)}" target="_blank" rel="noopener" title="Arbeitsblatt (PDF)">${kt('material')}</a>`:'')+
+  sh.map(x=>`<a class="btn sm ${matCls(x.l)}" href="${esc(x.u.trim())}" target="_blank" rel="noopener">${esc(x.l||'Link')}</a>`).join('')+
   (lim&&dl.length>lim?`<button class="btn sm ghost" data-act="entry" data-id="${esc(id)}" title="Weitere Materialien im Eintrag">+${dl.length-lim} mehr</button>`:'');
 }
 /* ================= KLAUSURVORBEREITUNG · ÜBUNGEN · SPRACHE ================= */
@@ -755,7 +778,7 @@ function lessonCard(o){
  const head=`<div class="les-h"><span>${esc(o.klasse)}</span><span class="fa">${esc(o.fach)}</span>${STUDENT?'':`<span class="dot amp-${ch.amp}" title="${AMP[ch.amp]} (${ch.verzugStd} Std Verzug)"></span>`}</div>`;
  let body='',cls='';
  const ent=`<button class="btn sm ghost" data-act="entry" data-id="${esc(o.id)}" title="${STUDENT?'':'Eintrag ansehen und Stunde planen (Klausur, Exkursion, Einzelstunde)'}">${STUDENT?kt('eintrag'):'Eintrag / Planen'}</button>`;
- const cp=`<button class="btn sm" data-act="copy" data-id="${esc(o.id)}" title="Klassenbuch-Eintrag kopieren">${ICON_COPY} ${kt('kopieren')}</button>`;
+ const cp=`<button class="btn sm c-rd" data-act="copy" data-id="${esc(o.id)}" title="Klassenbuch-Eintrag kopieren">${ICON_COPY} ${kt('kopieren')}</button>`;
  if(o.status==='unterricht'){
   const multi=o.segs.length>1;
   if(o.segs.some(g=>g.unit&&isLeistung(g.unit)))cls=' lk';
@@ -826,7 +849,7 @@ function renderVerlauf(){
  c.occ.forEach(o=>{
   const sl=STUDENT&&o.status==='fehlt'?kt('entfaellt'):o.status==='unterricht'&&STUDENT?kt('unterricht'):o.status==='klausur'&&STUDENT?kt('klausur'):kvStat(o.status);
   let inner='',acts='';
-  const cp=`<button class="btn sm" data-act="copy" data-id="${esc(o.id)}">${ICON_COPY}</button><button class="btn sm ghost" data-act="entry" data-id="${esc(o.id)}">${kt('eintrag')}</button>`;
+  const cp=`<button class="btn sm c-rd" data-act="copy" data-id="${esc(o.id)}">${ICON_COPY}</button><button class="btn sm ghost" data-act="entry" data-id="${esc(o.id)}">${kt('eintrag')}</button>`;
   if(o.status==='unterricht'){
    const hd=o.segs.map(g=>g.unit?`<b>${esc(unitTag(g.unit))}${g.unit.item.lab?': '+trSpan(g.unit.item.name,o.klasse):' – '+trSpan(g.unit.item.name,o.klasse)}</b>${g.unit.total>1?' · DS '+g.unit.dsNo+'/'+g.unit.total:''}${o.segs.length>1?' · '+g.n*45+' min':''}`:`<b>${esc(g.ins.name)}</b>${o.segs.length>1?' · '+g.n*45+' min':''}`).join(' + ');
    inner=`${hd}<br>${trEntryHtml(o,entryText(o))}`;
@@ -996,7 +1019,7 @@ function renderModal(){
  o.segs.forEach(g=>{
   if(g.ins){mat+=`<p class="small" style="margin:4px 0"><b>${esc(g.ins.name)}</b> · eingeplant · ${g.n===1?'1 Stunde':'Doppelstunde'}</p>`;return;}
   const u=g.unit,pm=matOf(u.part.id).links.filter(x=>isLink(x.u));
-  const btns=matButtons(u)+pm.map(x=>`<a class="btn sm ghost" href="${esc(x.u.trim())}" target="_blank" rel="noopener">${esc(x.l||'Link')} (${esc(u.part.tag)})</a>`).join('');
+  const btns=matButtons(u)+pm.map(x=>`<a class="btn sm ${matCls(x.l)}" href="${esc(x.u.trim())}" target="_blank" rel="noopener">${esc(x.l||'Link')} (${esc(u.part.tag)})</a>`).join('');
   mat+=`<p class="small" style="margin:4px 0"><b>${esc(unitTag(u))}</b>${u.item.lab?': '+esc(u.item.name):''} · Doppelstunde ${u.dsNo}/${u.total}${o.segs.length>1?' · '+g.n*45+' min':''}</p>${btns?`<div class="acts" style="margin:0 0 8px">${btns}</div>`:''}`;
  });
  const txt=entryText(o);
