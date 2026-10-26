@@ -598,7 +598,7 @@ function matCls(l){
  if(/online/i.test(l))return 'c-ye';
  if(LIVEADV.test(l))return 'c-br';
  if(/pr[üu]e?fungs?training|pruefungstraining|klausur|trainer|rechentest|trainingshefte/i.test(l))return 'c-bl';
- if(/\\(pdf\\)/i.test(l))return 'c-gr';
+ if(/\(pdf\)/i.test(l))return 'c-gr';
  if(/einstieg|live|popcorn|sockensortierer|verd[äa]e?chtigen|ladenwert|jahres-kassenbon/i.test(l))return 'c-pk';
  return 'c-gr';
 }
