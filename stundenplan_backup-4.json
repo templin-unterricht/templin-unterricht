@@ -158,7 +158,7 @@
               "ds": 2
             },
             "X1": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "X2": {
@@ -166,7 +166,7 @@
               "ds": 1
             },
             "X3": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "M8": {
@@ -658,7 +658,7 @@
     },
     "V26/2|Lernfelder": {
       "start": "2026-10-26",
-      "startKey": "LF1.X5",
+      "startKey": "LF2.M1",
       "startDs": 1,
       "parts": [
         {
@@ -750,7 +750,7 @@
             },
             "M1": {
               "on": true,
-              "ds": 2
+              "ds": 1
             },
             "M2": {
               "on": true,
