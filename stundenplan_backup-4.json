@@ -28,14 +28,7 @@
         "vi",
         "ru"
       ]
-    },
-    "aMonday": "2026-08-10",
-    "countFerienWeeks": true,
-    "thresholdH": 4,
-    "hoursPerSlot": 2,
-    "sollMitFeiertagen": true,
-    "yearStart": "2026-08-13",
-    "yearEnd": "2027-07-07"
+    }
   },
   "slots": {
     "A|0|0": {
@@ -130,27 +123,27 @@
           "on": true,
           "mods": {
             "M1": {
-              "on": false,
+              "on": true,
               "ds": 2
             },
             "M2": {
-              "on": false,
+              "on": true,
               "ds": 2
             },
             "M3": {
-              "on": false,
+              "on": true,
               "ds": 1
             },
             "M4": {
-              "on": false,
+              "on": true,
               "ds": 1
             },
             "M5": {
-              "on": false,
+              "on": true,
               "ds": 2
             },
             "M6": {
-              "on": false,
+              "on": true,
               "ds": 2
             },
             "M7": {
@@ -162,7 +155,7 @@
               "ds": 1
             },
             "X2": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "X3": {
@@ -190,6 +183,65 @@
               "ds": 2
             },
             "X4": {
+              "on": false,
+              "ds": 1
+            },
+            "X5": {
+              "on": false,
+              "ds": 1
+            },
+            "M13": {
+              "on": false,
+              "ds": 3
+            }
+          },
+          "extra": []
+        },
+        {
+          "pid": "LF2",
+          "on": false,
+          "mods": {
+            "X1": {
+              "on": true,
+              "ds": 0.5
+            },
+            "M1": {
+              "on": true,
+              "ds": 2
+            },
+            "M2": {
+              "on": true,
+              "ds": 2
+            },
+            "M3": {
+              "on": true,
+              "ds": 1
+            },
+            "M4": {
+              "on": true,
+              "ds": 2
+            },
+            "X2": {
+              "on": true,
+              "ds": 2
+            },
+            "M5": {
+              "on": true,
+              "ds": 2
+            },
+            "M6": {
+              "on": true,
+              "ds": 3
+            },
+            "M7": {
+              "on": true,
+              "ds": 1
+            },
+            "X3": {
+              "on": true,
+              "ds": 1
+            },
+            "X4": {
               "on": true,
               "ds": 1
             },
@@ -197,9 +249,160 @@
               "on": true,
               "ds": 1
             },
-            "M13": {
+            "M8": {
+              "on": true,
+              "ds": 2
+            },
+            "M9": {
               "on": true,
               "ds": 3
+            },
+            "M10": {
+              "on": true,
+              "ds": 2
+            },
+            "M11": {
+              "on": true,
+              "ds": 3
+            },
+            "M12": {
+              "on": true,
+              "ds": 1
+            },
+            "M13": {
+              "on": true,
+              "ds": 2
+            },
+            "M14": {
+              "on": true,
+              "ds": 2
+            },
+            "M15": {
+              "on": true,
+              "ds": 1
+            },
+            "X6": {
+              "on": true,
+              "ds": 1
+            },
+            "X7": {
+              "on": true,
+              "ds": 1
+            },
+            "X8": {
+              "on": true,
+              "ds": 1
+            },
+            "X9": {
+              "on": true,
+              "ds": 1
+            },
+            "X10": {
+              "on": true,
+              "ds": 1
+            }
+          },
+          "extra": []
+        },
+        {
+          "pid": "LF3",
+          "on": false,
+          "mods": {
+            "M1": {
+              "on": true,
+              "ds": 2
+            },
+            "M2": {
+              "on": true,
+              "ds": 2
+            },
+            "M3": {
+              "on": true,
+              "ds": 1
+            },
+            "M4": {
+              "on": true,
+              "ds": 2
+            },
+            "M5": {
+              "on": true,
+              "ds": 1
+            },
+            "M6": {
+              "on": true,
+              "ds": 2
+            },
+            "M7": {
+              "on": true,
+              "ds": 2
+            },
+            "M8": {
+              "on": true,
+              "ds": 1
+            },
+            "M9": {
+              "on": true,
+              "ds": 2
+            },
+            "M10": {
+              "on": true,
+              "ds": 1
+            },
+            "X1": {
+              "on": true,
+              "ds": 2
+            },
+            "X2": {
+              "on": true,
+              "ds": 1
+            },
+            "M11": {
+              "on": true,
+              "ds": 1
+            },
+            "M12": {
+              "on": true,
+              "ds": 3
+            },
+            "M13": {
+              "on": true,
+              "ds": 2
+            },
+            "M14": {
+              "on": true,
+              "ds": 3
+            },
+            "M15": {
+              "on": true,
+              "ds": 3
+            },
+            "M16": {
+              "on": true,
+              "ds": 2
+            },
+            "M17": {
+              "on": true,
+              "ds": 1
+            },
+            "M18": {
+              "on": true,
+              "ds": 1
+            },
+            "X3": {
+              "on": true,
+              "ds": 2
+            },
+            "X4": {
+              "on": true,
+              "ds": 1
+            },
+            "X5": {
+              "on": true,
+              "ds": 1
+            },
+            "X6": {
+              "on": true,
+              "ds": 1
             }
           },
           "extra": []
@@ -529,47 +732,47 @@
           "on": false,
           "mods": {
             "M1": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "M2": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M3": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M4": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "X1": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "X2": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "M5": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M6": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M7": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "M8": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "X3": {
-              "on": true,
+              "on": false,
               "ds": 1
             }
           },
@@ -658,12 +861,12 @@
     },
     "V26/2|Lernfelder": {
       "start": "2026-10-26",
-      "startKey": "LF2.M1",
+      "startKey": "LF2.X1",
       "startDs": 1,
       "parts": [
         {
           "pid": "LF1",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -734,7 +937,7 @@
               "ds": 1
             },
             "M13": {
-              "on": true,
+              "on": false,
               "ds": 3
             }
           },
@@ -1762,6 +1965,65 @@
             }
           },
           "extra": []
+        },
+        {
+          "pid": "LF5",
+          "on": false,
+          "mods": {
+            "M1": {
+              "on": true,
+              "ds": 2
+            },
+            "M2": {
+              "on": true,
+              "ds": 2
+            },
+            "M3": {
+              "on": true,
+              "ds": 1
+            },
+            "M4": {
+              "on": true,
+              "ds": 2
+            },
+            "M5": {
+              "on": true,
+              "ds": 1
+            },
+            "M6": {
+              "on": true,
+              "ds": 2
+            },
+            "M7": {
+              "on": true,
+              "ds": 1
+            },
+            "M8": {
+              "on": true,
+              "ds": 2
+            },
+            "M9": {
+              "on": true,
+              "ds": 2
+            },
+            "M10": {
+              "on": true,
+              "ds": 1
+            },
+            "M11": {
+              "on": true,
+              "ds": 2
+            },
+            "X1": {
+              "on": true,
+              "ds": 1
+            },
+            "X2": {
+              "on": true,
+              "ds": 1
+            }
+          },
+          "extra": []
         }
       ],
       "jumps": []
@@ -1839,8 +2101,8 @@
     },
     "V26/4|Wiso": {
       "start": "2026-10-26",
-      "startKey": "WISO1.M2",
-      "startDs": 1,
+      "startKey": "WISO1.M1",
+      "startDs": 2,
       "parts": [
         {
           "pid": "WISO1",
@@ -2034,6 +2296,57 @@
             }
           },
           "extra": []
+        },
+        {
+          "pid": "WPF-M",
+          "on": false,
+          "mods": {
+            "M1": {
+              "on": true,
+              "ds": 1
+            },
+            "M2": {
+              "on": true,
+              "ds": 2
+            },
+            "M3": {
+              "on": true,
+              "ds": 2
+            },
+            "M4": {
+              "on": true,
+              "ds": 1
+            },
+            "X1": {
+              "on": true,
+              "ds": 1
+            },
+            "X2": {
+              "on": true,
+              "ds": 1
+            },
+            "M5": {
+              "on": true,
+              "ds": 2
+            },
+            "M6": {
+              "on": true,
+              "ds": 2
+            },
+            "M7": {
+              "on": true,
+              "ds": 1
+            },
+            "M8": {
+              "on": true,
+              "ds": 2
+            },
+            "X3": {
+              "on": true,
+              "ds": 1
+            }
+          },
+          "extra": []
         }
       ],
       "jumps": []
@@ -2045,7 +2358,7 @@
       "parts": [
         {
           "pid": "LF6",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2116,70 +2429,70 @@
         },
         {
           "pid": "LF7",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M2": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M3": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M4": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M5": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M6": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M7": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M8": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M9": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M10": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M11": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M12": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M13": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "X1": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "M14": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "X2": {
-              "on": true,
+              "on": false,
               "ds": 1
             }
           },
@@ -2187,7 +2500,7 @@
         },
         {
           "pid": "LF9",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2238,54 +2551,54 @@
         },
         {
           "pid": "LF10",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
-              "on": true,
+              "on": false,
               "ds": 3
             },
             "M2": {
-              "on": true,
+              "on": false,
               "ds": 3
             },
             "M3": {
-              "on": true,
+              "on": false,
               "ds": 3
             },
             "M4": {
-              "on": true,
+              "on": false,
               "ds": 3
             },
             "M5": {
-              "on": true,
+              "on": false,
               "ds": 3
             },
             "M6": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M7": {
-              "on": true,
+              "on": false,
               "ds": 3
             },
             "M8": {
-              "on": true,
+              "on": false,
               "ds": 3
             },
             "M9": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "M10": {
-              "on": true,
+              "on": false,
               "ds": 4
             },
             "X1": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "X2": {
-              "on": true,
+              "on": false,
               "ds": 1
             }
           },
@@ -2293,7 +2606,7 @@
         },
         {
           "pid": "LF8",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2359,7 +2672,7 @@
               "ds": 1
             },
             "E4": {
-              "on": true,
+              "on": false,
               "ds": 1
             },
             "E5": {
@@ -2407,7 +2720,7 @@
       "parts": [
         {
           "pid": "WISO2",
-          "on": true,
+          "on": false,
           "mods": {
             "X1": {
               "on": true,
@@ -2506,7 +2819,7 @@
       "parts": [
         {
           "pid": "WPF-M",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2557,7 +2870,7 @@
         },
         {
           "pid": "WPF-R",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2596,7 +2909,7 @@
         },
         {
           "pid": "WPF-G",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2637,13 +2950,13 @@
       "jumps": []
     },
     "V25/3|Lernfelder": {
-      "start": "2026-10-26",
+      "start": "2026-11-09",
       "startKey": "",
       "startDs": 1,
       "parts": [
         {
           "pid": "LF6",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2714,7 +3027,7 @@
         },
         {
           "pid": "LF7",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2785,10 +3098,10 @@
         },
         {
           "pid": "LF9",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
-              "on": true,
+              "on": false,
               "ds": 2
             },
             "M2": {
@@ -2836,7 +3149,7 @@
         },
         {
           "pid": "LF10",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2891,7 +3204,7 @@
         },
         {
           "pid": "LF8",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -2928,7 +3241,7 @@
       "jumps": []
     },
     "V25/3|Englisch": {
-      "start": "2026-10-26",
+      "start": "2026-10-27",
       "startKey": "",
       "startDs": 1,
       "parts": [
@@ -3005,7 +3318,7 @@
       "parts": [
         {
           "pid": "WISO2",
-          "on": true,
+          "on": false,
           "mods": {
             "X1": {
               "on": true,
@@ -3104,7 +3417,7 @@
       "parts": [
         {
           "pid": "WPF-M",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -3155,7 +3468,7 @@
         },
         {
           "pid": "WPF-R",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -3194,7 +3507,7 @@
         },
         {
           "pid": "WPF-G",
-          "on": true,
+          "on": false,
           "mods": {
             "M1": {
               "on": true,
@@ -3267,128 +3580,25 @@
     }
   },
   "mat": {
-    "LF1": {
-      "pdf": "",
-      "links": [
-        {
-          "l": "Escape Room Frischmarkt LF1",
-          "u": ""
-        },
-        {
-          "l": "Rettet Kaje 7",
-          "u": ""
-        },
-        {
-          "l": "Wett-Quiz",
-          "u": ""
-        },
-        {
-          "l": "Escape Room Frischmarkt LF1",
-          "u": "materials/LF1_Escape_Room_Frischmarkt_LF1.html"
-        },
-        {
-          "l": "Escape Room 2 - Die neue Filiale",
-          "u": "materials/LF1_Escape_Room_2_-_Die_neue_Filiale.html"
-        },
-        {
-          "l": "Modul 1-12 - Rettet Kaje 7",
-          "u": "materials/LF1_Modul_1-12_-_Rettet_Kaje_7.html"
-        },
-        {
-          "l": "Modul 4 - Wett-Quiz",
-          "u": "materials/LF1_Modul_4_-_Wett-Quiz.html"
-        },
-        {
-          "l": "Klausurtrainer (interaktiv, mehrsprachig)",
-          "u": "materials/LF1_Klausurtrainer.html"
-        }
-      ]
-    },
-    "LF2": {
-      "pdf": "",
-      "links": [
-        {
-          "l": "Escape Room 1 – Der Testkäufer",
-          "u": ""
-        },
-        {
-          "l": "Escape Room 2 – Die Reklamation um 17:55 Uhr",
-          "u": ""
-        },
-        {
-          "l": "Kaufhaus Kranich – Der letzte Samstag",
-          "u": ""
-        },
-        {
-          "l": "Stufe für Stufe – Phasen des Verkaufsgesprächs",
-          "u": ""
-        },
-        {
-          "l": "Escape Room 1 - Der Testkaeufer",
-          "u": "materials/LF2_Escape_Room_1_-_Der_Testkaeufer.html"
-        },
-        {
-          "l": "Escape Room 2 - Die Reklamation um 17-55 Uhr",
-          "u": "materials/LF2_Escape_Room_2_-_Die_Reklamation_um_17-55_Uhr.html"
-        },
-        {
-          "l": "Exkursionsheft - Verkaufsgespräch-Safari (PDF)",
-          "u": "materials/LF2_Exkursionsheft_-_Verkaufsgespraech-Safari.pdf"
-        },
-        {
-          "l": "Kaufhaus Kranich - Der letzte Samstag",
-          "u": "materials/LF2_Kaufhaus_Kranich_-_Der_letzte_Samstag.html"
-        },
-        {
-          "l": "Rollenspiel - Das ganze Gespraech (PDF)",
-          "u": "materials/LF2_Rollenspiel_-_Das_ganze_Gespraech.pdf"
-        },
-        {
-          "l": "Stufe für Stufe - Phasen des Verkaufsgesprächs",
-          "u": "materials/LF2_Stufe_fuer_Stufe_-_Phasen_des_Verkaufsgespraechs.html"
-        },
-        {
-          "l": "Klausurtrainer (interaktiv, mehrsprachig)",
-          "u": "materials/LF2_Klausurtrainer.html"
-        }
-      ]
-    },
-    "LF9": {
-      "pdf": "",
-      "links": [
-        {
-          "l": "Einstieg Was steckt im Preis",
-          "u": ""
-        },
-        {
-          "l": "Lernkarten Modul 1–3",
-          "u": ""
-        },
-        {
-          "l": "Sturm über dem Hafenstore",
-          "u": ""
-        },
-        {
-          "l": "Einstieg - Was steckt im Preis",
-          "u": "materials/LF9_Einstieg_-_Was_steckt_im_Preis.html"
-        },
-        {
-          "l": "Kalkulations-Trainer",
-          "u": "materials/LF9_Kalkulations-Trainer.html"
-        },
-        {
-          "l": "Lernkarten Modul 1-3",
-          "u": "materials/LF9_Lernkarten_Modul_1-3.html"
-        },
-        {
-          "l": "Modul 1-9 - Sturm über dem Hafenstore",
-          "u": "materials/LF9_Modul_1-9_-_Sturm_ueber_dem_Hafenstore.html"
-        }
-      ]
-    },
     "LF1.M1": {
       "pdf": "materials/LF1_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Übersicht: Fachbegriffe (PDF)",
+          "u": "materials/LF1_Uebersicht_Fachbegriffe.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF1_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/LF1_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/LF1_Uebersicht_Uebersicht.pdf"
+        },
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF1_M_1_Einstiegsmaterial.pdf"
@@ -3451,6 +3661,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF1_M_4_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Wett-Quiz",
+          "u": "materials/LF1_Modul_4_-_Wett-Quiz.html"
         }
       ]
     },
@@ -3548,6 +3762,10 @@
           "u": "materials/LF1_M_6-7_leicht_Wortliste_DE-TI.pdf"
         },
         {
+          "l": "Escape Room: Frischmarkt",
+          "u": "materials/LF1_Escape_Room_Frischmarkt_LF1.html"
+        },
+        {
           "l": "Einstieg live (mehrsprachig)",
           "u": "materials/LF1_M_7_Einstieg_live_uebersetzt.html"
         },
@@ -3577,6 +3795,26 @@
           "u": "materials/LF1_M_8_Selbsttest.html"
         },
         {
+          "l": "Arbeitsblatt leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Arbeitsblatt.pdf"
+        },
+        {
+          "l": "Online-Arbeitsblatt leicht M 8–12",
+          "u": "materials/LF1_M8-12_leicht_-_Online.html"
+        },
+        {
+          "l": "Prüfungstraining leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Pruefungstraining.pdf"
+        },
+        {
+          "l": "Wortliste DE-ES M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-ES.pdf"
+        },
+        {
+          "l": "Wortliste DE-TI M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-TI.pdf"
+        },
+        {
           "l": "Einstieg live (mehrsprachig)",
           "u": "materials/LF1_M_8_Einstieg_live_uebersetzt.html"
         },
@@ -3600,6 +3838,26 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF1_M_9_Selbsttest.html"
+        },
+        {
+          "l": "Arbeitsblatt leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Arbeitsblatt.pdf"
+        },
+        {
+          "l": "Online-Arbeitsblatt leicht M 8–12",
+          "u": "materials/LF1_M8-12_leicht_-_Online.html"
+        },
+        {
+          "l": "Prüfungstraining leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Pruefungstraining.pdf"
+        },
+        {
+          "l": "Wortliste DE-ES M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-ES.pdf"
+        },
+        {
+          "l": "Wortliste DE-TI M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-TI.pdf"
         },
         {
           "l": "Einstieg live (mehrsprachig)",
@@ -3631,6 +3889,26 @@
           "u": "materials/LF1_M_10_Selbsttest.html"
         },
         {
+          "l": "Arbeitsblatt leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Arbeitsblatt.pdf"
+        },
+        {
+          "l": "Online-Arbeitsblatt leicht M 8–12",
+          "u": "materials/LF1_M8-12_leicht_-_Online.html"
+        },
+        {
+          "l": "Prüfungstraining leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Pruefungstraining.pdf"
+        },
+        {
+          "l": "Wortliste DE-ES M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-ES.pdf"
+        },
+        {
+          "l": "Wortliste DE-TI M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-TI.pdf"
+        },
+        {
           "l": "Einstieg live (mehrsprachig)",
           "u": "materials/LF1_M_10_Einstieg_live_uebersetzt.html"
         },
@@ -3660,6 +3938,26 @@
           "u": "materials/LF1_M_11_Selbsttest.html"
         },
         {
+          "l": "Arbeitsblatt leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Arbeitsblatt.pdf"
+        },
+        {
+          "l": "Online-Arbeitsblatt leicht M 8–12",
+          "u": "materials/LF1_M8-12_leicht_-_Online.html"
+        },
+        {
+          "l": "Prüfungstraining leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Pruefungstraining.pdf"
+        },
+        {
+          "l": "Wortliste DE-ES M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-ES.pdf"
+        },
+        {
+          "l": "Wortliste DE-TI M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-TI.pdf"
+        },
+        {
           "l": "Einstieg live (mehrsprachig)",
           "u": "materials/LF1_M_11_Einstieg_live_uebersetzt.html"
         },
@@ -3685,8 +3983,36 @@
           "u": "materials/LF1_M_12_Selbsttest.html"
         },
         {
-          "l": "index",
+          "l": "Spiel: Organisations-Arena",
           "u": "materials/LF1_M_12_index.html"
+        },
+        {
+          "l": "Arbeitsblatt leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Arbeitsblatt.pdf"
+        },
+        {
+          "l": "Online-Arbeitsblatt leicht M 8–12",
+          "u": "materials/LF1_M8-12_leicht_-_Online.html"
+        },
+        {
+          "l": "Prüfungstraining leicht M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Pruefungstraining.pdf"
+        },
+        {
+          "l": "Wortliste DE-ES M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-ES.pdf"
+        },
+        {
+          "l": "Wortliste DE-TI M 8–12 (PDF)",
+          "u": "materials/LF1_M8-12_leicht_-_Wortliste_DE-TI.pdf"
+        },
+        {
+          "l": "Escape Room: Die neue Filiale",
+          "u": "materials/LF1_Escape_Room_2_-_Die_neue_Filiale.html"
+        },
+        {
+          "l": "Spiel: Rettet Kaje 7",
+          "u": "materials/LF1_Modul_1-12_-_Rettet_Kaje_7.html"
         },
         {
           "l": "Einstieg live (mehrsprachig)",
@@ -3723,9 +4049,22 @@
         }
       ]
     },
+    "LF1": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Klausurtrainer (interaktiv, mehrsprachig)",
+          "u": "materials/LF1_Klausurtrainer.html"
+        }
+      ]
+    },
     "LF2.M1": {
       "pdf": "materials/LF2_M_1.pdf",
       "links": [
+        {
+          "l": "Einstiegsmaterial (PDF)",
+          "u": "materials/LF2_M_1_Einstiegsmaterial.pdf"
+        },
         {
           "l": "Bingokarten (1 Seite) (PDF)",
           "u": "materials/LF2_M_1_Bingokarten_1_Seite.pdf"
@@ -3739,16 +4078,24 @@
           "u": "materials/LF2_M_1_Comic.pdf"
         },
         {
-          "l": "Einstiegsmaterial (PDF)",
-          "u": "materials/LF2_M_1_Einstiegsmaterial.pdf"
-        },
-        {
           "l": "Live-App Stoerer-Bingo",
           "u": "materials/LF2_M_1_Live-App_Stoerer-Bingo.html"
         },
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_1_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_1_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_1_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_1_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3766,6 +4113,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_2_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_2_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_2_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_2_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3783,6 +4142,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_3_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_3_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_3_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_3_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3800,6 +4171,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_4_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_4_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_4_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_4_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3817,6 +4200,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_5_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_5_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_5_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_5_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3834,6 +4229,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_6_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_6_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_6_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_6_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3851,6 +4258,22 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_7_Selbsttest.html"
+        },
+        {
+          "l": "Escape Room: Der Testkäufer",
+          "u": "materials/LF2_Escape_Room_1_-_Der_Testkaeufer.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_7_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_7_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_7_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3868,6 +4291,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_8_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_8_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_8_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_8_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3885,6 +4320,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_9_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_9_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_9_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_9_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3902,6 +4349,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_10_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_10_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_10_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_10_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3919,6 +4378,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_11_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_11_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_11_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_11_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3936,6 +4407,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_12_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_12_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_12_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_12_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3953,6 +4436,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_13_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_13_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_13_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_13_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3970,6 +4465,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_14_Selbsttest.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_14_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_14_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_14_Arbeitsblatt_online_DE-AR-VI.html"
         }
       ]
     },
@@ -3987,12 +4494,65 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF2_M_15_Selbsttest.html"
+        },
+        {
+          "l": "Escape Room: Die Reklamation um 17:55 Uhr",
+          "u": "materials/LF2_Escape_Room_2_-_Die_Reklamation_um_17-55_Uhr.html"
+        },
+        {
+          "l": "Spiel: Kaufhaus Kranich – Der letzte Samstag",
+          "u": "materials/LF2_Kaufhaus_Kranich_-_Der_letzte_Samstag.html"
+        },
+        {
+          "l": "Spiel: Stufe für Stufe",
+          "u": "materials/LF2_Stufe_fuer_Stufe_-_Phasen_des_Verkaufsgespraechs.html"
+        },
+        {
+          "l": "Einstieg live übersetzt (AR/VI)",
+          "u": "materials/LF2_M_15_Einstieg_live_uebersetzt.html"
+        },
+        {
+          "l": "Selbsttest mehrsprachig (AR/VI)",
+          "u": "materials/LF2_M_15_Selbsttest_mehrsprachig.html"
+        },
+        {
+          "l": "Arbeitsblatt online (DE-AR-VI)",
+          "u": "materials/LF2_M_15_Arbeitsblatt_online_DE-AR-VI.html"
+        }
+      ]
+    },
+    "LF2": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Klausurtrainer (interaktiv, mehrsprachig)",
+          "u": "materials/LF2_Klausurtrainer.html"
         }
       ]
     },
     "LF3.M1": {
       "pdf": "materials/LF3_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Übersicht: Antworten wie in der Prüfung (PDF)",
+          "u": "materials/LF3_Uebersicht_Antworten_wie_in_der_Pruefung.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Fachbegriffe (PDF)",
+          "u": "materials/LF3_Uebersicht_Fachbegriffe.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF3_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/LF3_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/LF3_Uebersicht_Uebersicht.pdf"
+        },
         {
           "l": "Einstieg live",
           "u": "materials/LF3_M_1_Einstieg_live.html"
@@ -4004,6 +4564,14 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF3_M_1_Selbsttest.html"
+        },
+        {
+          "l": "Rechen-Minute Karten 1–20 (PDF)",
+          "u": "materials/LF3_Rechen-Minute_-_Karten_1-20.pdf"
+        },
+        {
+          "l": "Rechen-Minute Karten 21–40 (PDF)",
+          "u": "materials/LF3_Rechen-Minute_-_Karten_21-40.pdf"
         }
       ]
     },
@@ -4157,6 +4725,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF3_M_10_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Festival-Kasse Deichbeat",
+          "u": "materials/LF3_Modul_1-10_-_Festival-Kasse_Deichbeat.html"
         }
       ]
     },
@@ -4174,6 +4746,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF3_M_11_Selbsttest.html"
+        },
+        {
+          "l": "Rezeptkarten Rechnen (PDF)",
+          "u": "materials/LF3_Rezeptkarten_Rechnen.pdf"
         }
       ]
     },
@@ -4242,6 +4818,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF3_M_15_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Blitzkasse – Kopfrechnen",
+          "u": "materials/LF3_Blitzkasse_-_Kopfrechnen_an_der_Kasse.html"
         }
       ]
     },
@@ -4293,35 +4873,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF3_M_18_Selbsttest.html"
-        }
-      ]
-    },
-    "LF3": {
-      "pdf": "",
-      "links": [
-        {
-          "l": "Rechen-Minute - Karten 1-20 (PDF)",
-          "u": "materials/LF3_Rechen-Minute_-_Karten_1-20.pdf"
         },
         {
-          "l": "Rechen-Minute - Karten 21-40 (PDF)",
-          "u": "materials/LF3_Rechen-Minute_-_Karten_21-40.pdf"
-        },
-        {
-          "l": "Rezeptkarten Rechnen (PDF)",
-          "u": "materials/LF3_Rezeptkarten_Rechnen.pdf"
-        },
-        {
-          "l": "Blitzkasse - Kopfrechnen an der Kasse",
-          "u": "materials/LF3_Blitzkasse_-_Kopfrechnen_an_der_Kasse.html"
-        },
-        {
-          "l": "Escape Room - Kassensturz",
+          "l": "Escape Room: Kassensturz",
           "u": "materials/LF3_Escape_Room_-_Kassensturz.html"
-        },
-        {
-          "l": "Modul 1-10 - Festival-Kasse Deichbeat",
-          "u": "materials/LF3_Modul_1-10_-_Festival-Kasse_Deichbeat.html"
         },
         {
           "l": "Rechen-Domino (PDF)",
@@ -4329,54 +4884,33 @@
         }
       ]
     },
+    "LF3": {
+      "pdf": "",
+      "links": []
+    },
     "LF4": {
       "pdf": "",
-      "links": [
-        {
-          "l": "Exkursion - Innenstadt (PDF)",
-          "u": "materials/LF4_Exkursion_-_Innenstadt.pdf"
-        },
-        {
-          "l": "Exkursion - Karls Erlebnis-Dorf (PDF)",
-          "u": "materials/LF4_Exkursion_-_Karls_Erlebnis-Dorf.pdf"
-        },
-        {
-          "l": "Projekt - Feedbackbogen (PDF)",
-          "u": "materials/LF4_Projekt_-_Feedbackbogen.pdf"
-        },
-        {
-          "l": "Projekt - Kriterienbogen (PDF)",
-          "u": "materials/LF4_Projekt_-_Kriterienbogen.pdf"
-        },
-        {
-          "l": "Projekt - Projektmappe (PDF)",
-          "u": "materials/LF4_Projekt_-_Projektmappe.pdf"
-        },
-        {
-          "l": "Escape Room - Das Deko-Lager",
-          "u": "materials/LF4_Escape_Room_-_Das_Deko-Lager.html"
-        },
-        {
-          "l": "Farb-Memory (PDF)",
-          "u": "materials/LF4_Farb-Memory.pdf"
-        },
-        {
-          "l": "Modul 1 - Ladenmacher",
-          "u": "materials/LF4_Modul_1_-_Ladenmacher.html"
-        },
-        {
-          "l": "Module 1-11 - Das Erdbeer-Imperium",
-          "u": "materials/LF4_Module_1-11_-_Das_Erdbeer-Imperium.html"
-        },
-        {
-          "l": "Schaufenster-Quartett (PDF)",
-          "u": "materials/LF4_Schaufenster-Quartett.pdf"
-        }
-      ]
+      "links": []
     },
     "LF4.M1": {
       "pdf": "materials/LF4_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Übersicht: Antworten wie in der Prüfung (PDF)",
+          "u": "materials/LF4_Uebersicht_Antworten_wie_in_der_Pruefung.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Fachbegriffe (PDF)",
+          "u": "materials/LF4_Uebersicht_Fachbegriffe.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF4_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/LF4_Uebersicht_Punktekonto.pdf"
+        },
         {
           "l": "Einstieg live",
           "u": "materials/LF4_M_1_Einstieg_live.html"
@@ -4388,6 +4922,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF4_M_1_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Ladenmacher",
+          "u": "materials/LF4_Modul_1_-_Ladenmacher.html"
         }
       ]
     },
@@ -4405,6 +4943,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF4_M_2_Selbsttest.html"
+        },
+        {
+          "l": "Farb-Memory (PDF)",
+          "u": "materials/LF4_Farb-Memory.pdf"
         }
       ]
     },
@@ -4422,6 +4964,14 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF4_M_3_Selbsttest.html"
+        },
+        {
+          "l": "Exkursion Innenstadt (PDF)",
+          "u": "materials/LF4_Exkursion_-_Innenstadt.pdf"
+        },
+        {
+          "l": "Schaufenster-Quartett (PDF)",
+          "u": "materials/LF4_Schaufenster-Quartett.pdf"
         }
       ]
     },
@@ -4456,6 +5006,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF4_M_5_Selbsttest.html"
+        },
+        {
+          "l": "Exkursion Karls Erlebnis-Dorf (PDF)",
+          "u": "materials/LF4_Exkursion_-_Karls_Erlebnis-Dorf.pdf"
         }
       ]
     },
@@ -4558,37 +5112,48 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF4_M_11_Selbsttest.html"
+        },
+        {
+          "l": "Escape Room: Das Deko-Lager",
+          "u": "materials/LF4_Escape_Room_-_Das_Deko-Lager.html"
+        },
+        {
+          "l": "Spiel: Das Erdbeer-Imperium",
+          "u": "materials/LF4_Module_1-11_-_Das_Erdbeer-Imperium.html"
         }
       ]
     },
     "LF5": {
       "pdf": "",
-      "links": [
-        {
-          "l": "Einstieg - Werbe-Check",
-          "u": "materials/LF5_Einstieg_-_Werbe-Check.html"
-        },
-        {
-          "l": "Fachgespräch-Training (PDF)",
-          "u": "materials/LF5_Fachgespraech-Training.pdf"
-        },
-        {
-          "l": "Prüfungstraining (PDF)",
-          "u": "materials/LF5_Pruefungstraining.pdf"
-        },
-        {
-          "l": "- Countdown Hafenstraße",
-          "u": "materials/LF5_-_Countdown_Hafenstrasse.html"
-        },
-        {
-          "l": "Werbe-Trainer",
-          "u": "materials/LF5_Werbe-Trainer.html"
-        }
-      ]
+      "links": []
     },
     "LF5.M1": {
       "pdf": "materials/LF5_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Einstieg: Werbe-Check",
+          "u": "materials/LF5_Einstieg_-_Werbe-Check.html"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Antworten wie in der Prüfung (PDF)",
+          "u": "materials/LF5_Uebersicht_Antworten_wie_in_der_Pruefung.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Fragenpool (PDF)",
+          "u": "materials/LF5_Uebersicht_Fragenpool.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF5_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/LF5_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/LF5_Uebersicht_Uebersicht.pdf"
+        },
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF5_M_1_Einstiegsmaterial.pdf"
@@ -4654,6 +5219,10 @@
           "u": "materials/LF5_M_5_Einstiegsmaterial.pdf"
         },
         {
+          "l": "Aufgaben 2 (PDF)",
+          "u": "materials/LF5_M_5_Aufgaben_2.pdf"
+        },
+        {
           "l": "Selbsttest",
           "u": "materials/LF5_M_5_Selbsttest.html"
         }
@@ -4699,6 +5268,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF5_M_8_Selbsttest.html"
+        },
+        {
+          "l": "Trainer: Werbe-Trainer",
+          "u": "materials/LF5_Werbe-Trainer.html"
         }
       ]
     },
@@ -4746,33 +5319,52 @@
         {
           "l": "Teamsitzung (PDF)",
           "u": "materials/LF5_M_11_Teamsitzung.pdf"
+        },
+        {
+          "l": "Fachgespräch-Training (PDF)",
+          "u": "materials/LF5_Fachgespraech-Training.pdf"
+        },
+        {
+          "l": "Prüfungstraining (PDF)",
+          "u": "materials/LF5_Pruefungstraining.pdf"
+        },
+        {
+          "l": "Spiel: Countdown Hafenstraße",
+          "u": "materials/LF5_-_Countdown_Hafenstrasse.html"
         }
       ]
     },
     "LF6": {
       "pdf": "",
-      "links": [
-        {
-          "l": "index",
-          "u": "materials/LF6_index.html"
-        },
-        {
-          "l": "- Das Phantom der Geeste",
-          "u": "materials/LF6_-_Das_Phantom_der_Geeste.html"
-        },
-        {
-          "l": "Beschaffungs-Rechentrainer",
-          "u": "materials/LF6_Beschaffungs-Rechentrainer.html"
-        },
-        {
-          "l": "Kaufvertrags-Trainer",
-          "u": "materials/LF6_Kaufvertrags-Trainer.html"
-        }
-      ]
+      "links": []
     },
     "LF6.M1": {
       "pdf": "materials/LF6_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Einstieg: Live-Einstieg",
+          "u": "materials/LF6_index.html"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Fragenpool (PDF)",
+          "u": "materials/LF6_Uebersicht_Fragenpool.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF6_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/LF6_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Werkzeugkarte (PDF)",
+          "u": "materials/LF6_Uebersicht_Werkzeugkarte.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/LF6_Uebersicht_Uebersicht.pdf"
+        },
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF6_M_1_Einstiegsmaterial.pdf"
@@ -4817,6 +5409,10 @@
           "u": "materials/LF6_M_4_Einstiegsmaterial.pdf"
         },
         {
+          "l": "Aufgaben 2 (PDF)",
+          "u": "materials/LF6_M_4_Aufgaben_2.pdf"
+        },
+        {
           "l": "Selbsttest",
           "u": "materials/LF6_M_4_Selbsttest.html"
         }
@@ -4828,6 +5424,10 @@
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF6_M_5_Einstiegsmaterial.pdf"
+        },
+        {
+          "l": "Aufgaben 2 (PDF)",
+          "u": "materials/LF6_M_5_Aufgaben_2.pdf"
         },
         {
           "l": "Selbsttest",
@@ -4856,6 +5456,10 @@
           "u": "materials/LF6_M_7_Einstiegsmaterial.pdf"
         },
         {
+          "l": "Aufgaben 2 (PDF)",
+          "u": "materials/LF6_M_7_Aufgaben_2.pdf"
+        },
+        {
           "l": "Selbsttest",
           "u": "materials/LF6_M_7_Selbsttest.html"
         }
@@ -4882,8 +5486,16 @@
           "u": "materials/LF6_M_9_Einstiegsmaterial.pdf"
         },
         {
+          "l": "Aufgaben 2 (PDF)",
+          "u": "materials/LF6_M_9_Aufgaben_2.pdf"
+        },
+        {
           "l": "Selbsttest",
           "u": "materials/LF6_M_9_Selbsttest.html"
+        },
+        {
+          "l": "Trainer: Beschaffungs-Rechentrainer",
+          "u": "materials/LF6_Beschaffungs-Rechentrainer.html"
         }
       ]
     },
@@ -4893,6 +5505,10 @@
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF6_M_10_Einstiegsmaterial.pdf"
+        },
+        {
+          "l": "Aufgaben 2 (PDF)",
+          "u": "materials/LF6_M_10_Aufgaben_2.pdf"
         },
         {
           "l": "Selbsttest",
@@ -4923,6 +5539,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF6_M_12_Selbsttest.html"
+        },
+        {
+          "l": "Trainer: Kaufvertrags-Trainer",
+          "u": "materials/LF6_Kaufvertrags-Trainer.html"
         }
       ]
     },
@@ -4936,6 +5556,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF6_M_13_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Das Phantom der Geeste",
+          "u": "materials/LF6_-_Das_Phantom_der_Geeste.html"
         }
       ]
     },
@@ -4945,6 +5569,10 @@
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF6_M_14_Einstiegsmaterial.pdf"
+        },
+        {
+          "l": "Aufgaben 2 (PDF)",
+          "u": "materials/LF6_M_14_Aufgaben_2.pdf"
         },
         {
           "l": "Planspiel Einkaufsrunde Nordstadt (PDF)",
@@ -4959,6 +5587,26 @@
     "LF7.M1": {
       "pdf": "materials/LF7_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Übersicht: Fragenpool (PDF)",
+          "u": "materials/LF7_Uebersicht_Fragenpool.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF7_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/LF7_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Werkzeugkarte (PDF)",
+          "u": "materials/LF7_Uebersicht_Werkzeugkarte.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/LF7_Uebersicht_Uebersicht.pdf"
+        },
         {
           "l": "Einstieg live",
           "u": "materials/LF7_M_1_Einstieg_live.html"
@@ -4979,6 +5627,10 @@
         {
           "l": "Einstieg live",
           "u": "materials/LF7_M_2_Einstieg_live.html"
+        },
+        {
+          "l": "Einstiegsmaterial 2 (PDF)",
+          "u": "materials/LF7_M_2_Einstiegsmaterial_2.pdf"
         },
         {
           "l": "Einstiegsmaterial (PDF)",
@@ -5047,6 +5699,10 @@
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF7_M_6_Einstiegsmaterial.pdf"
+        },
+        {
+          "l": "Aufgaben 2 (PDF)",
+          "u": "materials/LF7_M_6_Aufgaben_2.pdf"
         },
         {
           "l": "Selbsttest",
@@ -5177,14 +5833,6 @@
       "pdf": "materials/LF7_M_14.pdf",
       "links": [
         {
-          "l": "Nachtschicht im Zentrallager",
-          "u": "materials/LF7_M_14_Nachtschicht_im_Zentrallager.html"
-        },
-        {
-          "l": "LF7 Lagerkennzahlen-Trainer",
-          "u": "materials/LF7_M_14_LF7_Lagerkennzahlen-Trainer.html"
-        },
-        {
           "l": "Einstieg live",
           "u": "materials/LF7_M_14_Einstieg_live.html"
         },
@@ -5193,40 +5841,54 @@
           "u": "materials/LF7_M_14_Einstiegsmaterial.pdf"
         },
         {
+          "l": "Nachtschicht im Zentrallager",
+          "u": "materials/LF7_M_14_Nachtschicht_im_Zentrallager.html"
+        },
+        {
+          "l": "LF7 Lagerkennzahlen-Trainer",
+          "u": "materials/LF7_M_14_LF7_Lagerkennzahlen-Trainer.html"
+        },
+        {
+          "l": "Aufgaben 2 (PDF)",
+          "u": "materials/LF7_M_14_Aufgaben_2.pdf"
+        },
+        {
           "l": "Selbsttest",
           "u": "materials/LF7_M_14_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Das Vermächtnis der Weserforts",
+          "u": "materials/LF7_Module_1-14_-_Das_Vermaechtnis_der_Weserforts.html"
         }
       ]
     },
     "LF7": {
       "pdf": "",
-      "links": [
-        {
-          "l": "Module 1-14 - Das Vermächtnis der Weserforts",
-          "u": "materials/LF7_Module_1-14_-_Das_Vermaechtnis_der_Weserforts.html"
-        }
-      ]
+      "links": []
     },
     "LF8": {
       "pdf": "",
-      "links": [
-        {
-          "l": "Abschlussspiel - Der Inventur-Krimi",
-          "u": "materials/LF8_Abschlussspiel_-_Der_Inventur-Krimi.html"
-        },
-        {
-          "l": "- Projekt Eiszeit",
-          "u": "materials/LF8_-_Projekt_Eiszeit.html"
-        },
-        {
-          "l": "Zahlen-Trainer",
-          "u": "materials/LF8_Zahlen-Trainer.html"
-        }
-      ]
+      "links": []
     },
     "LF8.M1": {
       "pdf": "materials/LF8_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Übersicht: Antworten wie in der Prüfung (PDF)",
+          "u": "materials/LF8_Uebersicht_Antworten_wie_in_der_Pruefung.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Fragenpool (PDF)",
+          "u": "materials/LF8_Uebersicht_Fragenpool.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF8_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/LF8_Uebersicht_Punktekonto.pdf"
+        },
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF8_M_1_Einstiegsmaterial.pdf"
@@ -5289,12 +5951,52 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF8_M_4_Selbsttest.html"
+        },
+        {
+          "l": "Abschlussspiel: Der Inventur-Krimi",
+          "u": "materials/LF8_Abschlussspiel_-_Der_Inventur-Krimi.html"
+        },
+        {
+          "l": "Spiel: Projekt Eiszeit",
+          "u": "materials/LF8_-_Projekt_Eiszeit.html"
+        },
+        {
+          "l": "Trainer: Zahlen-Trainer",
+          "u": "materials/LF8_Zahlen-Trainer.html"
         }
       ]
+    },
+    "LF9": {
+      "pdf": "",
+      "links": []
     },
     "LF9.M1": {
       "pdf": "materials/LF9_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Einstieg: Was steckt im Preis?",
+          "u": "materials/LF9_Einstieg_-_Was_steckt_im_Preis.html"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Antworten wie in der Prüfung (PDF)",
+          "u": "materials/LF9_Uebersicht_Antworten_wie_in_der_Pruefung.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF9_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/LF9_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Werkzeugkarte (PDF)",
+          "u": "materials/LF9_Uebersicht_Werkzeugkarte.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/LF9_Uebersicht_Uebersicht.pdf"
+        },
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF9_M_1_Einstiegsmaterial.pdf"
@@ -5302,6 +6004,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF9_M_1_Selbsttest.html"
+        },
+        {
+          "l": "Lernkarten Modul 1–3",
+          "u": "materials/LF9_Lernkarten_Modul_1-3.html"
         }
       ]
     },
@@ -5315,6 +6021,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF9_M_2_Selbsttest.html"
+        },
+        {
+          "l": "Lernkarten Modul 1–3",
+          "u": "materials/LF9_Lernkarten_Modul_1-3.html"
         }
       ]
     },
@@ -5328,6 +6038,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF9_M_3_Selbsttest.html"
+        },
+        {
+          "l": "Lernkarten Modul 1–3",
+          "u": "materials/LF9_Lernkarten_Modul_1-3.html"
         }
       ]
     },
@@ -5400,22 +6114,42 @@
       "pdf": "materials/LF9_M_9.pdf",
       "links": [
         {
-          "l": "Der Preis-Tresor",
-          "u": "materials/LF9_M_9_Der_Preis-Tresor.html"
-        },
-        {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF9_M_9_Einstiegsmaterial.pdf"
         },
         {
+          "l": "Der Preis-Tresor",
+          "u": "materials/LF9_M_9_Der_Preis-Tresor.html"
+        },
+        {
           "l": "Selbsttest",
           "u": "materials/LF9_M_9_Selbsttest.html"
+        },
+        {
+          "l": "Trainer: Kalkulations-Trainer",
+          "u": "materials/LF9_Kalkulations-Trainer.html"
+        },
+        {
+          "l": "Spiel: Sturm über dem Hafenstore",
+          "u": "materials/LF9_Modul_1-9_-_Sturm_ueber_dem_Hafenstore.html"
         }
       ]
     },
     "LF10.M1": {
       "pdf": "materials/LF10_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Übersicht: Antworten wie in der Prüfung (PDF)",
+          "u": "materials/LF10_Uebersicht_Antworten_wie_in_der_Pruefung.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Fragenpool (PDF)",
+          "u": "materials/LF10_Uebersicht_Fragenpool.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF10_Uebersicht_Kann-Liste.pdf"
+        },
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/LF10_M_1_Einstiegsmaterial.pdf"
@@ -5475,6 +6209,10 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF10_M_5_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Kein Bon, kein Problem",
+          "u": "materials/LF10_Modul_3-5_-_Kein_Bon_kein_Problem.html"
         }
       ]
     },
@@ -5540,77 +6278,39 @@
         {
           "l": "Selbsttest",
           "u": "materials/LF10_M_10_Selbsttest.html"
+        },
+        {
+          "l": "Trainer: Situations-Trainer",
+          "u": "materials/LF10_Situations-Trainer.html"
+        },
+        {
+          "l": "Spiel: Nebel über Bremerhaven",
+          "u": "materials/LF10_Module_1-10_-_Nebel_ueber_Bremerhaven.html"
         }
       ]
     },
     "LF10": {
       "pdf": "",
-      "links": [
-        {
-          "l": "Situations-Trainer",
-          "u": "materials/LF10_Situations-Trainer.html"
-        },
-        {
-          "l": "Modul 3-5 - Kein Bon, kein Problem",
-          "u": "materials/LF10_Modul_3-5_-_Kein_Bon_kein_Problem.html"
-        },
-        {
-          "l": "Module 1-10 - Nebel über Bremerhaven",
-          "u": "materials/LF10_Module_1-10_-_Nebel_ueber_Bremerhaven.html"
-        }
-      ]
+      "links": []
     },
     "WISO1": {
       "pdf": "",
-      "links": [
-        {
-          "l": "Einschub Operatoren - Aufgaben (PDF)",
-          "u": "materials/WiSo1_Einschub_Operatoren_-_Aufgaben.pdf"
-        },
-        {
-          "l": "Einschub Operatoren - Einstiegsmaterial (PDF)",
-          "u": "materials/WiSo1_Einschub_Operatoren_-_Einstiegsmaterial.pdf"
-        },
-        {
-          "l": "Einschub Operatoren - Selbsttest",
-          "u": "materials/WiSo1_Einschub_Operatoren_-_Selbsttest.html"
-        },
-        {
-          "l": "Großer Selbsttest A - Ausbildung und Arbeitsschutz",
-          "u": "materials/WiSo1_Grosser_Selbsttest_A_-_Ausbildung_und_Arbeitsschutz.html"
-        },
-        {
-          "l": "Großer Selbsttest B - Tarif, Mitbestimmung, Politik",
-          "u": "materials/WiSo1_Grosser_Selbsttest_B_-_Tarif_Mitbestimmung_Politik.html"
-        },
-        {
-          "l": "Prüfungswerkstatt - Aufgaben (PDF)",
-          "u": "materials/WiSo1_Pruefungswerkstatt_-_Aufgaben.pdf"
-        },
-        {
-          "l": "Operatoren bis Modul 5 - Akte Nordstadt",
-          "u": "materials/WiSo1_Operatoren_bis_Modul_5_-_Akte_Nordstadt.html"
-        },
-        {
-          "l": "Module 6-12 - Ladenschluss",
-          "u": "materials/WiSo1_Module_6-12_-_Ladenschluss.html"
-        },
-        {
-          "l": "Escape Room B",
-          "u": "materials/WiSo1_Escape_Room_B.html"
-        }
-      ]
+      "links": []
     },
     "WISO1.M1": {
       "pdf": "materials/WiSo1_M_1.pdf",
       "links": [
         {
-          "l": "Modul 1 Portugiesich",
-          "u": "materials/WiSo1_M_1_Modul_1_Portugiesich.html"
-        },
-        {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/WiSo1_M_1_Einstiegsmaterial.pdf"
+        },
+        {
+          "l": "Einstieg digital: Wer bestimmt, was ich lerne?",
+          "u": "materials/WiSo1_M_1_index.html"
+        },
+        {
+          "l": "Modul 1 Portugiesich",
+          "u": "materials/WiSo1_M_1_Modul_1_Portugiesich.html"
         },
         {
           "l": "Online-Fassung ES",
@@ -5619,10 +6319,6 @@
         {
           "l": "Selbsttest",
           "u": "materials/WiSo1_M_1_Selbsttest.html"
-        },
-        {
-          "l": "index",
-          "u": "materials/WiSo1_M_1_index.html"
         }
       ]
     },
@@ -5646,7 +6342,7 @@
           "u": "materials/WiSo1_M_2_Selbsttest.html"
         },
         {
-          "l": "index",
+          "l": "Online-Fassung",
           "u": "materials/WiSo1_M_2_index.html"
         }
       ]
@@ -5661,6 +6357,10 @@
         {
           "l": "Live-App",
           "u": "materials/WiSo1_M_3_Live-App.html"
+        },
+        {
+          "l": "Online-Fassung ES",
+          "u": "materials/WiSo1_M_3_Online-Fassung_ES.html"
         },
         {
           "l": "Online-Fassung PT",
@@ -5680,8 +6380,16 @@
           "u": "materials/WiSo1_M_4_Einstiegsmaterial.pdf"
         },
         {
+          "l": "Einschub Operatoren – Einstiegsmaterial (PDF)",
+          "u": "materials/WiSo1_Einschub_Operatoren_-_Einstiegsmaterial.pdf"
+        },
+        {
           "l": "Live-App",
           "u": "materials/WiSo1_M_4_Live-App.html"
+        },
+        {
+          "l": "Online-Fassung ES",
+          "u": "materials/WiSo1_M_4_Online-Fassung_ES.html"
         },
         {
           "l": "Online-Fassung PT",
@@ -5690,23 +6398,14 @@
         {
           "l": "Selbsttest",
           "u": "materials/WiSo1_M_4_Selbsttest.html"
-        }
-      ]
-    },
-    "WISO1.M5": {
-      "pdf": "materials/WiSo1_M_5.pdf",
-      "links": [
-        {
-          "l": "Einstieg live",
-          "u": "materials/WiSo1_M_5_Einstieg_live.html"
         },
         {
-          "l": "Einstiegsmaterial (PDF)",
-          "u": "materials/WiSo1_M_5_Einstiegsmaterial.pdf"
+          "l": "Einschub Operatoren – Aufgaben (PDF)",
+          "u": "materials/WiSo1_Einschub_Operatoren_-_Aufgaben.pdf"
         },
         {
-          "l": "Selbsttest",
-          "u": "materials/WiSo1_M_5_Selbsttest.html"
+          "l": "Einschub Operatoren – Selbsttest",
+          "u": "materials/WiSo1_Einschub_Operatoren_-_Selbsttest.html"
         }
       ]
     },
@@ -5720,6 +6419,10 @@
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/WiSo1_M_6_Einstiegsmaterial.pdf"
+        },
+        {
+          "l": "Online-Fassung ES",
+          "u": "materials/WiSo1_M_6_Online-Fassung_ES.html"
         },
         {
           "l": "Selbsttest",
@@ -5739,8 +6442,16 @@
           "u": "materials/WiSo1_M_7_Einstiegsmaterial.pdf"
         },
         {
+          "l": "Online-Fassung ES",
+          "u": "materials/WiSo1_M_7_Online-Fassung_ES.html"
+        },
+        {
           "l": "Selbsttest",
           "u": "materials/WiSo1_M_7_Selbsttest.html"
+        },
+        {
+          "l": "Großer Selbsttest A: Ausbildung und Arbeitsschutz",
+          "u": "materials/WiSo1_Grosser_Selbsttest_A_-_Ausbildung_und_Arbeitsschutz.html"
         }
       ]
     },
@@ -5826,6 +6537,18 @@
         {
           "l": "Selbsttest",
           "u": "materials/WiSo1_M_12_Selbsttest.html"
+        },
+        {
+          "l": "Großer Selbsttest B: Tarif, Mitbestimmung, Politik",
+          "u": "materials/WiSo1_Grosser_Selbsttest_B_-_Tarif_Mitbestimmung_Politik.html"
+        },
+        {
+          "l": "Spiel: Ladenschluss?",
+          "u": "materials/WiSo1_Module_6-12_-_Ladenschluss.html"
+        },
+        {
+          "l": "Escape Room B: Der Tresor im Betriebsratsbüro",
+          "u": "materials/WiSo1_Escape_Room_B.html"
         }
       ]
     },
@@ -5869,12 +6592,32 @@
       "pdf": "materials/WPF-Methoden_M_1.pdf",
       "links": [
         {
-          "l": "Methoden Lernkartei",
-          "u": "materials/WPF-Methoden_M_1_Methoden_Lernkartei.html"
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/WPF-Methoden_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Methodenkoffer (PDF)",
+          "u": "materials/WPF-Methoden_Uebersicht_Methodenkoffer.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Operatorenkarte (PDF)",
+          "u": "materials/WPF-Methoden_Uebersicht_Operatorenkarte.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/WPF-Methoden_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/WPF-Methoden_Uebersicht_Uebersicht.pdf"
         },
         {
           "l": "Einstiegsmaterial (PDF)",
           "u": "materials/WPF-Methoden_M_1_Einstiegsmaterial.pdf"
+        },
+        {
+          "l": "Methoden Lernkartei",
+          "u": "materials/WPF-Methoden_M_1_Methoden_Lernkartei.html"
         },
         {
           "l": "Online-Fassung Portugiesisch",
@@ -5920,8 +6663,20 @@
           "u": "materials/WPF-Methoden_M_4_Einstiegsmaterial.pdf"
         },
         {
+          "l": "Zusatzmodul Operatoren – Einstiegsmaterial (PDF)",
+          "u": "materials/WPF-Methoden_Zusatzmodul_Operatoren_-_Einstiegsmaterial.pdf"
+        },
+        {
           "l": "Selbsttest",
           "u": "materials/WPF-Methoden_M_4_Selbsttest.html"
+        },
+        {
+          "l": "Zusatzmodul Operatoren – Aufgaben (PDF)",
+          "u": "materials/WPF-Methoden_Zusatzmodul_Operatoren_-_Aufgaben.pdf"
+        },
+        {
+          "l": "Zusatzmodul Operatoren – Selbsttest",
+          "u": "materials/WPF-Methoden_Zusatzmodul_Operatoren_-_Selbsttest.html"
         }
       ]
     },
@@ -5974,33 +6729,25 @@
         {
           "l": "Selbsttest",
           "u": "materials/WPF-Methoden_M_8_Selbsttest.html"
+        },
+        {
+          "l": "Escape Room: Der Methodenkoffer",
+          "u": "materials/WPF-Methoden_Escape_Room_-_Der_Methodenkoffer.html"
         }
       ]
     },
     "WPF-M": {
       "pdf": "",
-      "links": [
-        {
-          "l": "Escape Room - Der Methodenkoffer",
-          "u": "materials/WPF-Methoden_Escape_Room_-_Der_Methodenkoffer.html"
-        },
-        {
-          "l": "Zusatzmodul Operatoren - Aufgaben (PDF)",
-          "u": "materials/WPF-Methoden_Zusatzmodul_Operatoren_-_Aufgaben.pdf"
-        },
-        {
-          "l": "Zusatzmodul Operatoren - Einstiegsmaterial (PDF)",
-          "u": "materials/WPF-Methoden_Zusatzmodul_Operatoren_-_Einstiegsmaterial.pdf"
-        },
-        {
-          "l": "Zusatzmodul Operatoren - Selbsttest",
-          "u": "materials/WPF-Methoden_Zusatzmodul_Operatoren_-_Selbsttest.html"
-        }
-      ]
+      "links": []
     },
     "WPF-R.M1": {
       "pdf": "materials/WPF-Rechenfit_M_1.pdf",
-      "links": []
+      "links": [
+        {
+          "l": "Lernfeld-Übersicht: Übersicht und Verlauf (PDF)",
+          "u": "materials/WPF-Rechenfit_Uebersicht_Uebersicht_und_Verlauf.pdf"
+        }
+      ]
     },
     "WPF-R.M2": {
       "pdf": "materials/WPF-Rechenfit_M_2.pdf",
@@ -6033,6 +6780,22 @@
     "WPF-G.M1": {
       "pdf": "materials/WPF-Grafiken_M_1.pdf",
       "links": [
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/WPF-Grafiken_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/WPF-Grafiken_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Werkzeugkarte (PDF)",
+          "u": "materials/WPF-Grafiken_Uebersicht_Werkzeugkarte.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/WPF-Grafiken_Uebersicht_Uebersicht.pdf"
+        },
         {
           "l": "Einstieg live",
           "u": "materials/WPF-Grafiken_M_1_Einstieg_live.html"
@@ -6129,34 +6892,16 @@
         {
           "l": "Selbsttest",
           "u": "materials/WPF-Grafiken_M_6_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Die Zahlen-Zentrale",
+          "u": "materials/WPF-Grafiken_Module_1-6_-_Die_Zahlen-Zentrale.html"
         }
       ]
     },
     "WPF-G": {
       "pdf": "",
-      "links": [
-        {
-          "l": "Module 1-6 - Die Zahlen-Zentrale",
-          "u": "materials/WPF-Grafiken_Module_1-6_-_Die_Zahlen-Zentrale.html"
-        }
-      ]
-    },
-    "WISO2.M1": {
-      "pdf": "materials/WiSo2_M_1.pdf",
-      "links": [
-        {
-          "l": "Einstieg digital: Wer zahlt",
-          "u": "materials/WiSo2_M_1_Einstieg.html"
-        },
-        {
-          "l": "Einstiegsmaterial (PDF)",
-          "u": "materials/WiSo2_M_1_Einstiegsmaterial.pdf"
-        },
-        {
-          "l": "Selbsttest",
-          "u": "materials/WiSo2_M_1_Selbsttest.html"
-        }
-      ]
+      "links": []
     },
     "WISO2.M2": {
       "pdf": "materials/WiSo2_M_2.pdf",
@@ -6240,6 +6985,14 @@
         {
           "l": "Selbsttest",
           "u": "materials/WiSo2_M_6_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Bremerhaven-Experiment",
+          "u": "materials/WiSo2_Module_1-6_-_Bremerhaven-Experiment.html"
+        },
+        {
+          "l": "Escape Room 1: Unfall im Lager",
+          "u": "materials/WiSo2_Escape_Room_1.html"
         }
       ]
     },
@@ -6325,31 +7078,251 @@
         {
           "l": "Selbsttest",
           "u": "materials/WiSo2_M_11_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Kutter und Korb",
+          "u": "materials/WiSo2_Module_7-11_-_Kutter_und_Korb.html"
+        },
+        {
+          "l": "Escape Room 2: Countdown zur Prüfung",
+          "u": "materials/WiSo2_Escape_Room_2.html"
         }
       ]
     },
     "WISO2": {
       "pdf": "",
+      "links": []
+    },
+    "LF1.X2": {
+      "pdf": "",
       "links": [
         {
-          "l": "Pruefungswerkstatt (PDF)",
-          "u": "materials/WiSo2_Pruefungswerkstatt.pdf"
+          "l": "Escape Room: Frischmarkt",
+          "u": "materials/LF1_Escape_Room_Frischmarkt_LF1.html"
+        }
+      ]
+    },
+    "LF2.X3": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Escape Room: Der Testkäufer",
+          "u": "materials/LF2_Escape_Room_1_-_Der_Testkaeufer.html"
+        }
+      ]
+    },
+    "LF2.X7": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Escape Room: Die Reklamation um 17:55 Uhr",
+          "u": "materials/LF2_Escape_Room_2_-_Die_Reklamation_um_17-55_Uhr.html"
+        }
+      ]
+    },
+    "LF2.X2": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Exkursionsheft Verkaufsgespräch-Safari (PDF)",
+          "u": "materials/LF2_Exkursionsheft_-_Verkaufsgespraech-Safari.pdf"
+        }
+      ]
+    },
+    "LF2.X6": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Rollenspiel: Das ganze Gespräch (PDF)",
+          "u": "materials/LF2_Rollenspiel_-_Das_ganze_Gespraech.pdf"
+        }
+      ]
+    },
+    "LF3.X4": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Escape Room: Kassensturz",
+          "u": "materials/LF3_Escape_Room_-_Kassensturz.html"
         },
         {
-          "l": "Module 7-11 - Kutter und Korb",
-          "u": "materials/WiSo2_Module_7-11_-_Kutter_und_Korb.html"
+          "l": "Rechen-Domino (PDF)",
+          "u": "materials/LF3_Rechen-Domino.pdf"
+        }
+      ]
+    },
+    "LF4.X1": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Projektmappe Fascination Point (PDF)",
+          "u": "materials/LF4_Projekt_-_Projektmappe.pdf"
         },
         {
-          "l": "Module 1-6 - Bremerhaven-Experiment",
+          "l": "Kriterienbogen Projekt (PDF)",
+          "u": "materials/LF4_Projekt_-_Kriterienbogen.pdf"
+        },
+        {
+          "l": "Feedbackbogen Projekt (PDF)",
+          "u": "materials/LF4_Projekt_-_Feedbackbogen.pdf"
+        }
+      ]
+    },
+    "LF4.X3": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Escape Room: Das Deko-Lager",
+          "u": "materials/LF4_Escape_Room_-_Das_Deko-Lager.html"
+        }
+      ]
+    },
+    "LF8.X2": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Abschlussspiel: Der Inventur-Krimi",
+          "u": "materials/LF8_Abschlussspiel_-_Der_Inventur-Krimi.html"
+        }
+      ]
+    },
+    "LF8.X1": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Trainer: Zahlen-Trainer",
+          "u": "materials/LF8_Zahlen-Trainer.html"
+        }
+      ]
+    },
+    "WISO1.X7": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Escape Room B: Der Tresor im Betriebsratsbüro",
+          "u": "materials/WiSo1_Escape_Room_B.html"
+        }
+      ]
+    },
+    "WISO2.X6": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Spiel: Bremerhaven-Experiment",
           "u": "materials/WiSo2_Module_1-6_-_Bremerhaven-Experiment.html"
-        },
+        }
+      ]
+    },
+    "WISO2.X9": {
+      "pdf": "",
+      "links": [
         {
-          "l": "Escape Room 2",
+          "l": "Escape Room 2: Countdown zur Prüfung",
           "u": "materials/WiSo2_Escape_Room_2.html"
+        }
+      ]
+    },
+    "WISO1.X3": {
+      "pdf": "materials/WiSo1_M_5.pdf",
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/WiSo1_M_5_Einstieg_live.html"
         },
         {
-          "l": "Escape Room 1",
-          "u": "materials/WiSo2_Escape_Room_1.html"
+          "l": "Einstiegsmaterial (PDF)",
+          "u": "materials/WiSo1_M_5_Einstiegsmaterial.pdf"
+        },
+        {
+          "l": "Online-Fassung ES",
+          "u": "materials/WiSo1_M_5_Online-Fassung_ES.html"
+        },
+        {
+          "l": "Selbsttest",
+          "u": "materials/WiSo1_M_5_Selbsttest.html"
+        },
+        {
+          "l": "Spiel: Akte Nordstadt (Operatoren)",
+          "u": "materials/WiSo1_Operatoren_bis_Modul_5_-_Akte_Nordstadt.html"
+        }
+      ]
+    },
+    "WISO2.X1": {
+      "pdf": "materials/WiSo2_M_1.pdf",
+      "links": [
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/WiSo2_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/WiSo2_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/WiSo2_Uebersicht_Uebersicht.pdf"
+        },
+        {
+          "l": "Einstieg digital: Wer zahlt",
+          "u": "materials/WiSo2_M_1_Einstieg.html"
+        },
+        {
+          "l": "Einstiegsmaterial (PDF)",
+          "u": "materials/WiSo2_M_1_Einstiegsmaterial.pdf"
+        },
+        {
+          "l": "Selbsttest",
+          "u": "materials/WiSo2_M_1_Selbsttest.html"
+        }
+      ]
+    },
+    "LF2.X1": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/LF2_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/LF2_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/LF2_Uebersicht_Uebersicht.pdf"
+        },
+        {
+          "l": "Einstiegsspiel",
+          "u": "https://templin-unterricht.github.io/templin-unterricht/LF2%20Einstiegsspiel%20-%20Dein%20erster%20Verkauf.html"
+        }
+      ]
+    },
+    "WISO1.X1": {
+      "pdf": "",
+      "links": [
+        {
+          "l": "Lernfeld-Übersicht: Auftakt - Material (PDF)",
+          "u": "materials/WiSo1_Uebersicht_Auftakt_-_Material.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Kann-Liste (PDF)",
+          "u": "materials/WiSo1_Uebersicht_Kann-Liste.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Operatorenkarte (PDF)",
+          "u": "materials/WiSo1_Uebersicht_Operatorenkarte.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Punktekonto (PDF)",
+          "u": "materials/WiSo1_Uebersicht_Punktekonto.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Wortgeländer Rechtsfall (PDF)",
+          "u": "materials/WiSo1_Uebersicht_Wortgela_nder_Rechtsfall.pdf"
+        },
+        {
+          "l": "Lernfeld-Übersicht: Übersicht (PDF)",
+          "u": "materials/WiSo1_Uebersicht_Uebersicht.pdf"
         }
       ]
     },
@@ -6415,15 +7388,6 @@
         {
           "l": "Einstieg live",
           "u": "materials/Englisch_M_5_Einstieg_live.html"
-        }
-      ]
-    },
-    "ENG.E6": {
-      "pdf": "materials/Englisch_M_6.pdf",
-      "links": [
-        {
-          "l": "Einstieg live",
-          "u": "materials/Englisch_M_6_Einstieg_live.html"
         },
         {
           "l": "Übungsklausur 1 (PDF)",
@@ -6431,9 +7395,18 @@
         }
       ]
     },
+    "ENG.E6": {
+      "pdf": "materials/Englisch_M_6.pdf",
+      "links": []
+    },
     "ENG.E7": {
       "pdf": "materials/Englisch_M_7.pdf",
-      "links": []
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_7_Einstieg_live.html"
+        }
+      ]
     },
     "ENG.E8": {
       "pdf": "materials/Englisch_M_8.pdf",
@@ -6468,21 +7441,30 @@
         {
           "l": "Einstieg live",
           "u": "materials/Englisch_M_11_Einstieg_live.html"
-        },
-        {
-          "l": "Übungsklausur 2 (PDF)",
-          "u": "materials/Englisch_Uebungsklausur_2.pdf"
         }
       ]
     },
     "ENG.E12": {
       "pdf": "materials/Englisch_M_12.pdf",
-      "links": []
+      "links": [
+        {
+          "l": "Einstieg live",
+          "u": "materials/Englisch_M_12_Einstieg_live.html"
+        }
+      ]
     }
   },
   "customDays": [],
   "absences": [],
-  "exams": [],
+  "exams": [
+    {
+      "id": "xmvocyub7gmfv",
+      "date": "2026-11-11",
+      "klasse": "V26/2",
+      "fach": "Lernfelder",
+      "note": ""
+    }
+  ],
   "exkursionen": [],
   "inserts": [],
   "texts": {},
@@ -6515,2650 +7497,9 @@
       "off": {}
     }
   },
-  "v": 1,
-  "classes": [
-    {
-      "id": "V26-1",
-      "name": "V26/1",
-      "type": "V"
-    },
-    {
-      "id": "V26-2",
-      "name": "V26/2",
-      "type": "V"
-    },
-    {
-      "id": "V26-4",
-      "name": "V26/4",
-      "type": "V"
-    },
-    {
-      "id": "V25-1",
-      "name": "V25/1",
-      "type": "V"
-    },
-    {
-      "id": "V25-3",
-      "name": "V25/3",
-      "type": "V"
-    },
-    {
-      "id": "FKL26-1",
-      "name": "Fkl 26/1",
-      "type": "F"
-    }
-  ],
-  "courses": [
-    {
-      "id": "c1",
-      "cls": "V26-1",
-      "subj": "Lernfelder",
-      "blocks": [
-        "LF1"
-      ],
-      "start": "2026-10-26",
-      "done": 10,
-      "gain": 0
-    },
-    {
-      "id": "c2",
-      "cls": "V26-2",
-      "subj": "Lernfelder",
-      "blocks": [
-        "LF2",
-        "LF3",
-        "LF4",
-        "LF5"
-      ],
-      "start": "2026-10-26",
-      "done": 0,
-      "gain": 0
-    },
-    {
-      "id": "c3",
-      "cls": "V26-4",
-      "subj": "Lernfelder",
-      "blocks": [
-        "LF2",
-        "LF3",
-        "LF4",
-        "LF5"
-      ],
-      "start": "2026-10-26",
-      "done": 0,
-      "gain": 0
-    },
-    {
-      "id": "c4",
-      "cls": "V26-1",
-      "subj": "Wiso",
-      "blocks": [
-        "WISO"
-      ],
-      "start": "",
-      "done": 0,
-      "gain": 0
-    },
-    {
-      "id": "c5",
-      "cls": "V26-2",
-      "subj": "Wiso",
-      "blocks": [
-        "WISO"
-      ],
-      "start": "",
-      "done": 0,
-      "gain": 0
-    },
-    {
-      "id": "c6",
-      "cls": "V26-1",
-      "subj": "Wahlpflicht",
-      "blocks": [
-        "WPF"
-      ],
-      "start": "",
-      "done": 0,
-      "gain": 0
-    },
-    {
-      "id": "c7",
-      "cls": "V25-1",
-      "subj": "Englisch",
-      "blocks": [
-        "ENG"
-      ],
-      "start": "",
-      "done": 0,
-      "gain": 0
-    },
-    {
-      "id": "c8",
-      "cls": "V25-3",
-      "subj": "Englisch",
-      "blocks": [
-        "ENG"
-      ],
-      "start": "",
-      "done": 0,
-      "gain": 0
-    },
-    {
-      "id": "c9",
-      "cls": "FKL26-1",
-      "subj": "Mathe",
-      "blocks": [
-        "MATHE"
-      ],
-      "start": "",
-      "done": 0,
-      "gain": 0
-    }
-  ],
-  "blocks": {
-    "LF1": {
-      "id": "LF1",
-      "name": "Lernfeld 1 – Das Einzelhandelsunternehmen repräsentieren",
-      "subj": "Lernfelder",
-      "lf": "1",
-      "check": false,
-      "units": [
-        {
-          "m": "M 1",
-          "t": "Auftakt: Übersicht, Punktekonto, Kann-Liste; Wer gibt wem was? Haushalte und Unternehmen",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 1",
-          "t": "Der einfache Wirtschaftskreislauf: Güterstrom, Geldstrom, Produktionsfaktoren",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Drei Wirtschaftssektoren; Handels-, Dienstleistungs- und Produktionsbetriebe",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Die Handelskette und die Bedeutung des Einzelhandels",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 3",
-          "t": "Bedürfnisse, Bedarf, Nachfrage; Güterarten",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "Das ökonomische Prinzip: Maximal- und Minimalprinzip",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 5",
-          "t": "Markt, Angebot und Nachfrage",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 5",
-          "t": "Der Gleichgewichtspreis; Käufer- und Verkäufermarkt",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 6",
-          "t": "Umweltschutz und Nachhaltigkeit: Begriffe und drei Dimensionen",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 6",
-          "t": "Nachhaltig handeln im Einzelhandel: Verpackung, Mehrweg, Batterien, Abfall",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 7",
-          "t": "Die Aufgaben des Einzelhandels",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 7",
-          "t": "Die Outlet-Tour; Prüfungs-Check Block A",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Übungsklausur 1 (Wirtschaft und Einzelhandel) mit Selbstkorrektur",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Wiederholung: Escape Room „Frischmarkt“, gezielte Wiederholung",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Klausur 1: Die Stellung des Einzelhandels",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Das Sortiment: Begriff und Sortimentspyramide",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Breit und schmal, tief und flach",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Kern-, Rand- und Saisonsortiment; Marke, Handelsmarke, No-Name",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Sortimentsplanung; Prüfungs-Check Sortiment",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 9",
-          "t": "Der Standort",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 9",
-          "t": "Betriebsformen im Einzelhandel",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 10",
-          "t": "Verkaufsformen",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 11",
-          "t": "Unternehmensziele",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 12",
-          "t": "Aufbauorganisation: Stelle, Instanz, Abteilung, Organigramm",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 12",
-          "t": "Leitungs- und Ausführungsaufgaben; Ablauforganisation",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Übungsklausur 2 (Sortiment bis Organisation) mit Selbstkorrektur",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Klausur 2: Sortiment bis Organisation",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 13",
-          "t": "Präsentieren: Ziel, Ablauf, Regeln, Feedback",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 13",
-          "t": "Präsentation „Mein Ausbildungsbetrieb“ vorbereiten",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 13",
-          "t": "Präsentationen mit Feedback; Kann-Liste abschließen",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "LF2": {
-      "id": "LF2",
-      "name": "Lernfeld 2 – Verkaufsgespräche kundenorientiert führen",
-      "subj": "Lernfelder",
-      "lf": 2,
-      "check": true,
-      "units": [
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 7",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 15",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 16",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 17",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 18",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 19",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 20",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 21",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 22",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 23",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 24",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 25",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 26",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 27",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 28",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 29",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 30",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 31",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 32",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 33",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 34",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 35",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 36",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 37",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 38",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 39",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 2 – Doppelstunde 40",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "LF3": {
-      "id": "LF3",
-      "name": "Lernfeld 3 – Kunden im Servicebereich Kasse betreuen",
-      "subj": "Lernfelder",
-      "lf": 3,
-      "check": false,
-      "units": [
-        {
-          "m": "M 1",
-          "t": "Auftakt: Kasse erleben; Kann-Liste, Punktekonto, Rechen-Minute; Kassensysteme, Scanner, GTIN, TSE",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 1",
-          "t": "Der Kassenbon: Pflichtangaben lesen und erklären",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Vor dem Kassieren: Vorbereitung und Kassieranweisung",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Kassiervorgang bar, Wechselgeld, kundenorientiertes Verhalten (Rollenspiel)",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 3",
-          "t": "Bargeld, Sicherheitsmerkmale, Falschgeld",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "girocard und Kreditkarte: Ablauf in Schritten, Vor- und Nachteile",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "Kontaktlos und Smartphone; Gutschein, Coupon, Kundenkarte, Datenschutz",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 5",
-          "t": "Besondere Situationen in wörtlicher Rede; Ergonomie",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 6",
-          "t": "Tageslosung und Kassenbericht",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 6",
-          "t": "Kassendifferenz und Kassenkontrolle; Prüfungs-Check Kassenblock",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 7",
-          "t": "Rechts- und Geschäftsfähigkeit",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 7",
-          "t": "Taschengeldparagraf: Fälle an der Kasse",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Rechtsgeschäfte, Nichtigkeit, Anfechtung",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 9",
-          "t": "Antrag und Annahme – auch an der Kasse",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 9",
-          "t": "Pflichten aus dem Kaufvertrag; Datumsaufgaben",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 10",
-          "t": "Besitz und Eigentum, Eigentumsvorbehalt",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Übungsklausur 1 (Kasse und Recht)",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Besprechung, Fehleranalyse, gezielte Wiederholung",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Klausur 1: Kasse und Recht",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 11",
-          "t": "Rechen-Start: Taschenrechner, Komma, Runden, Einheiten, Rechenfahrplan",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 12",
-          "t": "Dreisatz: auf 1 zurückrechnen",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 12",
-          "t": "Dreisatz: Grundpreis, lose Ware, Gewichtsware",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 12",
-          "t": "Dreisatz: Prämie, Fläche, Strom; Kosten geteilt durch Beteiligte",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 13",
-          "t": "Prozent: Grundwert, Prozentsatz, Prozentwert – über 1 %",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 13",
-          "t": "Prozentwert im Laden: Anteile, Rabattbetrag, Aufschlag",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 14",
-          "t": "Prozentsatz I: Um wie viel Prozent wurde der Preis gesenkt?",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 14",
-          "t": "Prozentsatz II: Anteil am Umsatz, Grafiken, Rundungsvorgaben",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 14",
-          "t": "Grundwert und verminderter Grundwert",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 15",
-          "t": "Rabatt und Coupon",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 15",
-          "t": "Skonto und Überweisungsbetrag",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 15",
-          "t": "Umsatzsteuer herausrechnen und aufschlagen",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 16",
-          "t": "Einfacher Durchschnitt",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 16",
-          "t": "Gewogener Durchschnitt",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 17",
-          "t": "Verteilungsrechnung",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 18",
-          "t": "Rechnen an der Kasse – Prüfungsmix",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Übungsklausur 2 (Rechnen und Kassenabrechnung)",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Besprechung, Fehleranalyse, Rechen-Stationen nach Fehlerbild",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Wiederholung: Escape Room „Kassensturz“ und Prüfungsaufgaben im Tempo",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Klausur 2: Rechnen und Kassenabrechnung",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Rückgabe, Nachschreiben, Puffer",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "LF4": {
-      "id": "LF4",
-      "name": "Lernfeld 4 – Waren präsentieren",
-      "subj": "Lernfelder",
-      "lf": 4,
-      "check": true,
-      "units": [
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 7",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 15",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 16",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 17",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 18",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 19",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 20",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 21",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 22",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 23",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 24",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 25",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 26",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 27",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 28",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 29",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 30",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 31",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 32",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 33",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 34",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 35",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 36",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 37",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 38",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 39",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 4 – Doppelstunde 40",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "LF5": {
-      "id": "LF5",
-      "name": "Lernfeld 5 – Werben und den Verkauf fördern",
-      "subj": "Lernfelder",
-      "lf": 5,
-      "check": false,
-      "units": [
-        {
-          "m": "M 1",
-          "t": "Werbung und Werbearten",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 1",
-          "t": "Werbearten festigen: Domino-Rundlauf",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Werbegrundsätze, Werbebotschaft, AIDA",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Slogan; Werbemittel und Werbeträger",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 3",
-          "t": "Werbemittel und Werbeträger: Sortierspiel; Stopp 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "Der Werbeplan: Werbeetat, Streuzeit, Streukreis, Streugebiet",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "Werbeplan-Werkstatt",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 5",
-          "t": "Werbeerfolgskontrolle: Werbeerfolg in Prozent, Werberendite; Stopp 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 6",
-          "t": "Verkaufsförderung und PR",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 6",
-          "t": "Exkursion (Vorbereitung); Kundenbindung heute",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 7",
-          "t": "Kundenbindung heute: Kundenkarte, App, Newsletter, Coupons (Exkursion Bogen)",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Das UWG: irreführende Werbung, Mondpreise, Lockangebote",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Wiederholung: Escape Room „Die Werbeagentur“; Stopp 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 9",
-          "t": "Verpackung: Aufgaben und Arten, Verpackungsgesetz",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 9",
-          "t": "Verpackungs-Rallye",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 10",
-          "t": "Warenzustellung: Tourenplanung, Frachtführer und Spediteur",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 11",
-          "t": "Teamarbeit: Voraussetzungen, fünf Phasen, Gesprächsregeln",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 11",
-          "t": "Teamsitzung als Rollenspiel; Stopp 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Übungsklausur im Format der Klausur, danach Besprechung",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Klausur (Teil A–F über alle elf Module)",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "LF6": {
-      "id": "LF6",
-      "name": "Lernfeld 6 – Waren beschaffen",
-      "subj": "Lernfelder",
-      "lf": 6,
-      "check": true,
-      "units": [
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 7",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 15",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 16",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 17",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 18",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 19",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 20",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 21",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 22",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 23",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 24",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 25",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 26",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 27",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 28",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 29",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 6 – Doppelstunde 30",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "LF7": {
-      "id": "LF7",
-      "name": "Lernfeld 7 – Lernfeld 7",
-      "subj": "Lernfelder",
-      "lf": 7,
-      "check": true,
-      "units": [
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 7",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 15",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 16",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 17",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 18",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 19",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 20",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 21",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 22",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 23",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 24",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 25",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 26",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 27",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 28",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 29",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 7 – Doppelstunde 30",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "LF8": {
-      "id": "LF8",
-      "name": "Lernfeld 8 – Geschäftsprozesse erfassen und kontrollieren",
-      "subj": "Lernfelder",
-      "lf": 8,
-      "check": true,
-      "units": [
-        {
-          "m": "M 1",
-          "t": "Inventur",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Inventurdifferenz",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 3",
-          "t": "Bilanz: Aufbau und Gliederung",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 3",
-          "t": "Bilanz: Eigenkapitalanteil",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "Gewinn- und Verlustrechnung (GuV)",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "Kennzahlen",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Wiederholung: Prüfungstraining, Abschlussspiel und Übungstest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Test (45 Min., nur Taschenrechner)",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "LF9": {
-      "id": "LF9",
-      "name": "Lernfeld 9 – Lernfeld 9",
-      "subj": "Lernfelder",
-      "lf": 9,
-      "check": true,
-      "units": [
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 7",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 15",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 16",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 17",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 18",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 19",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 20",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 21",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 22",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 23",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 24",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 25",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 26",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 27",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 28",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 29",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "LF 9 – Doppelstunde 30",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "LF10": {
-      "id": "LF10",
-      "name": "Lernfeld 10 – Besondere Verkaufssituationen bewältigen",
-      "subj": "Lernfelder",
-      "lf": 10,
-      "check": false,
-      "units": [
-        {
-          "m": "M 1",
-          "t": "Jugendschutz – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 1",
-          "t": "Jugendschutz – Training",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 1",
-          "t": "Jugendschutz – Selbsttest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Kasse besonders – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Kasse besonders – Training",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 2",
-          "t": "Kasse besonders – Selbsttest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 3",
-          "t": "Beschwerden – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 3",
-          "t": "Beschwerden – Training",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 3",
-          "t": "Beschwerden – Selbsttest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "Umtausch oder Reklamation – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "Umtausch oder Reklamation – Training",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 4",
-          "t": "Umtausch oder Reklamation – Selbsttest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 5",
-          "t": "Rechte bei Mängeln – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 5",
-          "t": "Rechte bei Mängeln – Training",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 5",
-          "t": "Rechte bei Mängeln – Selbsttest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 6",
-          "t": "Ladendiebstahl – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 6",
-          "t": "Ladendiebstahl – Selbsttest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 7",
-          "t": "Kundengruppen – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 7",
-          "t": "Kundengruppen – Training",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 7",
-          "t": "Kundengruppen – Selbsttest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Spezielle Situationen – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Spezielle Situationen – Training",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 8",
-          "t": "Spezielle Situationen – Selbsttest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 9",
-          "t": "Ratenkauf – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 10",
-          "t": "Situationstraining – Einstieg",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 10",
-          "t": "Situationstraining – Training",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 10",
-          "t": "Situationstraining – Training",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "M 10",
-          "t": "Situationstraining – Selbsttest",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Übungsklausur mit Besprechung",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Klausur (90 Min.)",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "WISO": {
-      "id": "WISO",
-      "name": "WiSo 1. Ausbildungsjahr (28 DS + 4 Politik-Termine)",
-      "subj": "Wiso",
-      "lf": "",
-      "check": true,
-      "units": [
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 7",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Berufliche Bildung – Doppelstunde 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 7",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mitbestimmung – Doppelstunde 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Politik (Grundgesetz/Wahlen) – Termin 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Politik (Grundgesetz/Wahlen) – Termin 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Politik (Grundgesetz/Wahlen) – Termin 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Politik (Grundgesetz/Wahlen) – Termin 4",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "ENG": {
-      "id": "ENG",
-      "name": "Englisch für Verkäufer (15 Termine)",
-      "subj": "Englisch",
-      "lf": "",
-      "check": true,
-      "units": [
-        {
-          "m": "",
-          "t": "Englisch – Termin 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Klausur",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Termin 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Englisch – Präsentation",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "WPF": {
-      "id": "WPF",
-      "name": "Wahlpflicht Methoden",
-      "subj": "Wahlpflicht",
-      "lf": "",
-      "check": true,
-      "units": [
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 1",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 2",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 7",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 15",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 16",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 17",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 18",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 19",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "WPF Methoden – Doppelstunde 20",
-          "f": "",
-          "u": ""
-        }
-      ]
-    },
-    "MATHE": {
-      "id": "MATHE",
-      "name": "Mathe Fachlageristen",
-      "subj": "Mathe",
-      "lf": "",
-      "check": true,
-      "units": [
-        {
-          "m": "",
-          "t": "Grundrechenarten wiederholen (plus, minus, mal, geteilt)",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Grundrechenarten im Lageralltag",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 3",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 4",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 5",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 6",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 7",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 8",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 9",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 10",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 11",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 12",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 13",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 14",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 15",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 16",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 17",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 18",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 19",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 20",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 21",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 22",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 23",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 24",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 25",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 26",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 27",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 28",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 29",
-          "f": "",
-          "u": ""
-        },
-        {
-          "m": "",
-          "t": "Mathe Fachlageristen – Doppelstunde 30",
-          "f": "",
-          "u": ""
-        }
-      ]
-    }
-  },
-  "freeDays": [],
-  "matOv": {},
-  "untisOv": {},
-  "seed1": true,
   "seed2": true,
+  "seed3": true,
   "seed4": true,
   "seed5": true,
-  "seed3": true
+  "seed6": true
 }
