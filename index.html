@@ -8,14 +8,15 @@
 :root{--bg:#f3f5fa;--card:#fff;--ink:#1c2433;--mut:#5d6b82;--line:#dce2ee;--pri:#2457c5;--priink:#fff;--g:#14894c;--gbg:#e0f4e9;--y:#9a6a00;--ybg:#fff1cc;--r:#c9302c;--rbg:#fde4e3;--free:#eceff5;--a:#2457c5;--b:#8a3fc0}
 @media(prefers-color-scheme:dark){:root{--bg:#0f131b;--card:#192030;--ink:#e8ecf5;--mut:#9aa7bf;--line:#2b3548;--pri:#6c97f0;--priink:#0b1020;--g:#4cd08a;--gbg:#113423;--y:#f0b93a;--ybg:#3a2f0e;--r:#ff7b78;--rbg:#451a1b;--free:#222a3a;--a:#7da5ff;--b:#c99aff}}
 
-:root{--c-gr:#14894c;--c-grbg:#e0f4e9;--c-ye:#8a6200;--c-yebg:#fff3bf;--c-rd:#c9302c;--c-rdbg:#fde4e3;--c-bl:#1d4fb3;--c-blbg:#dfe9ff;--c-pk:#b0246f;--c-pkbg:#ffe0ef;--c-br:#7a4a1c;--c-brbg:#f1e0cc}
-@media(prefers-color-scheme:dark){:root{--c-gr:#4cd08a;--c-grbg:#113423;--c-ye:#f0cf5a;--c-yebg:#3a3010;--c-rd:#ff8f8c;--c-rdbg:#451a1b;--c-bl:#8fb2ff;--c-blbg:#14284f;--c-pk:#ff93c4;--c-pkbg:#4a1632;--c-br:#e0b27c;--c-brbg:#3d2a14}}
+:root{--c-gr:#14894c;--c-grbg:#e0f4e9;--c-ye:#8a6200;--c-yebg:#fff3bf;--c-rd:#c9302c;--c-rdbg:#fde4e3;--c-bl:#1d4fb3;--c-blbg:#dfe9ff;--c-pk:#b0246f;--c-pkbg:#ffe0ef;--c-br:#7a4a1c;--c-brbg:#f1e0cc;--c-pu:#6b34b8;--c-pubg:#ece1fb}
+@media(prefers-color-scheme:dark){:root{--c-gr:#4cd08a;--c-grbg:#113423;--c-ye:#f0cf5a;--c-yebg:#3a3010;--c-rd:#ff8f8c;--c-rdbg:#451a1b;--c-bl:#8fb2ff;--c-blbg:#14284f;--c-pk:#ff93c4;--c-pkbg:#4a1632;--c-br:#e0b27c;--c-brbg:#3d2a14;--c-pu:#c9a2ff;--c-pubg:#2f1f4d}}
 .btn.c-gr{background:var(--c-grbg);color:var(--c-gr);border-color:var(--c-gr)}
 .btn.c-ye{background:var(--c-yebg);color:var(--c-ye);border-color:var(--c-ye)}
 .btn.c-rd{background:var(--c-rdbg);color:var(--c-rd);border-color:var(--c-rd)}
 .btn.c-bl{background:var(--c-blbg);color:var(--c-bl);border-color:var(--c-bl)}
 .btn.c-pk{background:var(--c-pkbg);color:var(--c-pk);border-color:var(--c-pk)}
 .btn.c-br{background:var(--c-brbg);color:var(--c-br);border-color:var(--c-br)}
+.btn.c-pu{background:var(--c-pubg);color:var(--c-pu);border-color:var(--c-pu)}
 .btn[class*=" c-"]:hover{filter:brightness(.95);border-color:currentColor}
 .legend{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px;font-size:12px}
 *{box-sizing:border-box}
@@ -308,6 +309,12 @@ function normalize(j){
   if(!e5.links.some(x=>/Klausurtrainer/.test(x.u||'')))e5.links.push({l:'Klausurtrainer (interaktiv, mehrsprachig)',u:'materials/LF1_Klausurtrainer.html'});
   [['LF1.M7','Einstieg live (mehrsprachig)','materials/LF1_M_7_Einstieg_live_uebersetzt.html'],['LF1.M7','Selbsttest (mehrsprachig)','materials/LF1_M_7_Selbsttest_mehrsprachig.html'],['LF1.M7','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_7_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M8','Einstieg live (mehrsprachig)','materials/LF1_M_8_Einstieg_live_uebersetzt.html'],['LF1.M8','Selbsttest (mehrsprachig)','materials/LF1_M_8_Selbsttest_mehrsprachig.html'],['LF1.M8','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_8_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M9','Einstieg live (mehrsprachig)','materials/LF1_M_9_Einstieg_live_uebersetzt.html'],['LF1.M9','Selbsttest (mehrsprachig)','materials/LF1_M_9_Selbsttest_mehrsprachig.html'],['LF1.M9','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_9_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M10','Einstieg live (mehrsprachig)','materials/LF1_M_10_Einstieg_live_uebersetzt.html'],['LF1.M10','Selbsttest (mehrsprachig)','materials/LF1_M_10_Selbsttest_mehrsprachig.html'],['LF1.M10','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_10_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M11','Einstieg live (mehrsprachig)','materials/LF1_M_11_Einstieg_live_uebersetzt.html'],['LF1.M11','Selbsttest (mehrsprachig)','materials/LF1_M_11_Selbsttest_mehrsprachig.html'],['LF1.M11','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_11_Arbeitsblatt_online_DE-UK-TI-PT-ES.html'],['LF1.M12','Einstieg live (mehrsprachig)','materials/LF1_M_12_Einstieg_live_uebersetzt.html'],['LF1.M12','Selbsttest (mehrsprachig)','materials/LF1_M_12_Selbsttest_mehrsprachig.html'],['LF1.M12','Arbeitsblatt online (DE-UK-TI-PT-ES)','materials/LF1_M_12_Arbeitsblatt_online_DE-UK-TI-PT-ES.html']].forEach(t=>{const e=o.mat[t[0]]||(o.mat[t[0]]={pdf:'',links:[]});e.links=(e.links||[]).filter(l=>l.u||l.l);if(!e.links.some(x=>x.u===t[2]))e.links.push({l:t[1],u:t[2]});});
  }
+ if(!o.seed6){ /* LF 2: Digitale Arbeitsblaetter (DE-AR-TR-VI) M 1-M 15 einmalig eintragen */
+  o.seed6=true;
+  for(let n=1;n<=15;n++){const e6=o.mat['LF2.M'+n]||(o.mat['LF2.M'+n]={pdf:'',links:[]});e6.links=(e6.links||[]).filter(l=>l.u||l.l);
+   const u6='materials/LF2_M_'+n+'_Digitales_Arbeitsblatt_DE-AR-TR-VI.html';
+   if(!e6.links.some(x=>x.u===u6))e6.links.push({l:'Digitales Arbeitsblatt (DE-AR-TR-VI)',u:u6});}
+ }
  if(!o.seed3){ /* Englisch V25: neue Einträge ENG.E1–E12 einmalig ergänzen, nichts überschreiben */
   o.seed3=true;
   Object.keys(SEED_MAT).filter(k=>k.indexOf('ENG.E')===0).forEach(k=>{
@@ -596,6 +603,7 @@ function unitSub(u,k){
 const LIVEADV=/escape|spiel|adventure|imperium|phantom|weserfort|eiszeit|nebel über|kutter|zahlen-zentrale|hafenstore|kranich|kaje|ladenmacher|festival-kasse|countdown|kein bon|akte nordstadt|bremerhaven-experiment|inventur-krimi|ladenschluss|wett-quiz|blitzkasse|organisations-arena|nachtschicht|preis-tresor|rettet/i;
 function matCls(l){
  l=l||'';
+ if(/digitales arbeitsblatt/i.test(l))return 'c-pu';
  if(/online/i.test(l))return 'c-ye';
  if(LIVEADV.test(l))return 'c-br';
  if(/pr[üu]e?fungs?training|pruefungstraining|klausur|trainer|rechentest|trainingshefte/i.test(l))return 'c-bl';
