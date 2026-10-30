@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escape Room – Die Reklamation um 17:55 Uhr | LF 2, Module 8 bis 15</title>
+<style>
+  :root{
+    --blau:#1F4E79; --blauhell:#9DC3E6; --blauflaeche:#EAF1F8;
+    --rosa:#E5B8B7; --grau:#F2F2F2; --graulinie:#BFBFBF; --grautext:#595959;
+    --rot:#C00000; --gruen:#2E6B45; --gruenflaeche:#EAF3ED;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: Arial, Helvetica, sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:#fff; color:#111; font-family:var(--serif); font-size:17px; line-height:1.6}
+  .blatt{max-width:860px; margin:0 auto; padding:26px 20px 80px}
+
+  header.kopf{border:1px solid #000; display:flex; align-items:stretch; margin-bottom:26px}
+  header.kopf .li{flex:0 0 32%; padding:12px 14px; border-right:1px solid #000; font-family:var(--sans); font-size:14px}
+  header.kopf .mi{flex:1; padding:12px 14px; text-align:center}
+  header.kopf .mi .lf{font-family:var(--sans); font-weight:bold; font-size:17px}
+  header.kopf .mi .lftxt{font-family:var(--sans); font-size:14px; padding-bottom:8px; border-bottom:1px solid #000; margin-bottom:8px}
+  header.kopf .mi .mod{font-family:var(--sans); font-weight:bold; font-size:17px}
+
+  h1{font-family:var(--sans); color:var(--blau); font-size:27px; margin:0 0 6px; border-bottom:2px solid var(--blauhell); padding-bottom:8px}
+  .unter{font-family:var(--sans); font-size:14px; color:var(--grautext); margin:0 0 22px}
+  .story{background:var(--grau); border-left:5px solid var(--graulinie); padding:14px 18px; margin:0 0 22px}
+  .story p{margin:0 0 9px}
+  .story p:last-child{margin:0}
+
+  /* Fortschrittsleiste */
+  .leiste{display:flex; gap:8px; margin:0 0 26px; flex-wrap:wrap}
+  .leiste .feld{
+    flex:1 1 0; min-width:74px; text-align:center; border:2px solid var(--graulinie);
+    background:#fff; font-family:var(--sans); padding:9px 4px; border-radius:4px
+  }
+  .leiste .feld .nr{font-size:11px; color:var(--grautext); letter-spacing:.06em; text-transform:uppercase}
+  .leiste .feld .zi{font-size:26px; font-weight:bold; color:var(--graulinie); line-height:1.1}
+  .leiste .feld.auf{border-color:var(--gruen); background:var(--gruenflaeche)}
+  .leiste .feld.auf .zi{color:var(--gruen)}
+
+  section.station{border:1px solid var(--graulinie); border-left:5px solid var(--blauhell); margin:0 0 20px; padding:16px 20px}
+  section.station.geloest{border-left-color:var(--gruen); background:var(--gruenflaeche)}
+  section.station h2{font-family:var(--sans); color:var(--blau); font-size:19px; margin:0 0 4px}
+  section.station .ort{font-family:var(--sans); font-size:13px; color:var(--grautext); margin:0 0 12px; letter-spacing:.04em; text-transform:uppercase}
+  section.station .fall{margin:0 0 14px}
+  section.station .frage{font-family:var(--sans); font-weight:bold; font-size:16px; margin:0 0 10px}
+  label.opt{display:block; padding:6px 8px 6px 4px; cursor:pointer; border-radius:3px; font-size:16px}
+  label.opt:hover{background:var(--blauflaeche)}
+  label.opt input{margin-right:9px}
+  .knopf{
+    font-family:var(--sans); font-size:15px; font-weight:bold; color:#fff; background:var(--blau);
+    border:0; border-radius:4px; padding:10px 22px; cursor:pointer; margin-top:10px
+  }
+  .knopf:hover{background:#17395a}
+  .knopf:disabled{background:var(--graulinie); cursor:default}
+  .rueck{margin:12px 0 0; padding:10px 14px; font-size:16px; display:none}
+  .rueck.falsch{background:#FBEDED; border-left:4px solid var(--rot)}
+  .rueck.richtig{background:var(--gruenflaeche); border-left:4px solid var(--gruen)}
+  .rueck b{font-family:var(--sans)}
+  .ziffer{font-family:var(--sans); font-weight:bold; color:var(--gruen); font-size:19px}
+
+  /* Schlüsselkasten */
+  .tresor{border:2px solid var(--blau); padding:20px 24px; margin-top:34px}
+  .tresor h2{font-family:var(--sans); color:var(--blau); font-size:21px; margin:0 0 10px}
+  .tresor input{
+    font-family:var(--sans); font-size:30px; letter-spacing:.35em; width:250px; text-align:center;
+    padding:8px 6px; border:2px solid var(--graulinie); border-radius:4px
+  }
+  .tresor .zeile{display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin-top:8px}
+  .tresor .hinw{font-family:var(--sans); font-size:14px; color:var(--grautext); margin:10px 0 0}
+  #tresorrueck{margin-top:14px; padding:12px 16px; display:none; font-size:16px}
+  #tresorrueck.zu{background:#FBEDED; border-left:4px solid var(--rot)}
+  #tresorrueck.auf{background:var(--gruenflaeche); border-left:4px solid var(--gruen)}
+
+  /* Ende */
+  #ende{display:none; margin-top:30px}
+  #ende .urkunde{border:3px double var(--blau); padding:26px 28px; text-align:center}
+  #ende .urkunde .gross{font-family:var(--sans); font-size:30px; font-weight:bold; color:var(--blau); margin-bottom:6px}
+  #ende .zahlen{font-family:var(--sans); font-size:17px; margin:14px 0 0}
+  #ende .namensfeld{font-family:var(--sans); font-size:15px; margin:18px 0 0}
+  #ende .namensfeld input{font-size:15px; padding:5px 6px; border:1px solid var(--graulinie); border-radius:3px; width:260px}
+  table.merk{border-collapse:collapse; width:100%; margin-top:22px; font-size:15px}
+  table.merk th{background:var(--rosa); font-family:var(--sans); font-size:14px; text-align:left; padding:8px 10px; border:1px solid var(--graulinie)}
+  table.merk td{border:1px solid var(--graulinie); padding:8px 10px; vertical-align:top}
+  table.merk td.b{font-family:var(--sans); font-weight:bold; width:34%}
+  @media print{ .knopf, .tresor input{display:none} }
+</style>
+</head>
+<body>
+<div class="blatt">
+
+  <header class="kopf">
+    <div class="li">Datum:<br><br>Name:</div>
+    <div class="mi">
+      <div class="lf">Lernfeld 2</div>
+      <div class="lftxt">Verkaufsgespräche kundenorientiert führen</div>
+      <div class="mod">Escape Room · Module 8 bis 15</div>
+    </div>
+  </header>
+
+  <h1>Die Reklamation um 17:55 Uhr</h1>
+  <p class="unter">Sechs Szenen · sechs Ziffern · ein Schlüsselkasten. Rechne mit etwa 25 Minuten. Allein oder zu zweit.</p>
+
+  <div class="story">
+    <p>Freitag, 17:55 Uhr. Die <b>Nordstadt-Kauf GmbH</b> schließt um 18 Uhr. Sie sind allein in der Abteilung, die Kollegin ist schon zur Kasse.</p>
+    <p>Die Tür geht auf. Eine Kundin kommt herein, in der Hand eine Tüte mit einer Jacke, die sie vor zwei Wochen gekauft hat. Sie ist aufgebracht. Und sie will eine Lösung, bevor Sie Feierabend machen.</p>
+    <p>Sie brauchen das Reklamationsformular – es liegt im Schrank der Abteilungsleitung, und der ist abgeschlossen. Der Schlüssel hängt im <b>Schlüsselkasten mit sechsstelligem Zahlenschloss</b>. Frau Ahlers hat die Zahl nicht hinterlassen, aber sie hat etwas anderes dagelassen: sechs Notizzettel aus den Gesprächsprotokollen dieser Woche. Auf der Rückseite jedes Zettels steht eine Ziffer – sichtbar nur für den, der die Szene richtig einordnet. <b>Sechs richtige Einordnungen – und der Schlüsselkasten geht auf.</b></p>
+  </div>
+
+  <div class="leiste" id="leiste"></div>
+
+  <div id="stationen"></div>
+
+  <div class="tresor">
+    <h2>Das Zahlenschloss</h2>
+    <p style="margin:0">Trage die sechs Ziffern in der Reihenfolge der Stationen ein.</p>
+    <div class="zeile">
+      <input type="text" id="code" maxlength="6" inputmode="numeric" placeholder="______" autocomplete="off">
+      <button type="button" class="knopf" id="oeffnen">Schlüsselkasten öffnen</button>
+    </div>
+    <p class="hinw">Die Ziffern erscheinen automatisch in der Leiste oben, sobald du eine Station gelöst hast.</p>
+    <div id="tresorrueck"></div>
+  </div>
+
+  <div id="ende">
+    <div class="urkunde">
+      <div class="gross">Schlüsselkasten offen</div>
+      <div>Der Schlüssel liegt in Ihrer Hand, das Formular ist da – und die Kundin steht immer noch vor Ihnen. Jetzt gilt alles, was Sie gerade eingeordnet haben: zuhören, ausreden lassen, eine Lösung anbieten.</div>
+      <div class="zahlen">
+        Fehlversuche an den Stationen: <b id="fehler">0</b> &nbsp;·&nbsp; Fehlversuche am Schloss: <b id="fehlerschloss">0</b>
+      </div>
+      <div class="namensfeld">
+        Name (zum Vorzeigen bei der Lehrkraft): <input type="text" id="name" placeholder="Vor- und Nachname">
+      </div>
+    </div>
+
+    <h2 style="font-family:var(--sans); color:var(--blau); font-size:20px; margin:28px 0 6px">Das nimmst du mit</h2>
+    <table class="merk">
+      <thead><tr><th>Der Fall</th><th>Woran du ihn erkennst</th></tr></thead>
+      <tbody>
+        <tr><td class="b">Warenvorlage</td><td>Drei Artikel, im Einzelfall vier bis fünf. Beginn in der mittleren Preislage. Den Kunden einbeziehen.</td></tr>
+        <tr><td class="b">Merkmal – Vorteil – Nutzen</td><td>Was die Ware hat, was sie deshalb kann, was der Kunde davon hat. Nur der Nutzen verkauft, und er enthält „Sie“.</td></tr>
+        <tr><td class="b">Sandwich-Methode</td><td>Nutzen – Preis – Nutzen. Ein nackter Preis löst einen Preisschock aus.</td></tr>
+        <tr><td class="b">Einwand oder Vorwand</td><td>Ein echter Einwand sagt etwas über Ware, Preis, Geschäft oder Personal. Ein Vorwand sagt nichts über die Ware.</td></tr>
+        <tr><td class="b">Ergänzung oder Zusatz</td><td>Ergänzung ist notwendig (Batterie zum Wecker). Zusatz erhöht nur den Nutzen (Hülle zum Handy).</td></tr>
+        <tr><td class="b">Kaufsignal</td><td>Sprachlich (Frage nach Lieferung, Zahlung) oder körpersprachlich (Griff zum Geldbeutel). Danach nicht weiterreden, sondern abschließen.</td></tr>
+      </tbody>
+    </table>
+    <p style="font-family:var(--sans); font-size:15px; color:var(--grautext); margin-top:18px">
+      Trag deine Punkte und die Zahl der Fehlversuche ins Punktekonto ein.
+    </p>
+    <button type="button" class="knopf" id="nochmal" style="background:#fff; color:var(--blau); border:1px solid var(--blau); font-weight:normal">Noch einmal spielen</button>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var STATIONEN = [
+    {
+      ort: "Notizzettel 1 · Sportabteilung",
+      titel: "Sieben Paar Schuhe",
+      fall: "Eine Kundin sucht Wanderschuhe. Der Verkäufer stellt ihr nacheinander sieben Paar hin, alle bleiben auf dem Tisch stehen. Nach zehn Minuten sagt die Kundin: „Ich weiß jetzt gar nicht mehr, welcher welcher war. Ich überlege es mir noch mal.“ Sie geht ohne Kauf.",
+      frage: "Wie ist diese Szene einzuordnen?",
+      optionen: [
+        "Richtig – je mehr Auswahl, desto größer die Chance auf einen Kauf.",
+        "Falsch – die Faustregel lautet drei Artikel, im Einzelfall vier bis fünf.",
+        "Falsch – Wanderschuhe dürfen gar nicht anprobiert werden.",
+        "Richtig – der Verkäufer hat alle Preislagen abgedeckt."
+      ],
+      richtig: 1,
+      ziffer: "4",
+      erklaerung: "Mehr als fünf Artikel verwirren den Kunden: Er kann nicht mehr vergleichen und entscheidet sich gar nicht. Richtig wäre gewesen, drei Paar vorzulegen und die Paare, die nicht infrage kommen, gleich wieder wegzuräumen – so wird die Auswahl Schritt für Schritt eingegrenzt.",
+      tipp: "Wie viele Artikel legt man nach der Faustregel vor? Und was passiert mit denen, die durchgefallen sind?"
+    },
+    {
+      ort: "Notizzettel 2 · Elektroabteilung",
+      titel: "Fünftausend Milliamperestunden",
+      fall: "Ein Kunde interessiert sich für ein Smartphone. Die Verkäuferin sagt: „Der Akku hat 5.000 Milliamperestunden, das Display 120 Hertz und die Hauptkamera 108 Megapixel.“ Der Kunde nickt höflich, legt das Gerät zurück und sagt: „Ich schaue noch bei der Konkurrenz.“",
+      frage: "Was fehlt in der Argumentation der Verkäuferin?",
+      optionen: [
+        "Nichts – sie hat drei Warenmerkmale genannt.",
+        "Der Warenvorteil und vor allem der Kundennutzen.",
+        "Der Preis – er hätte zuerst genannt werden müssen.",
+        "Eine geschlossene Frage am Ende."
+      ],
+      richtig: 1,
+      ziffer: "7",
+      erklaerung: "Alle drei Angaben sind reine Warenmerkmale. Es fehlt, was die Ware deshalb kann (Warenvorteil) und was der Kunde davon hat (Kundennutzen). Besser: „Der Akku hat 5.000 Milliamperestunden – das reicht für zwei volle Tage. Sie müssen unterwegs also kein Ladegerät mehr einpacken.“ Erkennbar ist der Nutzen immer am Wort „Sie“.",
+      tipp: "Stell nach jedem Satz die Frage „Na und?“. Solange sie noch passt, fehlt der Nutzen."
+    },
+    {
+      ort: "Notizzettel 3 · Haushaltsabteilung",
+      titel: "Zweihundertneunundvierzig",
+      fall: "Eine Kundin fragt nach dem Preis eines Kaffeevollautomaten. Die Verkäuferin antwortet: „249 Euro.“ Dann schweigt sie. Die Kundin zieht die Augenbrauen hoch, sagt „Aha“ und wendet sich ab.",
+      frage: "Welchen Fehler hat die Verkäuferin gemacht?",
+      optionen: [
+        "Sie hat den Preis zu spät genannt – Verzögerungsmethode wäre richtig gewesen.",
+        "Sie hat einen nackten Preis genannt und damit einen Preisschock ausgelöst.",
+        "Sie hätte die Verkleinerungsmethode anwenden müssen, alles andere ist falsch.",
+        "Sie hat gar keinen Fehler gemacht – der Preis muss klar genannt werden."
+      ],
+      richtig: 1,
+      ziffer: "9",
+      erklaerung: "Ein Preis ohne Nutzenaussage davor und danach ist ein „nackter“ Preis. Richtig wäre die Sandwich-Methode: „Der Automat mahlt die Bohnen frisch und reinigt sich selbst, er kostet 249 Euro – und Sie haben jeden Morgen frischen Kaffee, ohne die Maschine auseinanderzunehmen.“ Auch die Verkleinerungsmethode wäre möglich, aber die Sandwich-Methode ist der Normalfall.",
+      tipp: "Was steht in der Sandwich-Methode vor und was hinter dem Preis?"
+    },
+    {
+      ort: "Notizzettel 4 · Modeabteilung",
+      titel: "„Da muss ich meinen Mann fragen“",
+      fall: "Eine Kundin hat einen Mantel zwanzig Minuten lang anprobiert und sich beraten lassen. Dann sagt sie: „Da muss ich erst meinen Mann fragen.“ Der Verkäufer holt Luft und beginnt, den Mantel noch einmal von vorne zu erklären: Material, Verarbeitung, Preis-Leistungs-Verhältnis. Die Kundin wird einsilbig und geht.",
+      frage: "Wie ist diese Szene einzuordnen?",
+      optionen: [
+        "Richtig – bei einem Einwand muss man mit neuen Argumenten nachlegen.",
+        "Falsch – das ist ein Vorwand, hier hilft keine Argumentation mehr.",
+        "Falsch – der Verkäufer hätte sofort einen Preisnachlass anbieten müssen.",
+        "Richtig – der Kunde soll die Ware ja nicht vergessen."
+      ],
+      richtig: 1,
+      ziffer: "1",
+      erklaerung: "Der Satz sagt nichts über die Ware aus – das ist das Kennzeichen eines Vorwands, eines unechten Einwands. Er lässt sich nicht widerlegen. Richtig ist, Verständnis zu zeigen und der Kundin den Rückzug ohne Gesichtsverlust zu erleichtern: „Das verstehe ich gut. Ich lege Ihnen die Modellnummer auf einen Zettel – dann finden Sie den Mantel sofort wieder.“ Eine nette Verabschiedung erhöht die Chance, dass sie wiederkommt.",
+      tipp: "Sagt die Kundin etwas über die Ware, den Preis, das Geschäft oder das Personal? Wenn nein – was ist es dann?"
+    },
+    {
+      ort: "Notizzettel 5 · Spielwarenabteilung",
+      titel: "Ohne Batterien",
+      fall: "Ein Kunde kauft eine ferngesteuerte Autorennbahn als Geburtstagsgeschenk. Der Verkäufer verpackt sie, kassiert und verabschiedet ihn freundlich. Zwei Tage später steht der Kunde wieder da: Die Bahn braucht acht Batterien, das Kind saß am Geburtstag vor einem Karton, der nicht funktionierte.",
+      frage: "Was hat der Verkäufer versäumt?",
+      optionen: [
+        "Ein Zusatzangebot – die Batterien hätten den Nutzen erhöht.",
+        "Ein Ergänzungsangebot – die Batterien sind für die Nutzung notwendig.",
+        "Ein Alternativangebot – er hätte eine andere Bahn anbieten müssen.",
+        "Nichts – für die Batterien ist der Kunde selbst verantwortlich."
+      ],
+      richtig: 1,
+      ziffer: "3",
+      erklaerung: "Ohne Batterien fährt die Bahn nicht – sie sind für die Nutzung der Hauptware notwendig und damit ein Ergänzungsartikel. Ergänzungsartikel müssen immer angeboten werden. Ein Zusatzartikel wäre zum Beispiel eine zusätzliche Kurve gewesen: Die Bahn fährt auch ohne, der Nutzen wird nur größer.",
+      tipp: "Erste Frage: Funktioniert die Hauptware ohne? Nein heißt Ergänzung, ja heißt Zusatz."
+    },
+    {
+      ort: "Notizzettel 6 · Lederwaren",
+      titel: "Der Griff zur Geldbörse",
+      fall: "Eine Kundin prüft eine Handtasche zum dritten Mal, tritt einen Schritt zurück, betrachtet sie aus der Entfernung und fragt: „Kann ich damit auch mit Karte zahlen?“ Dabei greift sie nach ihrer Geldbörse. Die Verkäuferin antwortet „Ja, natürlich“ und beginnt dann, die Vorzüge des Innenfutters zu erklären. Nach fünf Minuten sagt die Kundin: „Wissen Sie, ich überlege es mir noch mal.“",
+      frage: "Was hat die Verkäuferin übersehen?",
+      optionen: [
+        "Einen Kundeneinwand gegen das Preis-Leistungs-Verhältnis.",
+        "Mehrere Kaufsignale – sie hätte zum Abschluss kommen müssen.",
+        "Einen Vorwand – die Kundin wollte gar nicht kaufen.",
+        "Die Kontrollfrage nach der Warenvorlage."
+      ],
+      richtig: 1,
+      ziffer: "6",
+      erklaerung: "Hier liegen gleich vier Kaufsignale vor: das mehrmalige In-die-Hand-Nehmen, das Zurücktreten und Begutachten, die Frage nach der Zahlungsweise und der Griff zur Geldbörse. Die Kundin war entschieden. Wer jetzt weiterredet, macht den Kauf wieder auf. Richtig wäre eine Abschlusstechnik gewesen – zum Beispiel die direkte Kaufaufforderung: „Darf ich Ihnen die Tasche einpacken?“",
+      tipp: "Zähl die Signale in der Szene – und überleg, was danach zu tun ist."
+    }
+  ];
+
+  var CODE = STATIONEN.map(function(s){ return s.ziffer; }).join("");
+  var geloest = STATIONEN.map(function(){ return false; });
+  var fehler = 0, fehlerSchloss = 0;
+
+  function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+  // Leiste
+  var leiste = document.getElementById("leiste");
+  STATIONEN.forEach(function(s,i){
+    var d = document.createElement("div");
+    d.className = "feld"; d.id = "feld"+i;
+    d.innerHTML = '<div class="nr">Station '+(i+1)+'</div><div class="zi">?</div>';
+    leiste.appendChild(d);
+  });
+
+  // Stationen
+  var box = document.getElementById("stationen");
+  STATIONEN.forEach(function(s,i){
+    var sec = document.createElement("section");
+    sec.className = "station"; sec.id = "st"+i;
+    var h = '<div class="ort">'+esc(s.ort)+'</div>';
+    h += '<h2>Station '+(i+1)+': '+esc(s.titel)+'</h2>';
+    h += '<p class="fall">'+esc(s.fall)+'</p>';
+    h += '<p class="frage">'+esc(s.frage)+'</p>';
+    s.optionen.forEach(function(o,k){
+      h += '<label class="opt"><input type="radio" name="s'+i+'" value="'+k+'">'+esc(o)+'</label>';
+    });
+    h += '<button type="button" class="knopf" data-i="'+i+'">Akte prüfen</button>';
+    h += '<div class="rueck" id="r'+i+'"></div>';
+    sec.innerHTML = h;
+    box.appendChild(sec);
+  });
+
+  box.addEventListener("click", function(e){
+    var b = e.target.closest("button[data-i]");
+    if (!b) return;
+    var i = Number(b.getAttribute("data-i"));
+    if (geloest[i]) return;
+    var s = STATIONEN[i];
+    var sel = document.querySelector('input[name="s'+i+'"]:checked');
+    var r = document.getElementById("r"+i);
+    if (!sel){
+      r.className = "rueck falsch";
+      r.innerHTML = "<b>Noch nichts ausgewählt.</b> Entscheide dich für eine Einordnung.";
+      r.style.display = "block";
+      return;
+    }
+    if (Number(sel.value) === s.richtig){
+      geloest[i] = true;
+      r.className = "rueck richtig";
+      r.innerHTML = "<b>Richtig eingeordnet.</b> " + esc(s.erklaerung) +
+                    '<br><span class="ziffer">In der Akte steckt die Ziffer ' + esc(s.ziffer) + '.</span>';
+      r.style.display = "block";
+      document.getElementById("st"+i).classList.add("geloest");
+      var f = document.getElementById("feld"+i);
+      f.classList.add("auf");
+      f.querySelector(".zi").textContent = s.ziffer;
+      b.disabled = true;
+      b.textContent = "Akte geschlossen";
+      document.querySelectorAll('input[name="s'+i+'"]').forEach(function(x){ x.disabled = true; });
+    } else {
+      fehler++;
+      r.className = "rueck falsch";
+      r.innerHTML = "<b>Das passt noch nicht.</b> " + esc(s.tipp) + " Schau notfalls in Modul 8 nach und versuch es noch einmal.";
+      r.style.display = "block";
+    }
+  });
+
+  // Schlüsselkasten
+  document.getElementById("oeffnen").addEventListener("click", function(){
+    var eing = document.getElementById("code").value.replace(/\D/g,"");
+    var tr = document.getElementById("tresorrueck");
+    var offen = geloest.filter(Boolean).length;
+    if (eing.length !== 6){
+      tr.className = "zu";
+      tr.innerHTML = "<b>Das Schloss braucht genau sechs Ziffern.</b> Bisher gelöst: " + offen + " von 6 Stationen.";
+      tr.style.display = "block";
+      return;
+    }
+    if (eing === CODE){
+      tr.className = "auf";
+      tr.innerHTML = "<b>Klick.</b> Der Schlüsselkasten ist offen.";
+      tr.style.display = "block";
+      document.getElementById("fehler").textContent = fehler;
+      document.getElementById("fehlerschloss").textContent = fehlerSchloss;
+      document.getElementById("ende").style.display = "block";
+      document.getElementById("ende").scrollIntoView({behavior:"smooth"});
+    } else {
+      fehlerSchloss++;
+      tr.className = "zu";
+      tr.innerHTML = "<b>Das Schloss rührt sich nicht.</b> Prüfe die Reihenfolge: Station 1 ganz links, Station 6 ganz rechts. " +
+                     "Bisher gelöst: " + offen + " von 6 Stationen.";
+      tr.style.display = "block";
+    }
+  });
+
+  document.getElementById("nochmal").addEventListener("click", function(){ location.reload(); });
+})();
+</script>
+</body>
+</html>
