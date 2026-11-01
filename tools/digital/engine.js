@@ -75,7 +75,7 @@ function renderItem(b,it){
   break;
  case 'calc':
   g=grade(it);h=q+'<div class="row2"><input class="in" style="max-width:12rem" inputmode="decimal" autocomplete="off" data-act="calc" data-id="'+it.id+'" value="'+esc(v||'')+'"><b>'+esc(it.unit||'')+'</b></div>';
-  if(fb){h+=fbBox(g.got?'ok':'no',(g.got?esc(U('right')):esc(U('wrong'))+' '+esc(UI.correctis[0])+' <b>'+r1(it.a)+' '+esc(it.unit||'')+'</b>')+'<div><b>'+esc(UI.steps[0])+':</b><br>'+it.steps.map(esc).join('<br>')+'</div>'+tl_ui('steps'))}
+  if(fb){var trap='';if(!g.got&&it.traps){var nv=num(v==null?'':v);it.traps.forEach(function(t){if(nv!=null&&Math.abs(nv-t[0])<=0.006)trap='<div>⚠ '+esc(t[1])+'</div>'+tl(it.id+'.w')})}h+=fbBox(g.got?'ok':'no',(g.got?esc(U('right')):esc(U('wrong'))+' '+esc(UI.correctis[0])+' <b>'+r1(it.a)+' '+esc(it.unit||'')+'</b>')+trap+'<div><b>'+esc(UI.steps[0])+':</b><br>'+it.steps.map(esc).join('<br>')+'</div>'+tl_ui('steps'))}
   break;
  case 'table':
   g=grade(it);h=q+'<table class="tbl"><tr><th>'+(it.hd||'')+'</th>'+it.cols.map(function(c){return '<th class="c" title="'+esc(c[1]||'')+'">'+esc(c[0])+'</th>'}).join('')+'</tr>'+it.rows.map(function(r,i){var sel=v&&v[i];var rc=fb?(g.rows[i]?' class="rok"':' class="rno"'):'';
