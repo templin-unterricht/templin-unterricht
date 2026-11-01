@@ -19,6 +19,7 @@ function li(){return LI.indexOf(S.lang)}
 /* Übersetzung */
 function trText(k){if(S.lang==='de')return '';var a=TR[k];var t=a&&a[li()-1];if(!t){missing[S.lang+':'+k]=1;return ''}return t}
 function tl(k){if(S.lang==='de')return '';var t=trText(k);if(!t)return '<div class="tr miss">'+esc(UI.mis[li()])+'</div>';return '<div class="tr" lang="'+S.lang+'" dir="'+(RTL[S.lang]?'rtl':'ltr')+'">'+esc(t)+'</div>'}
+function tlo(k){if(S.lang==='de'||!TR[k])return '';return tl(k)}
 function U(k){var a=UI[k];return a[li()]||a[0]}
 function B(k){var g=UI[k][0];var t=S.lang!=='de'?UI[k][li()]:'';return esc(g)+(t?'<small class="b" lang="'+S.lang+'" dir="'+(RTL[S.lang]?'rtl':'ltr')+'">'+esc(t)+'</small>':'')}
 /* Sichtbarkeit */
@@ -77,18 +78,18 @@ function renderItem(b,it){
   if(fb){h+=fbBox(g.got?'ok':'no',(g.got?esc(U('right')):esc(U('wrong'))+' '+esc(UI.correctis[0])+' <b>'+r1(it.a)+' '+esc(it.unit||'')+'</b>')+'<div><b>'+esc(UI.steps[0])+':</b><br>'+it.steps.map(esc).join('<br>')+'</div>'+tl_ui('steps'))}
   break;
  case 'table':
-  g=grade(it);h='<table class="tbl"><tr><th>'+(it.hd||'')+'</th>'+it.cols.map(function(c){return '<th class="c" title="'+esc(c[1]||'')+'">'+esc(c[0])+'</th>'}).join('')+'</tr>'+it.rows.map(function(r,i){var sel=v&&v[i];var rc=fb?(g.rows[i]?' class="rok"':' class="rno"'):'';
+  g=grade(it);h=q+'<table class="tbl"><tr><th>'+(it.hd||'')+'</th>'+it.cols.map(function(c){return '<th class="c" title="'+esc(c[1]||'')+'">'+esc(c[0])+'</th>'}).join('')+'</tr>'+it.rows.map(function(r,i){var sel=v&&v[i];var rc=fb?(g.rows[i]?' class="rok"':' class="rno"'):'';
    return '<tr'+rc+'><td>'+esc(r[0])+'</td>'+it.cols.map(function(c,j){var cl=sel===j?' on':'';if(fb){if(j===r[1])cl+=sel===j?' ok':' sol';else if(sel===j)cl+=' no'}return '<td class="c"><button class="ch'+cl+'" data-act="tb" data-id="'+it.id+'" data-r="'+i+'" data-i="'+j+'" aria-label="'+esc(c[1]||c[0])+'">'+esc(c[0])+'</button></td>'}).join('')+'</tr>'}).join('')+'</table>';
   if(it.legend)h+='<div class="meta">'+esc(it.legend)+'</div>';
   if(fb)h+=fbBox(g.got===g.max?'ok':g.got?'part':'no',g.got+' / '+g.max);
   break;
  case 'tf':
-  g=grade(it);h='<table class="tbl">'+it.rows.map(function(r,i){var sel=v&&v[i];var rc=fb?(g.rows[i]?' class="rok"':' class="rno"'):'';
+  g=grade(it);h=q+'<table class="tbl">'+it.rows.map(function(r,i){var sel=v&&v[i];var rc=fb?(g.rows[i]?' class="rok"':' class="rno"'):'';
    return '<tr'+rc+'><td>'+esc(r[0])+'</td>'+[[true,'✔'],[false,'✘']].map(function(c){var cl=sel===c[0]?' on':'';if(fb){if(c[0]===r[1])cl+=sel===c[0]?' ok':' sol';else if(sel===c[0])cl+=' no'}return '<td class="c"><button class="ch'+cl+'" data-act="tf" data-id="'+it.id+'" data-r="'+i+'" data-i="'+(c[0]?1:0)+'">'+c[1]+'</button></td>'}).join('')+'</tr>'}).join('')+'</table>';
   if(fb)h+=fbBox(g.got===g.max?'ok':g.got?'part':'no',g.got+' / '+g.max);
   break;
  case 'sel':
-  g=grade(it);h='<table class="tbl">'+it.rows.map(function(r,i){var sel=v&&v[i];var cl=fb?(g.rows[i]?' ok':' no'):'';
+  g=grade(it);h=q+'<table class="tbl">'+it.rows.map(function(r,i){var sel=v&&v[i];var cl=fb?(g.rows[i]?' ok':' no'):'';
    return '<tr><td>'+esc(r[0])+'</td><td><select class="in gapsel'+cl+'" data-act="sel" data-id="'+it.id+'" data-r="'+i+'"><option value="">…</option>'+it.o.map(function(o,j){return '<option value="'+j+'"'+(sel===j?' selected':'')+'>'+esc(o)+'</option>'}).join('')+'</select>'+(fb&&!g.rows[i]?'<div class="meta">'+esc(UI.correctis[0])+' <b>'+esc(it.o[r[1]])+'</b></div>':'')+'</td></tr>'}).join('')+'</table>';
   if(fb)h+=fbBox(g.got===g.max?'ok':g.got?'part':'no',g.got+' / '+g.max);
   break;
@@ -152,7 +153,7 @@ function render(){
  var lv=S.lvl==='v';
  var h='<h1>'+esc(SHEET.mod)+': '+esc(SHEET.title)+'</h1><p class="meta">'+esc(SHEET.meta)+'</p>'+tl('title');
  h+='<div class="card"><div class="row2"><label for="nm">'+B('name')+'</label><input class="in" id="nm" style="flex:1;min-width:10rem" autocomplete="off" data-act="nm" value="'+esc(S.name||'')+'"></div><div class="row2"><label for="dt">'+B('date')+'</label><input class="in" id="dt" type="date" style="max-width:12rem" data-act="dt" value="'+esc(S.date||'')+'"></div></div>';
- h+='<div class="card"><h2>✅ '+esc(UI.can[0])+'</h2>'+(S.lang!=='de'?'<div class="tr" lang="'+S.lang+'" dir="'+(RTL[S.lang]?'rtl':'ltr')+'">'+esc(U('can'))+'</div>':'')+'<ul class="cl">'+SHEET.can.map(function(c,i){return '<li>'+esc(c)+tl('can.'+i)+'</li>'}).join('')+'</ul></div>';
+ h+='<div class="card"><h2>✅ '+esc(UI.can[0])+'</h2>'+(S.lang!=='de'?'<div class="tr" lang="'+S.lang+'" dir="'+(RTL[S.lang]?'rtl':'ltr')+'">'+esc(U('can'))+'</div>':'')+'<ul class="cl">'+SHEET.can.map(function(c,i){return '<li>'+esc(c)+tlo('can.'+i)+'</li>'}).join('')+'</ul></div>';
  SHEET.blocks.forEach(function(b){if(b.k==='read')h+=renderRead(b);else if(vis(b))h+=renderTask(b)});
  h+='<div class="noprint" style="text-align:center"><button class="btn big" data-act="submit">'+B('submit')+'</button></div>';
  if(S.sub)h+=renderResult();
