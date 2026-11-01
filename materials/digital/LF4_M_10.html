@@ -99,6 +99,9 @@ tr.rok td{background:var(--okbg)}tr.rno td{background:var(--badbg)}
  #report .tk{break-inside:avoid;margin-bottom:8pt}
 }
 
+.tbl.selt td:first-child{width:55%}
+.tbl.selt select.gapsel{width:100%;min-width:0}
+
 </style>
 </head>
 <body>
@@ -387,7 +390,7 @@ function renderItem(b,it){
   if(fb)h+=fbBox(g.got===g.max?'ok':g.got?'part':'no',g.got+' / '+g.max);
   break;
  case 'sel':
-  g=grade(it);h=q+'<table class="tbl">'+it.rows.map(function(r,i){var sel=v&&v[i];var cl=fb?(g.rows[i]?' ok':' no'):'';
+  g=grade(it);h=q+'<table class="tbl selt">'+it.rows.map(function(r,i){var sel=v&&v[i];var cl=fb?(g.rows[i]?' ok':' no'):'';
    return '<tr><td>'+esc(r[0])+'</td><td><select class="in gapsel'+cl+'" data-act="sel" data-id="'+it.id+'" data-r="'+i+'"><option value="">…</option>'+it.o.map(function(o,j){return '<option value="'+j+'"'+(sel===j?' selected':'')+'>'+esc(o)+'</option>'}).join('')+'</select>'+(fb&&!g.rows[i]?'<div class="meta">'+esc(UI.correctis[0])+' <b>'+esc(it.o[r[1]])+'</b></div>':'')+'</td></tr>'}).join('')+'</table>';
   if(fb)h+=fbBox(g.got===g.max?'ok':g.got?'part':'no',g.got+' / '+g.max);
   break;

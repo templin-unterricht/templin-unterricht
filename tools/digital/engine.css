@@ -91,3 +91,6 @@ tr.rok td{background:var(--okbg)}tr.rno td{background:var(--badbg)}
  #report td,#report th{border:1px solid #999;padding:3px 5px;vertical-align:top;text-align:left}
  #report .tk{break-inside:avoid;margin-bottom:8pt}
 }
+
+.tbl.selt td:first-child{width:55%}
+.tbl.selt select.gapsel{width:100%;min-width:0}

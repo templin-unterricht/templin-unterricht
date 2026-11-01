@@ -315,6 +315,12 @@ function normalize(j){
    const u6='materials/LF2_M_'+n+'_Digitales_Arbeitsblatt_DE-AR-TR-VI.html';
    if(!e6.links.some(x=>x.u===u6))e6.links.push({l:'Digitales Arbeitsblatt (DE-AR-TR-VI)',u:u6});}
  }
+ if(!o.seed7){ /* LF 4: Digitale Arbeitsblaetter M 1-M 11 (DE, VI und 7 weitere Sprachen) einmalig eintragen */
+  o.seed7=true;
+  for(let n=1;n<=11;n++){const e7=o.mat['LF4.M'+n]||(o.mat['LF4.M'+n]={pdf:'',links:[]});e7.links=(e7.links||[]).filter(l=>l.u||l.l);
+   const u7='materials/digital/LF4_M_'+n+'.html';
+   if(!e7.links.some(x=>x.u===u7))e7.links.push({l:'Digitales Arbeitsblatt (interaktiv, mehrsprachig)',u:u7});}
+ }
  if(!o.seed3){ /* Englisch V25: neue Einträge ENG.E1–E12 einmalig ergänzen, nichts überschreiben */
   o.seed3=true;
   Object.keys(SEED_MAT).filter(k=>k.indexOf('ENG.E')===0).forEach(k=>{

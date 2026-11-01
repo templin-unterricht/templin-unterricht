@@ -99,6 +99,9 @@ tr.rok td{background:var(--okbg)}tr.rno td{background:var(--badbg)}
  #report .tk{break-inside:avoid;margin-bottom:8pt}
 }
 
+.tbl.selt td:first-child{width:55%}
+.tbl.selt select.gapsel{width:100%;min-width:0}
+
 </style>
 </head>
 <body>
@@ -312,7 +315,7 @@ function units(){var u=[];SHEET.blocks.forEach(function(b){if(b.k==='read'){u.pu
 function updProg(){var u=units();var d=u.filter(function(x){return x.done}).length;var p=u.length?Math.round(100*d/u.length):0;var f=document.getElementById('progf');if(f){f.style.width=p+'%';document.getElementById('progt').textContent=U('progress')+': '+d+' / '+u.length+' '+U('done')+' ('+p+' %)'}
  var q=p===100&&!S.pdone;if(q){S.pdone=1;toast('🎉 100 %')}}
 /* Bewertung */
-function num(s){var t=String(s).replace(/\s/g,'').replace(/€|%|cm|g|kg|ml|l|m/gi,'').replace(',','.');var x=parseFloat(t);return isNaN(x)?null:x}
+function num(s){var t=String(s).replace(/\s/g,'').replace(/€|%|cm|g|kg|ml|l|m/gi,'');if(t.indexOf(',')>=0&&t.indexOf('.')>=0)t=t.replace(/\./g,'');t=t.replace(',','.');var x=parseFloat(t);return isNaN(x)?null:x}
 function grade(it){
  var v=A(it.id),got=0,max=0,rows=[];
  switch(it.t){
@@ -348,7 +351,7 @@ function renderItem(b,it){
   break;
  case 'calc':
   g=grade(it);h=q+'<div class="row2"><input class="in" style="max-width:12rem" inputmode="decimal" autocomplete="off" data-act="calc" data-id="'+it.id+'" value="'+esc(v||'')+'"><b>'+esc(it.unit||'')+'</b></div>';
-  if(fb){h+=fbBox(g.got?'ok':'no',(g.got?esc(U('right')):esc(U('wrong'))+' '+esc(UI.correctis[0])+' <b>'+r1(it.a)+' '+esc(it.unit||'')+'</b>')+'<div><b>'+esc(UI.steps[0])+':</b><br>'+it.steps.map(esc).join('<br>')+'</div>'+tl_ui('steps'))}
+  if(fb){var trap='';if(!g.got&&it.traps){var nv=num(v==null?'':v);it.traps.forEach(function(t){if(nv!=null&&Math.abs(nv-t[0])<=0.006)trap='<div>⚠ '+esc(t[1])+'</div>'+tl(it.id+'.w')})}h+=fbBox(g.got?'ok':'no',(g.got?esc(U('right')):esc(U('wrong'))+' '+esc(UI.correctis[0])+' <b>'+r1(it.a)+' '+esc(it.unit||'')+'</b>')+trap+'<div><b>'+esc(UI.steps[0])+':</b><br>'+it.steps.map(esc).join('<br>')+'</div>'+tl_ui('steps'))}
   break;
  case 'table':
   g=grade(it);h=q+'<table class="tbl"><tr><th>'+(it.hd||'')+'</th>'+it.cols.map(function(c){return '<th class="c" title="'+esc(c[1]||'')+'">'+esc(c[0])+'</th>'}).join('')+'</tr>'+it.rows.map(function(r,i){var sel=v&&v[i];var rc=fb?(g.rows[i]?' class="rok"':' class="rno"'):'';
@@ -362,7 +365,7 @@ function renderItem(b,it){
   if(fb)h+=fbBox(g.got===g.max?'ok':g.got?'part':'no',g.got+' / '+g.max);
   break;
  case 'sel':
-  g=grade(it);h=q+'<table class="tbl">'+it.rows.map(function(r,i){var sel=v&&v[i];var cl=fb?(g.rows[i]?' ok':' no'):'';
+  g=grade(it);h=q+'<table class="tbl selt">'+it.rows.map(function(r,i){var sel=v&&v[i];var cl=fb?(g.rows[i]?' ok':' no'):'';
    return '<tr><td>'+esc(r[0])+'</td><td><select class="in gapsel'+cl+'" data-act="sel" data-id="'+it.id+'" data-r="'+i+'"><option value="">…</option>'+it.o.map(function(o,j){return '<option value="'+j+'"'+(sel===j?' selected':'')+'>'+esc(o)+'</option>'}).join('')+'</select>'+(fb&&!g.rows[i]?'<div class="meta">'+esc(UI.correctis[0])+' <b>'+esc(it.o[r[1]])+'</b></div>':'')+'</td></tr>'}).join('')+'</table>';
   if(fb)h+=fbBox(g.got===g.max?'ok':g.got?'part':'no',g.got+' / '+g.max);
   break;
