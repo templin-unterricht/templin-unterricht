@@ -19,7 +19,7 @@ const f=n=>'file://'+path.resolve(__dirname,'../../materials/digital/LF5_M_'+n+'
  // Freitext: Wortgeländer-Chip einfügen, Musterlösung, Selbstbewertung
  await p.click('#c_a1 .wg summary').catch(()=>{});
  const ta=await p.$('#c_a1 textarea');await ta.fill('Hallo');await p.click('#c_a1 textarea');
- await p.click('#c_a1 [data-act="model"]');await p.click('#c_a1 [data-rate="y"]');
+ await p.click('#c_a1 [data-act="model"]');await p.click('#c_a1 [data-rate="y"]');console.log('rate buttons:',await p.$$eval('#c_a1 [data-rate]',e=>e.length));
  // Match: select
  await p.selectOption('#c_m1 select >> nth=0','Nicht wirtschaftliche Kontrolle');
  // Sprachumschalter mitten drin

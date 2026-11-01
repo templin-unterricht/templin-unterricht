@@ -191,7 +191,7 @@ function grade(it){
   case'match':ok=has&&v===p.a;mine=has?v:'';sol=p.a;break;
   case'table':{const acc=[].concat(p.a);ok=has&&acc.some(x=>norm(x)===norm(v));mine=has?v:'';sol=acc[0];break}
   case'calc':{const n=num(v);ok=has&&!isNaN(n)&&Math.abs(n-p.a)<=(p.tol==null?0.01:p.tol);mine=has?v:'';sol=fnum(p.a)+(p.u?' '+p.u:'');if(a['p'+i+'w'])mine+=' | '+u('path')+': '+a['p'+i+'w'];break}
-  case'free':{const r=a['r'+i];ok=r==='y'?true:r==='p'?0.5:false;has=has&&!!r;mine=a['p'+i]||'';sol=T(p.m);break}
+  case'free':{const r=a.r;ok=r==='y'?true:r==='p'?0.5:false;has=has&&!!r;mine=a['p'+i]||'';sol=T(p.m);break}
   }
   res.push({ok,has,mine,sol,why:p.why,q:p.q,p});});
  const per=ps.length?it.pts/ps.length:0;let got=0;res.forEach(r=>{got+=(r.ok===true?1:r.ok===0.5?0.5:0)*per});
@@ -229,7 +229,7 @@ const BODY={
     return`<div class="fld" data-part="${i}"><label>${esc(it.cols[ci])}</label>${f}</div>`}
    return`<div class="fld"><label>${esc(it.cols[ci])}</label><div>${rich(T(c))}</div></div>`}).join('')+'</div>'}).join('')},
  calc(it){const a=A(it.id);return it.parts.map((p,i)=>`<div class="crow" data-part="${i}"><p class="qt">${rich(T(p.q))}</p><input class="in" type="text" inputmode="decimal" data-k="p${i}" value="${esc(a['p'+i]||'')}" autocomplete="off" placeholder="0,00"><span class="u">${esc(p.u||'')}</span>${p.work?`<textarea class="in" data-k="p${i}w" rows="2" style="min-height:4rem" placeholder="${S.lang==='vi'?'Cách tính (viết ra)':'Rechenweg (aufschreiben)'}">${esc(a['p'+i+'w']||'')}</textarea>`:''}</div>`).join('')},
- free(it){const a=A(it.id);const sh=S.shown[it.id];return it.parts.map((p,i)=>`<div class="fpart"><p class="qt">${rich(T(p.q))}</p>${wg(it,i,p)}<textarea class="in" id="${it.id}_${i}" data-k="p${i}" rows="3" placeholder="…">${esc(a['p'+i]||'')}</textarea>`+(sh?`<div class="model"><div class="t">${u('model').replace(/ anzeigen| ?$/,'')}</div>${rich(T(p.m))}</div><div class="rate" data-part="${i}"><span style="flex:1 1 100%;font-weight:600">${u('rate')}</span>`+['y','p','n'].map(v=>`<button type="button" data-rate="${v}" data-k="r${i}" class="${a['r'+i]===v?'on':''}">${u(v)}</button>`).join('')+'</div>':'')+'</div>').join('')}
+ free(it){const a=A(it.id);const sh=S.shown[it.id];return it.parts.map((p,i)=>`<div class="fpart"><p class="qt">${rich(T(p.q))}</p>${wg(it,i,p)}<textarea class="in" id="${it.id}_${i}" data-k="p${i}" rows="3" placeholder="…">${esc(a['p'+i]||'')}</textarea>`+(sh?`<div class="model"><div class="t">${u('model').replace(/ anzeigen| ?$/,'')}</div>${rich(T(p.m))}</div>`:'')+'</div>').join('')+(sh?`<div class="rate"><span style="flex:1 1 100%;font-weight:600">${u('rate')}</span>`+['y','p','n'].map(v=>`<button type="button" data-rate="${v}" data-k="r" class="${a.r===v?'on':''}">${u(v)}</button>`).join('')+'</div>':'')}
 };
 function actions(it){if(it.type==='info'||it.type==='read')return'';if(it.type==='free')return S.shown[it.id]?'':`<button type="button" class="primary" data-act="model" data-id="${it.id}">${u('model')}</button>`;return`<button type="button" class="primary" data-act="check" data-id="${it.id}">${u('check')}</button>`}
 function cardHtml(it){const v=it.level==='v';
@@ -333,7 +333,7 @@ window.LF5={S:()=>S,grade:id=>grade(D.items.find(x=>x.id===id)),
    case'match':a[k]=right?p.a:'—falsch—';break;
    case'table':a[k]=right?[].concat(p.a)[0]:'—falsch—';break;
    case'calc':a[k]=right?String(p.a).replace('.',','):'1';break;
-   case'free':a[k]='Beispielantwort';a['r'+i]=right?'y':'n';S.shown[it.id]=true;break}});
+   case'free':a[k]='Beispielantwort';a.r=right?'y':'n';S.shown[it.id]=true;break}});
   if(it.type==='read'){a.m=right?readKeys(it):[];a.chk=true;if(it.quiz)a.q=right?it.quiz.a:(it.quiz.a+1)%it.quiz.o.length}
   S.checked[it.id]=true});renderAll();evaluate();return S},
  data:D};
