@@ -39,7 +39,7 @@ function units(){var u=[];SHEET.blocks.forEach(function(b){if(b.k==='read'){u.pu
 function updProg(){var u=units();var d=u.filter(function(x){return x.done}).length;var p=u.length?Math.round(100*d/u.length):0;var f=document.getElementById('progf');if(f){f.style.width=p+'%';document.getElementById('progt').textContent=U('progress')+': '+d+' / '+u.length+' '+U('done')+' ('+p+' %)'}
  var q=p===100&&!S.pdone;if(q){S.pdone=1;toast('🎉 100 %')}}
 /* Bewertung */
-function num(s){var t=String(s).replace(/\s/g,'').replace(/€|%|cm|g|kg|ml|l|m/gi,'').replace(',','.');var x=parseFloat(t);return isNaN(x)?null:x}
+function num(s){var t=String(s).replace(/\s/g,'').replace(/€|%|cm|g|kg|ml|l|m/gi,'');if(t.indexOf(',')>=0&&t.indexOf('.')>=0)t=t.replace(/\./g,'');t=t.replace(',','.');var x=parseFloat(t);return isNaN(x)?null:x}
 function grade(it){
  var v=A(it.id),got=0,max=0,rows=[];
  switch(it.t){
