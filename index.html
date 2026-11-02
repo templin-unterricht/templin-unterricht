@@ -623,6 +623,9 @@ function matCls(l){
  if(/einstieg|live|popcorn|sockensortierer|verd[äa]e?chtigen|ladenwert|jahres-kassenbon/i.test(l))return 'c-pk';
  return 'c-gr';
 }
+/* Material, das fest an einem bestimmten Unterrichtstag hängt (unabhängig vom Modul) */
+const DAY_LINKS=[{date:'2026-11-03',klasse:'Fkl 26/1',fach:'Mathe',l:'Einstieg: Lager-Chaos (Dreisatz)',u:'materials/MATHE_M_3_Einstieg_Dreisatz.html'}];
+const dayBtns=o=>DAY_LINKS.filter(x=>x.date===o.date&&x.klasse===o.klasse&&x.fach===o.fach).map(x=>`<a class="btn sm ${matCls(x.l)}" href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.l)}</a>`).join('');
 function matButtons(u,lim,id){
  const pl=pdfLink(u),dl=digLinks(u),sh=lim?dl.slice(0,lim):dl;
  return (pl?`<a class="btn sm c-gr" href="${esc(pl)}" target="_blank" rel="noopener" title="Arbeitsblatt (PDF)">${kt('material')}</a>`:'')+
@@ -801,7 +804,7 @@ function lessonCard(o){
   const multi=o.segs.length>1;
   if(o.segs.some(g=>g.unit&&isLeistung(g.unit)))cls=' lk';
   body=o.segs.map(g=>segHtml(g,o,multi)).join('')+kvBox(o)+
-  `<div class="acts">${o.segs.filter(g=>g.unit).map(g=>matButtons(g.unit,multi?2:3,o.id)).join('')}
+  `<div class="acts">${o.segs.filter(g=>g.unit).map(g=>matButtons(g.unit,multi?2:3,o.id)).join('')}${dayBtns(o)}
   ${cp}${ent}</div>`;
  }else if(o.status==='klausur'){
   body=`<div class="topic">${kt('klausur')}</div><div class="sub">${kt('keinStoff')}</div>${kvBox(o)}<div class="acts">${cp}${ent}</div>`;
@@ -871,7 +874,7 @@ function renderVerlauf(){
   if(o.status==='unterricht'){
    const hd=o.segs.map(g=>g.unit?`<b>${esc(unitTag(g.unit))}${g.unit.item.lab?': '+trSpan(g.unit.item.name,o.klasse):' – '+trSpan(g.unit.item.name,o.klasse)}</b>${g.unit.total>1?' · DS '+g.unit.dsNo+'/'+g.unit.total:''}${o.segs.length>1?' · '+g.n*45+' min':''}`:`<b>${esc(g.ins.name)}</b>${o.segs.length>1?' · '+g.n*45+' min':''}`).join(' + ');
    inner=`${hd}<br>${trEntryHtml(o,entryText(o))}`;
-   acts=cp+o.segs.filter(g=>g.unit).map(g=>matButtons(g.unit)).join('');
+   acts=cp+o.segs.filter(g=>g.unit).map(g=>matButtons(g.unit)).join('')+dayBtns(o);
   }else if(o.status==='klausur'){inner=kt('klausurKein')+kvBox(o)+`<br>${trEntryHtml(o,entryText(o))}`;acts=cp;}
   else if(o.status==='exkursion'){inner=`<b>🚌 ${kt('exkursion')}: ${esc(o.ex.ziel||'')}</b><br>${trEntryHtml(o,entryText(o))}`;acts=cp;}
   else if(o.status==='puffer')inner=kt('puffer')+' – '+kt('wdh');
