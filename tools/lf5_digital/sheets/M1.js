@@ -1,0 +1,116 @@
+const L=(de,vi)=>({de,vi});
+const ART=(n,m,b)=>`<p><b>${n}</b> – ${m}<br><i>Beispiel: ${b}</i></p>`;
+module.exports={
+id:'M1',short:'LF 5 · Modul 1',title:'Modul 1 – Werbung und Werbearten',sub:'Lernfeld 5 · Werben und den Verkauf fördern',
+can:[
+ L('Ich kann erklären, was Werbung ist, und das Ziel der Werbung aus Sicht des Betriebs und aus Sicht des Kunden nennen.','Em có thể giải thích Werbung (quảng cáo) là gì và nêu mục tiêu của quảng cáo từ góc nhìn của cửa hàng và của khách hàng.'),
+ L('Ich kann die neun Werbearten erklären und zu jeder ein Beispiel finden.','Em có thể giải thích chín Werbearten (loại quảng cáo) và tìm ví dụ cho mỗi loại.'),
+ L('Ich kann den Unterschied zwischen Direktwerbung und Massenwerbung nennen.','Em có thể nêu sự khác nhau giữa Direktwerbung (quảng cáo trực tiếp) và Massenwerbung (quảng cáo đại chúng).'),
+ L('Ich kann Alleinwerbung, Gemeinschaftswerbung und Sammelwerbung unterscheiden.','Em có thể phân biệt Alleinwerbung, Gemeinschaftswerbung và Sammelwerbung.')],
+items:[
+{id:'a1',no:'Aufgabe 1',type:'free',pts:1,title:'Ankommen: Was weißt du noch?',
+ instr:L('Beantworte die Fragen aus dem Kopf. Nicht nachschlagen. Es geht darum, was hängengeblieben ist.','Hãy trả lời bằng trí nhớ, không tra cứu. Điều quan trọng là em còn nhớ được gì.'),
+ tip:L('Denk an das Thema Sortiment und Verkaufsraum aus den letzten Wochen. Schreibe Stichworte, keine ganzen Sätze.','Hãy nhớ lại chủ đề Sortiment (danh mục hàng) và Verkaufsraum (khu bán hàng) mấy tuần trước. Chỉ cần viết từ khóa, không cần viết cả câu.'),
+ parts:[
+ {q:'1. Was ist der Unterschied zwischen einem breiten und einem tiefen Sortiment?',m:'Breites Sortiment: viele verschiedene Warengruppen nebeneinander. Tiefes Sortiment: von einer Warengruppe viele Sorten, Größen und Preislagen.',w:['Warengruppen','Sorten','Größen','Preislagen']},
+ {q:'2. Was gehört zum Kernsortiment, was zum Randsortiment?',m:'Kernsortiment: die Waren, für die der Betrieb bekannt ist und die den größten Teil des Umsatzes bringen. Randsortiment: ergänzende Waren, die das Angebot abrunden.',s:['Zum Kernsortiment gehört …','Zum Randsortiment gehört …']},
+ {q:'3. Nenne drei Zonen eines Verkaufsregals.',m:'Reckzone, Sichtzone, Griffzone, Bückzone (drei davon genügen).'},
+ {q:'4. Nenne zwei Aufgaben des Einzelhandels.',m:'Zum Beispiel: Waren in kleinen Mengen anbieten (Mengenausgleich), Waren bereithalten (Zeitausgleich), Waren dorthin bringen, wo Kunden sind (Raumausgleich), beraten, Sortiment zusammenstellen, Kredit gewähren.'},
+ {q:'5. Nenne zwei Vorteile der Selbstbedienung für den Kunden.',m:'Zum Beispiel: Der Kunde kann die Ware selbst ansehen und anfassen, er kann in Ruhe vergleichen, er ist nicht an Beratung gebunden, es geht schneller.'}]},
+{id:'w1',type:'info',title:L('Wortspeicher','Wortspeicher (kho từ)'),
+ html:'<p>Werbung · Absatz · Direktwerbung · Massenwerbung · Alleinwerbung · Einzelwerbung · Kollektivwerbung · Gemeinschaftswerbung · Sammelwerbung · Warenwerbung · Sortimentswerbung · Firmenwerbung · Aktionswerbung · Zielgruppe · Wirtschaftszweig</p><div class="box"><b>Tipp für Schnelle:</b> Deck den Wortspeicher ab und schau nur hin, wenn du wirklich nicht weiterkommst.</div>',
+ vi:'Werbung = quảng cáo · Absatz = lượng hàng bán được · Direktwerbung = quảng cáo trực tiếp · Massenwerbung = quảng cáo đại chúng · Alleinwerbung (Einzelwerbung) = một cửa hàng tự quảng cáo · Gemeinschaftswerbung = nhiều cửa hàng cùng quảng cáo (có nêu tên) · Sammelwerbung = cả một ngành quảng cáo (không nêu tên) · Warenwerbung = quảng cáo một món hàng · Sortimentswerbung = quảng cáo cả danh mục hàng · Firmenwerbung = quảng cáo cho chính cửa hàng · Aktionswerbung = quảng cáo khuyến mãi có thời hạn · Zielgruppe = nhóm khách hàng mục tiêu · Wirtschaftszweig = ngành kinh tế'},
+{id:'r1',no:'Lesen 1',type:'read',title:'Was ist Werbung?',
+ instr:L('Lies den Text. Tippe die wichtigen Wörter an: Was ist Werbung? Was ist ihr Ziel?','Em đọc đoạn văn. Chạm vào các từ quan trọng: Werbung (quảng cáo) là gì? Mục tiêu của nó là gì?'),
+ tip:L('Suche Wörter, die sagen, was Werbung tut und was sie erreichen soll.','Hãy tìm những từ nói quảng cáo làm gì và muốn đạt được điều gì.'),
+ paras:['Werbung sind alle [[Maßnahmen]], die das [[Kaufverhalten]] von Kunden beeinflussen sollen. Ziel ist, den [[Absatz]] einer Ware oder einer Dienstleistung zu [[fördern]]. Absatz heißt: die Menge, die verkauft wird.',
+  'Der Einzelhandelsbetrieb wirbt, um die Verbraucher über sein Angebot zu informieren. Sein Ziel: [[Kunden gewinnen]] und [[Kunden binden]]. Der Kunde liest Werbung, um den richtigen Anbieter zu finden. Sein Ziel: seine Bedürfnisse bestmöglich erfüllen.'],
+ vi:'Tóm tắt: Werbung (quảng cáo) là mọi biện pháp ảnh hưởng đến việc mua hàng của khách để tăng Absatz (lượng hàng bán). Cửa hàng muốn có thêm khách và giữ khách cũ. Khách hàng muốn tìm đúng nơi bán để thỏa mãn nhu cầu.',
+ quiz:{q:'Was bedeutet „Absatz“?',o:['Die Menge, die verkauft wird','Der Preis einer Ware','Der Gewinn des Betriebs'],a:0,why:L('Absatz heißt: die Menge, die verkauft wird.','Absatz nghĩa là: số lượng hàng bán được.')}},
+{id:'r2',no:'Lesen 2',type:'read',title:'Die drei Fragen hinter den Werbearten',
+ instr:L('Lies den Merksatz. Tippe an, was man sich merken muss.','Em đọc câu cần nhớ. Chạm vào những gì cần ghi nhớ.'),
+ tip:L('Es geht um die Anzahl der Fragen und darum, wann man sie beantwortet.','Quan trọng là có bao nhiêu câu hỏi và khi nào trả lời chúng.'),
+ paras:['Werbearten wirken auf den ersten Blick wie eine lange Liste. Sie werden übersichtlich, wenn du dir bei jeder Werbung drei Fragen stellst: Frage 1: Wen sprechen wir an? Frage 2: Wer wirbt? Frage 3: Wofür wird geworben?','Merke: Jede Werbung beantwortet [[alle drei Fragen]] [[gleichzeitig]]. Eine Anzeige ist also nicht entweder Massenwerbung oder Aktionswerbung. Sie ist [[beides]], und dazu noch eine Antwort auf Frage 2.'],
+ vi:'Tóm tắt: Với mỗi quảng cáo, em hỏi 3 câu: 1. Ai là người nhận? 2. Ai quảng cáo? 3. Quảng cáo cho cái gì? Một quảng cáo luôn trả lời cả ba câu cùng lúc.',
+ quiz:{q:'Eine Anzeige ist Massenwerbung. Kann sie auch Aktionswerbung sein?',o:['Ja, sie beantwortet beide Fragen gleichzeitig.','Nein, es gibt nur eine Antwort.','Nur wenn sie im Radio läuft.'],a:0,why:L('Frage 1 und Frage 3 sind unabhängig. Eine Anzeige kann also Massenwerbung und Aktionswerbung sein.','Câu hỏi 1 và câu hỏi 3 độc lập với nhau. Vì vậy một quảng cáo có thể vừa là Massenwerbung vừa là Aktionswerbung.')}},
+{id:'w2',type:'info',title:L('Die neun Werbearten','Chín Werbearten (loại quảng cáo)'),
+ html:'<div class="box"><b>Frage 1: Wen sprechen wir an?</b> Direktwerbung oder Massenwerbung<br><b>Frage 2: Wer wirbt?</b> Alleinwerbung, Gemeinschaftswerbung oder Sammelwerbung<br><b>Frage 3: Wofür wird geworben?</b> Warenwerbung, Sortimentswerbung, Firmenwerbung oder Aktionswerbung</div>'+
+ ART('Direktwerbung','Bestimmte Personen werden direkt und persönlich angesprochen.','Das Modehaus schickt seiner Stammkundin einen Brief mit einem Gutschein zum Geburtstag.')+
+ ART('Massenwerbung','Die Werbung richtet sich an die Allgemeinheit. Sie kann sich auch an eine große Gruppe richten, zum Beispiel an Jugendliche oder an Heimwerker.','Ein Radiospot für den Sommerschlussverkauf.')+
+ ART('Alleinwerbung (Einzelwerbung)','Ein Betrieb wirbt allein und mit seinem eigenen Namen.','Das Spielwarengeschäft Kinderglück schaltet eine eigene Anzeige.')+
+ ART('Gemeinschaftswerbung','Mehrere Betriebe werben zusammen. Die Namen der beteiligten Betriebe werden genannt.','Zwölf Geschäfte eines Einkaufszentrums werben gemeinsam für den verkaufsoffenen Sonntag.')+
+ ART('Sammelwerbung','Ein ganzer Wirtschaftszweig wirbt. Die Namen der einzelnen Betriebe werden nicht genannt.','Die deutsche Milchwirtschaft wirbt für Milch.')+
+ ART('Warenwerbung','Ein einzelner Artikel wird herausgestellt. Oft wird diese Werbung vom Hersteller erstellt und bezahlt.','Eine Anzeige für eine bestimmte Bohrmaschine mit Preis.')+
+ ART('Sortimentswerbung','Die Breite, die Tiefe oder das Niveau des Sortiments wird gezeigt.','„Über 300 Teesorten bei uns im Haus.“')+
+ ART('Firmenwerbung','Der Betrieb selbst steht im Mittelpunkt: sein Name und seine Leistungsfähigkeit.','„Seit 1954 Ihr Fachgeschäft in Bremerhaven – Beratung, die weiterhilft.“')+
+ ART('Aktionswerbung','Kunden werden auf ein befristetes Angebot aufmerksam gemacht. Die Ware soll kurzfristig abverkauft werden.','„Nur am Samstag: 20 % auf alle Winterjacken.“'),
+ vi:'Frage 1 (Ai là người nhận?): Direktwerbung = gửi riêng cho từng người · Massenwerbung = gửi cho mọi người.\nFrage 2 (Ai quảng cáo?): Alleinwerbung = một cửa hàng · Gemeinschaftswerbung = nhiều cửa hàng, có nêu tên · Sammelwerbung = cả một ngành, không nêu tên.\nFrage 3 (Quảng cáo cho cái gì?): Warenwerbung = một món hàng · Sortimentswerbung = cả danh mục hàng · Firmenwerbung = chính cửa hàng · Aktionswerbung = ưu đãi có thời hạn.'},
+{id:'t1',no:'Lesen 3',type:'tf',pts:0,title:'Richtig oder falsch?',
+ instr:L('Entscheide: Ist die Aussage richtig oder falsch?','Em quyết định: câu này đúng hay sai?'),
+ tip:L('Lies in der Übersicht oben nach. Achte auf die Namen der Betriebe.','Đọc lại bảng tổng quan ở trên. Chú ý đến việc tên các cửa hàng có được nêu hay không.'),
+ st:[
+ {t:'Bei der Sammelwerbung werden die Namen der einzelnen Betriebe genannt.',a:false,why:L('Bei der Sammelwerbung wirbt ein ganzer Wirtschaftszweig, ohne Namen.','Với Sammelwerbung cả một ngành quảng cáo, không nêu tên cửa hàng nào.')},
+ {t:'Eine Anzeige kann Massenwerbung und Aktionswerbung zugleich sein.',a:true},
+ {t:'Alleinwerbung wird auch Einzelwerbung genannt.',a:true},
+ {t:'Direktwerbung richtet sich an die Allgemeinheit.',a:false,why:L('Direktwerbung spricht bestimmte Personen persönlich an.','Direktwerbung nói với từng người cụ thể. Quảng cáo cho mọi người là Massenwerbung.')}]},
+{id:'a2',no:'Aufgabe 2',type:'info',title:'Vorgemacht: So ordnest du eine Werbung ein',
+ html:'<div class="box"><b>Die Anzeige:</b> Möbel-Haus Rieck, Bremerhaven<br>„Nur bis Samstag: Alle Polstergarnituren 20 % reduziert!“ (Anzeige in der Tageszeitung)</div><p><b>Frage 1: Wen sprechen wir an?</b> Die Anzeige steht in der Zeitung. Sie spricht niemanden mit Namen an, sondern alle Leser. → <b>Massenwerbung</b></p><p><b>Frage 2: Wer wirbt?</b> Oben steht ein einziger Betrieb mit seinem Namen. Kein zweiter Betrieb ist beteiligt. → <b>Alleinwerbung</b></p><p><b>Frage 3: Wofür wird geworben?</b> Es geht nicht um ein einzelnes Modell und nicht um das ganze Sortiment, sondern um ein Angebot mit Rabatt, das am Samstag endet. → <b>Aktionswerbung</b></p><div class="box merke"><b>Ergebnis:</b> Massenwerbung, Alleinwerbung, Aktionswerbung.</div>',
+ vi:'Ví dụ làm mẫu: quảng cáo đăng báo của một cửa hàng đồ nội thất, giảm giá đến hết thứ Bảy. Câu 1: đăng báo, ai cũng đọc được → Massenwerbung. Câu 2: chỉ có một cửa hàng → Alleinwerbung. Câu 3: ưu đãi có thời hạn → Aktionswerbung.'},
+{id:'a3',no:'Aufgabe 3',type:'table',pts:1,title:'Geführte Übung',
+ instr:L('Einige Felder sind schon ausgefüllt. Ergänze die fehlenden. Beantworte pro Werbung die drei Fragen.','Một số ô đã được điền sẵn. Em điền các ô còn thiếu. Với mỗi quảng cáo, trả lời ba câu hỏi.'),
+ tip:L('Gehe die drei Fragen der Reihe nach durch: Wen? Wer? Wofür? Der Hinweis unter der Werbung hilft dir.','Lần lượt trả lời ba câu hỏi: Ai nhận? Ai quảng cáo? Quảng cáo cho cái gì? Phần gợi ý dưới mỗi quảng cáo sẽ giúp em.'),
+ cols:['Werbung','Frage 1: Wen?','Frage 2: Wer?','Frage 3: Wofür?'],
+ colOpts:[null,['Direktwerbung','Massenwerbung'],['Alleinwerbung','Gemeinschaftswerbung','Sammelwerbung'],['Warenwerbung','Sortimentswerbung','Firmenwerbung','Aktionswerbung']],
+ rows:[
+ ['Ein Werbebrief an die Kundinnen der Modeabteilung: „Zu Ihrem Geburtstag 15 % auf das gesamte Sortiment.“ Hinweis: Der Brief geht an eine bestimmte Person.','Direktwerbung',{a:'Alleinwerbung'},{a:'Aktionswerbung'}],
+ ['Plakat: „Die Milch macht’s.“ Geworben wird von der deutschen Milchwirtschaft, einzelne Molkereien werden nicht genannt. Hinweis: Es wirbt ein ganzer Wirtschaftszweig.',{a:'Massenwerbung'},'Sammelwerbung',{a:'Warenwerbung'}],
+ ['Anzeige des Columbus Centers mit den Logos von zwölf Geschäften: „Verkaufsoffener Sonntag.“ Hinweis: Die Namen der Geschäfte stehen auf der Anzeige.','Massenwerbung',{a:'Gemeinschaftswerbung'},{a:'Aktionswerbung'}],
+ ['Schaufensterbeschriftung eines Teegeschäfts: „Bei uns finden Sie über 300 Teesorten.“',{a:'Massenwerbung'},{a:'Alleinwerbung'},{a:'Sortimentswerbung'}]]},
+{id:'a4',no:'Aufgabe 4',type:'table',pts:2,title:'Freie Übung',
+ instr:L('Ordne jede Werbung mit den drei Fragen ein.','Em xếp từng quảng cáo bằng ba câu hỏi.'),
+ tip:L('Frage 2: Werden Namen genannt? Wie viele Betriebe werben? Frage 3: Ist es ein Artikel, das ganze Sortiment, der Betrieb oder ein befristetes Angebot?','Câu 2: Có nêu tên không? Bao nhiêu cửa hàng quảng cáo? Câu 3: Là một món hàng, cả danh mục, chính cửa hàng hay ưu đãi có thời hạn?'),
+ cols:['Werbung','Frage 1: Wen?','Frage 2: Wer?','Frage 3: Wofür?'],
+ colOpts:[null,['Direktwerbung','Massenwerbung'],['Alleinwerbung','Gemeinschaftswerbung','Sammelwerbung'],['Warenwerbung','Sortimentswerbung','Firmenwerbung','Aktionswerbung']],
+ rows:[
+ ['Newsletter an registrierte Kunden: „Neu bei uns: der Wanderschuh Trekker 3.“',{a:'Direktwerbung'},{a:'Alleinwerbung'},{a:'Warenwerbung'}],
+ ['Radiospot: „Elektro Germer – seit 40 Jahren Ihr Fachbetrieb in der Region.“',{a:'Massenwerbung'},{a:'Alleinwerbung'},{a:'Firmenwerbung'}],
+ ['Prospekt der Werbegemeinschaft Innenstadt: „Stadtfest-Wochenende – Sonderangebote in 24 Geschäften“, alle Geschäfte sind aufgeführt.',{a:'Massenwerbung'},{a:'Gemeinschaftswerbung'},{a:'Aktionswerbung'}],
+ ['Plakat: „Obst und Gemüse aus Deutschland – frisch auf den Tisch.“ Geworben wird von der Landwirtschaft, ohne einzelne Höfe zu nennen.',{a:'Massenwerbung'},{a:'Sammelwerbung'},{a:'Warenwerbung'}],
+ ['Katalog eines Warenhauses, der das gesamte Angebot der Haushaltsabteilung zeigt.',{a:'Massenwerbung'},{a:'Alleinwerbung'},{a:'Sortimentswerbung'}],
+ ['Persönliche Einladung an Stammkunden zur Hausmesse am kommenden Freitag.',{a:'Direktwerbung'},{a:'Alleinwerbung'},{a:'Aktionswerbung'}]]},
+{id:'a5',no:'Aufgabe 5',type:'free',pts:1,title:'Aus deinem Betrieb',
+ instr:L('Suche eine Werbung deines Ausbildungsbetriebs (Anzeige, Aushang, Newsletter, Social-Media-Beitrag). Beschreibe sie kurz und ordne sie mit den drei Fragen ein.','Tìm một quảng cáo của cửa hàng nơi em thực tập (tờ rơi, bảng thông báo, bản tin, bài đăng mạng xã hội). Mô tả ngắn gọn và xếp loại bằng ba câu hỏi.'),
+ tip:L('Beschreibe zuerst, was auf der Werbung steht. Beantworte dann Frage 1, 2 und 3 mit je einem Satz.','Trước tiên mô tả nội dung quảng cáo. Sau đó trả lời câu hỏi 1, 2 và 3, mỗi câu một câu văn.'),
+ parts:[{q:'Meine Werbung und die Einordnung:',m:'Individuelle Lösung. Wichtig ist, dass alle drei Fragen beantwortet werden und die Zuordnung zum beschriebenen Beispiel passt.',s:['Die Werbung zeigt …','Das ist … (Frage 1), weil …','Wer wirbt? …','Wofür wird geworben? …']}]},
+{id:'a6',no:'Aufgabe 6',type:'free',pts:0,title:'Für Profis: Zum Weiterdenken',
+ instr:L('Beantworte die Fragen. Begründe in ganzen Sätzen.','Em trả lời các câu hỏi và giải thích bằng câu hoàn chỉnh.'),
+ tip:L('Denke bei 6.1 an die Nachfrage nach der ganzen Warengruppe und an die Kosten. Bei 6.3: Die drei Fragen sind unabhängig voneinander.','Câu 6.1: nghĩ đến nhu cầu cho cả nhóm hàng và chi phí. Câu 6.3: ba câu hỏi độc lập với nhau.'),
+ parts:[
+ {q:'6.1 Bei der Sammelwerbung werden die Namen der beteiligten Betriebe nicht genannt. Erkläre, warum ein einzelner Einzelhändler trotzdem davon profitiert.',m:'Die Sammelwerbung erhöht die Nachfrage nach der ganzen Warengruppe. Wenn mehr Menschen Milch kaufen wollen, kaufen sie auch im Geschäft dieses Händlers mehr Milch. Außerdem sind die Kosten auf viele Betriebe verteilt, sodass eine große Reichweite bezahlbar wird.',s:['Der Händler profitiert, weil …']},
+ {q:'6.2 Nenne einen Fall, in dem Gemeinschaftswerbung für einen kleinen Betrieb sinnvoller ist als Alleinwerbung. Begründe.',m:'Zum Beispiel beim verkaufsoffenen Sonntag oder einem Stadtfest: Allein könnte sich das kleine Geschäft eine ganzseitige Anzeige nicht leisten, gemeinsam schon. Außerdem wirkt ein Anlass, zu dem viele Geschäfte öffnen, stärker als die Werbung eines einzelnen Ladens. Die Kunden kommen wegen des Anlasses in die Stadt und gehen dann auch in dieses Geschäft.'},
+ {q:'6.3 Knacknuss: Kann eine Werbung gleichzeitig Direktwerbung und Sammelwerbung sein? Begründe mit einem Beispiel – oder zeige, warum es nicht geht.',m:'Ja, möglich ist es. Beispiel: Ein Branchenverband der Optiker schreibt alle Haushalte einer Stadt persönlich an und wirbt für regelmäßige Sehtests, ohne einzelne Optiker zu nennen. Das ist direkt (persönliche Ansprache) und zugleich Sammelwerbung. In der Praxis kommt das selten vor. Wichtig ist die Einsicht: Die drei Fragen sind voneinander unabhängig, deshalb sind viele Kombinationen möglich.'}]},
+{id:'d1',no:'Domino',type:'match',pts:0,title:'Anlage: Domino-Rundlauf „Werbearten“',
+ instr:L('Ordne jeder Frage die richtige Antwort zu. (Das ist das Domino zum Ausschneiden, nur digital.)','Em ghép mỗi câu hỏi với đáp án đúng. (Đây là trò domino cắt giấy, nhưng làm trên máy.)'),
+ tip:L('Beginne mit den Fragen, bei denen du die Antwort sicher weißt. Streiche in Gedanken die Begriffe durch, die schon verwendet sind.','Bắt đầu với những câu em chắc chắn. Trong đầu hãy gạch bỏ những từ đã dùng rồi.'),
+ rows:[
+ {l:'Welches Ziel verfolgt der Einzelhandelsbetrieb mit Werbung?',a:'Kunden gewinnen und binden'},
+ {l:'Welches Ziel hat der Kunde, wenn er Werbung liest?',a:'Den richtigen Anbieter finden und seine Bedürfnisse bestmöglich erfüllen'},
+ {l:'Das Modehaus schickt seiner Stammkundin einen Brief mit einem Geburtstagsgutschein. Welche Werbeart?',a:'Direktwerbung'},
+ {l:'Ein Radiospot wirbt für den Sommerschlussverkauf. Welche Werbeart?',a:'Massenwerbung'},
+ {l:'Das Spielwarengeschäft Kinderglück schaltet eine Anzeige unter eigenem Namen. Welche Werbeart?',a:'Alleinwerbung'},
+ {l:'Zwölf Geschäfte eines Einkaufszentrums werben zusammen, alle Namen stehen auf der Anzeige. Welche Werbeart?',a:'Gemeinschaftswerbung'},
+ {l:'Die deutsche Milchwirtschaft wirbt für Milch, ohne einzelne Molkereien zu nennen. Welche Werbeart?',a:'Sammelwerbung'},
+ {l:'Eine Anzeige zeigt eine bestimmte Bohrmaschine mit Preis. Welche Werbeart?',a:'Warenwerbung'},
+ {l:'„Über 300 Teesorten bei uns im Haus.“ Welche Werbeart?',a:'Sortimentswerbung'},
+ {l:'„Seit 1954 Ihr Fachgeschäft in Bremerhaven.“ Welche Werbeart?',a:'Firmenwerbung'},
+ {l:'„Nur am Samstag: 20 % auf alle Winterjacken.“ Welche Werbeart?',a:'Aktionswerbung'},
+ {l:'Alle Maßnahmen, die das Kaufverhalten beeinflussen sollen, um den Absatz zu fördern – wie heißt der Oberbegriff?',a:'Werbung'}]},
+{id:'v1',level:'v',no:'Vertiefung 1',type:'free',pts:1,title:'Warum ist das so?',
+ instr:L('Begründe deine Antwort in ganzen Sätzen.','Em giải thích câu trả lời bằng câu hoàn chỉnh.'),
+ tip:L('Überlege: Welche Frage fragt nach dem Empfänger, welche nach dem Absender, welche nach dem Inhalt?','Hãy nghĩ: câu hỏi nào hỏi về người nhận, câu nào về người gửi, câu nào về nội dung?'),
+ parts:[{q:'Warum kann dieselbe Anzeige gleichzeitig Massenwerbung, Alleinwerbung und Aktionswerbung sein? Begründe.',m:'Die drei Fragen (Wen? Wer? Wofür?) fragen nach verschiedenen Dingen: nach dem Empfänger, nach dem Werbenden und nach dem Inhalt. Sie sind voneinander unabhängig. Deshalb beantwortet jede Anzeige alle drei Fragen gleichzeitig, zum Beispiel: Zeitungsanzeige (Massen-), ein Betrieb (Allein-), befristeter Rabatt (Aktions-).',s:['Das ist so, weil …','Die drei Fragen fragen nach …']}]},
+{id:'v2',level:'v',no:'Vertiefung 2',type:'free',pts:1,title:'Begründe deine Entscheidung',
+ instr:L('Ein kleines Blumengeschäft will für den Muttertag werben. Es kann allein oder mit anderen Geschäften werben. Wofür entscheidest du dich? Begründe.','Một cửa hàng hoa nhỏ muốn quảng cáo cho Ngày của Mẹ. Cửa hàng có thể tự quảng cáo hoặc cùng các cửa hàng khác. Em chọn cách nào? Hãy giải thích.'),
+ tip:L('Denke an die Kosten und daran, wie viele Kunden die Werbung erreicht.','Hãy nghĩ đến chi phí và số khách hàng mà quảng cáo tiếp cận được.'),
+ parts:[{q:'Meine Entscheidung und meine Begründung:',m:'Mögliche Begründung: Gemeinschaftswerbung ist günstiger, weil sich die Kosten auf mehrere Betriebe verteilen, und sie erreicht mehr Kunden. Alleinwerbung hat den Vorteil, dass nur der eigene Name im Mittelpunkt steht. Beide Entscheidungen sind richtig, wenn sie gut begründet sind.',s:['Ich entscheide mich für …, weil …']}]}
+]};
