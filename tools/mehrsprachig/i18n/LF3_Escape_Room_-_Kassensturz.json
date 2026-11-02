@@ -1,0 +1,407 @@
+{
+ "Escape Room LF 3 · Kassensturz": {
+  "tr": "Kaçış odası LF 3 · Kassensturz (kasa sayımı)",
+  "vi": "Phòng thoát hiểm LF 3 · Kassensturz (kiểm kê quỹ đột xuất)",
+  "ar": "غرفة الهروب LF 3 · جرد الصندوق المفاجئ (Kassensturz)"
+ },
+ "Es ist 20 Uhr in der Kaufhaus Hansa GmbH. Die Filialleitung hat einen Kassensturz angekündigt – aber das Wechselgeld für morgen liegt im Kassentresor, und niemand kennt den Code. Die Kassenaufsicht hat ihn auf sechs Aufgaben verteilt: Jede gelöste Station verrät eine Ziffer. Ihr habt 45 Minuten. Tipps gibt es – aber jeder Tipp kostet 2 Minuten. Zahlen ohne €-Zeichen eingeben, Komma oder Punkt ist egal (z. B. 12,98). Taschenrechner und Rezeptkarten sind erlaubt.": {
+  "tr": "Saat 20, Kaufhaus Hansa GmbH'de. Şube müdürlüğü bir Kassensturz (sürpriz kasa kontrolü) duyurdu – ama yarının bozuk parası çelik kasada duruyor ve kimse şifreyi bilmiyor. Kasa sorumlusu şifreyi altı göreve dağıttı: Çözülen her istasyon bir rakam verir. 45 dakikanız var. İpuçları var – ama her ipucu 2 dakika tutar. Sayıları € işareti olmadan girin, virgül veya nokta fark etmez (örn. 12,98). Hesap makinesi ve formül kartları serbesttir.",
+  "vi": "Bây giờ là 20 giờ tại Kaufhaus Hansa GmbH. Ban quản lý chi nhánh đã báo sẽ có Kassensturz (kiểm kê quỹ đột xuất) – nhưng tiền lẻ để thối (Wechselgeld) cho ngày mai nằm trong két của quầy thu ngân, và không ai biết mã. Người giám sát quầy thu ngân đã chia mã thành sáu bài tập: Mỗi trạm giải xong sẽ cho biết một chữ số. Các bạn có 45 phút. Có gợi ý – nhưng mỗi gợi ý tốn 2 phút. Nhập số không có ký hiệu €, dấu phẩy hay dấu chấm đều được (ví dụ 12,98). Được phép dùng máy tính cầm tay và thẻ công thức (Rezeptkarten).",
+  "ar": "الساعة 20 Uhr في Kaufhaus Hansa GmbH. أعلنت إدارة الفرع عن جرد الصندوق المفاجئ (Kassensturz) – لكن الفكّة (Wechselgeld) لليوم التالي موجودة في خزنة الصندوق، ولا أحد يعرف الرمز. وزّعت مشرفة الصندوق الرمز على ست مهام: كل محطة تُحلّ تكشف رقمًا. لديكم 45 دقيقة. هناك تلميحات – لكن كل تلميح يكلّف 2 دقيقة. أدخلوا الأرقام بدون علامة €، والفاصلة أو النقطة سواء (مثلًا 12,98). الآلة الحاسبة وبطاقات الوصفة الحسابية مسموحة."
+ },
+ "Es ist 20 Uhr in der Kaufhaus Hansa GmbH.": {
+  "tr": "Saat 20, Kaufhaus Hansa GmbH'de.",
+  "vi": "Bây giờ là 20 giờ tại Kaufhaus Hansa GmbH.",
+  "ar": "الساعة 20 Uhr في Kaufhaus Hansa GmbH."
+ },
+ "Kassensturz": {
+  "tr": "Kasa sayımı",
+  "vi": "Kiểm kê quỹ đột xuất (Kassensturz)",
+  "ar": "جرد الصندوق المفاجئ"
+ },
+ "45 Minuten": {
+  "tr": "45 dakika",
+  "vi": "45 phút",
+  "ar": "45 دقيقة"
+ },
+ "2 Minuten": {
+  "tr": "2 dakika",
+  "vi": "2 phút",
+  "ar": "2 دقيقة"
+ },
+ "Zahlen ohne €-Zeichen eingeben, Komma oder Punkt ist egal (z. B. 12,98). Taschenrechner und Rezeptkarten sind erlaubt.": {
+  "tr": "Sayıları € işareti olmadan girin, virgül veya nokta fark etmez (örn. 12,98). Hesap makinesi ve formül kartları serbesttir.",
+  "vi": "Nhập số không có ký hiệu €, dấu phẩy hay dấu chấm đều được (ví dụ 12,98). Được phép dùng máy tính cầm tay và thẻ công thức (Rezeptkarten).",
+  "ar": "أدخلوا الأرقام بدون علامة €، والفاصلة أو النقطة سواء (مثلًا 12,98). الآلة الحاسبة وبطاقات الوصفة الحسابية مسموحة."
+ },
+ "🔒 Der Kassentresor": {
+  "tr": "🔒 Çelik kasa",
+  "vi": "🔒 Két của quầy thu ngân",
+  "ar": "🔒 خزنة الصندوق"
+ },
+ "Eure Ziffern (Station 1 bis 6):": {
+  "tr": "Rakamlarınız (istasyon 1 ile 6):",
+  "vi": "Các chữ số của các bạn (trạm 1 đến 6):",
+  "ar": "أرقامكم (المحطة 1 إلى 6):"
+ },
+ "Tresor öffnen": {
+  "tr": "Kasayı aç",
+  "vi": "Mở két",
+  "ar": "افتح الخزنة"
+ },
+ "🎉 Der Kassentresor ist offen!": {
+  "tr": "🎉 Çelik kasa açıldı!",
+  "vi": "🎉 Két của quầy thu ngân đã mở!",
+  "ar": "🎉 خزنة الصندوق مفتوحة!"
+ },
+ "Das Wechselgeld ist da – der Kassensturz kann kommen. Eure Zeit: · Genutzte Tipps:": {
+  "tr": "Bozuk para burada – kasa sayımı gelebilir. Süreniz: · Kullanılan ipuçları:",
+  "vi": "Tiền lẻ để thối đã có – có thể kiểm kê quỹ đột xuất rồi. Thời gian của các bạn: · Số gợi ý đã dùng:",
+  "ar": "الفكّة موجودة – يمكن أن يأتي الجرد المفاجئ. وقتكم: · التلميحات المستخدمة:"
+ },
+ "Zeigt diesen Bildschirm eurer Lehrkraft.": {
+  "tr": "Bu ekranı öğretmeninize gösterin.",
+  "vi": "Hãy cho giáo viên xem màn hình này.",
+  "ar": "اعرضوا هذه الشاشة على المعلم/ة."
+ },
+ "Eine 500-g-Packung Kaffee kostet 6,49 €. Grundpreis je kg in €? (Zahl mit Komma)": {
+  "tr": "500 g'lık bir paket kahve 6,49 €. kg başına birim fiyat (€)? (virgüllü sayı)",
+  "vi": "Một gói cà phê 500 g giá 6,49 €. Giá theo đơn vị (Grundpreis) mỗi kg tính bằng €? (Số có dấu phẩy)",
+  "ar": "عبوة قهوة 500 g تكلّف 6,49 €. سعر الوحدة (Grundpreis) لكل kg بالـ €؟ (رقم مع فاصلة)"
+ },
+ "300 g Käse zu 18,90 € je kg kosten … € (Zahl)": {
+  "tr": "kg'ı 18,90 € olan 300 g peynir … € eder (sayı)",
+  "vi": "300 g phô mai giá 18,90 € mỗi kg giá … € (số)",
+  "ar": "300 g جبن بسعر 18,90 € للكيلوغرام تكلّف … € (رقم)"
+ },
+ "Für 2.500 € Umsatz gibt es 50 € Prämie. Prämie bei 3.400 € Umsatz in €? (Zahl)": {
+  "tr": "2.500 € ciroya 50 € prim verilir. 3.400 € cirodaki prim (€)? (sayı)",
+  "vi": "Doanh thu 2.500 € được thưởng (Prämie) 50 €. Tiền thưởng khi doanh thu 3.400 € tính bằng €? (Số)",
+  "ar": "لمبيعات 2.500 € هناك مكافأة (Prämie) 50 €. المكافأة عند مبيعات 3.400 € بالـ €؟ (رقم)"
+ },
+ "Welche Aufgabe löst du mit dem Dreisatz über die 1?": {
+  "tr": "Hangi soruyu 1'e inerek Dreisatz (üçlü orantı) ile çözersin?",
+  "vi": "Bài nào bạn giải bằng quy tắc tam suất (Dreisatz) qua số 1?",
+  "ar": "أي مسألة تحلّها بقاعدة الثلاثة (Dreisatz) عبر الـ 1؟"
+ },
+ "Wie hoch ist die Umsatzsteuer?": {
+  "tr": "Katma değer vergisi (Umsatzsteuer) ne kadar?",
+  "vi": "Thuế giá trị gia tăng (Umsatzsteuer) là bao nhiêu?",
+  "ar": "كم تبلغ ضريبة القيمة المضافة (Umsatzsteuer)؟"
+ },
+ "6 Tassen kosten 53,40 €. Was kosten 8 Tassen?": {
+  "tr": "6 fincan 53,40 €. 8 fincan kaç €?",
+  "vi": "6 cái cốc giá 53,40 €. 8 cái cốc giá bao nhiêu?",
+  "ar": "6 أكواب تكلّف 53,40 €. كم تكلّف 8 أكواب؟"
+ },
+ "Wie viel Prozent ist der Rabatt?": {
+  "tr": "İndirim yüzde kaç?",
+  "vi": "Giảm giá là bao nhiêu phần trăm?",
+  "ar": "كم بالمئة الخصم (Rabatt)؟"
+ },
+ "Wie viele Kunden kamen je Stunde?": {
+  "tr": "Saatte kaç müşteri geldi?",
+  "vi": "Mỗi giờ có bao nhiêu khách?",
+  "ar": "كم عميلًا جاء في الساعة؟"
+ },
+ "Prüfen": {
+  "tr": "Kontrol et",
+  "vi": "Kiểm tra",
+  "ar": "تحقّق"
+ },
+ "Tipp (+2 Min.)": {
+  "tr": "İpucu (+2 dk.)",
+  "vi": "Gợi ý (+2 phút)",
+  "ar": "تلميح (+2 دقيقة)"
+ },
+ "Zurück zur Übersicht": {
+  "tr": "Genel bakışa dön",
+  "vi": "Quay lại trang tổng quan",
+  "ar": "العودة إلى الصفحة الرئيسية"
+ },
+ "💡 Grundpreis = Preis : Menge in kg. Lose Ware = Preis je kg × Menge in kg. Prämie = alte Prämie : alter Umsatz × neuer Umsatz.": {
+  "tr": "💡 Birim fiyat = fiyat : kg cinsinden miktar. Açık mal = kg fiyatı × kg cinsinden miktar. Prim = eski prim : eski ciro × yeni ciro.",
+  "vi": "💡 Giá theo đơn vị (Grundpreis) = giá : lượng tính bằng kg. Hàng bán theo cân = giá mỗi kg × lượng tính bằng kg. Tiền thưởng = tiền thưởng cũ : doanh thu cũ × doanh thu mới.",
+  "ar": "💡 سعر الوحدة = السعر : الكمية بالـ kg. البضاعة السائبة = السعر لكل kg × الكمية بالـ kg. المكافأة = المكافأة القديمة : المبيعات القديمة × المبيعات الجديدة."
+ },
+ "74,90 € mit 20 % Rabatt. Zu zahlen in €? (Zahl)": {
+  "tr": "74,90 € ve 20 % indirim. Ödenecek tutar (€)? (sayı)",
+  "vi": "74,90 € với giảm giá 20 %. Số tiền phải trả tính bằng €? (Số)",
+  "ar": "74,90 € مع خصم (Rabatt) 20 %. المبلغ المستحق بالـ €؟ (رقم)"
+ },
+ "Rechnung 1.600 € mit 3 % Skonto. Überweisung in €? (Zahl)": {
+  "tr": "Fatura 1.600 € ve 3 % Skonto (peşin ödeme iskontosu). Havale tutarı (€)? (sayı)",
+  "vi": "Hóa đơn 1.600 € với chiết khấu thanh toán sớm (Skonto) 3 %. Số tiền chuyển khoản tính bằng €? (Số)",
+  "ar": "فاتورة 1.600 € مع خصم الدفع الفوري (Skonto) 3 %. مبلغ التحويل بالـ €؟ (رقم)"
+ },
+ "125 € −20 %, danach noch −10 %. Neuer Preis in €? (Zahl)": {
+  "tr": "125 € −20 %, sonra bir de −10 %. Yeni fiyat (€)? (sayı)",
+  "vi": "125 € −20 %, sau đó −10 %. Giá mới tính bằng €? (Số)",
+  "ar": "125 € −20 %، ثم −10 %. السعر الجديد بالـ €؟ (رقم)"
+ },
+ "Ein Kunde legt einen 15-%-Coupon vor. Womit rechnest du den Zahlbetrag?": {
+  "tr": "Bir müşteri 15 %'lik kupon sunuyor. Ödenecek tutarı neyle hesaplarsın?",
+  "vi": "Một khách đưa phiếu giảm giá (Coupon) 15 %. Bạn tính số tiền phải trả bằng cách nào?",
+  "ar": "عميل يقدّم قسيمة خصم (Coupon) 15 %. بماذا تحسب المبلغ المستحق؟"
+ },
+ "Preis : 115 × 100": {
+  "tr": "Fiyat : 115 × 100",
+  "vi": "Preis : 115 × 100",
+  "ar": "السعر : 115 × 100"
+ },
+ "Preis − 15": {
+  "tr": "Fiyat − 15",
+  "vi": "Preis − 15",
+  "ar": "السعر − 15"
+ },
+ "Preis : 100 × 15": {
+  "tr": "Fiyat : 100 × 15",
+  "vi": "Preis : 100 × 15",
+  "ar": "السعر : 100 × 15"
+ },
+ "Preis : 100 × 85": {
+  "tr": "Fiyat : 100 × 85",
+  "vi": "Preis : 100 × 85",
+  "ar": "السعر : 100 × 85"
+ },
+ "💡 Zu zahlen = Preis : 100 × (100 − p). Zwei Rabatte nacheinander: der zweite vom neuen Preis.": {
+  "tr": "💡 Ödenecek tutar = fiyat : 100 × (100 − p). Art arda iki indirim: ikincisi yeni fiyattan.",
+  "vi": "💡 Số tiền phải trả = giá : 100 × (100 − p). Hai lần giảm giá liên tiếp: lần thứ hai tính từ giá mới.",
+  "ar": "💡 المبلغ المستحق = السعر : 100 × (100 − p). خصمان متتاليان: الثاني من السعر الجديد."
+ },
+ "Ein Preis sinkt von 49,90 € auf 39,92 €. Um wie viel Prozent? (Zahl)": {
+  "tr": "Bir fiyat 49,90 €'dan 39,92 €'ya düşüyor. Yüzde kaç oranında? (sayı)",
+  "vi": "Giá giảm từ 49,90 € xuống 39,92 €. Giảm bao nhiêu phần trăm? (Số)",
+  "ar": "ينخفض سعر من 49,90 € إلى 39,92 €. بكم بالمئة؟ (رقم)"
+ },
+ "Kasse 2 hat 1.350 € von 5.400 € Tagesumsatz. Anteil in %? (Zahl)": {
+  "tr": "Kasa 2, 5.400 € günlük cironun 1.350 €'sunu yaptı. Pay % olarak? (sayı)",
+  "vi": "Quầy 2 có 1.350 € trên 5.400 € doanh thu trong ngày. Phần tính bằng %? (Số)",
+  "ar": "الصندوق 2 لديه 1.350 € من أصل 5.400 € مبيعات اليوم. الحصة بالـ %؟ (رقم)"
+ },
+ "Nach 25 % Rabatt kostet eine Hose 44,97 €. Preis vorher in €? (Zahl)": {
+  "tr": "25 % indirimden sonra bir pantolon 44,97 €. Önceki fiyat (€)? (sayı)",
+  "vi": "Sau khi giảm giá 25 % một chiếc quần giá 44,97 €. Giá trước đó tính bằng €? (Số)",
+  "ar": "بعد خصم 25 % يكلّف البنطلون 44,97 €. السعر قبل الخصم بالـ €؟ (رقم)"
+ },
+ "Welcher Preis ist bei „Um wie viel Prozent reduziert?“ der Grundwert?": {
+  "tr": "„Yüzde kaç düşürüldü?“ sorusunda hangi fiyat Grundwert (ana değer) olur?",
+  "vi": "Với câu hỏi „Giảm bao nhiêu phần trăm?“ thì giá nào là giá trị gốc (Grundwert)?",
+  "ar": "أي سعر هو القيمة الأساسية (Grundwert) في „بكم بالمئة انخفض السعر؟“"
+ },
+ "der neue Preis": {
+  "tr": "yeni fiyat",
+  "vi": "giá mới",
+  "ar": "السعر الجديد"
+ },
+ "die Differenz": {
+  "tr": "fark",
+  "vi": "chênh lệch",
+  "ar": "الفرق"
+ },
+ "der Rabatt": {
+  "tr": "indirim",
+  "vi": "tiền giảm giá",
+  "ar": "الخصم"
+ },
+ "der alte Preis": {
+  "tr": "eski fiyat",
+  "vi": "giá cũ",
+  "ar": "السعر القديم"
+ },
+ "💡 p = Differenz × 100 : alter Preis. Preis vorher = neuer Preis : (100 − p) × 100.": {
+  "tr": "💡 p = fark × 100 : eski fiyat. Önceki fiyat = yeni fiyat : (100 − p) × 100.",
+  "vi": "💡 p = chênh lệch × 100 : giá cũ. Giá trước đó = giá mới : (100 − p) × 100.",
+  "ar": "💡 p = الفرق × 100 : السعر القديم. السعر قبل الخصم = السعر الجديد : (100 − p) × 100."
+ },
+ "Wie viel Euro USt (19 %) stecken in 59,50 €? (Zahl)": {
+  "tr": "59,50 €'nun içinde kaç euro KDV (19 %) var? (sayı)",
+  "vi": "Trong 59,50 € có bao nhiêu euro thuế giá trị gia tăng (USt) 19 %? (Số)",
+  "ar": "كم يورو ضريبة قيمة مضافة (USt) 19 % موجودة في 59,50 €؟ (رقم)"
+ },
+ "Ein Buch kostet 107,00 € brutto (7 %). Nettopreis in €? (Zahl)": {
+  "tr": "Bir kitap brüt 107,00 € (7 %). Net fiyat (€)? (sayı)",
+  "vi": "Một cuốn sách giá 107,00 € đã gồm thuế (brutto) (7 %). Giá chưa thuế (netto) tính bằng €? (Số)",
+  "ar": "كتاب يكلّف 107,00 € إجمالي (brutto) (7 %). السعر الصافي (netto) بالـ €؟ (رقم)"
+ },
+ "Nettopreis 80 €, dazu 19 % USt. Bruttopreis in €? (Zahl)": {
+  "tr": "Net fiyat 80 €, buna 19 % KDV. Brüt fiyat (€)? (sayı)",
+  "vi": "Giá chưa thuế (netto) 80 €, cộng thêm 19 % USt. Giá đã gồm thuế (brutto) tính bằng €? (Số)",
+  "ar": "السعر الصافي 80 €، يُضاف 19 % ضريبة. السعر الإجمالي بالـ €؟ (رقم)"
+ },
+ "Welche Rechnung für die USt aus 119 € ist FALSCH?": {
+  "tr": "119 €'dan KDV için hangi hesap YANLIŞ?",
+  "vi": "Cách tính nào cho USt từ 119 € là SAI?",
+  "ar": "أي عملية حساب لضريبة القيمة المضافة من 119 € هي خاطئة؟"
+ },
+ "119 : 1,19 = 100, dann 119 − 100": {
+  "tr": "119 : 1,19 = 100, sonra 119 − 100",
+  "vi": "119 : 1,19 = 100, sau đó 119 − 100",
+  "ar": "119 : 1,19 = 100، ثم 119 − 100"
+ },
+ "brutto − netto": {
+  "tr": "brüt − net",
+  "vi": "brutto − netto",
+  "ar": "الإجمالي − الصافي"
+ },
+ "💡 USt heraus: brutto : 119 × 19 (7 %: : 107 × 7). netto = brutto : 119 × 100. brutto = netto : 100 × 119.": {
+  "tr": "💡 KDV'yi ayır: brüt : 119 × 19 (7 %: : 107 × 7). net = brüt : 119 × 100. brüt = net : 100 × 119.",
+  "vi": "💡 Tách USt ra: brutto : 119 × 19 (7 %: : 107 × 7). netto = brutto : 119 × 100. brutto = netto : 100 × 119.",
+  "ar": "💡 استخراج الضريبة: الإجمالي : 119 × 19 (لـ 7 %: : 107 × 7). الصافي = الإجمالي : 119 × 100. الإجمالي = الصافي : 100 × 119."
+ },
+ "1.767 Kunden, geöffnet 09:00–13:30 und 15:00–20:00. Kunden je Stunde? (Zahl)": {
+  "tr": "1.767 müşteri, 09:00–13:30 ve 15:00–20:00 arası açık. Saatte kaç müşteri? (sayı)",
+  "vi": "1.767 khách, mở cửa 09:00–13:30 và 15:00–20:00. Mỗi giờ bao nhiêu khách? (Số)",
+  "ar": "1.767 عميلًا، مفتوح من 09:00–13:30 ومن 15:00–20:00. كم عميلًا في الساعة؟ (رقم)"
+ },
+ "10 Paar Socken zu 4 € und 30 Paar zu 6 €. Durchschnittspreis in €? (Zahl)": {
+  "tr": "4 €'luk 10 çift çorap ve 6 €'luk 30 çift. Ortalama fiyat (€)? (sayı)",
+  "vi": "10 đôi tất giá 4 € và 30 đôi giá 6 €. Giá trung bình tính bằng €? (Số)",
+  "ar": "10 أزواج جوارب بسعر 4 € و 30 زوجًا بسعر 6 €. متوسط السعر (Durchschnittspreis) بالـ €؟ (رقم)"
+ },
+ "2.400 € Kosten nach Fläche: 500, 300 und 400 m². Anteil der 300 m² in €? (Zahl)": {
+  "tr": "2.400 € masraf alana göre: 500, 300 ve 400 m². 300 m²'nin payı (€)? (sayı)",
+  "vi": "Chi phí 2.400 € chia theo diện tích: 500, 300 và 400 m². Phần của 300 m² tính bằng €? (Số)",
+  "ar": "تكاليف 2.400 € حسب المساحة: 500 و 300 و 400 m². حصة الـ 300 m² بالـ €؟ (رقم)"
+ },
+ "Umsatz netto 2.448 € bei 144 Kunden. Umsatz je Kunde in €? (Zahl)": {
+  "tr": "144 müşteride net ciro 2.448 €. Müşteri başına ciro (€)? (sayı)",
+  "vi": "Doanh thu chưa thuế (netto) 2.448 € với 144 khách. Doanh thu mỗi khách tính bằng €? (Số)",
+  "ar": "مبيعات صافية (netto) 2.448 € مع 144 عميلًا. المبيعات لكل عميل بالـ €؟ (رقم)"
+ },
+ "💡 Kunden je Stunde = Kunden : Stunden. Gewogen = Summe (Menge × Preis) : Summe der Mengen. Verteilung = Kosten : Summe der Anteile × Anteil.": {
+  "tr": "💡 Saatte müşteri = müşteri : saat. Ağırlıklı = toplam (miktar × fiyat) : miktarların toplamı. Dağıtım = masraf : payların toplamı × pay.",
+  "vi": "💡 Khách mỗi giờ = khách : giờ. Có trọng số (gewogen) = tổng (lượng × giá) : tổng các lượng. Phân bổ = chi phí : tổng các phần × phần.",
+  "ar": "💡 العملاء في الساعة = العملاء : الساعات. المرجّح = مجموع (الكمية × السعر) : مجموع الكميات. التوزيع = التكاليف : مجموع الأجزاء × الجزء."
+ },
+ "Kassenbestand 1.980,50 € · Abschöpfung 1.500 € · Wechselgeld 250 € · Karte 2.114,30 €. Tagesumsatz in €? (Zahl)": {
+  "tr": "Kasa mevcudu 1.980,50 € · kasadan ara para çekme (Abschöpfung) 1.500 € · bozuk para (Wechselgeld) 250 € · kart 2.114,30 €. Günlük ciro (€)? (sayı)",
+  "vi": "Số dư quỹ 1.980,50 € · rút bớt giữa ca (Abschöpfung) 1.500 € · tiền lẻ để thối (Wechselgeld) 250 € · thẻ 2.114,30 €. Doanh thu trong ngày (Tagesumsatz) tính bằng €? (Số)",
+  "ar": "رصيد الصندوق 1.980,50 € · سحب من الصندوق (Abschöpfung) 1.500 € · فكّة (Wechselgeld) 250 € · بطاقة 2.114,30 €. مبيعات اليوم (Tagesumsatz) بالـ €؟ (رقم)"
+ },
+ "30 Artikel zu 12,95 € verkauft, 100 € Wechselgeld, Ist 478,50 €. Kassendifferenz in €? (Zahl mit Minus)": {
+  "tr": "12,95 €'luk 30 ürün satıldı, 100 € bozuk para, Ist (fiili) 478,50 €. Kasa farkı (€)? (eksi işaretli sayı)",
+  "vi": "Bán 30 mặt hàng giá 12,95 €, tiền lẻ để thối (Wechselgeld) 100 €, thực tế (Ist) 478,50 €. Chênh lệch quỹ (Kassendifferenz) tính bằng €? (Số có dấu trừ)",
+  "ar": "بيع 30 قطعة بسعر 12,95 €، فكّة 100 €، الفعلي (Ist) 478,50 €. فرق الصندوق (Kassendifferenz) بالـ €؟ (رقم مع علامة ناقص)"
+ },
+ "Abends sind 5 € ZU VIEL in der Kasse. Was kann die Ursache sein?": {
+  "tr": "Akşam kasada 5 € FAZLA var. Sebep ne olabilir?",
+  "vi": "Buổi tối trong quỹ THỪA 5 €. Nguyên nhân có thể là gì?",
+  "ar": "في المساء يوجد 5 € زيادة في الصندوق. ما السبب المحتمل؟"
+ },
+ "Einem Kunden wurde zu wenig Wechselgeld gegeben.": {
+  "tr": "Bir müşteriye eksik para üstü verildi.",
+  "vi": "Đã thối thiếu tiền lẻ cho một khách.",
+  "ar": "أُعطي عميل باقيًا أقل من اللازم."
+ },
+ "Es wurde etwas gestohlen.": {
+  "tr": "Bir şey çalındı.",
+  "vi": "Có thứ bị lấy cắp.",
+  "ar": "سُرق شيء."
+ },
+ "Die Abschöpfung wurde doppelt gezählt.": {
+  "tr": "Kasadan ara para çekme iki kez sayıldı.",
+  "vi": "Khoản rút bớt giữa ca (Abschöpfung) bị đếm hai lần.",
+  "ar": "حُسب السحب من الصندوق مرتين."
+ },
+ "Einem Kunden wurde zu viel Wechselgeld gegeben.": {
+  "tr": "Bir müşteriye fazla para üstü verildi.",
+  "vi": "Đã thối thừa tiền lẻ cho một khách.",
+  "ar": "أُعطي عميل باقيًا أكثر من اللازم."
+ },
+ "Soll 620 € · Barumsatz 3.400 € · Rückgabe bar 20 € · Entnahme 3.000 €. Mit wie viel Euro wurde die Kasse eröffnet? (Zahl)": {
+  "tr": "Soll (olması gereken) 620 € · Nakit satış 3.400 € · Nakit iade 20 € · Kasadan çekilen 3.000 €. Kasa kaç euro ile açıldı? (Sayı)",
+  "vi": "Soll (số dư theo sổ sách) 620 € · Doanh thu tiền mặt 3.400 € · Trả lại bằng tiền mặt 20 € · Rút ra 3.000 €. Quầy thu ngân được mở với bao nhiêu euro? (Nhập số)",
+  "ar": "الرصيد المطلوب (Soll) 620 € · المبيعات النقدية 3.400 € · إرجاع نقدي 20 € · المبلغ المسحوب 3.000 €. بكم يورو تم فتح الصندوق؟ (رقم)"
+ },
+ "💡 Tagesumsatz = Kassenbestand + Abschöpfung − Wechselgeld + Karte. Differenz = Ist − Soll. Karte gehört nie in den Bargeld-Soll.": {
+  "tr": "💡 Günlük ciro (Tagesumsatz) = Kasa mevcudu + kasadan ara para çekme (Abschöpfung) − bozuk para (Wechselgeld) + Kart. Fark = Ist (fiili) − Soll (olması gereken). Kart ödemesi asla nakit Soll tutarına girmez.",
+  "vi": "💡 Tagesumsatz (doanh thu trong ngày) = số dư quỹ + tiền rút bớt − tiền lẻ để thối + thẻ. Chênh lệch = Ist (thực tế) − Soll (sổ sách). Tiền thẻ không bao giờ tính vào Soll tiền mặt.",
+  "ar": "💡 Tagesumsatz (مبيعات اليوم) = رصيد الصندوق + السحب (Abschöpfung) − الفكّة + البطاقة. الفرق = الفعلي − المطلوب. البطاقة لا تدخل أبداً في المبلغ النقدي المطلوب."
+ },
+ "Dreisatz und Grundpreis": {
+  "tr": "Üçlü orantı ve birim fiyat",
+  "vi": "Quy tắc tam suất và giá theo đơn vị",
+  "ar": "قاعدة الثلاثة (Dreisatz) وسعر الوحدة (Grundpreis)"
+ },
+ "Rabatt und Skonto": {
+  "tr": "İndirim ve Skonto (peşin ödeme iskontosu)",
+  "vi": "Giảm giá và chiết khấu thanh toán sớm",
+  "ar": "الخصم (Rabatt) والخصم عند الدفع الفوري (Skonto)"
+ },
+ "Prozentsatz und Grundwert": {
+  "tr": "Yüzde oranı ve ana değer",
+  "vi": "Tỷ lệ phần trăm và giá trị gốc",
+  "ar": "معدل النسبة (Prozentsatz) والقيمة الأساسية (Grundwert)"
+ },
+ "Umsatzsteuer": {
+  "tr": "Katma değer vergisi (KDV)",
+  "vi": "Thuế giá trị gia tăng (VAT)",
+  "ar": "ضريبة القيمة المضافة (Umsatzsteuer)"
+ },
+ "119 × 19 %": {
+  "tr": "119 × 19 %",
+  "vi": "119 × 19 %",
+  "ar": "119 × 19 %"
+ },
+ "119 : 119 × 19": {
+  "tr": "119 : 119 × 19",
+  "vi": "119 : 119 × 19",
+  "ar": "119 : 119 × 19"
+ },
+ "Durchschnitt und Verteilung": {
+  "tr": "Ortalama ve dağıtım",
+  "vi": "Trung bình và tính phân bổ",
+  "ar": "المتوسط (Durchschnitt) والتوزيع"
+ },
+ "Der Kassensturz": {
+  "tr": "Kasa sayımı (sürpriz kasa kontrolü)",
+  "vi": "Kassensturz (kiểm kê quỹ đột xuất)",
+  "ar": "جرد الصندوق المفاجئ (Kassensturz)"
+ },
+ "Station {1}: {2}": {
+  "tr": "İstasyon {1}: {2}",
+  "vi": "Trạm {1}: {2}",
+  "ar": "المحطة {1}: {2}"
+ },
+ "Module {1} und {2}": {
+  "tr": "Modül {1} ve {2}",
+  "vi": "Mô-đun {1} và {2}",
+  "ar": "الوحدتان {1} و{2}"
+ },
+ "Modul {1} und {2}": {
+  "tr": "Modül {1} ve {2}",
+  "vi": "Mô-đun {1} và {2}",
+  "ar": "الوحدتان {1} و{2}"
+ },
+ "Modul {1}": {
+  "tr": "Modül {1}",
+  "vi": "Mô-đun {1}",
+  "ar": "الوحدة {1}"
+ },
+ "{1} von {2} richtig. Die roten Aufgaben noch einmal prüfen – schaut in euren Unterlagen nach.": {
+  "tr": "{2} sorudan {1} tanesi doğru. Kırmızı soruları bir kez daha kontrol edin – notlarınıza bakın.",
+  "vi": "Đúng {1} trên {2}. Hãy kiểm tra lại các bài màu đỏ – xem lại tài liệu của các bạn.",
+  "ar": "{1} من {2} صحيحة. راجعوا المسائل الحمراء مرة أخرى – انظروا في أوراقكم."
+ },
+ "✅ Alles richtig! Eure Ziffer für den Tresor: {1}": {
+  "tr": "✅ Hepsi doğru! Çelik kasa (Tresor) için rakamınız: {1}",
+  "vi": "✅ Tất cả đều đúng! Chữ số của các bạn cho két sắt: {1}",
+  "ar": "✅ كل شيء صحيح! رقمكم للخزنة: {1}"
+ },
+ "Das Wechselgeld ist da – der Kassensturz kann kommen. Eure Zeit: {1} · Genutzte Tipps: {2}": {
+  "tr": "Bozuk para (Wechselgeld) hazır – Kassensturz (sürpriz kasa kontrolü) gelebilir. Süreniz: {1} · Kullanılan ipuçları: {2}",
+  "vi": "Tiền lẻ để thối đã sẵn sàng – kiểm kê quỹ đột xuất có thể đến. Thời gian của các bạn: {1} · Số gợi ý đã dùng: {2}",
+  "ar": "الفكّة جاهزة – يمكن أن يأتي جرد الصندوق. وقتكم: {1} · التلميحات المستخدمة: {2}"
+ },
+ "❌ Der Tresor bleibt zu. Prüft eure Ziffern!": {
+  "tr": "❌ Kasa kapalı kalıyor. Rakamlarınızı kontrol edin!",
+  "vi": "❌ Két sắt vẫn đóng. Hãy kiểm tra lại các chữ số!",
+  "ar": "❌ الخزنة تبقى مغلقة. راجعوا أرقامكم!"
+ },
+ "{1} Min. (inkl. Tipps)": {
+  "tr": "{1} dk. (ipuçları dahil)",
+  "vi": "{1} phút (gồm cả gợi ý)",
+  "ar": "{1} دقيقة (مع التلميحات)"
+ }
+}

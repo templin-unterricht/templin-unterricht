@@ -1,0 +1,1262 @@
+{
+ "Kopfrechnen an der Kasse": {
+  "tr": "Kasada zihinden hesap",
+  "vi": "Tính nhẩm ở quầy thu ngân",
+  "ar": "الحساب الذهني عند صندوق الدفع"
+ },
+ "Kunde {1}/{2}": {
+  "tr": "Müşteri {1}/{2}",
+  "vi": "Khách hàng {1}/{2}",
+  "ar": "الزبون {1}/{2}"
+ },
+ "Punkte {1}": {
+  "tr": "Puan {1}",
+  "vi": "Điểm {1}",
+  "ar": "النقاط {1}"
+ },
+ "Serie {1}": {
+  "tr": "Seri {1}",
+  "vi": "Chuỗi {1}",
+  "ar": "السلسلة {1}"
+ },
+ "Lernfeld 3 · Kassieren": {
+  "tr": "Öğrenme alanı 3 · Kasada ödeme almak",
+  "vi": "Lĩnh vực học tập 3 · Thu tiền",
+  "ar": "مجال التعلّم 3 · تحصيل المبلغ"
+ },
+ "Deine Schicht an Kasse 3 beginnt.": {
+  "tr": "Kasa 3'teki vardiyanız başlıyor.",
+  "vi": "Ca làm của bạn ở quầy thu ngân 3 bắt đầu.",
+  "ar": "تبدأ ورديتك عند الصندوق 3."
+ },
+ "Zehn Kunden stehen an. Rechne Rückgeld, Summen und Rabatte im Kopf und gib das Wechselgeld passend heraus. Wer schnell und richtig rechnet, sammelt mehr Punkte.": {
+  "tr": "On müşteri sırada bekliyor. Para üstünü (Rückgeld), toplamları ve indirimleri zihninizden hesaplayın ve bozuk parayı doğru verin. Hızlı ve doğru hesaplayan daha çok puan toplar.",
+  "vi": "Mười khách hàng đang xếp hàng. Hãy tính nhẩm tiền thối lại, tổng tiền và giảm giá, rồi đưa tiền thối đúng. Ai tính nhanh và đúng sẽ được nhiều điểm hơn.",
+  "ar": "عشرة زبائن ينتظرون. احسب الباقي (Rückgeld) والمجاميع والخصومات في ذهنك وأعطِ الفكّة بشكل صحيح. من يحسب بسرعة وبشكل صحيح يجمع نقاطاً أكثر."
+ },
+ "Stufe": {
+  "tr": "Seviye",
+  "vi": "Cấp",
+  "ar": "المستوى"
+ },
+ "Azubi": {
+  "tr": "Çırak",
+  "vi": "Học viên học nghề",
+  "ar": "متدرّب/ة"
+ },
+ "Runde Beträge, Scheine bis 50 €, Rabatte 10 / 20 / 25 / 50 %": {
+  "tr": "Yuvarlak tutarlar, 50 €'ya kadar banknotlar, indirimler 10 / 20 / 25 / 50 %",
+  "vi": "Số tiền tròn, tờ tiền đến 50 €, giảm giá 10 / 20 / 25 / 50 %",
+  "ar": "مبالغ صحيحة، أوراق نقدية حتى 50 €، خصومات 10 / 20 / 25 / 50 %"
+ },
+ "Kassenprofi": {
+  "tr": "Kasa uzmanı",
+  "vi": "Chuyên gia thu ngân",
+  "ar": "محترف الصندوق"
+ },
+ "Krumme Cent-Beträge, Skonto, Doppel-Rabatt und Profi-Fragen zum Begründen": {
+  "tr": "Düzensiz sent tutarları, Skonto (peşin ödeme iskontosu), çifte indirim ve gerekçelendirme gerektiren uzman soruları",
+  "vi": "Số tiền lẻ cent, chiết khấu thanh toán sớm (Skonto), giảm giá hai lần và câu hỏi chuyên gia cần giải thích",
+  "ar": "مبالغ سنتات غير مستديرة، خصم الدفع الفوري (Skonto)، خصم مزدوج وأسئلة احترافية مع التعليل"
+ },
+ "Aufgaben": {
+  "tr": "Görevler",
+  "vi": "Bài tập",
+  "ar": "المسائل"
+ },
+ "Rückgeld": {
+  "tr": "Para üstü",
+  "vi": "Tiền thối lại",
+  "ar": "الباقي (المبلغ المردود)"
+ },
+ "Summe": {
+  "tr": "Toplam",
+  "vi": "Tổng",
+  "ar": "المجموع"
+ },
+ "Rabatt & Aktion": {
+  "tr": "İndirim ve kampanya",
+  "vi": "Giảm giá & khuyến mãi",
+  "ar": "الخصم والعرض"
+ },
+ "Geld herausgeben": {
+  "tr": "Para vermek",
+  "vi": "Đưa tiền thối",
+  "ar": "إعطاء النقود"
+ },
+ "Zeit": {
+  "tr": "Süre",
+  "vi": "Thời gian",
+  "ar": "الوقت"
+ },
+ "Mit Zeitbonus (ohne Haken: in Ruhe üben)": {
+  "tr": "Zaman bonuslu (işaret yoksa: rahatça alıştırma yap)",
+  "vi": "Có thưởng thời gian (bỏ dấu tích: luyện tập thong thả)",
+  "ar": "مع مكافأة الوقت (بدون علامة: تدرّب بهدوء)"
+ },
+ "Schicht starten": {
+  "tr": "Vardiyayı başlat",
+  "vi": "Bắt đầu ca làm",
+  "ar": "ابدأ الوردية"
+ },
+ "Tastatur geht auch: Zahlen, Komma, Enter.": {
+  "tr": "Klavye de olur: rakamlar, virgül, Enter.",
+  "vi": "Cũng có thể dùng bàn phím: số, dấu phẩy, Enter.",
+  "ar": "يمكنك أيضاً استخدام لوحة المفاتيح: الأرقام والفاصلة وEnter."
+ },
+ "Wähle mindestens eine Aufgabenart.": {
+  "tr": "En az bir görev türü seç.",
+  "vi": "Hãy chọn ít nhất một loại bài tập.",
+  "ar": "اختر نوعاً واحداً على الأقل من المسائل."
+ },
+ "Kasse 3": {
+  "tr": "Kasa 3",
+  "vi": "Quầy 3",
+  "ar": "الصندوق 3"
+ },
+ "So läuft die Schicht": {
+  "tr": "Vardiya böyle işler",
+  "vi": "Ca làm diễn ra như thế nào",
+  "ar": "هكذا تسير الوردية"
+ },
+ "10 Kunden pro Schicht.": {
+  "tr": "Vardiya başına 10 müşteri.",
+  "vi": "10 khách hàng mỗi ca.",
+  "ar": "10 زبائن في كل وردية."
+ },
+ "Richtig: 100 Punkte. Schnell: bis zu 50 Punkte extra.": {
+  "tr": "Doğru: 100 puan. Hızlı: 50 puana kadar ekstra.",
+  "vi": "Đúng: 100 điểm. Nhanh: thêm tối đa 50 điểm.",
+  "ar": "الإجابة الصحيحة: 100 نقطة. السرعة: حتى 50 نقطة إضافية."
+ },
+ "Ab 3 Richtigen hintereinander gibt es Serien-Punkte.": {
+  "tr": "Arka arkaya 3 doğrudan sonra seri puanı verilir.",
+  "vi": "Từ 3 câu đúng liên tiếp trở lên sẽ có điểm chuỗi.",
+  "ar": "بعد 3 إجابات صحيحة متتالية تحصل على نقاط السلسلة."
+ },
+ "Beim Geldherausgeben zählt auch: möglichst wenige Scheine und Münzen.": {
+  "tr": "Para verirken şu da önemli: mümkün olduğunca az banknot ve madeni para.",
+  "vi": "Khi đưa tiền thối cũng được tính: dùng càng ít tờ tiền và đồng xu càng tốt.",
+  "ar": "عند إعطاء النقود يُحسب أيضاً: أقل عدد ممكن من الأوراق والعملات المعدنية."
+ },
+ "Nach jeder Antwort siehst du den schnellen Rechenweg.": {
+  "tr": "Her cevaptan sonra hızlı hesap yolunu görürsün.",
+  "vi": "Sau mỗi câu trả lời, bạn sẽ thấy cách tính nhanh.",
+  "ar": "بعد كل إجابة ترى طريقة الحساب السريعة."
+ },
+ "Dein Rekord: Azubi {1} · Kassenprofi {2} Punkte": {
+  "tr": "Rekorun: Çırak {1} · Kasa uzmanı {2} puan",
+  "vi": "Kỷ lục của bạn: Học viên học nghề {1} · Chuyên gia thu ngân {2} điểm",
+  "ar": "رقمك القياسي: متدرّب/ة {1} · محترف الصندوق {2} نقطة"
+ },
+ "Noch kein Rekord auf diesem Gerät.": {
+  "tr": "Bu cihazda henüz rekor yok.",
+  "vi": "Chưa có kỷ lục trên thiết bị này.",
+  "ar": "لا يوجد رقم قياسي على هذا الجهاز بعد."
+ },
+ "Profi-Frage · Begründen": {
+  "tr": "Uzman sorusu · Gerekçelendir",
+  "vi": "Câu hỏi chuyên gia · Giải thích",
+  "ar": "سؤال احترافي · التعليل"
+ },
+ "Betrag": {
+  "tr": "Tutar",
+  "vi": "Số tiền",
+  "ar": "المبلغ"
+ },
+ "Fertig": {
+  "tr": "Bitti",
+  "vi": "Xong",
+  "ar": "تم"
+ },
+ "Auf dem Tresen (antippen = zurücknehmen)": {
+  "tr": "Tezgâhta (dokun = geri al)",
+  "vi": "Trên quầy (chạm = lấy lại)",
+  "ar": "على الطاولة (اضغط = استرجاع)"
+ },
+ "Alles zurück": {
+  "tr": "Hepsini geri al",
+  "vi": "Lấy lại tất cả",
+  "ar": "إرجاع الكل"
+ },
+ "Geld geben": {
+  "tr": "Para ver",
+  "vi": "Đưa tiền",
+  "ar": "أعطِ النقود"
+ },
+ "Dein Titel": {
+  "tr": "Unvanın",
+  "vi": "Danh hiệu của bạn",
+  "ar": "لقبك"
+ },
+ "Neue Schicht": {
+  "tr": "Yeni vardiya",
+  "vi": "Ca làm mới",
+  "ar": "وردية جديدة"
+ },
+ "Einstellungen ändern": {
+  "tr": "Ayarları değiştir",
+  "vi": "Thay đổi cài đặt",
+  "ar": "تغيير الإعدادات"
+ },
+ "Letzte Ziffer löschen": {
+  "tr": "Son rakamı sil",
+  "vi": "Xóa chữ số cuối",
+  "ar": "حذف الرقم الأخير"
+ },
+ "Gegeben": {
+  "tr": "Verilen",
+  "vi": "Khách đưa",
+  "ar": "المُعطى"
+ },
+ "Zu zahlen": {
+  "tr": "Ödenecek",
+  "vi": "Phải trả",
+  "ar": "المطلوب دفعه"
+ },
+ "SUMME": {
+  "tr": "TOPLAM",
+  "vi": "TỔNG",
+  "ar": "المجموع"
+ },
+ "ZU ZAHLEN": {
+  "tr": "ÖDENECEK",
+  "vi": "PHẢI TRẢ",
+  "ar": "المطلوب دفعه"
+ },
+ "Aktion 3 für 2": {
+  "tr": "Kampanya: 3 al 2 öde",
+  "vi": "Khuyến mãi 3 für 2 (mua ba, trả tiền hai)",
+  "ar": "عرض 3 بسعر 2"
+ },
+ "3 für 2": {
+  "tr": "3 al 2 öde",
+  "vi": "3 für 2 (mua ba, trả tiền hai)",
+  "ar": "3 بسعر 2"
+ },
+ "Rabatt": {
+  "tr": "İndirim",
+  "vi": "Giảm giá",
+  "ar": "خصم"
+ },
+ "Doppel-Rabatt": {
+  "tr": "Çifte indirim",
+  "vi": "Giảm giá hai lần",
+  "ar": "خصم مزدوج"
+ },
+ "Skonto": {
+  "tr": "Peşin ödeme iskontosu",
+  "vi": "Chiết khấu thanh toán sớm",
+  "ar": "خصم الدفع الفوري"
+ },
+ "2. Teil −50 %": {
+  "tr": "2. parça −50 %",
+  "vi": "Món thứ 2 giảm 50 %",
+  "ar": "القطعة 2 −50 %"
+ },
+ "Rabatt {1} %": {
+  "tr": "İndirim {1} %",
+  "vi": "Giảm giá {1} %",
+  "ar": "خصم {1} %"
+ },
+ "Skonto {1} %": {
+  "tr": "Skonto (peşin ödeme iskontosu) {1} %",
+  "vi": "Chiết khấu thanh toán sớm {1} %",
+  "ar": "خصم الدفع الفوري {1} %"
+ },
+ "Rabatt 20 %": {
+  "tr": "İndirim 20 %",
+  "vi": "Giảm giá 20 %",
+  "ar": "خصم 20 %"
+ },
+ "Gutschein 10 % auf Rest": {
+  "tr": "Kalan tutara 10 % hediye çeki",
+  "vi": "Phiếu giảm giá 10 % trên phần còn lại",
+  "ar": "قسيمة 10 % على الباقي"
+ },
+ "Rechnung Möbel-Lieferung": {
+  "tr": "Mobilya teslimatı faturası",
+  "vi": "Hóa đơn giao đồ nội thất",
+  "ar": "فاتورة توصيل الأثاث"
+ },
+ "PUNKTE": {
+  "tr": "PUAN",
+  "vi": "ĐIỂM",
+  "ar": "النقاط"
+ },
+ "Richtig": {
+  "tr": "Doğru",
+  "vi": "Đúng",
+  "ar": "صحيح"
+ },
+ "Rekord": {
+  "tr": "Rekor",
+  "vi": "Kỷ lục",
+  "ar": "الرقم القياسي"
+ },
+ "Rekord {1}": {
+  "tr": "Rekor {1}",
+  "vi": "Kỷ lục {1}",
+  "ar": "الرقم القياسي {1}"
+ },
+ "Profi-Frage": {
+  "tr": "Uzman sorusu",
+  "vi": "Câu hỏi chuyên gia",
+  "ar": "سؤال احترافي"
+ },
+ "Wähle die richtige Antwort.": {
+  "tr": "Doğru cevabı seç.",
+  "vi": "Hãy chọn câu trả lời đúng.",
+  "ar": "اختر الإجابة الصحيحة."
+ },
+ "Kurze Frage an Sie, bevor der nächste Kunde kommt.": {
+  "tr": "Sonraki müşteri gelmeden size kısa bir soru.",
+  "vi": "Một câu hỏi ngắn cho bạn trước khi khách tiếp theo đến.",
+  "ar": "سؤال قصير لكم قبل أن يأتي الزبون التالي."
+ },
+ "Filialleiterin Frau Brandt": {
+  "tr": "Şube müdürü Frau Brandt",
+  "vi": "Trưởng chi nhánh bà Brandt",
+  "ar": "مديرة الفرع السيدة Brandt"
+ },
+ "Wie viel Rückgeld bekommt {1}?": {
+  "tr": "{1} ne kadar para üstü (Rückgeld) alır?",
+  "vi": "{1} nhận được bao nhiêu tiền thối lại?",
+  "ar": "كم الباقي (Rückgeld) الذي يحصل عليه {1}؟"
+ },
+ "Wie viel muss {1} bezahlen?": {
+  "tr": "{1} ne kadar ödemeli?",
+  "vi": "{1} phải trả bao nhiêu tiền?",
+  "ar": "كم يجب أن يدفع {1}؟"
+ },
+ "Wie viel kostet der Einkauf zusammen?": {
+  "tr": "Alışveriş toplam kaç para tutuyor?",
+  "vi": "Tổng cộng lần mua hàng này giá bao nhiêu?",
+  "ar": "كم تبلغ تكلفة المشتريات معاً؟"
+ },
+ "Lege das Rückgeld hin – mit möglichst wenigen Scheinen und Münzen.": {
+  "tr": "Para üstünü koy – mümkün olduğunca az banknot ve madeni parayla.",
+  "vi": "Hãy đặt tiền thối lại ra – dùng càng ít tờ tiền và đồng xu càng tốt.",
+  "ar": "ضع الباقي – بأقل عدد ممكن من الأوراق والعملات المعدنية."
+ },
+ "Ich zahle mit einem {1}-Euro-Schein.": {
+  "tr": "{1} euroluk banknotla ödüyorum.",
+  "vi": "Tôi trả bằng tờ {1} euro.",
+  "ar": "سأدفع بورقة نقدية من فئة {1} يورو."
+ },
+ "Hier sind {1} – dann bekomme ich glatter zurück.": {
+  "tr": "Buyurun {1} – o zaman daha düzgün para üstü alırım.",
+  "vi": "Đây là {1} – như vậy tôi sẽ được thối tiền tròn hơn.",
+  "ar": "تفضّل {1} – هكذا أحصل على باقٍ أسهل."
+ },
+ "Das wär's, danke.": {
+  "tr": "Bu kadar, teşekkürler.",
+  "vi": "Vậy thôi, cảm ơn.",
+  "ar": "هذا كل شيء، شكراً."
+ },
+ "Einmal das hier, bitte.": {
+  "tr": "Şunu alayım, lütfen.",
+  "vi": "Cho tôi món này, làm ơn.",
+  "ar": "هذا فقط، من فضلك."
+ },
+ "Nur die paar Sachen.": {
+  "tr": "Sadece şu birkaç şey.",
+  "vi": "Chỉ vài món này thôi.",
+  "ar": "فقط هذه الأشياء القليلة."
+ },
+ "Ich hab's ein bisschen eilig!": {
+  "tr": "Biraz acelem var!",
+  "vi": "Tôi hơi vội!",
+  "ar": "أنا مستعجل قليلاً!"
+ },
+ "Was macht das zusammen?": {
+  "tr": "Hepsi ne tutuyor?",
+  "vi": "Tổng cộng là bao nhiêu?",
+  "ar": "كم المجموع؟"
+ },
+ "Ich nehme drei Mal {1}. Da ist doch die Aktion, oder?": {
+  "tr": "Üç tane {1} alıyorum. Kampanya var, değil mi?",
+  "vi": "Tôi lấy ba cái {1}. Có khuyến mãi mà, đúng không?",
+  "ar": "سآخذ ثلاث قطع من {1}. هناك عرض، أليس كذلك؟"
+ },
+ "Ich nehme das hier: {1}. Das ist doch heute reduziert, oder?": {
+  "tr": "Şunu alıyorum: {1}. Bugün indirimde, değil mi?",
+  "vi": "Tôi lấy món này: {1}. Hôm nay được giảm giá, đúng không?",
+  "ar": "سآخذ هذا: {1}. هو مخفّض اليوم، أليس كذلك؟"
+ },
+ "Ich nehme {1} Stück {2}. Gilt die Aktion?": {
+  "tr": "{1} adet {2} alıyorum. Kampanya geçerli mi?",
+  "vi": "Tôi lấy {1} cái {2}. Khuyến mãi có áp dụng không?",
+  "ar": "سآخذ {1} قطعة من {2}. هل العرض ساري؟"
+ },
+ "Ich zahle die Rechnung sofort bar. Da gibt es doch {1} % Skonto?": {
+  "tr": "Faturayı hemen nakit ödüyorum. Bunda % {1} Skonto (peşin ödeme iskontosu) var, değil mi?",
+  "vi": "Tôi trả tiền mặt ngay hóa đơn này. Vậy có {1} % Skonto (chiết khấu thanh toán sớm) đúng không?",
+  "ar": "سأدفع الفاتورة نقداً فوراً. هناك Skonto (خصم الدفع الفوري) بنسبة {1} %، أليس كذلك؟"
+ },
+ "Ich nehme das hier: {1}. Das ist 20 % reduziert – und ich habe noch einen 10-%-Gutschein!": {
+  "tr": "Şunu alıyorum: {1}. 20 % indirimli – ve bir de 10 %'luk hediye çekim var!",
+  "vi": "Tôi lấy món này: {1}. Được giảm 20 % – và tôi còn có phiếu giảm giá 10 %!",
+  "ar": "سآخذ هذا: {1}. عليه خصم 20 % – ومعي أيضاً قسيمة خصم 10 %!"
+ },
+ "Ich nehme zwei Mal {1}. Das zweite ist doch halb so teuer?": {
+  "tr": "İki tane {1} alıyorum. İkincisi yarı fiyat, değil mi?",
+  "vi": "Tôi lấy hai cái {1}. Cái thứ hai chỉ bằng nửa giá, đúng không?",
+  "ar": "سآخذ قطعتين من {1}. القطعة الثانية بنصف السعر، أليس كذلك؟"
+ },
+ "Ich nehme das hier: {1}. Heute gibt es {2} % darauf, stimmt's?": {
+  "tr": "Şunu alıyorum: {1}. Bugün buna % {2} var, doğru mu?",
+  "vi": "Tôi lấy món này: {1}. Hôm nay được giảm {2} %, đúng không?",
+  "ar": "سآخذ هذا: {1}. اليوم عليه {2} %، صحيح؟"
+ },
+ "Betrag stimmt!": {
+  "tr": "Tutar doğru!",
+  "vi": "Số tiền đúng!",
+  "ar": "المبلغ صحيح!"
+ },
+ "Aber es geht mit weniger Teilen: {1} statt {2}.": {
+  "tr": "Ama daha az parçayla da olur: {2} yerine {1}.",
+  "vi": "Nhưng có thể dùng ít tờ/xu hơn: {1} thay vì {2}.",
+  "ar": "لكن يمكن بعدد أقل من القطع: {1} بدلاً من {2}."
+ },
+ "Leider nicht richtig.": {
+  "tr": "Maalesef doğru değil.",
+  "vi": "Rất tiếc, chưa đúng.",
+  "ar": "للأسف غير صحيح."
+ },
+ "Deine Antwort: {1} Richtig: {2}": {
+  "tr": "Cevabın: {1} Doğru: {2}",
+  "vi": "Câu trả lời của bạn: {1} Đúng: {2}",
+  "ar": "إجابتك: {1} الصحيح: {2}"
+ },
+ "Richtig: {1}": {
+  "tr": "Doğru: {1}",
+  "vi": "Đúng: {1}",
+  "ar": "الصحيح: {1}"
+ },
+ "Deine Antwort: {1} · Richtig: {2}": {
+  "tr": "Cevabın: {1} · Doğru: {2}",
+  "vi": "Câu trả lời của bạn: {1} · Đúng: {2}",
+  "ar": "إجابتك: {1} · الصحيح: {2}"
+ },
+ "Richtig!": {
+  "tr": "Doğru!",
+  "vi": "Đúng rồi!",
+  "ar": "صحيح!"
+ },
+ "Stimmt genau!": {
+  "tr": "Tam isabet!",
+  "vi": "Chính xác!",
+  "ar": "صحيح تماماً!"
+ },
+ "Sauber gerechnet!": {
+  "tr": "Temiz hesap!",
+  "vi": "Tính chuẩn lắm!",
+  "ar": "حساب نظيف!"
+ },
+ "Perfekt!": {
+  "tr": "Mükemmel!",
+  "vi": "Hoàn hảo!",
+  "ar": "ممتاز!"
+ },
+ "Nächster Kunde": {
+  "tr": "Sonraki müşteri",
+  "vi": "Khách hàng tiếp theo",
+  "ar": "الزبون التالي"
+ },
+ "Schicht beenden": {
+  "tr": "Vardiyayı bitir",
+  "vi": "Kết thúc ca làm",
+  "ar": "إنهاء الوردية"
+ },
+ "Tippe zuerst einen Betrag ein.": {
+  "tr": "Önce bir tutar gir.",
+  "vi": "Hãy nhập một số tiền trước.",
+  "ar": "اكتب مبلغاً أولاً."
+ },
+ "Tippe oben auf Scheine und Münzen.": {
+  "tr": "Yukarıdan banknotlara ve madeni paralara dokun.",
+  "vi": "Hãy chạm vào tờ tiền và đồng xu ở phía trên.",
+  "ar": "اضغط في الأعلى على الأوراق والعملات المعدنية."
+ },
+ "Lege zuerst Geld auf den Tresen.": {
+  "tr": "Önce tezgâha para koy.",
+  "vi": "Hãy đặt tiền lên quầy trước.",
+  "ar": "ضع النقود على الطاولة أولاً."
+ },
+ "Zeitbonus: +{1}": {
+  "tr": "Zaman bonusu: +{1}",
+  "vi": "Thưởng thời gian: +{1}",
+  "ar": "مكافأة الوقت: +{1}"
+ },
+ "Der Kunde wird ungeduldig – kein Zeitbonus mehr. Rechne trotzdem in Ruhe zu Ende.": {
+  "tr": "Müşteri sabırsızlanıyor – artık zaman bonusu yok. Yine de rahatça hesabı bitir.",
+  "vi": "Khách hàng đang mất kiên nhẫn – không còn thưởng thời gian. Dù vậy hãy cứ tính xong thong thả.",
+  "ar": "الزبون يفقد صبره – لا توجد مكافأة وقت بعد الآن. أكمل الحساب بهدوء على أي حال."
+ },
+ "{1} in 1 Teil": {
+  "tr": "{1} 1 parçada",
+  "vi": "{1} trong 1 tờ/xu",
+  "ar": "{1} في 1 قطعة"
+ },
+ "{1} in {2} Teilen": {
+  "tr": "{1} {2} parçada",
+  "vi": "{1} trong {2} tờ/xu",
+  "ar": "{1} في {2} قطع"
+ },
+ "{1} · {2} Teile": {
+  "tr": "{1} · {2} parça",
+  "vi": "{1} · {2} tờ/xu",
+  "ar": "{1} · {2} قطع"
+ },
+ "{1} · 1 Teil": {
+  "tr": "{1} · 1 parça",
+  "vi": "{1} · 1 tờ/xu",
+  "ar": "{1} · 1 قطعة"
+ },
+ "Ergänzen wie an der Kasse – vom Preis hochzählen:": {
+  "tr": "Kasada olduğu gibi tamamla – fiyattan yukarı doğru say:",
+  "vi": "Bổ sung như ở quầy thu ngân – đếm lên từ giá tiền:",
+  "ar": "أكمل كما في الصندوق – عدّ صعوداً من السعر:"
+ },
+ "Von {1} bis {2} fehlen {3}.": {
+  "tr": "{1} ile {2} arasında {3} eksik.",
+  "vi": "Từ {1} đến {2} còn thiếu {3}.",
+  "ar": "من {1} إلى {2} ينقص {3}."
+ },
+ "Dazu kommen {1}, die der Kunde extra gegeben hat.": {
+  "tr": "Buna müşterinin fazladan verdiği {1} eklenir.",
+  "vi": "Thêm vào đó là {1} mà khách đã đưa thêm.",
+  "ar": "يُضاف إليها {1} التي أعطاها الزبون زيادة."
+ },
+ "Zusammen: {1} Rückgeld.": {
+  "tr": "Toplam: {1} para üstü.",
+  "vi": "Tổng cộng: tiền thối lại {1}.",
+  "ar": "المجموع: {1} باقي."
+ },
+ "Trick erkennen:": {
+  "tr": "Püf noktasını fark et:",
+  "vi": "Nhận ra mẹo:",
+  "ar": "اكتشف الحيلة:"
+ },
+ "Die Cent sind gleich (,{1}). Sie heben sich auf.": {
+  "tr": "Sent kısımları aynı (,{1}). Birbirini götürürler.",
+  "vi": "Phần cent giống nhau (,{1}). Chúng triệt tiêu nhau.",
+  "ar": "السنتات متساوية (,{1}). فهي تلغي بعضها."
+ },
+ "Rechne nur mit den Euro: {1} − {2} = {3}.": {
+  "tr": "Sadece euro ile hesapla: {1} − {2} = {3}.",
+  "vi": "Chỉ tính với phần euro: {1} − {2} = {3}.",
+  "ar": "احسب باليورو فقط: {1} − {2} = {3}."
+ },
+ "Rückgeld: {1}.": {
+  "tr": "Para üstü: {1}.",
+  "vi": "Tiền thối lại: {1}.",
+  "ar": "الباقي: {1}."
+ },
+ "Mit glatten Preisen rechnen, dann die Cent abziehen:": {
+  "tr": "Yuvarlak fiyatlarla hesapla, sonra sentleri çıkar:",
+  "vi": "Tính với giá tròn, rồi trừ phần cent:",
+  "ar": "احسب بأسعار مستديرة، ثم اطرح السنتات:"
+ },
+ "{1} → {2} ({3} ct zu viel)": {
+  "tr": "{1} → {2} ({3} ct fazla)",
+  "vi": "{1} → {2} (thừa {3} ct)",
+  "ar": "{1} → {2} ({3} ct زيادة)"
+ },
+ "{1} bleibt so": {
+  "tr": "{1} aynen kalır",
+  "vi": "{1} giữ nguyên",
+  "ar": "{1} يبقى كما هو"
+ },
+ "Glatte Summe: {1}": {
+  "tr": "Yuvarlak toplam: {1}",
+  "vi": "Tổng tròn: {1}",
+  "ar": "المجموع المستدير: {1}"
+ },
+ "Erst die Euro, dann die Cent:": {
+  "tr": "Önce euro, sonra sent:",
+  "vi": "Tính euro trước, rồi đến cent:",
+  "ar": "أولاً اليورو، ثم السنتات:"
+ },
+ "Euro zusammen: {1} €": {
+  "tr": "Euro toplamı: {1} €",
+  "vi": "Tổng euro: {1} €",
+  "ar": "مجموع اليورو: {1} €"
+ },
+ "Cent zusammen: {1} ct": {
+  "tr": "Sent toplamı: {1} ct",
+  "vi": "Tổng cent: {1} ct",
+  "ar": "مجموع السنتات: {1} ct"
+ },
+ "Summe: {1}": {
+  "tr": "Toplam: {1}",
+  "vi": "Tổng: {1}",
+  "ar": "المجموع: {1}"
+ },
+ "Bei „3 für 2“ ist ein Teil gratis:": {
+  "tr": "„3 al 2 öde“ kampanyasında bir parça bedavadır:",
+  "vi": "Với „3 für 2“ (mua ba, trả tiền hai) có một món miễn phí:",
+  "ar": "في عرض „3 بسعر 2“ قطعة واحدة مجانية:"
+ },
+ "Der Kunde bezahlt nur 2 Stück.": {
+  "tr": "Müşteri sadece 2 adet öder.",
+  "vi": "Khách hàng chỉ trả tiền cho 2 cái.",
+  "ar": "الزبون يدفع ثمن 2 قطعة فقط."
+ },
+ "Bei „3 für 2“ ist jedes dritte Teil gratis:": {
+  "tr": "„3 al 2 öde“ kampanyasında her üçüncü parça bedavadır:",
+  "vi": "Với „3 für 2“ (mua ba, trả tiền hai) cứ món thứ ba là miễn phí:",
+  "ar": "في عرض „3 بسعر 2“ كل قطعة ثالثة مجانية:"
+ },
+ "{1} Stück: {2} davon gratis, bezahlt werden {3}.": {
+  "tr": "{1} adet: bunun {2} tanesi bedava, {3} tanesi ödenir.",
+  "vi": "{1} cái: {2} cái miễn phí, trả tiền cho {3} cái.",
+  "ar": "{1} قطعة: {2} منها مجانية، ويُدفع ثمن {3}."
+ },
+ "Erst den Rabatt, dann abziehen:": {
+  "tr": "Önce indirimi hesapla, sonra çıkar:",
+  "vi": "Tính giảm giá trước, rồi trừ đi:",
+  "ar": "أولاً احسب الخصم، ثم اطرحه:"
+ },
+ "10 % = Preis ÷ 10 = {1}": {
+  "tr": "10 % = Fiyat ÷ 10 = {1}",
+  "vi": "10 % = giá ÷ 10 = {1}",
+  "ar": "10 % = السعر ÷ 10 = {1}"
+ },
+ "25 % = ein Viertel = Preis ÷ 4 = {1}": {
+  "tr": "25 % = dörtte bir = Fiyat ÷ 4 = {1}",
+  "vi": "25 % = một phần tư = giá ÷ 4 = {1}",
+  "ar": "25 % = ربع = السعر ÷ 4 = {1}"
+ },
+ "50 % = die Hälfte = {1}": {
+  "tr": "50 % = yarısı = {1}",
+  "vi": "50 % = một nửa = {1}",
+  "ar": "50 % = النصف = {1}"
+ },
+ "Über 1 % rechnen:": {
+  "tr": "1 % üzerinden hesapla:",
+  "vi": "Tính qua 1 %:",
+  "ar": "احسب عبر 1 %:"
+ },
+ "1 % = Preis ÷ 100 = {1}": {
+  "tr": "1 % = Fiyat ÷ 100 = {1}",
+  "vi": "1 % = giá ÷ 100 = {1}",
+  "ar": "1 % = السعر ÷ 100 = {1}"
+ },
+ "Schritt für Schritt – der Gutschein gilt für den neuen Preis:": {
+  "tr": "Adım adım – hediye çeki (Gutschein) yeni fiyat için geçerlidir:",
+  "vi": "Từng bước một – phiếu giảm giá áp dụng cho giá mới:",
+  "ar": "خطوة بخطوة – القسيمة تُطبَّق على السعر الجديد:"
+ },
+ "20 % von {1} = {2} → {3}": {
+  "tr": "{1} tutarının 20 %'si = {2} → {3}",
+  "vi": "20 % của {1} = {2} → {3}",
+  "ar": "20 % من {1} = {2} → {3}"
+ },
+ "10 % von {1} = {2}": {
+  "tr": "{1} tutarının 10 %'u = {2}",
+  "vi": "10 % của {1} = {2}",
+  "ar": "10 % من {1} = {2}"
+ },
+ "Achtung: Das sind nicht 30 %, sondern 28 % Ersparnis.": {
+  "tr": "Dikkat: Bu 30 % değil, 28 % tasarruftur.",
+  "vi": "Chú ý: Đó không phải là tiết kiệm 30 %, mà là 28 %.",
+  "ar": "انتبه: هذا ليس 30 %، بل توفير 28 %."
+ },
+ "Ein Teil voll, eins zum halben Preis:": {
+  "tr": "Bir parça tam fiyat, biri yarı fiyat:",
+  "vi": "Một món giá đầy đủ, một món nửa giá:",
+  "ar": "قطعة بالسعر الكامل وقطعة بنصف السعر:"
+ },
+ "1. Teil: {1}": {
+  "tr": "1. parça: {1}",
+  "vi": "Món 1: {1}",
+  "ar": "القطعة 1: {1}"
+ },
+ "2. Teil: {1} ÷ 2 = {2}": {
+  "tr": "2. parça: {1} ÷ 2 = {2}",
+  "vi": "Món 2: {1} ÷ 2 = {2}",
+  "ar": "القطعة 2: {1} ÷ 2 = {2}"
+ },
+ "5 % = die Hälfte davon = {1}": {
+  "tr": "5 % = bunun yarısı = {1}",
+  "vi": "5 % = một nửa của số đó = {1}",
+  "ar": "5 % = نصف ذلك = {1}"
+ },
+ "5 % = die Hälfte = {1}": {
+  "tr": "5 % = yarısı = {1}",
+  "vi": "5 % = một nửa = {1}",
+  "ar": "5 % = النصف = {1}"
+ },
+ "25 % = Preis ÷ 4 = {1}": {
+  "tr": "25 % = Fiyat ÷ 4 = {1}",
+  "vi": "25 % = giá ÷ 4 = {1}",
+  "ar": "25 % = السعر ÷ 4 = {1}"
+ },
+ "Schneller: Der Kunde zahlt nur 25 % = {1}": {
+  "tr": "Daha hızlı: Müşteri sadece 25 % öder = {1}",
+  "vi": "Nhanh hơn: Khách hàng chỉ trả 25 % = {1}",
+  "ar": "أسرع: الزبون يدفع 25 % فقط = {1}"
+ },
+ "Über 10 % (oder 25 %) rechnen:": {
+  "tr": "10 % (veya 25 %) üzerinden hesapla:",
+  "vi": "Tính qua 10 % (hoặc 25 %):",
+  "ar": "احسب عبر 10 % (أو 25 %):"
+ },
+ "Immer mit dem größten Schein oder der größten Münze anfangen, die noch passt:": {
+  "tr": "Her zaman uyan en büyük banknot veya madeni parayla başla:",
+  "vi": "Luôn bắt đầu với tờ tiền hoặc đồng xu lớn nhất còn phù hợp:",
+  "ar": "ابدأ دائماً بأكبر ورقة نقدية أو عملة معدنية تناسب المبلغ:"
+ },
+ "Das sind {1} Teile.": {
+  "tr": "Bu {1} parça.",
+  "vi": "Đó là {1} tờ/xu.",
+  "ar": "هذه {1} قطع."
+ },
+ "Das sind 1 Teile.": {
+  "tr": "Bu 1 parça.",
+  "vi": "Đó là 1 tờ/xu.",
+  "ar": "هذه 1 قطعة."
+ },
+ "Begründung:": {
+  "tr": "Gerekçe:",
+  "vi": "Giải thích:",
+  "ar": "التعليل:"
+ },
+ "Vielen Dank für Ihren Einsatz!": {
+  "tr": "Çabanız için çok teşekkürler!",
+  "vi": "Cảm ơn bạn rất nhiều vì sự nỗ lực!",
+  "ar": "شكراً جزيلاً على جهدكم!"
+ },
+ "Kassen-Legende": {
+  "tr": "Kassen-Legende (Kasa Efsanesi)",
+  "vi": "Kassen-Legende (Huyền thoại thu ngân)",
+  "ar": "أسطورة الصندوق (Kassen-Legende)"
+ },
+ "Kassen-Ass": {
+  "tr": "Kasa ustası",
+  "vi": "Kassen-Ass (Cao thủ thu ngân)",
+  "ar": "بطل الصندوق"
+ },
+ "Kassen-Azubi": {
+  "tr": "Kasa çırağı",
+  "vi": "Kassen-Azubi (Học viên thu ngân)",
+  "ar": "متدرّب الصندوق"
+ },
+ "Kassen-Neuling": {
+  "tr": "Kasada acemi",
+  "vi": "Kassen-Neuling (Người mới thu ngân)",
+  "ar": "مبتدئ الصندوق"
+ },
+ "Alles richtig. Du bist bereit für den Samstag vor Weihnachten.": {
+  "tr": "Hepsi doğru. Noel'den önceki cumartesiye hazırsın.",
+  "vi": "Tất cả đều đúng. Bạn đã sẵn sàng cho ngày thứ Bảy trước Giáng sinh.",
+  "ar": "كل شيء صحيح. أنت جاهز ليوم السبت قبل عيد الميلاد."
+ },
+ "Sehr sicher an der Kasse. Schau dir die Fehler unten kurz an.": {
+  "tr": "Kasada çok emin. Aşağıdaki hatalara kısaca bak.",
+  "vi": "Rất vững ở quầy thu ngân. Hãy xem nhanh các lỗi ở bên dưới.",
+  "ar": "واثق جداً عند الصندوق. ألقِ نظرة سريعة على الأخطاء في الأسفل."
+ },
+ "Gute Grundlage. Mit den Rechenwegen unten wirst du schneller.": {
+  "tr": "İyi bir temel. Aşağıdaki hesap yollarıyla daha hızlı olacaksın.",
+  "vi": "Nền tảng tốt. Với các cách tính ở bên dưới bạn sẽ nhanh hơn.",
+  "ar": "أساس جيد. مع طرق الحساب في الأسفل ستصبح أسرع."
+ },
+ "Noch etwas wackelig. Spiel ohne Zeitbonus und lies die Rechenwege in Ruhe.": {
+  "tr": "Biraz daha sallantılı. Zaman bonusu olmadan oyna ve hesap yollarını rahatça oku.",
+  "vi": "Vẫn còn hơi yếu. Hãy chơi không có thưởng thời gian và đọc các cách tính thong thả.",
+  "ar": "ما زلت غير ثابت قليلاً. العب بدون مكافأة الوقت واقرأ طرق الحساب بهدوء."
+ },
+ "Probier als Nächstes die Stufe Kassenprofi.": {
+  "tr": "Sıradaki adımda Kasa uzmanı seviyesini dene.",
+  "vi": "Lần tới hãy thử cấp độ Chuyên gia thu ngân.",
+  "ar": "جرّب المستوى التالي: محترف الصندوق."
+ },
+ "Das schauen wir uns nochmal an": {
+  "tr": "Buna bir kez daha bakalım",
+  "vi": "Chúng ta sẽ xem lại phần này",
+  "ar": "سننظر في هذا مرة أخرى"
+ },
+ "Keine Fehler in dieser Schicht": {
+  "tr": "Bu vardiyada hata yok",
+  "vi": "Không có lỗi nào trong ca làm này",
+  "ar": "لا أخطاء في هذه الوردية"
+ },
+ "Profi-Frage: {1}": {
+  "tr": "Uzman sorusu: {1}",
+  "vi": "Câu hỏi chuyên gia: {1}",
+  "ar": "سؤال احترافي: {1}"
+ },
+ "Rückgeld: {1}": {
+  "tr": "Para üstü: {1}",
+  "vi": "Tiền thối lại: {1}",
+  "ar": "الباقي: {1}"
+ },
+ "{1} von {2}": {
+  "tr": "{2} içinden {1}",
+  "vi": "{1} trên {2}",
+  "ar": "{1} من {2}"
+ },
+ "NEU! {1}": {
+  "tr": "YENİ! {1}",
+  "vi": "MỚI! {1}",
+  "ar": "جديد! {1}"
+ },
+ "Milch": {
+  "tr": "Süt",
+  "vi": "Sữa",
+  "ar": "حليب"
+ },
+ "Brötchen": {
+  "tr": "Ekmek (Brötchen)",
+  "vi": "Bánh mì nhỏ",
+  "ar": "خبز صغير"
+ },
+ "Butter": {
+  "tr": "Tereyağı",
+  "vi": "Bơ",
+  "ar": "زبدة"
+ },
+ "Kaffee": {
+  "tr": "Kahve",
+  "vi": "Cà phê",
+  "ar": "قهوة"
+ },
+ "Schokolade": {
+  "tr": "Çikolata",
+  "vi": "Sô-cô-la",
+  "ar": "شوكولاتة"
+ },
+ "Duschgel": {
+  "tr": "Duş jeli",
+  "vi": "Sữa tắm",
+  "ar": "جل استحمام"
+ },
+ "Zahnpasta": {
+  "tr": "Diş macunu",
+  "vi": "Kem đánh răng",
+  "ar": "معجون أسنان"
+ },
+ "Socken 3er-Pack": {
+  "tr": "Çorap 3'lü paket",
+  "vi": "Tất (gói 3 đôi)",
+  "ar": "جوارب (عبوة من 3)"
+ },
+ "Batterien": {
+  "tr": "Piller",
+  "vi": "Pin",
+  "ar": "بطاريات"
+ },
+ "Kaugummi": {
+  "tr": "Sakız",
+  "vi": "Kẹo cao su",
+  "ar": "علكة"
+ },
+ "Apfelsaft": {
+  "tr": "Elma suyu",
+  "vi": "Nước ép táo",
+  "ar": "عصير تفاح"
+ },
+ "Ladekabel": {
+  "tr": "Şarj kablosu",
+  "vi": "Dây sạc",
+  "ar": "كابل شحن"
+ },
+ "Notizbuch": {
+  "tr": "Not defteri",
+  "vi": "Sổ tay",
+  "ar": "دفتر ملاحظات"
+ },
+ "Bananen": {
+  "tr": "Muz",
+  "vi": "Chuối",
+  "ar": "موز"
+ },
+ "Chips": {
+  "tr": "Cips",
+  "vi": "Khoai tây chiên lát",
+  "ar": "رقائق البطاطس"
+ },
+ "Mascara": {
+  "tr": "Rimel",
+  "vi": "Mascara",
+  "ar": "ماسكارا"
+ },
+ "Shampoo": {
+  "tr": "Şampuan",
+  "vi": "Dầu gội",
+  "ar": "شامبو"
+ },
+ "Eis am Stiel": {
+  "tr": "Çubuk dondurma",
+  "vi": "Kem que",
+  "ar": "مثلجات على عود"
+ },
+ "Duftkerze": {
+  "tr": "Kokulu mum",
+  "vi": "Nến thơm",
+  "ar": "شمعة عطرية"
+ },
+ "Postkarte": {
+  "tr": "Kartpostal",
+  "vi": "Bưu thiếp",
+  "ar": "بطاقة بريدية"
+ },
+ "Tiefkühlpizza": {
+  "tr": "Dondurulmuş pizza",
+  "vi": "Pizza đông lạnh",
+  "ar": "بيتزا مجمّدة"
+ },
+ "Mineralwasser": {
+  "tr": "Maden suyu",
+  "vi": "Nước khoáng",
+  "ar": "مياه معدنية"
+ },
+ "Haargel": {
+  "tr": "Saç jölesi",
+  "vi": "Gel vuốt tóc",
+  "ar": "جل شعر"
+ },
+ "Müsli": {
+  "tr": "Müsli",
+  "vi": "Ngũ cốc muesli",
+  "ar": "موسلي"
+ },
+ "Jacke": {
+  "tr": "Ceket",
+  "vi": "Áo khoác",
+  "ar": "جاكيت"
+ },
+ "Jeans": {
+  "tr": "Kot pantolon",
+  "vi": "Quần jeans",
+  "ar": "بنطلون جينز"
+ },
+ "Sneaker": {
+  "tr": "Spor ayakkabı",
+  "vi": "Giày sneaker",
+  "ar": "حذاء رياضي"
+ },
+ "Rucksack": {
+  "tr": "Sırt çantası",
+  "vi": "Ba lô",
+  "ar": "حقيبة ظهر"
+ },
+ "Kopfhörer": {
+  "tr": "Kulaklık",
+  "vi": "Tai nghe",
+  "ar": "سماعات رأس"
+ },
+ "Pullover": {
+  "tr": "Kazak",
+  "vi": "Áo len chui đầu",
+  "ar": "بلوفر"
+ },
+ "Kaffeemaschine": {
+  "tr": "Kahve makinesi",
+  "vi": "Máy pha cà phê",
+  "ar": "آلة صنع القهوة"
+ },
+ "Sporttasche": {
+  "tr": "Spor çantası",
+  "vi": "Túi thể thao",
+  "ar": "حقيبة رياضية"
+ },
+ "Winterstiefel": {
+  "tr": "Kışlık bot",
+  "vi": "Ủng mùa đông",
+  "ar": "حذاء شتوي"
+ },
+ "Bluetooth-Box": {
+  "tr": "Bluetooth hoparlör",
+  "vi": "Loa Bluetooth",
+  "ar": "مكبّر صوت بلوتوث"
+ },
+ "Bettwäsche": {
+  "tr": "Nevresim takımı",
+  "vi": "Bộ ga gối",
+  "ar": "مفروشات السرير"
+ },
+ "Wasserkocher": {
+  "tr": "Su ısıtıcısı",
+  "vi": "Ấm đun nước điện",
+  "ar": "غلّاية ماء"
+ },
+ "Müsliriegel": {
+  "tr": "Müsli bar",
+  "vi": "Thanh ngũ cốc",
+  "ar": "ألواح موسلي"
+ },
+ "Teelichter": {
+  "tr": "Küçük mumlar",
+  "vi": "Nến tealight",
+  "ar": "شموع صغيرة"
+ },
+ "Taschentücher": {
+  "tr": "Kâğıt mendil",
+  "vi": "Khăn giấy",
+  "ar": "مناديل ورقية"
+ },
+ "Energydrink": {
+  "tr": "Enerji içeceği",
+  "vi": "Nước tăng lực",
+  "ar": "مشروب طاقة"
+ },
+ "Handcreme": {
+  "tr": "El kremi",
+  "vi": "Kem dưỡng da tay",
+  "ar": "كريم لليدين"
+ },
+ "T-Shirt": {
+  "tr": "Tişört",
+  "vi": "Áo phông",
+  "ar": "تي شيرت"
+ },
+ "Bluse": {
+  "tr": "Bluz",
+  "vi": "Áo sơ mi nữ",
+  "ar": "بلوزة"
+ },
+ "Mütze": {
+  "tr": "Bere",
+  "vi": "Mũ len",
+  "ar": "قبعة"
+ },
+ "Hemd": {
+  "tr": "Gömlek",
+  "vi": "Áo sơ mi",
+  "ar": "قميص"
+ },
+ "Erst 20 % Rabatt, dann an der Kasse noch 10 % auf den neuen Preis. Wie viel spart die Kundin insgesamt?": {
+  "tr": "Önce 20 % indirim (Rabatt), sonra kasada yeni fiyata bir de 10 %. Müşteri toplam ne kadar tasarruf eder?",
+  "vi": "Trước tiên giảm giá 20 %, sau đó ở quầy thu ngân giảm thêm 10 % trên giá mới. Tổng cộng khách hàng nữ tiết kiệm được bao nhiêu?",
+  "ar": "أولاً خصم 20 %، ثم عند الصندوق 10 % أخرى على السعر الجديد. كم توفّر الزبونة في المجموع؟"
+ },
+ "Der Einkauf kostet 13,70 €. Der Kunde gibt 20,20 €. Warum macht er das?": {
+  "tr": "Alışveriş 13,70 € tutuyor. Müşteri 20,20 € veriyor. Bunu neden yapıyor?",
+  "vi": "Lần mua hàng giá 13,70 €. Khách đưa 20,20 €. Tại sao khách làm vậy?",
+  "ar": "المشتريات تكلّف 13,70 €. الزبون يعطي 20,20 €. لماذا يفعل ذلك؟"
+ },
+ "6 Flaschen kosten je 4,99 €. Welcher Rechenweg ist im Kopf am schnellsten?": {
+  "tr": "6 şişe tanesi 4,99 €. Zihinden en hızlı hesap yolu hangisi?",
+  "vi": "6 chai, mỗi chai giá 4,99 €. Cách tính nào nhanh nhất khi tính nhẩm?",
+  "ar": "6 زجاجات سعر الواحدة 4,99 €. ما طريقة الحساب الأسرع في الذهن؟"
+ },
+ "Warum kann man 25 % Rabatt mit „Preis ÷ 4“ ausrechnen?": {
+  "tr": "25 % indirim neden „Fiyat ÷ 4“ ile hesaplanabilir?",
+  "vi": "Tại sao có thể tính giảm giá 25 % bằng „giá ÷ 4“?",
+  "ar": "لماذا يمكن حساب خصم 25 % بـ „السعر ÷ 4“؟"
+ },
+ "Aktion „3 für 2“. Wie viel Prozent spart der Kunde, wenn er genau 3 Stück kauft?": {
+  "tr": "„3 al 2 öde“ kampanyası. Müşteri tam 3 adet alırsa yüzde kaç tasarruf eder?",
+  "vi": "Khuyến mãi „3 für 2“ (mua ba, trả tiền hai). Khách hàng tiết kiệm được bao nhiêu phần trăm nếu mua đúng 3 cái?",
+  "ar": "عرض „3 بسعر 2“. كم بالمئة يوفّر الزبون إذا اشترى 3 قطع بالضبط؟"
+ },
+ "Eine Ware kostet 80 €. Sie wird 25 % teurer. Danach gibt es 25 % Rabatt. Was kostet sie jetzt?": {
+  "tr": "Bir ürün 80 €. Fiyatı 25 % artıyor. Sonra 25 % indirim yapılıyor. Şimdi ne kadar?",
+  "vi": "Một món hàng giá 80 €. Giá tăng 25 %. Sau đó giảm giá 25 %. Bây giờ nó giá bao nhiêu?",
+  "ar": "سعر سلعة 80 €. ارتفع سعرها 25 %. بعد ذلك يوجد خصم 25 %. كم سعرها الآن؟"
+ },
+ "Sie sollen 3 % Skonto von 400 € ausrechnen. Welcher Weg ist richtig?": {
+  "tr": "400 €'nun 3 % Skonto (peşin ödeme iskontosu) tutarını hesaplayacaksınız. Hangi yol doğru?",
+  "vi": "Bạn cần tính 3 % Skonto (chiết khấu thanh toán sớm) của 400 €. Cách nào đúng?",
+  "ar": "عليك حساب Skonto (خصم الدفع الفوري) بنسبة 3 % من 400 €. أي طريقة صحيحة؟"
+ },
+ "Rückgeld 7,90 €. Welche Stückelung ist am besten?": {
+  "tr": "Para üstü (Rückgeld) 7,90 €. Hangi banknot-bozuk para dağılımı en iyisi?",
+  "vi": "Tiền thối lại 7,90 €. Cách chia tờ tiền và đồng xu nào là tốt nhất?",
+  "ar": "الباقي (Rückgeld) 7,90 €. ما أفضل تقسيم للأوراق والعملات؟"
+ },
+ "Die Kasse ist ausgefallen. Einkauf 47,80 €, der Kunde zahlt mit 100 €. Sie geben 52,20 € zurück. Wie prüfen Sie das schnell?": {
+  "tr": "Kasa arızalandı. Alışveriş 47,80 €, müşteri 100 € ile ödüyor. 52,20 € geri veriyorsunuz. Bunu nasıl hızlıca kontrol edersiniz?",
+  "vi": "Máy tính tiền bị hỏng. Mua hàng 47,80 €, khách trả bằng 100 €. Bạn thối lại 52,20 €. Bạn kiểm tra nhanh như thế nào?",
+  "ar": "الصندوق متعطّل. المشتريات 47,80 €، والزبون يدفع بـ 100 €. أنت تعيد 52,20 €. كيف تتحقق من ذلك بسرعة؟"
+ },
+ "Die 10 % werden vom schon reduzierten Preis gerechnet. Beispiel 100 €: minus 20 % = 80 €. Davon 10 % = 8 €, also 72 €. Gespart: 28 €, das sind 28 %.": {
+  "tr": "10 % zaten indirimli fiyat üzerinden hesaplanır. Örnek 100 €: eksi 20 % = 80 €. Bunun 10 %'u = 8 €, yani 72 €. Tasarruf: 28 €, bu da 28 %.",
+  "vi": "10 % được tính trên giá đã giảm. Ví dụ 100 €: trừ 20 % = 80 €. 10 % của số đó = 8 €, tức là 72 €. Tiết kiệm: 28 €, tức là 28 %.",
+  "ar": "الـ 10 % تُحسب من السعر المخفّض أصلاً. مثال 100 €: ناقص 20 % = 80 €. منها 10 % = 8 €، إذن 72 €. التوفير: 28 €، أي 28 %."
+ },
+ "6,30 € wären 5 € + 1 € + 20 ct + 10 ct (4 Teile). 6,50 € sind 5 € + 1 € + 50 ct (3 Teile). Der Kunde wird Kleingeld los und bekommt weniger Münzen zurück.": {
+  "tr": "6,30 € şöyle olurdu: 5 € + 1 € + 20 ct + 10 ct (4 parça). 6,50 € ise 5 € + 1 € + 50 ct (3 parça). Müşteri bozuk paralarından kurtulur ve daha az madeni para geri alır.",
+  "vi": "6,30 € sẽ là 5 € + 1 € + 20 ct + 10 ct (4 tờ/xu). 6,50 € là 5 € + 1 € + 50 ct (3 tờ/xu). Khách hàng bớt được tiền xu lẻ và nhận lại ít đồng xu hơn.",
+  "ar": "6,30 € ستكون 5 € + 1 € + 20 ct + 10 ct (4 قطع). 6,50 € هي 5 € + 1 € + 50 ct (3 قطع). الزبون يتخلص من الفكّة ويأخذ عملات معدنية أقل."
+ },
+ "Mit dem runden Preis rechnen und die Cent danach abziehen: 6 × 5 € = 30 €. Pro Flasche 1 ct zu viel, also 6 ct weniger: 29,94 €.": {
+  "tr": "Yuvarlak fiyatla hesapla, sentleri sonra çıkar: 6 × 5 € = 30 €. Şişe başına 1 ct fazla, yani 6 ct eksik: 29,94 €.",
+  "vi": "Tính với giá tròn rồi trừ phần cent sau: 6 × 5 € = 30 €. Mỗi chai thừa 1 ct, vậy bớt 6 ct: 29,94 €.",
+  "ar": "احسب بالسعر المستدير ثم اطرح السنتات: 6 × 5 € = 30 €. لكل زجاجة 1 ct زيادة، إذن ينقص 6 ct: 29,94 €."
+ },
+ "100 % ist der ganze Preis. 25 % ist ein Viertel davon. Ein Viertel heißt: durch 4 teilen. Das gilt für jeden Preis.": {
+  "tr": "100 % fiyatın tamamıdır. 25 % bunun dörtte biridir. Dörtte bir demek: 4'e bölmek. Bu her fiyat için geçerlidir.",
+  "vi": "100 % là toàn bộ giá. 25 % là một phần tư của nó. Một phần tư nghĩa là: chia cho 4. Điều này đúng với mọi giá.",
+  "ar": "100 % هو السعر كله. 25 % هو ربعه. الربع يعني: القسمة على 4. وهذا ينطبق على أي سعر."
+ },
+ "Er bezahlt 2 von 3 Teilen. 1 von 3 Teilen ist gratis. 1/3 sind etwa 33,3 %.": {
+  "tr": "3 parçanın 2'sini öder. 3 parçanın 1'i bedava. 1/3 yaklaşık 33,3 %.",
+  "vi": "Khách trả tiền cho 2 trong 3 món. 1 trong 3 món là miễn phí. 1/3 là khoảng 33,3 %.",
+  "ar": "هو يدفع ثمن 2 من 3 قطع. 1 من 3 قطع مجانية. 1/3 تساوي تقريباً 33,3 %."
+ },
+ "80 € + 25 % = 80 € + 20 € = 100 €. Der Rabatt wird vom neuen Preis gerechnet: 25 % von 100 € = 25 €. 100 € − 25 € = 75 €.": {
+  "tr": "80 € + 25 % = 80 € + 20 € = 100 €. İndirim yeni fiyat üzerinden hesaplanır: 100 €'nun 25 %'i = 25 €. 100 € − 25 € = 75 €.",
+  "vi": "80 € + 25 % = 80 € + 20 € = 100 €. Giảm giá được tính trên giá mới: 25 % của 100 € = 25 €. 100 € − 25 € = 75 €.",
+  "ar": "80 € + 25 % = 80 € + 20 € = 100 €. الخصم يُحسب من السعر الجديد: 25 % من 100 € = 25 €. 100 € − 25 € = 75 €."
+ },
+ "1 % ist der hundertste Teil: 400 € ÷ 100 = 4 €. 3 % sind dreimal so viel: 12 €.": {
+  "tr": "1 % yüzde birdir: 400 € ÷ 100 = 4 €. 3 % bunun üç katıdır: 12 €.",
+  "vi": "1 % là một phần trăm: 400 € ÷ 100 = 4 €. 3 % gấp ba lần: 12 €.",
+  "ar": "1 % هو الجزء المئوي: 400 € ÷ 100 = 4 €. 3 % هي ثلاثة أضعاف ذلك: 12 €."
+ },
+ "Immer mit dem größten Schein oder der größten Münze beginnen, die noch passt. So brauchst du die wenigsten Teile: hier 5 Stück.": {
+  "tr": "Her zaman uyan en büyük banknot veya madeni parayla başla. Böylece en az parça gerekir: burada 5 adet.",
+  "vi": "Luôn bắt đầu với tờ tiền hoặc đồng xu lớn nhất còn phù hợp. Như vậy bạn cần ít tờ/xu nhất: ở đây là 5 cái.",
+  "ar": "ابدأ دائماً بأكبر ورقة نقدية أو عملة معدنية تناسب المبلغ. هكذا تحتاج أقل عدد من القطع: هنا 5 قطع."
+ },
+ "Probe durch Zusammenzählen: Einkauf + Rückgeld = gegebenes Geld. 47,80 € + 52,20 € = 100,00 €. Stimmt.": {
+  "tr": "Toplayarak doğrulama: Alışveriş + para üstü = verilen para. 47,80 € + 52,20 € = 100,00 €. Doğru.",
+  "vi": "Kiểm tra bằng cách cộng: tiền mua hàng + tiền thối lại = tiền khách đưa. 47,80 € + 52,20 € = 100,00 €. Đúng.",
+  "ar": "التحقق بالجمع: المشتريات + الباقي = النقود المُعطاة. 47,80 € + 52,20 € = 100,00 €. صحيح."
+ },
+ "28 %": {
+  "tr": "28 %",
+  "vi": "28 %",
+  "ar": "28 %"
+ },
+ "30 %": {
+  "tr": "30 %",
+  "vi": "30 %",
+  "ar": "30 %"
+ },
+ "32 %": {
+  "tr": "32 %",
+  "vi": "32 %",
+  "ar": "32 %"
+ },
+ "Er bekommt glatter zurück: 6,50 € statt 6,30 €": {
+  "tr": "Daha düzgün para üstü alır: 6,30 € yerine 6,50 €",
+  "vi": "Khách được thối tiền tròn hơn: 6,50 € thay vì 6,30 €",
+  "ar": "يحصل على باقٍ أسهل: 6,50 € بدلاً من 6,30 €"
+ },
+ "Er hat sich verzählt – die 20 ct gibt man sofort zurück": {
+  "tr": "Yanlış saymış – 20 ct hemen geri verilir",
+  "vi": "Khách đếm nhầm – 20 ct phải trả lại ngay",
+  "ar": "أخطأ في العدّ – الـ 20 ct تُعاد فوراً"
+ },
+ "Er möchte Trinkgeld geben": {
+  "tr": "Bahşiş vermek istiyor",
+  "vi": "Khách muốn cho tiền boa",
+  "ar": "يريد أن يعطي بقشيشاً"
+ },
+ "6 × 5 € = 30 €, minus 6 ct = 29,94 €": {
+  "tr": "6 × 5 € = 30 €, eksi 6 ct = 29,94 €",
+  "vi": "6 × 5 € = 30 €, trừ 6 ct = 29,94 €",
+  "ar": "6 × 5 € = 30 €، ناقص 6 ct = 29,94 €"
+ },
+ "6 × 4 € + 6 × 0,99 €": {
+  "tr": "6 × 4 € + 6 × 0,99 €",
+  "vi": "6 × 4 € + 6 × 0,99 €",
+  "ar": "6 × 4 € + 6 × 0,99 €"
+ },
+ "4,99 + 4,99 + 4,99 + 4,99 + 4,99 + 4,99": {
+  "tr": "4,99 + 4,99 + 4,99 + 4,99 + 4,99 + 4,99",
+  "vi": "4,99 + 4,99 + 4,99 + 4,99 + 4,99 + 4,99",
+  "ar": "4,99 + 4,99 + 4,99 + 4,99 + 4,99 + 4,99"
+ },
+ "Weil 25 % ein Viertel von 100 % sind": {
+  "tr": "Çünkü 25 %, 100 %'ün dörtte biridir",
+  "vi": "Vì 25 % là một phần tư của 100 %",
+  "ar": "لأن 25 % هو ربع الـ 100 %"
+ },
+ "Weil 4 × 25 = 100 ist – das ist nur ein Zufall": {
+  "tr": "Çünkü 4 × 25 = 100 – bu sadece bir tesadüf",
+  "vi": "Vì 4 × 25 = 100 – đó chỉ là ngẫu nhiên",
+  "ar": "لأن 4 × 25 = 100 – هذه مجرد صدفة"
+ },
+ "Das klappt nur bei runden Preisen": {
+  "tr": "Bu sadece yuvarlak fiyatlarda işe yarar",
+  "vi": "Cách này chỉ dùng được với giá tròn",
+  "ar": "هذا ينجح فقط مع الأسعار المستديرة"
+ },
+ "etwa 33 %": {
+  "tr": "yaklaşık 33 %",
+  "vi": "khoảng 33 %",
+  "ar": "حوالي 33 %"
+ },
+ "50 %": {
+  "tr": "50 %",
+  "vi": "50 %",
+  "ar": "50 %"
+ },
+ "etwa 66 %": {
+  "tr": "yaklaşık 66 %",
+  "vi": "khoảng 66 %",
+  "ar": "حوالي 66 %"
+ },
+ "75 €": {
+  "tr": "75 €",
+  "vi": "75 €",
+  "ar": "75 €"
+ },
+ "80 €": {
+  "tr": "80 €",
+  "vi": "80 €",
+  "ar": "80 €"
+ },
+ "85 €": {
+  "tr": "85 €",
+  "vi": "85 €",
+  "ar": "85 €"
+ },
+ "1 % = 4 €, also 3 % = 12 €": {
+  "tr": "1 % = 4 €, yani 3 % = 12 €",
+  "vi": "1 % = 4 €, vậy 3 % = 12 €",
+  "ar": "1 % = 4 €، إذن 3 % = 12 €"
+ },
+ "400 € ÷ 3 = 133,33 €": {
+  "tr": "400 € ÷ 3 = 133,33 €",
+  "vi": "400 € ÷ 3 = 133,33 €",
+  "ar": "400 € ÷ 3 = 133,33 €"
+ },
+ "400 € − 3 € = 397 €": {
+  "tr": "400 € − 3 € = 397 €",
+  "vi": "400 € − 3 € = 397 €",
+  "ar": "400 € − 3 € = 397 €"
+ },
+ "5 € + 2 € + 50 ct + 20 ct + 20 ct": {
+  "tr": "5 € + 2 € + 50 ct + 20 ct + 20 ct",
+  "vi": "5 € + 2 € + 50 ct + 20 ct + 20 ct",
+  "ar": "5 € + 2 € + 50 ct + 20 ct + 20 ct"
+ },
+ "5 € + 1 € + 1 € + 50 ct + 20 ct + 20 ct": {
+  "tr": "5 € + 1 € + 1 € + 50 ct + 20 ct + 20 ct",
+  "vi": "5 € + 1 € + 1 € + 50 ct + 20 ct + 20 ct",
+  "ar": "5 € + 1 € + 1 € + 50 ct + 20 ct + 20 ct"
+ },
+ "2 € + 2 € + 2 € + 1 € + 50 ct + 20 ct + 10 ct + 10 ct": {
+  "tr": "2 € + 2 € + 2 € + 1 € + 50 ct + 20 ct + 10 ct + 10 ct",
+  "vi": "2 € + 2 € + 2 € + 1 € + 50 ct + 20 ct + 10 ct + 10 ct",
+  "ar": "2 € + 2 € + 2 € + 1 € + 50 ct + 20 ct + 10 ct + 10 ct"
+ },
+ "47,80 € + 52,20 € muss 100 € ergeben": {
+  "tr": "47,80 € + 52,20 € toplamı 100 € etmeli",
+  "vi": "47,80 € + 52,20 € phải ra 100 €",
+  "ar": "47,80 € + 52,20 € يجب أن يساوي 100 €"
+ },
+ "52,20 € − 47,80 € muss 0 ergeben": {
+  "tr": "52,20 € − 47,80 € sonucu 0 etmeli",
+  "vi": "52,20 € − 47,80 € phải ra 0",
+  "ar": "52,20 € − 47,80 € يجب أن يساوي 0"
+ },
+ "100 € ÷ 2 muss 52,20 € ergeben": {
+  "tr": "100 € ÷ 2 sonucu 52,20 € etmeli",
+  "vi": "100 € ÷ 2 phải ra 52,20 €",
+  "ar": "100 € ÷ 2 يجب أن يساوي 52,20 €"
+ },
+ "je {1}": {
+  "tr": "birimi {1}",
+  "vi": "mỗi cái {1}",
+  "ar": "للواحد {1}"
+ }
+}
