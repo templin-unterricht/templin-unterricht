@@ -1,0 +1,422 @@
+{
+ "Kunden im Servicebereich Kasse betreuen": {
+  "tr": "Kasa hizmet alanında müşterilere hizmet vermek",
+  "vi": "Phục vụ khách hàng tại khu vực quầy thu ngân (Kasse)",
+  "ar": "خدمة العملاء في منطقة خدمة الصندوق (Kasse)"
+ },
+ "Rechen-Minute – Stufe 3 und 4": {
+  "tr": "Hesap dakikası – 3. ve 4. seviye",
+  "vi": "Phút tính nhẩm – Cấp 3 và 4",
+  "ar": "دقيقة الحساب – المستوى 3 و 4"
+ },
+ "Mehrsprachige Online-Fassung · Sprache oben wählen": {
+  "tr": "Çok dilli çevrimiçi sürüm · Dili yukarıdan seçin",
+  "vi": "Phiên bản trực tuyến đa ngôn ngữ · Chọn ngôn ngữ ở phía trên",
+  "ar": "النسخة الإلكترونية متعددة اللغات · اختر اللغة من الأعلى"
+ },
+ "Rechen-Minute: Karten 21 bis 40": {
+  "tr": "Hesap dakikası: 21 ile 40 arası kartlar",
+  "vi": "Phút tính nhẩm: Thẻ 21 đến 40",
+  "ar": "دقيقة الحساب: البطاقات من 21 إلى 40"
+ },
+ "Für DS 21 bis DS 40 · Stufe 3: Wiederholung früherer Rechenarten · Stufe 4: gemischte Prüfungsaufgaben": {
+  "tr": "DS 21 ile DS 40 için · 3. seviye: Önceki hesap türlerinin tekrarı · 4. seviye: karışık sınav soruları",
+  "vi": "Cho DS 21 đến DS 40 · Cấp 3: Ôn lại các phép tính đã học · Cấp 4: Bài thi tổng hợp",
+  "ar": "لحصص DS 21 إلى DS 40 · المستوى 3: تكرار أنواع الحساب السابقة · المستوى 4: مسائل امتحان مختلطة"
+ },
+ "So geht es": {
+  "tr": "Nasıl yapılır",
+  "vi": "Cách thực hiện",
+  "ar": "الطريقة"
+ },
+ "Wie bei den Karten 1–20: Tandem, 5 Minuten rechnen, 5 Minuten vergleichen.": {
+  "tr": "1–20 arası kartlardaki gibi: ikili ekip, 5 dakika hesap, 5 dakika karşılaştırma.",
+  "vi": "Giống như thẻ 1–20: Nhóm hai người, tính 5 phút, so sánh 5 phút.",
+  "ar": "مثل البطاقات 1–20: فريق ثنائي (Tandem)، 5 دقائق حساب، 5 دقائق مقارنة."
+ },
+ "Ab jetzt immer mit Taschenrechner und Rezeptkarte.": {
+  "tr": "Bundan sonra her zaman hesap makinesi ve formül kartı (Rezeptkarte) ile.",
+  "vi": "Từ giờ luôn dùng máy tính cầm tay và thẻ công thức (Rezeptkarte).",
+  "ar": "من الآن دائمًا مع الآلة الحاسبة وبطاقة الوصفة الحسابية (Rezeptkarte)."
+ },
+ "Die Karten wiederholen bewusst frühere Rechenarten (verteiltes Üben): Karte 25 zum Beispiel übt Prozent, während der Unterricht schon beim Prozentsatz ist.": {
+  "tr": "Kartlar önceki hesap türlerini bilerek tekrarlar (dağıtılmış alıştırma): Örneğin kart 25 yüzdeyi alıştırır, ders ise bu sırada yüzde oranındadır.",
+  "vi": "Các thẻ cố ý ôn lại những phép tính trước đó (luyện tập rải đều): ví dụ thẻ 25 luyện phần trăm (Prozent), trong khi giờ học đã đến tỷ lệ phần trăm (Prozentsatz).",
+  "ar": "تكرّر البطاقات عمدًا أنواع الحساب السابقة (تدريب موزّع على الوقت): البطاقة 25 مثلًا تدرّب على النسبة المئوية (Prozent) بينما الدرس وصل إلى معدل النسبة (Prozentsatz)."
+ },
+ "Ab Karte 31 sind alle Rechenarten gemischt – wie in der Prüfung.": {
+  "tr": "Kart 31'den itibaren tüm hesap türleri karışıktır – sınavdaki gibi.",
+  "vi": "Từ thẻ 31 tất cả các dạng tính được trộn lẫn – như trong kỳ thi.",
+  "ar": "ابتداءً من البطاقة 31 تكون كل أنواع الحساب مختلطة – كما في الامتحان."
+ },
+ "Druck: beidseitig auf festes Papier, Wenden an der langen Kante.": {
+  "tr": "Baskı: sağlam kâğıda iki yüzlü, uzun kenardan çevirin.",
+  "vi": "In: hai mặt trên giấy cứng, lật theo cạnh dài.",
+  "ar": "الطباعة: من الوجهين على ورق سميك، القلب على الحافة الطويلة."
+ },
+ "Karte": {
+  "tr": "Kart",
+  "vi": "Thẻ",
+  "ar": "البطاقة"
+ },
+ "alle richtig?": {
+  "tr": "hepsi doğru mu?",
+  "vi": "đúng hết?",
+  "ar": "كلها صحيحة؟"
+ },
+ "Meine Rechen-Liste": {
+  "tr": "Hesap listem",
+  "vi": "Bảng tính nhẩm của tôi",
+  "ar": "قائمة الحساب الخاصة بي"
+ },
+ "Einkauf 37,85 €, der Kunde gibt 50 €. Rückgeld?": {
+  "tr": "Alışveriş 37,85 €, müşteri 50 € veriyor. Para üstü?",
+  "vi": "Mua hàng 37,85 €, khách đưa 50 €. Tiền thối lại (Rückgeld)?",
+  "ar": "المشتريات 37,85 €، والعميل يدفع 50 €. الباقي (Rückgeld)؟"
+ },
+ "19,996 € auf 2 Stellen runden": {
+  "tr": "19,996 € 2 basamağa yuvarlayın",
+  "vi": "Làm tròn 19,996 € đến 2 chữ số thập phân",
+  "ar": "قرّب 19,996 € إلى 2 منزلة عشرية"
+ },
+ "Stufe 3 · Wiederholung mit Taschenrechner": {
+  "tr": "3. seviye · hesap makinesiyle tekrar",
+  "vi": "Cấp 3 · Ôn tập với máy tính cầm tay",
+  "ar": "المستوى 3 · تكرار مع آلة حاسبة (Taschenrechner)"
+ },
+ "Lösung zeigen": {
+  "tr": "Çözümü göster",
+  "vi": "Xem đáp án",
+  "ar": "إظهار الحل"
+ },
+ "4 kg kosten 6,20 €. Preis für 1 kg?": {
+  "tr": "4 kg 6,20 €. 1 kg fiyatı?",
+  "vi": "4 kg giá 6,20 €. Giá của 1 kg?",
+  "ar": "4 kg تكلّف 6,20 €. سعر 1 kg؟"
+ },
+ "Ist 812,40 €, Soll 815,90 €. Differenz?": {
+  "tr": "Ist (fiili tutar) 812,40 €, Soll (olması gereken tutar) 815,90 €. Fark?",
+  "vi": "Thực tế 812,40 €, theo sổ sách 815,90 €. Chênh lệch?",
+  "ar": "الفعلي (Ist) 812,40 €، والمطلوب (Soll) 815,90 €. الفرق؟"
+ },
+ "−3,50 € (Fehlbetrag)": {
+  "tr": "−3,50 € (kasa açığı)",
+  "vi": "−3,50 € (thiếu tiền)",
+  "ar": "−3,50 € (عجز / Fehlbetrag)"
+ },
+ "Grundpreis: 400 g kosten 2,99 €. Preis je kg?": {
+  "tr": "Grundpreis (birim fiyat): 400 g 2,99 €. kg fiyatı?",
+  "vi": "Giá theo đơn vị (Grundpreis): 400 g giá 2,99 €. Giá mỗi kg?",
+  "ar": "سعر الوحدة (Grundpreis): 400 g تكلّف 2,99 €. السعر لكل kg؟"
+ },
+ "40 € Prämie je 1.000 € Umsatz. Prämie bei 2.600 €?": {
+  "tr": "Her 1.000 € ciroya 40 € prim. 2.600 € cirodaki prim?",
+  "vi": "Tiền thưởng (Prämie) 40 € cho mỗi 1.000 € doanh thu. Tiền thưởng khi doanh thu 2.600 €?",
+  "ar": "مكافأة (Prämie) 40 € لكل 1.000 € مبيعات. المكافأة عند 2.600 €؟"
+ },
+ "125 g Tee zu 24,00 € je kg =": {
+  "tr": "kg'ı 24,00 € olan 125 g çay =",
+  "vi": "125 g trà giá 24,00 € mỗi kg =",
+  "ar": "125 g شاي بسعر 24,00 € للكيلوغرام ="
+ },
+ "Geöffnet 9–13 und 14–18 Uhr. Stunden?": {
+  "tr": "9–13 ve 14–18 saatleri arası açık. Kaç saat?",
+  "vi": "Mở cửa 9–13 và 14–18 giờ. Tổng số giờ?",
+  "ar": "مفتوح من 9 إلى 13 ومن 14 إلى 18 Uhr (ساعة). كم ساعة؟"
+ },
+ "10 % von 84,50 € =": {
+  "tr": "84,50 €'nun 10 %'u =",
+  "vi": "10 % của 84,50 € =",
+  "ar": "10 % من 84,50 € ="
+ },
+ "1 % von 1.250 € =": {
+  "tr": "1.250 €'nun 1 %'i =",
+  "vi": "1 % của 1.250 € =",
+  "ar": "1 % من 1.250 € ="
+ },
+ "25 % von 36 € =": {
+  "tr": "36 €'nun 25 %'i =",
+  "vi": "25 % của 36 € =",
+  "ar": "25 % من 36 € ="
+ },
+ "15 % von 60 € =": {
+  "tr": "60 €'nun 15 %'i =",
+  "vi": "15 % của 60 € =",
+  "ar": "15 % من 60 € ="
+ },
+ "2 × 24,95 € mit 20 % Rabatt =": {
+  "tr": "2 × 24,95 € ve 20 % indirim =",
+  "vi": "2 × 24,95 € với giảm giá (Rabatt) 20 % =",
+  "ar": "2 × 24,95 € مع خصم (Rabatt) 20 % ="
+ },
+ "12,5 % von 80 € =": {
+  "tr": "80 €'nun 12,5 %'i =",
+  "vi": "12,5 % của 80 € =",
+  "ar": "12,5 % من 80 € ="
+ },
+ "12 von 48 Kunden = … %": {
+  "tr": "48 müşteriden 12'si = … %",
+  "vi": "12 trong 48 khách = … %",
+  "ar": "12 من 48 عميلًا = … %"
+ },
+ "Preis sinkt von 50 € auf 35 €. Um … %?": {
+  "tr": "Fiyat 50 €'dan 35 €'ya düşüyor. … % oranında?",
+  "vi": "Giá giảm từ 50 € xuống 35 €. Giảm … %?",
+  "ar": "ينخفض السعر من 50 € إلى 35 €. بنسبة … %؟"
+ },
+ "7 von 28 = … %": {
+  "tr": "28'in 7'si = … %",
+  "vi": "7 trong 28 = … %",
+  "ar": "7 من 28 = … %"
+ },
+ "30 % sind 45 Kunden. 100 % = ?": {
+  "tr": "30 % = 45 müşteri. 100 % = ?",
+  "vi": "30 % là 45 khách. 100 % = ?",
+  "ar": "30 % تساوي 45 عميلًا. 100 % = ؟"
+ },
+ "Nach 20 % Rabatt 64 €. Preis vorher?": {
+  "tr": "20 % indirimden sonra 64 €. Önceki fiyat?",
+  "vi": "Sau khi giảm giá 20 % còn 64 €. Giá trước đó?",
+  "ar": "بعد خصم 20 % أصبح السعر 64 €. ما السعر قبل الخصم؟"
+ },
+ "7 % sind 3.500 €. Grundwert?": {
+  "tr": "7 % = 3.500 €. Ana değer (Grundwert)?",
+  "vi": "7 % là 3.500 €. Giá trị gốc (Grundwert)?",
+  "ar": "7 % تساوي 3.500 €. القيمة الأساسية (Grundwert)؟"
+ },
+ "150 Kunden": {
+  "tr": "150 müşteri",
+  "vi": "150 khách",
+  "ar": "150 عميلًا"
+ },
+ "USt (19 %) aus 59,50 € =": {
+  "tr": "59,50 €'dan KDV (19 %) =",
+  "vi": "Thuế giá trị gia tăng (USt) 19 % từ 59,50 € =",
+  "ar": "ضريبة القيمة المضافة (USt) 19 % من 59,50 € ="
+ },
+ "netto 100 € + 19 % USt = brutto": {
+  "tr": "net 100 € + 19 % KDV = brüt",
+  "vi": "chưa thuế (netto) 100 € + 19 % USt = đã gồm thuế (brutto)",
+  "ar": "صافي (netto) 100 € + 19 % ضريبة = إجمالي (brutto)"
+ },
+ "49,90 € mit 10 % Rabatt =": {
+  "tr": "49,90 € ve 10 % indirim =",
+  "vi": "49,90 € với giảm giá 10 % =",
+  "ar": "49,90 € مع خصم (Rabatt) 10 % ="
+ },
+ "1.250 € mit 2 % Skonto = Überweisung": {
+  "tr": "1.250 € ve 2 % Skonto (peşin ödeme iskontosu) = havale tutarı",
+  "vi": "1.250 € với chiết khấu thanh toán sớm (Skonto) 2 % = số tiền chuyển khoản",
+  "ar": "1.250 € مع خصم الدفع الفوري (Skonto) 2 % = مبلغ التحويل"
+ },
+ "3 % Skonto von 800 € =": {
+  "tr": "800 €'nun 3 % Skonto'su (peşin ödeme iskontosu) =",
+  "vi": "3 % Skonto (chiết khấu thanh toán sớm) của 800 € =",
+  "ar": "خصم الدفع الفوري (Skonto) 3 % من 800 € ="
+ },
+ "netto 80 € + 7 % USt = brutto": {
+  "tr": "net 80 € + 7 % KDV = brüt",
+  "vi": "chưa thuế (netto) 80 € + 7 % USt = đã gồm thuế (brutto)",
+  "ar": "صافي (netto) 80 € + 7 % ضريبة = إجمالي (brutto)"
+ },
+ "Ø von 12, 15, 18 und 19 Kunden": {
+  "tr": "12, 15, 18 ve 19 müşterinin ortalaması (Ø)",
+  "vi": "Ø (trung bình) của 12, 15, 18 và 19 khách",
+  "ar": "المتوسط (Ø) لـ 12 و 15 و 18 و 19 عميلًا"
+ },
+ "3.600 € Umsatz in 8 Stunden. Umsatz je Stunde?": {
+  "tr": "8 saatte 3.600 € ciro. Saatlik ciro?",
+  "vi": "Doanh thu 3.600 € trong 8 giờ. Doanh thu mỗi giờ?",
+  "ar": "مبيعات 3.600 € في 8 ساعات. كم المبيعات في الساعة؟"
+ },
+ "USt (7 %) aus 21,40 € =": {
+  "tr": "21,40 €'dan KDV (7 %) =",
+  "vi": "Thuế giá trị gia tăng (USt) 7 % từ 21,40 € =",
+  "ar": "ضريبة القيمة المضافة (USt) 7 % من 21,40 € ="
+ },
+ "16 Kunden": {
+  "tr": "16 müşteri",
+  "vi": "16 khách",
+  "ar": "16 عميلًا"
+ },
+ "Stufe 4 · Prüfungsmix mit Taschenrechner": {
+  "tr": "4. seviye · hesap makinesiyle sınav karması",
+  "vi": "Cấp 4 · Bài thi tổng hợp với máy tính cầm tay",
+  "ar": "المستوى 4 · مزيج امتحان مع آلة حاسبة (Taschenrechner)"
+ },
+ "5 Stück zu 2,00 € und 5 zu 4,00 €. Ø-Preis?": {
+  "tr": "2,00 €'luk 5 adet ve 4,00 €'luk 5 adet. Ortalama (Ø) fiyat?",
+  "vi": "5 cái giá 2,00 € và 5 cái giá 4,00 €. Giá trung bình Ø?",
+  "ar": "5 قطع بسعر 2,00 € و 5 قطع بسعر 4,00 €. متوسط السعر (Ø-Preis)؟"
+ },
+ "450 Artikel, 180 Kunden. Artikel je Kunde?": {
+  "tr": "450 ürün, 180 müşteri. Müşteri başına ürün?",
+  "vi": "450 mặt hàng, 180 khách. Mỗi khách bao nhiêu mặt hàng?",
+  "ar": "450 قطعة، 180 عميلًا. كم قطعة لكل عميل؟"
+ },
+ "1.470 Kunden in 8,5 Stunden. Je Stunde?": {
+  "tr": "8,5 saatte 1.470 müşteri. Saatte kaç müşteri?",
+  "vi": "1.470 khách trong 8,5 giờ. Mỗi giờ bao nhiêu?",
+  "ar": "1.470 عميلًا في 8,5 ساعات. كم في الساعة؟"
+ },
+ "2,5 Artikel": {
+  "tr": "2,5 ürün",
+  "vi": "2,5 mặt hàng",
+  "ar": "2,5 قطعة"
+ },
+ "173 Kunden": {
+  "tr": "173 müşteri",
+  "vi": "173 khách",
+  "ar": "173 عميلًا"
+ },
+ "900 € nach Fläche: 300, 200, 100 m². Anteil der 300 m²?": {
+  "tr": "900 € alana göre: 300, 200, 100 m². 300 m²'nin payı?",
+  "vi": "900 € chia theo diện tích: 300, 200, 100 m². Phần của 300 m²?",
+  "ar": "900 € حسب المساحة: 300 و 200 و 100 m². حصة الـ 300 m²؟"
+ },
+ "20 % von 245 € =": {
+  "tr": "245 €'nun 20 %'i =",
+  "vi": "20 % của 245 € =",
+  "ar": "20 % من 245 € ="
+ },
+ "Bargeld 1.850 € + Abschöpfung 500 € − Wechselgeld 200 € + Karte 1.320 € = Tagesumsatz": {
+  "tr": "Nakit 1.850 € + kasadan ara para çekme (Abschöpfung) 500 € − bozuk para (Wechselgeld) 200 € + kart 1.320 € = günlük ciro",
+  "vi": "Tiền mặt 1.850 € + rút bớt giữa ca (Abschöpfung) 500 € − tiền lẻ để thối (Wechselgeld) 200 € + thẻ 1.320 € = doanh thu trong ngày (Tagesumsatz)",
+  "ar": "نقد 1.850 € + سحب من الصندوق (Abschöpfung) 500 € − فكّة (Wechselgeld) 200 € + بطاقة 1.320 € = مبيعات اليوم (Tagesumsatz)"
+ },
+ "40 T-Shirts zu 9,95 € + 50 € Wechselgeld, Ist 446 €. Differenz?": {
+  "tr": "9,95 €'luk 40 tişört + 50 € bozuk para, Ist (fiili tutar) 446 €. Fark?",
+  "vi": "40 áo phông giá 9,95 € + 50 € tiền lẻ để thối (Wechselgeld), thực tế 446 €. Chênh lệch?",
+  "ar": "40 قميصًا بسعر 9,95 € + 50 € فكّة (Wechselgeld)، الفعلي (Ist) 446 €. الفرق؟"
+ },
+ "18 von 72 = … %": {
+  "tr": "72'nin 18'i = … %",
+  "vi": "18 trong 72 = … %",
+  "ar": "18 من 72 = … %"
+ },
+ "−2,00 € (Fehlbetrag)": {
+  "tr": "−2,00 € (kasa açığı)",
+  "vi": "−2,00 € (thiếu tiền)",
+  "ar": "−2,00 € (عجز / Fehlbetrag)"
+ },
+ "Grundpreis: 330 ml kosten 0,99 €. Preis je l?": {
+  "tr": "Grundpreis (birim fiyat): 330 ml 0,99 €. Litre fiyatı?",
+  "vi": "Giá theo đơn vị (Grundpreis): 330 ml giá 0,99 €. Giá mỗi lít?",
+  "ar": "سعر الوحدة (Grundpreis): 330 ml تكلّف 0,99 €. السعر لكل l؟"
+ },
+ "125 € −20 %, dann −10 % =": {
+  "tr": "125 € −20 %, sonra −10 % =",
+  "vi": "125 € −20 %, rồi −10 % =",
+  "ar": "125 € −20 %، ثم −10 % ="
+ },
+ "Ware für 44,70 € zurück, neuer Artikel 8,94 €. Stück?": {
+  "tr": "44,70 €'luk mal iade, yeni ürün 8,94 €. Kaç adet?",
+  "vi": "Trả lại hàng 44,70 €, mặt hàng mới 8,94 €. Mấy cái?",
+  "ar": "إرجاع بضاعة بـ 44,70 €، والمنتج الجديد 8,94 €. كم قطعة؟"
+ },
+ "5 Stück": {
+  "tr": "5 adet",
+  "vi": "5 cái",
+  "ar": "5 قطع"
+ },
+ "brutto 238,00 € (19 %). netto?": {
+  "tr": "brüt 238,00 € (19 %). Net?",
+  "vi": "đã gồm thuế (brutto) 238,00 € (19 %). Chưa thuế (netto)?",
+  "ar": "إجمالي (brutto) 238,00 € (19 %). الصافي (netto)؟"
+ },
+ "USt (7 %) aus 53,50 € =": {
+  "tr": "53,50 €'dan KDV (7 %) =",
+  "vi": "Thuế giá trị gia tăng (USt) 7 % từ 53,50 € =",
+  "ar": "ضريبة القيمة المضافة (USt) 7 % من 53,50 € ="
+ },
+ "450 € von 1.800 € = … %": {
+  "tr": "1.800 €'nun 450 €'su = … %",
+  "vi": "450 € trong 1.800 € = … %",
+  "ar": "450 € من 1.800 € = … %"
+ },
+ "25 € Prämie für 2.000 € Umsatz. Prämie bei 3.600 €?": {
+  "tr": "2.000 € ciro için 25 € prim. 3.600 € cirodaki prim?",
+  "vi": "Tiền thưởng (Prämie) 25 € cho 2.000 € doanh thu. Tiền thưởng khi doanh thu 3.600 €?",
+  "ar": "مكافأة (Prämie) 25 € لكل 2.000 € مبيعات. المكافأة عند 3.600 €؟"
+ },
+ "850 Bonuspunkte (1 Punkt = 0,01 €) = … €": {
+  "tr": "850 bonus puan (1 puan = 0,01 €) = … €",
+  "vi": "850 điểm thưởng (1 điểm = 0,01 €) = … €",
+  "ar": "850 نقطة مكافأة (1 نقطة = 0,01 €) = … €"
+ },
+ "4 Stück zu 5 € und 6 Stück zu 10 €. Ø- Preis?": {
+  "tr": "5 €'luk 4 adet ve 10 €'luk 6 adet. Ortalama (Ø) fiyat?",
+  "vi": "4 cái giá 5 € và 6 cái giá 10 €. Giá trung bình Ø?",
+  "ar": "4 قطع بسعر 5 € و 6 قطع بسعر 10 €. متوسط السعر (Ø-Preis)؟"
+ },
+ "Preis sinkt von 80 € auf 60 €. Um … %?": {
+  "tr": "Fiyat 80 €'dan 60 €'ya düşüyor. … % oranında?",
+  "vi": "Giá giảm từ 80 € xuống 60 €. Giảm … %?",
+  "ar": "ينخفض السعر من 80 € إلى 60 €. بنسبة … %؟"
+ },
+ "60 € sind 75 % des alten Preises. Alter Preis?": {
+  "tr": "60 €, eski fiyatın 75 %'idir. Eski fiyat?",
+  "vi": "60 € là 75 % của giá cũ. Giá cũ?",
+  "ar": "60 € تساوي 75 % من السعر القديم. السعر القديم؟"
+ },
+ "2.450 € mit 3 % Skonto = Überweisung": {
+  "tr": "2.450 € ve 3 % Skonto (peşin ödeme iskontosu) = havale tutarı",
+  "vi": "2.450 € với chiết khấu thanh toán sớm (Skonto) 3 % = số tiền chuyển khoản",
+  "ar": "2.450 € مع خصم الدفع الفوري (Skonto) 3 % = مبلغ التحويل"
+ },
+ "Ø-Lagerbestand aus 20, 30, 40 und 30 Stück": {
+  "tr": "20, 30, 40 ve 30 adetten ortalama (Ø) stok",
+  "vi": "Tồn kho trung bình Ø từ 20, 30, 40 và 30 cái",
+  "ar": "متوسط المخزون (Ø-Lagerbestand) من 20 و 30 و 40 و 30 قطعة"
+ },
+ "1.260 Kunden in 7,5 Stunden. Je Stunde?": {
+  "tr": "7,5 saatte 1.260 müşteri. Saatte kaç müşteri?",
+  "vi": "1.260 khách trong 7,5 giờ. Mỗi giờ bao nhiêu?",
+  "ar": "1.260 عميلًا في 7,5 ساعات. كم في الساعة؟"
+ },
+ "30 Stück": {
+  "tr": "30 adet",
+  "vi": "30 cái",
+  "ar": "30 قطعة"
+ },
+ "168 Kunden": {
+  "tr": "168 müşteri",
+  "vi": "168 khách",
+  "ar": "168 عميلًا"
+ },
+ "USt (19 %) aus 119,00 € =": {
+  "tr": "119,00 €'dan KDV (19 %) =",
+  "vi": "Thuế giá trị gia tăng (USt) 19 % từ 119,00 € =",
+  "ar": "ضريبة القيمة المضافة (USt) 19 % من 119,00 € ="
+ },
+ "40 € mit 15 % Coupon =": {
+  "tr": "40 € ve 15 % kupon =",
+  "vi": "40 € với phiếu giảm giá (Coupon) 15 % =",
+  "ar": "40 € مع قسيمة خصم (Coupon) 15 % ="
+ },
+ "3 kg kosten 7,50 €. 5 kg kosten?": {
+  "tr": "3 kg 7,50 €. 5 kg kaç €?",
+  "vi": "3 kg giá 7,50 €. 5 kg giá bao nhiêu?",
+  "ar": "3 kg تكلّف 7,50 €. كم تكلّف 5 kg؟"
+ },
+ "Lösungen auf einen Blick": {
+  "tr": "Çözümler bir bakışta",
+  "vi": "Đáp án trong một cái nhìn",
+  "ar": "الحلول بنظرة واحدة"
+ },
+ "Für die Lehrkraft": {
+  "tr": "Öğretmen için",
+  "vi": "Dành cho giáo viên",
+  "ar": "للمعلم/ة"
+ },
+ "Stufe": {
+  "tr": "Seviye",
+  "vi": "Cấp",
+  "ar": "المستوى"
+ },
+ "Lösungen": {
+  "tr": "Çözümler",
+  "vi": "Đáp án",
+  "ar": "الحلول"
+ }
+}
