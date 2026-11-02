@@ -1,5 +1,10 @@
 /* Sprach-Buttons TR · VI · AR im Dashboard (Lernstoff > Modulübergreifend). Schlüssel = Pfad des Originals. */
 window.UEB_ML={
+ "materials/LF2_Stufe_fuer_Stufe_-_Phasen_des_Verkaufsgespraechs.html": {
+ "tr": "materials/LF2_Stufe_fuer_Stufe_-_Phasen_des_Verkaufsgespraechs.html?lang=tr",
+ "vi": "materials/LF2_Stufe_fuer_Stufe_-_Phasen_des_Verkaufsgespraechs.html?lang=vi",
+ "ar": "materials/LF2_Stufe_fuer_Stufe_-_Phasen_des_Verkaufsgespraechs.html?lang=ar"
+ },
  "materials/LF3_Rechen-Minute_-_Karten_1-20.pdf": {
   "tr": "materials/LF3_Rechen-Minute_-_Karten_1-20_mehrsprachig.html?lang=tr",
   "vi": "materials/LF3_Rechen-Minute_-_Karten_1-20_mehrsprachig.html?lang=vi",
