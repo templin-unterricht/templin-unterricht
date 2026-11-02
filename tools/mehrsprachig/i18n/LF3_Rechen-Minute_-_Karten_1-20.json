@@ -1,0 +1,242 @@
+{
+ "Kunden im Servicebereich Kasse betreuen": {
+  "tr": "Kasa hizmet alanında müşterilere hizmet vermek",
+  "vi": "Phục vụ khách hàng tại khu vực quầy thu ngân (Kasse)",
+  "ar": "خدمة العملاء في منطقة خدمة الصندوق (Kasse)"
+ },
+ "Rechen-Minute – Stufe 1 und 2": {
+  "tr": "Hesap dakikası – 1. ve 2. seviye",
+  "vi": "Phút tính nhẩm – Cấp 1 và 2",
+  "ar": "دقيقة الحساب – المستوى 1 و 2"
+ },
+ "Mehrsprachige Online-Fassung · Sprache oben wählen": {
+  "tr": "Çok dilli çevrimiçi sürüm · Dili yukarıdan seçin",
+  "vi": "Phiên bản trực tuyến đa ngôn ngữ · Chọn ngôn ngữ ở phía trên",
+  "ar": "النسخة الإلكترونية متعددة اللغات · اختر اللغة من الأعلى"
+ },
+ "Rechen-Minute: Karten 1 bis 20": {
+  "tr": "Hesap dakikası: 1 ile 20 arası kartlar",
+  "vi": "Phút tính nhẩm: Thẻ 1 đến 20",
+  "ar": "دقيقة الحساب: البطاقات من 1 إلى 20"
+ },
+ "Für DS 1 bis DS 19 · Stufe 1: Geld und Komma (ohne Taschenrechner) · Stufe 2: Runden, Einheiten, Taschenrechner": {
+  "tr": "DS 1 ile DS 19 için (çift ders) · 1. seviye: Para ve virgül (hesap makinesi olmadan) · 2. seviye: Yuvarlama, birimler, hesap makinesi",
+  "vi": "Cho DS 1 đến DS 19 (tiết đôi) · Cấp 1: Tiền và dấu phẩy (không dùng máy tính cầm tay) · Cấp 2: Làm tròn, đơn vị, máy tính cầm tay",
+  "ar": "لحصص DS 1 إلى DS 19 · المستوى 1: النقود والفاصلة (بدون آلة حاسبة) · المستوى 2: التقريب والوحدات والآلة الحاسبة"
+ },
+ "So geht es": {
+  "tr": "Nasıl yapılır",
+  "vi": "Cách thực hiện",
+  "ar": "الطريقة"
+ },
+ "Zu Beginn jeder Doppelstunde bekommt jedes Tandem eine Karte (Karte 1 in DS 1, Karte 2 in DS 2 …).": {
+  "tr": "Her çift dersin başında her ikili ekip (Tandem) bir kart alır (DS 1'de kart 1, DS 2'de kart 2 …).",
+  "vi": "Đầu mỗi tiết đôi (Doppelstunde), mỗi nhóm hai người (Tandem) nhận một thẻ (thẻ 1 trong DS 1, thẻ 2 trong DS 2 …).",
+  "ar": "في بداية كل حصة مزدوجة (Doppelstunde) يحصل كل فريق ثنائي (Tandem) على بطاقة (البطاقة 1 في DS 1، البطاقة 2 في DS 2 …)."
+ },
+ "Jede Person rechnet die drei Aufgaben allein – höchstens 5 Minuten.": {
+  "tr": "Herkes üç soruyu tek başına çözer – en fazla 5 dakika.",
+  "vi": "Mỗi người tự tính ba bài – tối đa 5 phút.",
+  "ar": "يحلّ كل شخص المسائل الثلاث وحده – 5 دقائق على الأكثر."
+ },
+ "Dann vergleicht das Tandem mit der Rückseite und erklärt sich gegenseitig die Fehler (5 Minuten).": {
+  "tr": "Sonra ikili ekip kartın arka yüzüyle karşılaştırır ve hataları birbirine anlatır (5 dakika).",
+  "vi": "Sau đó nhóm hai người so với mặt sau và giải thích lỗi cho nhau (5 phút).",
+  "ar": "ثم يقارن الفريق الثنائي الإجابات مع ظهر البطاقة ويشرح كل واحد للآخر الأخطاء (5 دقائق)."
+ },
+ "Wer alle drei richtig hat, macht einen Strich in seiner Rechen-Liste.": {
+  "tr": "Üçünü de doğru yapan kişi hesap listesine bir çizgi çeker.",
+  "vi": "Ai làm đúng cả ba bài thì gạch một vạch trong Bảng tính nhẩm của mình.",
+  "ar": "من أجاب على الثلاث بشكل صحيح يضع علامة (خطًّا) في قائمة الحساب الخاصة به."
+ },
+ "Nach 10 Karten: Wie viele Striche?": {
+  "tr": "10 karttan sonra: Kaç çizgi var?",
+  "vi": "Sau 10 thẻ: Được bao nhiêu vạch?",
+  "ar": "بعد 10 بطاقات: كم علامة لديك؟"
+ },
+ "Tipp für die Lehrkraft: Die Karten auf festes Papier beidseitig drucken (Wenden an der langen Kante), dann liegt die Lösung auf der Rückseite.": {
+  "tr": "Öğretmen için ipucu: Kartları sağlam kâğıda iki yüzlü yazdırın (uzun kenardan çevirin), böylece çözüm arka yüzde olur.",
+  "vi": "Gợi ý cho giáo viên: In thẻ hai mặt trên giấy cứng (lật theo cạnh dài), như vậy đáp án (Lösung) nằm ở mặt sau.",
+  "ar": "نصيحة للمعلم/ة: اطبعوا البطاقات على ورق سميك من الوجهين (القلب على الحافة الطويلة)، فيكون الحل على ظهر البطاقة."
+ },
+ "Ab DS 20 folgen die Karten der Stufen 3 und 4 mit dem Rechenblock.": {
+  "tr": "DS 20'den itibaren 3. ve 4. seviye kartları hesap bloğuyla birlikte gelir.",
+  "vi": "Từ DS 20 là các thẻ cấp 3 và 4 với giấy nháp tính toán.",
+  "ar": "ابتداءً من DS 20 تأتي بطاقات المستوى 3 و 4 مع دفتر الحساب."
+ },
+ "Karte": {
+  "tr": "Kart",
+  "vi": "Thẻ",
+  "ar": "البطاقة"
+ },
+ "alle richtig?": {
+  "tr": "hepsi doğru mu?",
+  "vi": "đúng hết?",
+  "ar": "كلها صحيحة؟"
+ },
+ "Meine Rechen-Liste": {
+  "tr": "Hesap listem",
+  "vi": "Bảng tính nhẩm của tôi",
+  "ar": "قائمة الحساب الخاصة بي"
+ },
+ "Stufe 1 · ohne Taschenrechner": {
+  "tr": "1. seviye · hesap makinesi olmadan",
+  "vi": "Cấp 1 · không dùng máy tính cầm tay",
+  "ar": "المستوى 1 · بدون آلة حاسبة (Taschenrechner)"
+ },
+ "Lösung zeigen": {
+  "tr": "Çözümü göster",
+  "vi": "Xem đáp án",
+  "ar": "إظهار الحل"
+ },
+ "Wie viel Cent sind 2,05 €?": {
+  "tr": "2,05 € kaç sent eder?",
+  "vi": "2,05 € là bao nhiêu cent?",
+  "ar": "كم سنتًا (Cent) تساوي 2,05 €؟"
+ },
+ "Einkauf 7,60 €, der Kunde gibt 10 €. Rückgeld?": {
+  "tr": "Alışveriş 7,60 €, müşteri 10 € veriyor. Para üstü?",
+  "vi": "Mua hàng 7,60 €, khách đưa 10 €. Tiền thối lại (Rückgeld)?",
+  "ar": "المشتريات 7,60 €، والعميل يدفع 10 €. الباقي (Rückgeld)؟"
+ },
+ "Die Kundin zahlt diesen Einkauf mit 5 €. Rückgeld?": {
+  "tr": "Müşteri bu alışverişi 5 € ile ödüyor. Para üstü?",
+  "vi": "Khách nữ trả 5 € cho khoản mua này. Tiền thối lại (Rückgeld)?",
+  "ar": "العميلة تدفع ثمن هذه المشتريات بـ 5 €. الباقي (Rückgeld)؟"
+ },
+ "Die Hälfte von 9,90 € =": {
+  "tr": "9,90 €'nun yarısı =",
+  "vi": "Một nửa của 9,90 € =",
+  "ar": "نصف 9,90 € ="
+ },
+ "10 Münzen zu 0,20 € = … €": {
+  "tr": "0,20 €'luk 10 madeni para = … €",
+  "vi": "10 đồng xu 0,20 € = … €",
+  "ar": "10 عملات من 0,20 € = … €"
+ },
+ "25 Münzen zu 0,50 € = … €": {
+  "tr": "0,50 €'luk 25 madeni para = … €",
+  "vi": "25 đồng xu 0,50 € = … €",
+  "ar": "25 عملة من 0,50 € = … €"
+ },
+ "Einkauf 57,85 €, der Kunde gibt 60 €. Rückgeld?": {
+  "tr": "Alışveriş 57,85 €, müşteri 60 € veriyor. Para üstü?",
+  "vi": "Mua hàng 57,85 €, khách đưa 60 €. Tiền thối lại (Rückgeld)?",
+  "ar": "المشتريات 57,85 €، والعميل يدفع 60 €. الباقي (Rückgeld)؟"
+ },
+ "Kassenbon: 2 T-Shirts zu 13,95 € und 1 Shirt zu 29,95 €. Summe?": {
+  "tr": "Fiş: 13,95 €'luk 2 tişört ve 29,95 €'luk 1 tişört. Toplam?",
+  "vi": "Hóa đơn (Kassenbon): 2 áo phông giá 13,95 € và 1 áo giá 29,95 €. Tổng?",
+  "ar": "إيصال (Kassenbon): 2 قميص بسعر 13,95 € للواحد و 1 قميص بسعر 29,95 €. المجموع؟"
+ },
+ "Die Kundin zahlt mit 60 €. Rückgeld?": {
+  "tr": "Müşteri 60 € ile ödüyor. Para üstü?",
+  "vi": "Khách nữ trả bằng 60 €. Tiền thối lại (Rückgeld)?",
+  "ar": "العميلة تدفع 60 €. الباقي (Rückgeld)؟"
+ },
+ "12,345 € kaufmännisch auf 2 Stellen runden": {
+  "tr": "12,345 € ticari yuvarlamayla 2 basamağa yuvarlayın",
+  "vi": "Làm tròn 12,345 € theo cách thương mại đến 2 chữ số thập phân",
+  "ar": "قرّب 12,345 € إلى 2 منزلة عشرية بالطريقة التجارية (kaufmännisch runden)"
+ },
+ "7,994 € auf 2 Stellen runden": {
+  "tr": "7,994 € 2 basamağa yuvarlayın",
+  "vi": "Làm tròn 7,994 € đến 2 chữ số thập phân",
+  "ar": "قرّب 7,994 € إلى 2 منزلة عشرية"
+ },
+ "0,125 € auf 2 Stellen runden": {
+  "tr": "0,125 € 2 basamağa yuvarlayın",
+  "vi": "Làm tròn 0,125 € đến 2 chữ số thập phân",
+  "ar": "قرّب 0,125 € إلى 2 منزلة عشرية"
+ },
+ "Stufe 2 · mit Taschenrechner": {
+  "tr": "2. seviye · hesap makinesiyle",
+  "vi": "Cấp 2 · dùng máy tính cầm tay",
+  "ar": "المستوى 2 · مع آلة حاسبة (Taschenrechner)"
+ },
+ "7,95 € : 0,75 = (auf 2 Stellen runden)": {
+  "tr": "7,95 € : 0,75 = (2 basamağa yuvarlayın)",
+  "vi": "7,95 € : 0,75 = (làm tròn đến 2 chữ số thập phân)",
+  "ar": "7,95 € : 0,75 = (قرّب إلى 2 منزلة عشرية)"
+ },
+ "2,49 € : 0,45 = (auf 2 Stellen runden)": {
+  "tr": "2,49 € : 0,45 = (2 basamağa yuvarlayın)",
+  "vi": "2,49 € : 0,45 = (làm tròn đến 2 chữ số thập phân)",
+  "ar": "2,49 € : 0,45 = (قرّب إلى 2 منزلة عشرية)"
+ },
+ "1 % von 300 € (= 300 € : 100)": {
+  "tr": "300 €'nun 1 %'i (= 300 € : 100)",
+  "vi": "1 % của 300 € (= 300 € : 100)",
+  "ar": "1 % من 300 € (= 300 € : 100)"
+ },
+ "10 % von 59,90 € (= 59,90 € : 10)": {
+  "tr": "59,90 €'nun 10 %'u (= 59,90 € : 10)",
+  "vi": "10 % của 59,90 € (= 59,90 € : 10)",
+  "ar": "10 % من 59,90 € (= 59,90 € : 10)"
+ },
+ "50 % von 24,00 € (= die Hälfte)": {
+  "tr": "24,00 €'nun 50 %'si (= yarısı)",
+  "vi": "50 % của 24,00 € (= một nửa)",
+  "ar": "50 % من 24,00 € (= النصف)"
+ },
+ "42,86 auf eine Nachkommastelle runden": {
+  "tr": "42,86 sayısını bir ondalık basamağa yuvarlayın",
+  "vi": "Làm tròn 42,86 đến một chữ số thập phân",
+  "ar": "قرّب 42,86 إلى منزلة عشرية واحدة"
+ },
+ "16,678 auf eine Nachkommastelle runden": {
+  "tr": "16,678 sayısını bir ondalık basamağa yuvarlayın",
+  "vi": "Làm tròn 16,678 đến một chữ số thập phân",
+  "ar": "قرّب 16,678 إلى منزلة عشرية واحدة"
+ },
+ "2,55 auf eine Nachkommastelle runden": {
+  "tr": "2,55 sayısını bir ondalık basamağa yuvarlayın",
+  "vi": "Làm tròn 2,55 đến một chữ số thập phân",
+  "ar": "قرّب 2,55 إلى منزلة عشرية واحدة"
+ },
+ "1.384 Bonuspunkte, 1 Punkt = 0,01 €. Wie viel Euro?": {
+  "tr": "1.384 bonus puan, 1 puan = 0,01 €. Kaç euro?",
+  "vi": "1.384 điểm thưởng, 1 điểm = 0,01 €. Được bao nhiêu euro?",
+  "ar": "1.384 نقطة مكافأة، 1 نقطة = 0,01 €. كم يورو؟"
+ },
+ "256 Kunden in 4 Stunden. Kunden je Stunde?": {
+  "tr": "4 saatte 256 müşteri. Saatte kaç müşteri?",
+  "vi": "256 khách trong 4 giờ. Mỗi giờ bao nhiêu khách?",
+  "ar": "256 عميلًا في 4 ساعات. كم عميلًا في الساعة؟"
+ },
+ "657 Artikel für 256 Kunden. Artikel je Kunde? (1 Stelle)": {
+  "tr": "256 müşteriye 657 ürün. Müşteri başına ürün? (1 basamak)",
+  "vi": "657 mặt hàng cho 256 khách. Mỗi khách bao nhiêu mặt hàng? (1 chữ số thập phân)",
+  "ar": "657 قطعة لـ 256 عميلًا. كم قطعة لكل عميل؟ (1 منزلة عشرية)"
+ },
+ "360 g Käse, 1 kg kostet 12,00 €. Preis? (360 g = 0,36 kg)": {
+  "tr": "360 g peynir, 1 kg 12,00 €. Fiyat? (360 g = 0,36 kg)",
+  "vi": "360 g phô mai, 1 kg giá 12,00 €. Giá tiền? (360 g = 0,36 kg)",
+  "ar": "360 g جبن، وسعر 1 kg هو 12,00 €. السعر؟ (360 g = 0,36 kg)"
+ },
+ "125 g Tee, 1 kg kostet 6,80 €. Preis?": {
+  "tr": "125 g çay, 1 kg 6,80 €. Fiyat?",
+  "vi": "125 g trà, 1 kg giá 6,80 €. Giá tiền?",
+  "ar": "125 g شاي، وسعر 1 kg هو 6,80 €. السعر؟"
+ },
+ "Lösungen auf einen Blick": {
+  "tr": "Çözümler bir bakışta",
+  "vi": "Đáp án trong một cái nhìn",
+  "ar": "الحلول بنظرة واحدة"
+ },
+ "Für die Lehrkraft": {
+  "tr": "Öğretmen için",
+  "vi": "Dành cho giáo viên",
+  "ar": "للمعلم/ة"
+ },
+ "Stufe": {
+  "tr": "Seviye",
+  "vi": "Cấp",
+  "ar": "المستوى"
+ },
+ "Lösungen": {
+  "tr": "Çözümler",
+  "vi": "Đáp án",
+  "ar": "الحلول"
+ }
+}

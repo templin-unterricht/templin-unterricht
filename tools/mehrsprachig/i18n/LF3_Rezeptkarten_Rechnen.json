@@ -1,0 +1,392 @@
+{
+ "Kunden im Servicebereich Kasse betreuen": {
+  "tr": "Kasa hizmet alanında müşterilere hizmet vermek",
+  "vi": "Phục vụ khách hàng tại khu vực quầy thu ngân (Kasse)",
+  "ar": "خدمة العملاء في منطقة خدمة الصندوق (Kasse)"
+ },
+ "Rezeptkarten Rechnen": {
+  "tr": "Hesaplama formül kartları",
+  "vi": "Thẻ công thức tính toán (Rezeptkarten)",
+  "ar": "بطاقات الوصفة الحسابية (Rezeptkarten) للحساب"
+ },
+ "Mehrsprachige Online-Fassung · Sprache oben wählen": {
+  "tr": "Çok dilli çevrimiçi sürüm · Dili yukarıdan seçin",
+  "vi": "Phiên bản trực tuyến đa ngôn ngữ · Chọn ngôn ngữ ở phía trên",
+  "ar": "النسخة الإلكترونية متعددة اللغات · اختر اللغة من الأعلى"
+ },
+ "Rezeptkarten: 10 Karten für die Prüfungsrechnungen": {
+  "tr": "Formül kartları: sınav hesapları için 10 kart",
+  "vi": "Thẻ công thức (Rezeptkarten): 10 thẻ cho các bài tính trong kỳ thi",
+  "ar": "بطاقات الوصفة الحسابية (Rezeptkarten): 10 بطاقات لمسائل الامتحان"
+ },
+ "Ausschneiden, lochen oder in eine Klarsichthülle · erlaubt in Übungsklausur 2 und Klausur 2 (ohne eigene Zusätze)": {
+  "tr": "Kesin, delin veya şeffaf dosyaya koyun · Übungsklausur (deneme sınavı) 2 ve Klausur (sınav) 2 içinde izinli (kendi eklemeniz olmadan)",
+  "vi": "Cắt ra, đục lỗ hoặc cho vào bìa nhựa trong · được phép dùng trong Bài thi thử 2 và Bài kiểm tra 2 (không tự thêm nội dung)",
+  "ar": "قصّها، واثقبها أو ضعها في غلاف شفاف · مسموحة في الامتحان التجريبي 2 والامتحان 2 (بدون إضافات شخصية)"
+ },
+ "So benutzt du die Karten": {
+  "tr": "Kartları nasıl kullanırsın",
+  "vi": "Cách dùng thẻ",
+  "ar": "كيف تستخدم البطاقات"
+ },
+ "Lies die Aufgabe und markiere, was gesucht ist.": {
+  "tr": "Soruyu oku ve nelerin istendiğini işaretle.",
+  "vi": "Đọc đề và đánh dấu điều cần tìm.",
+  "ar": "اقرأ المسألة وحدّد ما هو المطلوب."
+ },
+ "Suche die Signalwörter – sie zeigen dir die richtige Karte.": {
+  "tr": "İpucu kelimelerini (Signalwörter) ara – doğru kartı sana gösterirler.",
+  "vi": "Tìm các từ khóa gợi ý (Signalwörter) – chúng chỉ cho bạn đúng thẻ.",
+  "ar": "ابحث عن الكلمات الدالّة (Signalwörter) – فهي تدلّك على البطاقة الصحيحة."
+ },
+ "Rechne nach dem Rezept und vergleiche mit dem Beispiel.": {
+  "tr": "Formüle göre hesapla ve örnekle karşılaştır.",
+  "vi": "Tính theo công thức và so sánh với ví dụ.",
+  "ar": "احسب حسب الوصفة وقارن مع المثال."
+ },
+ "Lies die Falle – dort passieren die meisten Fehler.": {
+  "tr": "Tuzağı (Falle) oku – hataların çoğu orada yapılır.",
+  "vi": "Đọc phần lỗi hay gặp (Falle) – đa số lỗi xảy ra ở đó.",
+  "ar": "اقرأ التنبيه (Falle) – ففيه تحدث معظم الأخطاء."
+ },
+ "Wichtig: In der Abschlussprüfung gibt es keine Rezeptkarten.": {
+  "tr": "Önemli: Bitirme sınavında formül kartı yoktur.",
+  "vi": "Quan trọng: Trong kỳ thi cuối khóa không có thẻ công thức.",
+  "ar": "مهم: في الامتحان النهائي لا توجد بطاقات وصفة حسابية."
+ },
+ "Übe deshalb im Rechenfit-Block auch ohne Karten.": {
+  "tr": "Bu yüzden Rechenfit bloğunda kartsız da alıştırma yap.",
+  "vi": "Vì vậy hãy luyện cả không dùng thẻ trong khối Rechenfit.",
+  "ar": "لذلك تدرّب في وحدة Rechenfit أيضًا بدون بطاقات."
+ },
+ "Rezeptkarte 1 Dreisatz": {
+  "tr": "Formül kartı 1 Dreisatz (üçlü orantı)",
+  "vi": "Thẻ công thức 1 Quy tắc tam suất (Dreisatz)",
+  "ar": "بطاقة الوصفة الحسابية 1: قاعدة الثلاثة (Dreisatz)"
+ },
+ "Signalwörter:": {
+  "tr": "İpucu kelimeleri:",
+  "vi": "Từ khóa gợi ý (Signalwörter):",
+  "ar": "كلمات دالّة:"
+ },
+ "„… kosten …, wie viel kosten …?“ · Prämie · Umtausch · je": {
+  "tr": "„… kaç para, … kaç para eder?“ · prim · değişim · başına",
+  "vi": "„… giá …, … giá bao nhiêu?“ · tiền thưởng (Prämie) · đổi hàng · mỗi",
+  "ar": "„… تكلّف …، كم تكلّف …؟“ · مكافأة · استبدال · لكل"
+ },
+ "Rezept": {
+  "tr": "Formül",
+  "vi": "Công thức",
+  "ar": "الوصفة"
+ },
+ "bekannter Wert : bekannte Menge × gesuchte Menge": {
+  "tr": "bilinen değer : bilinen miktar × istenen miktar",
+  "vi": "giá trị đã biết : lượng đã biết × lượng cần tìm",
+  "ar": "القيمة المعروفة : الكمية المعروفة × الكمية المطلوبة"
+ },
+ "erst auf 1, dann auf das Gesuchte": {
+  "tr": "önce 1'e, sonra istenene",
+  "vi": "trước tiên về 1, sau đó đến giá trị cần tìm",
+  "ar": "أولًا إلى 1، ثم إلى المطلوب"
+ },
+ "Beispiel": {
+  "tr": "Örnek",
+  "vi": "Ví dụ",
+  "ar": "مثال"
+ },
+ "3 kg kosten 5,70 €. 5 kg?": {
+  "tr": "3 kg 5,70 €. 5 kg?",
+  "vi": "3 kg giá 5,70 €. 5 kg?",
+  "ar": "3 kg تكلّف 5,70 €. وكم 5 kg؟"
+ },
+ "Falle:": {
+  "tr": "Dikkat, tuzak:",
+  "vi": "Lỗi hay gặp:",
+  "ar": "تنبيه:"
+ },
+ "Richtung prüfen: mehr Ware → mehr Geld?": {
+  "tr": "Yönü kontrol et: daha çok mal → daha çok para?",
+  "vi": "Kiểm tra chiều: hàng nhiều hơn → tiền nhiều hơn?",
+  "ar": "تحقّق من الاتجاه: بضاعة أكثر ← مال أكثر؟"
+ },
+ "Rezeptkarte 2 Grundpreis und lose Ware": {
+  "tr": "Formül kartı 2 Grundpreis (birim fiyat) ve açık mal",
+  "vi": "Thẻ công thức 2 Giá theo đơn vị (Grundpreis) và hàng bán lẻ theo cân",
+  "ar": "بطاقة الوصفة الحسابية 2: سعر الوحدة (Grundpreis) والبضاعة السائبة"
+ },
+ "„je kg / je l / je 100 g“ · Tee · Käse · Schokolade": {
+  "tr": "„kg başına / litre başına / 100 g başına“ · çay · peynir · çikolata",
+  "vi": "„mỗi kg / mỗi l / mỗi 100 g“ · trà · phô mai · sô cô la",
+  "ar": "„لكل kg / لكل l / لكل 100 g“ · شاي · جبن · شوكولاتة"
+ },
+ "Grundpreis = Preis : Menge in kg (l)": {
+  "tr": "birim fiyat = fiyat : kg (l) cinsinden miktar",
+  "vi": "Giá theo đơn vị = giá : lượng tính bằng kg (l)",
+  "ar": "سعر الوحدة = السعر : الكمية بالـ kg (l)"
+ },
+ "lose Ware = Preis je kg × Menge in kg": {
+  "tr": "açık mal = kg fiyatı × kg cinsinden miktar",
+  "vi": "hàng bán theo cân = giá mỗi kg × lượng tính bằng kg",
+  "ar": "البضاعة السائبة = السعر لكل kg × الكمية بالـ kg"
+ },
+ "750 ml für 7,95 €: 7,95 : 0,75 = 10,60 € je l": {
+  "tr": "750 ml 7,95 €: 7,95 : 0,75 = litre başına 10,60 €",
+  "vi": "750 ml giá 7,95 €: 7,95 : 0,75 = 10,60 € mỗi l",
+  "ar": "750 ml بسعر 7,95 €: 7,95 : 0,75 = 10,60 € لكل l"
+ },
+ "Gramm in kg: 125 g = 0,125 kg": {
+  "tr": "Gramı kg'a çevir: 125 g = 0,125 kg",
+  "vi": "Đổi gam ra kg: 125 g = 0,125 kg",
+  "ar": "من الغرام إلى kg: 125 g = 0,125 kg"
+ },
+ "Rezeptkarte 3 Prozentwert": {
+  "tr": "Formül kartı 3 Prozentwert (yüzde değeri)",
+  "vi": "Thẻ công thức 3 Giá trị phần trăm (Prozentwert)",
+  "ar": "بطاقة الوصفة الحسابية 3: قيمة النسبة المئوية (Prozentwert)"
+ },
+ "„… % von …“ · „wie viel Euro Rabatt / Anteil?“": {
+  "tr": "„… %'i …'nin“ · „kaç euro indirim / pay?“",
+  "vi": "„… % của …“ · „giảm giá / phần là bao nhiêu euro?“",
+  "ar": "„… % من …“ · „كم يورو خصم / حصة؟“"
+ },
+ "Wert nach Abzug: G : 100 × (100 − p)": {
+  "tr": "İndirimden sonraki değer: G : 100 × (100 − p)",
+  "vi": "Giá trị sau khi trừ: G : 100 × (100 − p)",
+  "ar": "القيمة بعد الخصم: G : 100 × (100 − p)"
+ },
+ "Wert nach Aufschlag: G : 100 × (100 + p)": {
+  "tr": "Zamdan sonraki değer: G : 100 × (100 + p)",
+  "vi": "Giá trị sau khi cộng thêm: G : 100 × (100 + p)",
+  "ar": "القيمة بعد الزيادة: G : 100 × (100 + p)"
+ },
+ "25 % von 198 €: 198 : 100 × 25 = 49,50 €": {
+  "tr": "198 €'nun 25 %'i: 198 : 100 × 25 = 49,50 €",
+  "vi": "25 % của 198 €: 198 : 100 × 25 = 49,50 €",
+  "ar": "25 % من 198 €: 198 : 100 × 25 = 49,50 €"
+ },
+ "keine %-Taste! 10 % = Komma 1 Stelle nach links": {
+  "tr": "%-tuşu yok! 10 % = virgülü 1 basamak sola kaydır",
+  "vi": "không dùng phím %! 10 % = dịch dấu phẩy sang trái 1 chữ số",
+  "ar": "لا تستخدم زر %! 10 % = انقل الفاصلة 1 منزلة إلى اليسار"
+ },
+ "Rezeptkarte 4 Prozentsatz": {
+  "tr": "Formül kartı 4 Prozentsatz (yüzde oranı)",
+  "vi": "Thẻ công thức 4 Tỷ lệ phần trăm (Prozentsatz)",
+  "ar": "بطاقة الوصفة الحسابية 4: معدل النسبة (Prozentsatz)"
+ },
+ "„Wie viel Prozent …?“ · „Um wie viel Prozent …?“ · Anteil": {
+  "tr": "„Yüzde kaç …?“ · „Yüzde kaç oranında …?“ · pay",
+  "vi": "„Bao nhiêu phần trăm …?“ · „Giảm bao nhiêu phần trăm …?“ · phần",
+  "ar": "„كم بالمئة …؟“ · „بكم بالمئة …؟“ · حصة"
+ },
+ "Preissenkung: P = Differenz, G = alter Preis": {
+  "tr": "Fiyat indirimi: P = fark, G = eski fiyat",
+  "vi": "Giảm giá: P = chênh lệch, G = giá cũ",
+  "ar": "انخفاض السعر: P = الفرق، G = السعر القديم"
+ },
+ "Anteil: G = Summe aller Teile": {
+  "tr": "Pay: G = tüm parçaların toplamı",
+  "vi": "Phần: G = tổng tất cả các phần",
+  "ar": "الحصة: G = مجموع كل الأجزاء"
+ },
+ "G ist der alte Preis, nicht der neue · Rundungsvorgabe!": {
+  "tr": "G eski fiyattır, yeni fiyat değil · yuvarlama kuralına dikkat!",
+  "vi": "G là giá cũ, không phải giá mới · chú ý yêu cầu làm tròn!",
+  "ar": "G هو السعر القديم، وليس الجديد · انتبه لتعليمات التقريب!"
+ },
+ "Rezeptkarte 5 Grundwert – Preis vorher": {
+  "tr": "Formül kartı 5 Grundwert (ana değer) – önceki fiyat",
+  "vi": "Thẻ công thức 5 Giá trị gốc (Grundwert) – giá trước đó",
+  "ar": "بطاقة الوصفة الحسابية 5: القيمة الأساسية (Grundwert) – السعر قبل الخصم"
+ },
+ "„ursprünglicher Preis“ · „vor dem Rabatt“ · „Rechnungsbetrag vor Skonto“": {
+  "tr": "„ilk fiyat“ · „indirimden önce“ · „Skonto öncesi fatura tutarı“",
+  "vi": "„giá ban đầu“ · „trước khi giảm giá“ · „số tiền hóa đơn trước Skonto“",
+  "ar": "„السعر الأصلي“ · „قبل الخصم“ · „مبلغ الفاتورة قبل خصم الدفع الفوري“"
+ },
+ "Preis vorher = neuer Preis : (100 − p) × 100": {
+  "tr": "önceki fiyat = yeni fiyat : (100 − p) × 100",
+  "vi": "Giá trước đó = giá mới : (100 − p) × 100",
+  "ar": "السعر قبل الخصم = السعر الجديد : (100 − p) × 100"
+ },
+ "nach 10 % Rabatt 180 €: 180 : 90 × 100 = 200,00 €": {
+  "tr": "10 % indirimden sonra 180 €: 180 : 90 × 100 = 200,00 €",
+  "vi": "sau khi giảm giá 10 % còn 180 €: 180 : 90 × 100 = 200,00 €",
+  "ar": "بعد خصم 10 % أصبح 180 €: 180 : 90 × 100 = 200,00 €"
+ },
+ "NICHT 180 + 10 % (= 198 € ist falsch)": {
+  "tr": "180 + 10 % DEĞİL (= 198 € yanlış)",
+  "vi": "KHÔNG phải 180 + 10 % (= 198 € là sai)",
+  "ar": "ليس 180 + 10 % (= 198 € خطأ)"
+ },
+ "Rezeptkarte 6 Rabatt, Coupon, Skonto": {
+  "tr": "Formül kartı 6 İndirim, kupon, Skonto (peşin ödeme iskontosu)",
+  "vi": "Thẻ công thức 6 Giảm giá (Rabatt), phiếu giảm giá (Coupon), chiết khấu thanh toán sớm (Skonto)",
+  "ar": "بطاقة الوصفة الحسابية 6: خصم (Rabatt) وقسيمة (Coupon) وخصم الدفع الفوري (Skonto)"
+ },
+ "„Coupon“ · „Rabatt“ · „Überweisungsbetrag nach Skonto“": {
+  "tr": "„kupon“ · „indirim“ · „Skonto sonrası havale tutarı“",
+  "vi": "„Coupon“ · „Rabatt“ · „số tiền chuyển khoản sau Skonto“",
+  "ar": "„قسيمة خصم“ · „خصم“ · „مبلغ التحويل بعد خصم الدفع الفوري“"
+ },
+ "zu zahlen = Preis : 100 × (100 − p)": {
+  "tr": "ödenecek tutar = fiyat : 100 × (100 − p)",
+  "vi": "số tiền phải trả = giá : 100 × (100 − p)",
+  "ar": "المبلغ المستحق = السعر : 100 × (100 − p)"
+ },
+ "zwei Nachlässe: nacheinander, der zweite vom neuen Betrag": {
+  "tr": "iki indirim: art arda, ikincisi yeni tutardan",
+  "vi": "hai lần giảm: lần lượt, lần thứ hai tính từ số tiền mới",
+  "ar": "خصمان: واحد بعد الآخر، والثاني من المبلغ الجديد"
+ },
+ "287,20 € mit 15 % Coupon: 287,20 : 100 × 85 = 244,12 €": {
+  "tr": "287,20 € ve 15 % kupon: 287,20 : 100 × 85 = 244,12 €",
+  "vi": "287,20 € với phiếu giảm giá 15 %: 287,20 : 100 × 85 = 244,12 €",
+  "ar": "287,20 € مع قسيمة 15 %: 287,20 : 100 × 85 = 244,12 €"
+ },
+ "3.820 € mit 3 % Skonto: 3.820 : 100 × 97 = 3.705,40 €": {
+  "tr": "3.820 € ve 3 % Skonto: 3.820 : 100 × 97 = 3.705,40 €",
+  "vi": "3.820 € với Skonto 3 %: 3.820 : 100 × 97 = 3.705,40 €",
+  "ar": "3.820 € مع خصم دفع فوري 3 %: 3.820 : 100 × 97 = 3.705,40 €"
+ },
+ "−20 % und −25 % sind nicht −45 %": {
+  "tr": "−20 % ve −25 %, −45 % etmez",
+  "vi": "−20 % và −25 % không phải là −45 %",
+  "ar": "−20 % و −25 % لا تساوي −45 %"
+ },
+ "Rezeptkarte 7 Umsatzsteuer": {
+  "tr": "Formül kartı 7 Umsatzsteuer (katma değer vergisi, KDV)",
+  "vi": "Thẻ công thức 7 Thuế giá trị gia tăng (Umsatzsteuer)",
+  "ar": "بطاقة الوصفة الحسابية 7: ضريبة القيمة المضافة (Umsatzsteuer)"
+ },
+ "„enthalten“ · „netto“ · „brutto“ · „inkl. USt“ · Kassenbon": {
+  "tr": "„dahil“ · „net“ · „brüt“ · „KDV dahil“ · fiş",
+  "vi": "„đã bao gồm“ · „chưa thuế (netto)“ · „đã gồm thuế (brutto)“ · „gồm USt“ · hóa đơn (Kassenbon)",
+  "ar": "„متضمَّنة“ · „صافي (netto)“ · „إجمالي (brutto)“ · „شاملة ضريبة القيمة المضافة“ · إيصال (Kassenbon)"
+ },
+ "USt herausrechnen: brutto : 119 × 19 (7 %: : 107 × 7)": {
+  "tr": "KDV'yi ayır: brüt : 119 × 19 (7 %: : 107 × 7)",
+  "vi": "Tách USt ra: brutto : 119 × 19 (7 %: : 107 × 7)",
+  "ar": "استخراج الضريبة: الإجمالي : 119 × 19 (لـ 7 %: : 107 × 7)"
+ },
+ "netto = brutto : 119 × 100": {
+  "tr": "net = brüt : 119 × 100",
+  "vi": "netto = brutto : 119 × 100",
+  "ar": "الصافي = الإجمالي : 119 × 100"
+ },
+ "brutto = netto : 100 × 119": {
+  "tr": "brüt = net : 100 × 119",
+  "vi": "brutto = netto : 100 × 119",
+  "ar": "الإجمالي = الصافي : 100 × 119"
+ },
+ "228,50 € brutto: 228,50 : 119 × 19 = 36,48 € USt": {
+  "tr": "228,50 € brüt: 228,50 : 119 × 19 = 36,48 € KDV",
+  "vi": "228,50 € brutto: 228,50 : 119 × 19 = 36,48 € USt",
+  "ar": "228,50 € إجمالي: 228,50 : 119 × 19 = 36,48 € ضريبة"
+ },
+ "NIE 19 % vom Bruttopreis · Probe: netto + USt = brutto": {
+  "tr": "ASLA brüt fiyatın 19 %'i değil · Kontrol: net + KDV = brüt",
+  "vi": "KHÔNG BAO GIỜ tính 19 % trên giá brutto · Kiểm tra: netto + USt = brutto",
+  "ar": "لا تحسب أبدًا 19 % من السعر الإجمالي · التحقق: الصافي + الضريبة = الإجمالي"
+ },
+ "Rezeptkarte 8 Durchschnitt": {
+  "tr": "Formül kartı 8 Durchschnitt (ortalama)",
+  "vi": "Thẻ công thức 8 Trung bình (Durchschnitt)",
+  "ar": "بطاقة الوصفة الحسابية 8: المتوسط (Durchschnitt)"
+ },
+ "„im Durchschnitt“ · „je Kunde / je Stunde / je m²“ · „Durchschnittspreis“": {
+  "tr": "„ortalama olarak“ · „müşteri başına / saat başına / m² başına“ · „ortalama fiyat“",
+  "vi": "„trung bình“ · „mỗi khách / mỗi giờ / mỗi m²“ · „giá trung bình“",
+  "ar": "„في المتوسط“ · „لكل عميل / لكل ساعة / لكل m²“ · „متوسط السعر“"
+ },
+ "einfach: Summe : Anzahl": {
+  "tr": "basit: toplam : adet",
+  "vi": "đơn giản: tổng : số lượng",
+  "ar": "بسيط: المجموع : العدد"
+ },
+ "gewogen: Summe (Menge × Preis) : Summe der Mengen": {
+  "tr": "ağırlıklı: toplam (miktar × fiyat) : miktarların toplamı",
+  "vi": "có trọng số (gewogen): tổng (lượng × giá) : tổng các lượng",
+  "ar": "مرجّح (gewogen): مجموع (الكمية × السعر) : مجموع الكميات"
+ },
+ "Ø-Lagerbestand Jahr: (Anfang + 12 Monatsenden) : 13": {
+  "tr": "Yıllık Ø stok: (başlangıç + 12 ay sonu) : 13",
+  "vi": "Ø-tồn kho cả năm: (đầu kỳ + 12 cuối tháng) : 13",
+  "ar": "متوسط المخزون السنوي: (البداية + 12 نهاية شهر) : 13"
+ },
+ "218,90 : 22 Mützen = 9,95 €": {
+  "tr": "218,90 : 22 bere = 9,95 €",
+  "vi": "218,90 : 22 mũ len = 9,95 €",
+  "ar": "218,90 : 22 قبعة = 9,95 €"
+ },
+ "Stunden genau zählen (9:00–13:30 = 4,5 h) · Kunden ganzzahlig": {
+  "tr": "Saatleri tam say (9:00–13:30 = 4,5 sa) · Müşteriler tam sayı",
+  "vi": "Đếm số giờ chính xác (9:00–13:30 = 4,5 h) · Số khách là số nguyên",
+  "ar": "احسب الساعات بدقة (9:00–13:30 = 4,5 h) · عدد العملاء عدد صحيح"
+ },
+ "Rezeptkarte 9 Verteilungsrechnung": {
+  "tr": "Formül kartı 9 Verteilungsrechnung (dağıtım hesabı)",
+  "vi": "Thẻ công thức 9 Tính phân bổ (Verteilungsrechnung)",
+  "ar": "بطاقة الوصفة الحسابية 9: حساب التوزيع (Verteilungsrechnung)"
+ },
+ "„verteilt nach Fläche / Gewicht / Stück / Personen“ · „anteilig“": {
+  "tr": "„alana / ağırlığa / adede / kişiye göre dağıtılır“ · „oranlı olarak“",
+  "vi": "„phân bổ theo diện tích / trọng lượng / số cái / số người“ · „theo tỷ lệ“",
+  "ar": "„موزّعة حسب المساحة / الوزن / القطع / الأشخاص“ · „بالتناسب“"
+ },
+ "Kosten : Summe der Anteile × eigener Anteil": {
+  "tr": "Masraf : payların toplamı × kendi payı",
+  "vi": "Chi phí : tổng các phần × phần của mình",
+  "ar": "التكاليف : مجموع الأجزاء × الجزء الخاص"
+ },
+ "Probe: alle Teile zusammen = Kosten": {
+  "tr": "Kontrol: tüm parçalar birlikte = masraf",
+  "vi": "Kiểm tra: tất cả các phần cộng lại = chi phí",
+  "ar": "التحقق: كل الأجزاء معًا = التكاليف"
+ },
+ "6.000 € nach 800 + 1.200 + 1.000 m²: 6.000 : 3.000 × 800 = 1.600,00 €": {
+  "tr": "6.000 € 800 + 1.200 + 1.000 m²'ye göre: 6.000 : 3.000 × 800 = 1.600,00 €",
+  "vi": "6.000 € theo 800 + 1.200 + 1.000 m²: 6.000 : 3.000 × 800 = 1.600,00 €",
+  "ar": "6.000 € حسب 800 + 1.200 + 1.000 m²: 6.000 : 3.000 × 800 = 1.600,00 €"
+ },
+ "erst die Summe der Anteile bilden": {
+  "tr": "önce payların toplamını bul",
+  "vi": "trước tiên tính tổng các phần",
+  "ar": "أولًا اجمع الأجزاء"
+ },
+ "Rezeptkarte 10 Kasse": {
+  "tr": "Formül kartı 10 Kasa",
+  "vi": "Thẻ công thức 10 Quầy thu ngân (Kasse)",
+  "ar": "بطاقة الوصفة الحسابية 10: الصندوق (Kasse)"
+ },
+ "„Tagesumsatz“ · „Kassendifferenz“ · „Soll-Bestand“ · „Kasseneröffnung“": {
+  "tr": "„günlük ciro“ · „kasa farkı“ · „olması gereken stok“ · „kasa açılışı“",
+  "vi": "„doanh thu trong ngày (Tagesumsatz)“ · „chênh lệch quỹ (Kassendifferenz)“ · „số dư theo sổ sách (Soll-Bestand)“ · „mở quầy (Kasseneröffnung)“",
+  "ar": "„مبيعات اليوم“ · „فرق الصندوق“ · „الرصيد المطلوب (Soll)“ · „فتح الصندوق“"
+ },
+ "Tageslosung = Bargeld + Abschöpfung − Wechselgeld": {
+  "tr": "günlük nakit hasılat = nakit + kasadan ara para çekme − bozuk para",
+  "vi": "Tageslosung (doanh thu tiền mặt trong ngày) = tiền mặt + rút bớt giữa ca − tiền lẻ để thối",
+  "ar": "حصيلة اليوم النقدية (Tageslosung) = نقد + سحب من الصندوق − فكّة"
+ },
+ "Tagesumsatz = Tageslosung + Karte": {
+  "tr": "günlük ciro = günlük nakit hasılat + kart",
+  "vi": "Tagesumsatz (doanh thu trong ngày) = Tageslosung + thẻ",
+  "ar": "مبيعات اليوم (Tagesumsatz) = حصيلة اليوم النقدية + بطاقة"
+ },
+ "Soll = Wechselgeld + Barumsatz − Entnahmen · Differenz = Ist − Soll": {
+  "tr": "Soll (olması gereken) = bozuk para + nakit satış − çekilenler · Fark = Ist (fiili) − Soll",
+  "vi": "Soll (theo sổ sách) = tiền lẻ để thối + doanh thu tiền mặt − tiền rút ra · Chênh lệch = Ist (thực tế) − Soll",
+  "ar": "المطلوب (Soll) = فكّة + مبيعات نقدية − مبالغ مسحوبة · الفرق = الفعلي (Ist) − المطلوب (Soll)"
+ },
+ "3.450 + 2.000 − 600 + 3.150 = 8.000,00 € Tagesumsatz": {
+  "tr": "3.450 + 2.000 − 600 + 3.150 = 8.000,00 € günlük ciro",
+  "vi": "3.450 + 2.000 − 600 + 3.150 = 8.000,00 € doanh thu trong ngày",
+  "ar": "3.450 + 2.000 − 600 + 3.150 = 8.000,00 € مبيعات اليوم"
+ },
+ "Karte gehört NIE in den Bargeld-Soll · Minus = Fehlbetrag": {
+  "tr": "Kart ASLA nakit Soll'üne girmez · Eksi = kasa açığı",
+  "vi": "Thẻ KHÔNG BAO GIỜ tính vào Soll tiền mặt · Âm = thiếu tiền (Fehlbetrag)",
+  "ar": "مبلغ البطاقة لا يدخل أبدًا في الرصيد النقدي المطلوب · ناقص = عجز (Fehlbetrag)"
+ }
+}

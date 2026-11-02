@@ -1,0 +1,1728 @@
+{
+ "rm1": {
+  "file": "LF3_Rechen-Minute_-_Karten_1-20",
+  "pdf": "LF3_Rechen-Minute_-_Karten_1-20.pdf",
+  "title": "Rechen-Minute – Stufe 1 und 2",
+  "doc": "Rechen-Minute: Karten 1 bis 20",
+  "meta": "Für DS 1 bis DS 19 · Stufe 1: Geld und Komma (ohne Taschenrechner) · Stufe 2: Runden, Einheiten, Taschenrechner",
+  "steps": [
+   "Zu Beginn jeder Doppelstunde bekommt jedes Tandem eine Karte (Karte 1 in DS 1, Karte 2 in DS 2 …).",
+   "Jede Person rechnet die drei Aufgaben allein – höchstens 5 Minuten.",
+   "Dann vergleicht das Tandem mit der Rückseite und erklärt sich gegenseitig die Fehler (5 Minuten).",
+   "Wer alle drei richtig hat, macht einen Strich in seiner Rechen-Liste. Nach 10 Karten: Wie viele Striche?"
+  ],
+  "paras": [
+   "Tipp für die Lehrkraft: Die Karten auf festes Papier beidseitig drucken (Wenden an der langen Kante), dann liegt die Lösung auf der Rückseite. Ab DS 20 folgen die Karten der Stufen 3 und 4 mit dem Rechenblock."
+  ],
+  "cards": [
+   {
+    "n": 1,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "2,50 € + 3,75 € ="
+     ],
+     [
+      "b",
+      "10,00 € − 6,40 € ="
+     ],
+     [
+      "c",
+      "3 × 1,50 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "6,25 €"
+     ],
+     [
+      "b",
+      "3,60 €"
+     ],
+     [
+      "c",
+      "4,50 €"
+     ]
+    ]
+   },
+   {
+    "n": 2,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "4,99 € + 5,01 € ="
+     ],
+     [
+      "b",
+      "20,00 € − 12,35 € ="
+     ],
+     [
+      "c",
+      "2 × 3,95 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "10,00 €"
+     ],
+     [
+      "b",
+      "7,65 €"
+     ],
+     [
+      "c",
+      "7,90 €"
+     ]
+    ]
+   },
+   {
+    "n": 3,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "Wie viel Cent sind 2,05 €?"
+     ],
+     [
+      "b",
+      "1,20 € + 80 ct = … €"
+     ],
+     [
+      "c",
+      "50,00 € − 23,70 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "205 ct"
+     ],
+     [
+      "b",
+      "2,00 €"
+     ],
+     [
+      "c",
+      "26,30 €"
+     ]
+    ]
+   },
+   {
+    "n": 4,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "3 × 0,99 € ="
+     ],
+     [
+      "b",
+      "100,00 € − 64,25 € ="
+     ],
+     [
+      "c",
+      "Einkauf 7,60 €, der Kunde gibt 10 €. Rückgeld?"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "2,97 €"
+     ],
+     [
+      "b",
+      "35,75 €"
+     ],
+     [
+      "c",
+      "2,40 €"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "1,29 € + 2,49 € + 0,89 € ="
+     ],
+     [
+      "b",
+      "Die Kundin zahlt diesen Einkauf mit 5 €. Rückgeld?"
+     ],
+     [
+      "c",
+      "4 × 2,25 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "4,67 €"
+     ],
+     [
+      "b",
+      "0,33 €"
+     ],
+     [
+      "c",
+      "9,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 6,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "12,50 € + 7,50 € + 30,00 € ="
+     ],
+     [
+      "b",
+      "200,00 € − 79,50 € ="
+     ],
+     [
+      "c",
+      "Die Hälfte von 9,90 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "50,00 €"
+     ],
+     [
+      "b",
+      "120,50 €"
+     ],
+     [
+      "c",
+      "4,95 €"
+     ]
+    ]
+   },
+   {
+    "n": 7,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "10 Münzen zu 0,20 € = … €"
+     ],
+     [
+      "b",
+      "25 Münzen zu 0,50 € = … €"
+     ],
+     [
+      "c",
+      "3 × 2,00 € + 4 × 1,00 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "2,00 €"
+     ],
+     [
+      "b",
+      "12,50 €"
+     ],
+     [
+      "c",
+      "10,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 8,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "45,00 € + 12,80 € − 7,80 € ="
+     ],
+     [
+      "b",
+      "Einkauf 57,85 €, der Kunde gibt 60 €. Rückgeld?"
+     ],
+     [
+      "c",
+      "6 × 0,50 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "50,00 €"
+     ],
+     [
+      "b",
+      "2,15 €"
+     ],
+     [
+      "c",
+      "3,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 9,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "2.500 € + 1.250 € ="
+     ],
+     [
+      "b",
+      "5.000 € − 1.999 € ="
+     ],
+     [
+      "c",
+      "2 × 12,49 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "3.750,00 €"
+     ],
+     [
+      "b",
+      "3.001,00 €"
+     ],
+     [
+      "c",
+      "24,98 €"
+     ]
+    ]
+   },
+   {
+    "n": 10,
+    "stufe": "Stufe 1 · ohne Taschenrechner",
+    "items": [
+     [
+      "a",
+      "Kassenbon: 2 T-Shirts zu 13,95 € und 1 Shirt zu 29,95 €. Summe?"
+     ],
+     [
+      "b",
+      "Die Kundin zahlt mit 60 €. Rückgeld?"
+     ],
+     [
+      "c",
+      "3 × 9,95 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "57,85 €"
+     ],
+     [
+      "b",
+      "2,15 €"
+     ],
+     [
+      "c",
+      "29,85 €"
+     ]
+    ]
+   },
+   {
+    "n": 11,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "12,345 € kaufmännisch auf 2 Stellen runden"
+     ],
+     [
+      "b",
+      "7,994 € auf 2 Stellen runden"
+     ],
+     [
+      "c",
+      "0,125 € auf 2 Stellen runden"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "12,35 €"
+     ],
+     [
+      "b",
+      "7,99 €"
+     ],
+     [
+      "c",
+      "0,13 €"
+     ]
+    ]
+   },
+   {
+    "n": 12,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "750 g = … kg"
+     ],
+     [
+      "b",
+      "1,5 kg = … g"
+     ],
+     [
+      "c",
+      "250 ml = … l"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "0,75 kg"
+     ],
+     [
+      "b",
+      "1.500 g"
+     ],
+     [
+      "c",
+      "0,25 l"
+     ]
+    ]
+   },
+   {
+    "n": 13,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "36,00 € : 4 ="
+     ],
+     [
+      "b",
+      "9,90 € : 3 ="
+     ],
+     [
+      "c",
+      "100,00 € : 8 ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "9,00 €"
+     ],
+     [
+      "b",
+      "3,30 €"
+     ],
+     [
+      "c",
+      "12,50 €"
+     ]
+    ]
+   },
+   {
+    "n": 14,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "7,95 € : 0,75 = (auf 2 Stellen runden)"
+     ],
+     [
+      "b",
+      "1,19 € : 0,5 ="
+     ],
+     [
+      "c",
+      "2,49 € : 0,45 = (auf 2 Stellen runden)"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "10,60 €"
+     ],
+     [
+      "b",
+      "2,38 €"
+     ],
+     [
+      "c",
+      "5,53 €"
+     ]
+    ]
+   },
+   {
+    "n": 15,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "0,36 × 12,00 € ="
+     ],
+     [
+      "b",
+      "1,5 × 4,00 € ="
+     ],
+     [
+      "c",
+      "0,8 × 7,50 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "4,32 €"
+     ],
+     [
+      "b",
+      "6,00 €"
+     ],
+     [
+      "c",
+      "6,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 16,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "1 % von 300 € (= 300 € : 100)"
+     ],
+     [
+      "b",
+      "10 % von 59,90 € (= 59,90 € : 10)"
+     ],
+     [
+      "c",
+      "50 % von 24,00 € (= die Hälfte)"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "3,00 €"
+     ],
+     [
+      "b",
+      "5,99 €"
+     ],
+     [
+      "c",
+      "12,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 17,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "42,86 auf eine Nachkommastelle runden"
+     ],
+     [
+      "b",
+      "16,678 auf eine Nachkommastelle runden"
+     ],
+     [
+      "c",
+      "2,55 auf eine Nachkommastelle runden"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "42,9"
+     ],
+     [
+      "b",
+      "16,7"
+     ],
+     [
+      "c",
+      "2,6"
+     ]
+    ]
+   },
+   {
+    "n": 18,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "1.384 Bonuspunkte, 1 Punkt = 0,01 €. Wie viel Euro?"
+     ],
+     [
+      "b",
+      "42,45 € − 13,84 € ="
+     ],
+     [
+      "c",
+      "46 × 9,95 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "13,84 €"
+     ],
+     [
+      "b",
+      "28,61 €"
+     ],
+     [
+      "c",
+      "457,70 €"
+     ]
+    ]
+   },
+   {
+    "n": 19,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "256 Kunden in 4 Stunden. Kunden je Stunde?"
+     ],
+     [
+      "b",
+      "657 Artikel für 256 Kunden. Artikel je Kunde? (1 Stelle)"
+     ],
+     [
+      "c",
+      "(120 + 130 + 110) : 3 ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "64"
+     ],
+     [
+      "b",
+      "2,6"
+     ],
+     [
+      "c",
+      "120"
+     ]
+    ]
+   },
+   {
+    "n": 20,
+    "stufe": "Stufe 2 · mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "360 g Käse, 1 kg kostet 12,00 €. Preis? (360 g = 0,36 kg)"
+     ],
+     [
+      "b",
+      "125 g Tee, 1 kg kostet 6,80 €. Preis?"
+     ],
+     [
+      "c",
+      "2,5 l = … ml"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "4,32 €"
+     ],
+     [
+      "b",
+      "0,85 €"
+     ],
+     [
+      "c",
+      "2.500 ml"
+     ]
+    ]
+   }
+  ],
+  "first": 1,
+  "last": 20
+ },
+ "rm2": {
+  "file": "LF3_Rechen-Minute_-_Karten_21-40",
+  "pdf": "LF3_Rechen-Minute_-_Karten_21-40.pdf",
+  "title": "Rechen-Minute – Stufe 3 und 4",
+  "doc": "Rechen-Minute: Karten 21 bis 40",
+  "meta": "Für DS 21 bis DS 40 · Stufe 3: Wiederholung früherer Rechenarten · Stufe 4: gemischte Prüfungsaufgaben",
+  "steps": [],
+  "paras": [
+   "Wie bei den Karten 1–20: Tandem, 5 Minuten rechnen, 5 Minuten vergleichen. Ab jetzt immer mit Taschenrechner und Rezeptkarte.",
+   "Die Karten wiederholen bewusst frühere Rechenarten (verteiltes Üben): Karte 25 zum Beispiel übt Prozent, während der Unterricht schon beim Prozentsatz ist. Ab Karte 31 sind alle Rechenarten gemischt – wie in der Prüfung.",
+   "Druck: beidseitig auf festes Papier, Wenden an der langen Kante."
+  ],
+  "cards": [
+   {
+    "n": 21,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "Einkauf 37,85 €, der Kunde gibt 50 €. Rückgeld?"
+     ],
+     [
+      "b",
+      "0,45 kg zu 8,80 € je kg ="
+     ],
+     [
+      "c",
+      "19,996 € auf 2 Stellen runden"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "12,15 €"
+     ],
+     [
+      "b",
+      "3,96 €"
+     ],
+     [
+      "c",
+      "20,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 22,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "4 kg kosten 6,20 €. Preis für 1 kg?"
+     ],
+     [
+      "b",
+      "Ist 812,40 €, Soll 815,90 €. Differenz?"
+     ],
+     [
+      "c",
+      "650 g = … kg"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "1,55 €"
+     ],
+     [
+      "b",
+      "−3,50 € (Fehlbetrag)"
+     ],
+     [
+      "c",
+      "0,65 kg"
+     ]
+    ]
+   },
+   {
+    "n": 23,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "Grundpreis: 400 g kosten 2,99 €. Preis je kg?"
+     ],
+     [
+      "b",
+      "3 × 4,95 € ="
+     ],
+     [
+      "c",
+      "1.250 ml = … l"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "7,48 €"
+     ],
+     [
+      "b",
+      "14,85 €"
+     ],
+     [
+      "c",
+      "1,25 l"
+     ]
+    ]
+   },
+   {
+    "n": 24,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "40 € Prämie je 1.000 € Umsatz. Prämie bei 2.600 €?"
+     ],
+     [
+      "b",
+      "125 g Tee zu 24,00 € je kg ="
+     ],
+     [
+      "c",
+      "Geöffnet 9–13 und 14–18 Uhr. Stunden?"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "104,00 €"
+     ],
+     [
+      "b",
+      "3,00 €"
+     ],
+     [
+      "c",
+      "8 h"
+     ]
+    ]
+   },
+   {
+    "n": 25,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "10 % von 84,50 € ="
+     ],
+     [
+      "b",
+      "1 % von 1.250 € ="
+     ],
+     [
+      "c",
+      "25 % von 36 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "8,45 €"
+     ],
+     [
+      "b",
+      "12,50 €"
+     ],
+     [
+      "c",
+      "9,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 26,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "15 % von 60 € ="
+     ],
+     [
+      "b",
+      "2 × 24,95 € mit 20 % Rabatt ="
+     ],
+     [
+      "c",
+      "12,5 % von 80 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "9,00 €"
+     ],
+     [
+      "b",
+      "39,92 €"
+     ],
+     [
+      "c",
+      "10,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 27,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "12 von 48 Kunden = … %"
+     ],
+     [
+      "b",
+      "Preis sinkt von 50 € auf 35 €. Um … %?"
+     ],
+     [
+      "c",
+      "7 von 28 = … %"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "25 %"
+     ],
+     [
+      "b",
+      "30 %"
+     ],
+     [
+      "c",
+      "25 %"
+     ]
+    ]
+   },
+   {
+    "n": 28,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "30 % sind 45 Kunden. 100 % = ?"
+     ],
+     [
+      "b",
+      "Nach 20 % Rabatt 64 €. Preis vorher?"
+     ],
+     [
+      "c",
+      "7 % sind 3.500 €. Grundwert?"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "150 Kunden"
+     ],
+     [
+      "b",
+      "80,00 €"
+     ],
+     [
+      "c",
+      "50.000,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 29,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "USt (19 %) aus 59,50 € ="
+     ],
+     [
+      "b",
+      "netto 100 € + 19 % USt = brutto"
+     ],
+     [
+      "c",
+      "49,90 € mit 10 % Rabatt ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "9,50 €"
+     ],
+     [
+      "b",
+      "119,00 €"
+     ],
+     [
+      "c",
+      "44,91 €"
+     ]
+    ]
+   },
+   {
+    "n": 30,
+    "stufe": "Stufe 3 · Wiederholung mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "1.250 € mit 2 % Skonto = Überweisung"
+     ],
+     [
+      "b",
+      "3 % Skonto von 800 € ="
+     ],
+     [
+      "c",
+      "netto 80 € + 7 % USt = brutto"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "1.225,00 €"
+     ],
+     [
+      "b",
+      "24,00 €"
+     ],
+     [
+      "c",
+      "85,60 €"
+     ]
+    ]
+   },
+   {
+    "n": 31,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "Ø von 12, 15, 18 und 19 Kunden"
+     ],
+     [
+      "b",
+      "3.600 € Umsatz in 8 Stunden. Umsatz je Stunde?"
+     ],
+     [
+      "c",
+      "USt (7 %) aus 21,40 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "16 Kunden"
+     ],
+     [
+      "b",
+      "450,00 €"
+     ],
+     [
+      "c",
+      "1,40 €"
+     ]
+    ]
+   },
+   {
+    "n": 32,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "5 Stück zu 2,00 € und 5 zu 4,00 €. Ø-Preis?"
+     ],
+     [
+      "b",
+      "450 Artikel, 180 Kunden. Artikel je Kunde?"
+     ],
+     [
+      "c",
+      "1.470 Kunden in 8,5 Stunden. Je Stunde?"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "3,00 €"
+     ],
+     [
+      "b",
+      "2,5 Artikel"
+     ],
+     [
+      "c",
+      "173 Kunden"
+     ]
+    ]
+   },
+   {
+    "n": 33,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "900 € nach Fläche: 300, 200, 100 m². Anteil der 300 m²?"
+     ],
+     [
+      "b",
+      "0,8 kg zu 6,50 € je kg ="
+     ],
+     [
+      "c",
+      "20 % von 245 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "450,00 €"
+     ],
+     [
+      "b",
+      "5,20 €"
+     ],
+     [
+      "c",
+      "49,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 34,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "Bargeld 1.850 € + Abschöpfung 500 € − Wechselgeld 200 € + Karte 1.320 € = Tagesumsatz"
+     ],
+     [
+      "b",
+      "40 T-Shirts zu 9,95 € + 50 € Wechselgeld, Ist 446 €. Differenz?"
+     ],
+     [
+      "c",
+      "18 von 72 = … %"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "3.470,00 €"
+     ],
+     [
+      "b",
+      "−2,00 € (Fehlbetrag)"
+     ],
+     [
+      "c",
+      "25 %"
+     ]
+    ]
+   },
+   {
+    "n": 35,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "Grundpreis: 330 ml kosten 0,99 €. Preis je l?"
+     ],
+     [
+      "b",
+      "125 € −20 %, dann −10 % ="
+     ],
+     [
+      "c",
+      "Ware für 44,70 € zurück, neuer Artikel 8,94 €. Stück?"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "3,00 €"
+     ],
+     [
+      "b",
+      "90,00 €"
+     ],
+     [
+      "c",
+      "5 Stück"
+     ]
+    ]
+   },
+   {
+    "n": 36,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "brutto 238,00 € (19 %). netto?"
+     ],
+     [
+      "b",
+      "USt (7 %) aus 53,50 € ="
+     ],
+     [
+      "c",
+      "450 € von 1.800 € = … %"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "200,00 €"
+     ],
+     [
+      "b",
+      "3,50 €"
+     ],
+     [
+      "c",
+      "25 %"
+     ]
+    ]
+   },
+   {
+    "n": 37,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "25 € Prämie für 2.000 € Umsatz. Prämie bei 3.600 €?"
+     ],
+     [
+      "b",
+      "850 Bonuspunkte (1 Punkt = 0,01 €) = … €"
+     ],
+     [
+      "c",
+      "42,30 € − 8,50 € ="
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "45,00 €"
+     ],
+     [
+      "b",
+      "8,50 €"
+     ],
+     [
+      "c",
+      "33,80 €"
+     ]
+    ]
+   },
+   {
+    "n": 38,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "4 Stück zu 5 € und 6 Stück zu 10 €. Ø- Preis?"
+     ],
+     [
+      "b",
+      "Preis sinkt von 80 € auf 60 €. Um … %?"
+     ],
+     [
+      "c",
+      "60 € sind 75 % des alten Preises. Alter Preis?"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "8,00 €"
+     ],
+     [
+      "b",
+      "25 %"
+     ],
+     [
+      "c",
+      "80,00 €"
+     ]
+    ]
+   },
+   {
+    "n": 39,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "2.450 € mit 3 % Skonto = Überweisung"
+     ],
+     [
+      "b",
+      "Ø-Lagerbestand aus 20, 30, 40 und 30 Stück"
+     ],
+     [
+      "c",
+      "1.260 Kunden in 7,5 Stunden. Je Stunde?"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "2.376,50 €"
+     ],
+     [
+      "b",
+      "30 Stück"
+     ],
+     [
+      "c",
+      "168 Kunden"
+     ]
+    ]
+   },
+   {
+    "n": 40,
+    "stufe": "Stufe 4 · Prüfungsmix mit Taschenrechner",
+    "items": [
+     [
+      "a",
+      "USt (19 %) aus 119,00 € ="
+     ],
+     [
+      "b",
+      "40 € mit 15 % Coupon ="
+     ],
+     [
+      "c",
+      "3 kg kosten 7,50 €. 5 kg kosten?"
+     ]
+    ],
+    "sol": [
+     [
+      "a",
+      "19,00 €"
+     ],
+     [
+      "b",
+      "34,00 €"
+     ],
+     [
+      "c",
+      "12,50 €"
+     ]
+    ]
+   }
+  ],
+  "first": 21,
+  "last": 40
+ },
+ "rz": {
+  "file": "LF3_Rezeptkarten_Rechnen",
+  "pdf": "LF3_Rezeptkarten_Rechnen.pdf",
+  "title": "Rezeptkarten Rechnen",
+  "doc": "Rezeptkarten: 10 Karten für die Prüfungsrechnungen",
+  "meta": "Ausschneiden, lochen oder in eine Klarsichthülle · erlaubt in Übungsklausur 2 und Klausur 2 (ohne eigene Zusätze)",
+  "h3": "So benutzt du die Karten",
+  "steps": [
+   "Lies die Aufgabe und markiere, was gesucht ist.",
+   "Suche die Signalwörter – sie zeigen dir die richtige Karte.",
+   "Rechne nach dem Rezept und vergleiche mit dem Beispiel.",
+   "Lies die Falle – dort passieren die meisten Fehler."
+  ],
+  "paras": [
+   "Wichtig: In der Abschlussprüfung gibt es keine Rezeptkarten. Übe deshalb im Rechenfit-Block auch ohne Karten."
+  ],
+  "cards": [
+   [
+    "Rezeptkarte 1 Dreisatz",
+    "„… kosten …, wie viel kosten …?“ · Prämie · Umtausch · je",
+    [
+     "bekannter Wert : bekannte Menge × gesuchte Menge",
+     "erst auf 1, dann auf das Gesuchte"
+    ],
+    [
+     "3 kg kosten 5,70 €. 5 kg?",
+     "5,70 : 3 × 5 = 9,50 €"
+    ],
+    "Richtung prüfen: mehr Ware → mehr Geld?"
+   ],
+   [
+    "Rezeptkarte 2 Grundpreis und lose Ware",
+    "„je kg / je l / je 100 g“ · Tee · Käse · Schokolade",
+    [
+     "Grundpreis = Preis : Menge in kg (l)",
+     "lose Ware = Preis je kg × Menge in kg"
+    ],
+    [
+     "750 ml für 7,95 €: 7,95 : 0,75 = 10,60 € je l",
+     "150 g zu 14,20 €/kg: 0,15 × 14,20 = 2,13 €"
+    ],
+    "Gramm in kg: 125 g = 0,125 kg"
+   ],
+   [
+    "Rezeptkarte 3 Prozentwert",
+    "„… % von …“ · „wie viel Euro Rabatt / Anteil?“",
+    [
+     "P = G : 100 × p",
+     "Wert nach Abzug: G : 100 × (100 − p)",
+     "Wert nach Aufschlag: G : 100 × (100 + p)"
+    ],
+    [
+     "25 % von 198 €: 198 : 100 × 25 = 49,50 €"
+    ],
+    "keine %-Taste! 10 % = Komma 1 Stelle nach links"
+   ],
+   [
+    "Rezeptkarte 4 Prozentsatz",
+    "„Wie viel Prozent …?“ · „Um wie viel Prozent …?“ · Anteil",
+    [
+     "p = P × 100 : G",
+     "Preissenkung: P = Differenz, G = alter Preis",
+     "Anteil: G = Summe aller Teile"
+    ],
+    [
+     "69,95 € → 55,95 €: 14,00 × 100 : 69,95 = 20,01 → 20 %"
+    ],
+    "G ist der alte Preis, nicht der neue · Rundungsvorgabe!"
+   ],
+   [
+    "Rezeptkarte 5 Grundwert – Preis vorher",
+    "„ursprünglicher Preis“ · „vor dem Rabatt“ · „Rechnungsbetrag vor Skonto“",
+    [
+     "G = P : p × 100",
+     "Preis vorher = neuer Preis : (100 − p) × 100"
+    ],
+    [
+     "nach 10 % Rabatt 180 €: 180 : 90 × 100 = 200,00 €"
+    ],
+    "NICHT 180 + 10 % (= 198 € ist falsch)"
+   ],
+   [
+    "Rezeptkarte 6 Rabatt, Coupon, Skonto",
+    "„Coupon“ · „Rabatt“ · „Überweisungsbetrag nach Skonto“",
+    [
+     "zu zahlen = Preis : 100 × (100 − p)",
+     "zwei Nachlässe: nacheinander, der zweite vom neuen Betrag"
+    ],
+    [
+     "287,20 € mit 15 % Coupon: 287,20 : 100 × 85 = 244,12 €",
+     "3.820 € mit 3 % Skonto: 3.820 : 100 × 97 = 3.705,40 €"
+    ],
+    "−20 % und −25 % sind nicht −45 %"
+   ],
+   [
+    "Rezeptkarte 7 Umsatzsteuer",
+    "„enthalten“ · „netto“ · „brutto“ · „inkl. USt“ · Kassenbon",
+    [
+     "USt herausrechnen: brutto : 119 × 19 (7 %: : 107 × 7)",
+     "netto = brutto : 119 × 100",
+     "brutto = netto : 100 × 119"
+    ],
+    [
+     "228,50 € brutto: 228,50 : 119 × 19 = 36,48 € USt"
+    ],
+    "NIE 19 % vom Bruttopreis · Probe: netto + USt = brutto"
+   ],
+   [
+    "Rezeptkarte 8 Durchschnitt",
+    "„im Durchschnitt“ · „je Kunde / je Stunde / je m²“ · „Durchschnittspreis“",
+    [
+     "einfach: Summe : Anzahl",
+     "gewogen: Summe (Menge × Preis) : Summe der Mengen",
+     "Ø-Lagerbestand Jahr: (Anfang + 12 Monatsenden) : 13"
+    ],
+    [
+     "7 × 7,40 + 3 × 12,30 + 4 × 9,75 + 8 × 11,40 = 218,90 €",
+     "218,90 : 22 Mützen = 9,95 €"
+    ],
+    "Stunden genau zählen (9:00–13:30 = 4,5 h) · Kunden ganzzahlig"
+   ],
+   [
+    "Rezeptkarte 9 Verteilungsrechnung",
+    "„verteilt nach Fläche / Gewicht / Stück / Personen“ · „anteilig“",
+    [
+     "Kosten : Summe der Anteile × eigener Anteil",
+     "Probe: alle Teile zusammen = Kosten"
+    ],
+    [
+     "6.000 € nach 800 + 1.200 + 1.000 m²: 6.000 : 3.000 × 800 = 1.600,00 €"
+    ],
+    "erst die Summe der Anteile bilden"
+   ],
+   [
+    "Rezeptkarte 10 Kasse",
+    "„Tagesumsatz“ · „Kassendifferenz“ · „Soll-Bestand“ · „Kasseneröffnung“",
+    [
+     "Tageslosung = Bargeld + Abschöpfung − Wechselgeld",
+     "Tagesumsatz = Tageslosung + Karte",
+     "Soll = Wechselgeld + Barumsatz − Entnahmen · Differenz = Ist − Soll"
+    ],
+    [
+     "3.450 + 2.000 − 600 + 3.150 = 8.000,00 € Tagesumsatz"
+    ],
+    "Karte gehört NIE in den Bargeld-Soll · Minus = Fehlbetrag"
+   ]
+  ]
+ },
+ "dom": {
+  "file": "LF3_Rechen-Domino",
+  "pdf": "LF3_Rechen-Domino.pdf",
+  "title": "Spiel – Rechen-Domino",
+  "doc": "Rechen-Domino: 24 Karten, eine geschlossene Kette",
+  "meta": "Wiederholung aller Rechenarten · z. B. DS 37 (Rechen-Stationen) oder als Einstieg in eine Rechen-Stunde · Gruppen zu dritt, 20 Minuten",
+  "h3": "So geht es",
+  "steps": [
+   "Jede Gruppe bekommt einen gemischten Kartensatz (Karten ausschneiden, jede Karte ist ein Rechteck mit zwei Feldern).",
+   "Eine beliebige Karte liegt als Start in der Mitte. Rechnet die Aufgabe rechts. Sucht die Karte, auf der das Ergebnis links im blauen Feld steht, und legt sie an.",
+   "Weiter so, bis die Kette geschlossen ist: Die letzte Aufgabe führt wieder zur ersten Karte.",
+   "Taschenrechner und Rezeptkarten sind erlaubt. Wer fertig ist, schreibt die Reihenfolge der Karten-Nummern (klein unten) auf – die Lehrkraft kontrolliert mit der Lösung."
+  ],
+  "paras": [],
+  "cards": [
+   {
+    "n": 1,
+    "left": "6 Kunden",
+    "task": "Nach 10 % Rabatt kostet ein Pulli 90 €. Preis vorher?"
+   },
+   {
+    "n": 2,
+    "left": "−5,00 €",
+    "task": "20 € Prämie je 1.000 € Umsatz. Prämie bei 3.000 €?"
+   },
+   {
+    "n": 3,
+    "left": "3 Stück",
+    "task": "1 % von 1.250 €"
+   },
+   {
+    "n": 4,
+    "left": "2.000,00 €",
+    "task": "750 ml kosten 3,00 €. Grundpreis je Liter?"
+   },
+   {
+    "n": 5,
+    "left": "1,90 €",
+    "task": "10 % von 84 €"
+   },
+   {
+    "n": 6,
+    "left": "20 %",
+    "task": "Durchschnitt von 4, 6 und 8 Kunden"
+   },
+   {
+    "n": 7,
+    "left": "200,00 €",
+    "task": "2 Stück zu 5 € und 3 Stück zu 10 €. Gewogener Ø-Preis?"
+   },
+   {
+    "n": 8,
+    "left": "9,00 €",
+    "task": "Rechnung 500 € mit 2 % Skonto. Überweisung?"
+   },
+   {
+    "n": 9,
+    "left": "168 Kunden",
+    "task": "25 % von 36 €"
+   },
+   {
+    "n": 10,
+    "left": "238,00 €",
+    "task": "Bargeld 1.000 € + Abschöpfung 500 € − Wechselgeld 200 € + Karte 700 € = Tagesumsatz"
+   },
+   {
+    "n": 11,
+    "left": "13,84 €",
+    "task": "125 € −20 % und danach noch einmal −20 %"
+   },
+   {
+    "n": 12,
+    "left": "25 %",
+    "task": "netto 200 € + 19 % USt"
+   },
+   {
+    "n": 13,
+    "left": "19,00 €",
+    "task": "250 g Käse zu 12,00 € je kg"
+   },
+   {
+    "n": 14,
+    "left": "400,00 €",
+    "task": "1.260 Kunden in 7,5 Stunden. Kunden je Stunde?"
+   },
+   {
+    "n": 15,
+    "left": "8,00 €",
+    "task": "4 Tassen zu 6 € zurück, neue Tassen kosten 8 €. Wie viele ohne Zuzahlung?"
+   },
+   {
+    "n": 16,
+    "left": "12,50 €",
+    "task": "1.384 Bonuspunkte, 1 Punkt = 0,01 €"
+   },
+   {
+    "n": 17,
+    "left": "80,00 €",
+    "task": "3 kg kosten 5,70 €. Was kostet 1 kg?"
+   },
+   {
+    "n": 18,
+    "left": "8,40 €",
+    "task": "USt (19 %) in 119,00 €"
+   },
+   {
+    "n": 19,
+    "left": "4,00 €",
+    "task": "Ist 495,00 €, Soll 500,00 €. Kassendifferenz?"
+   },
+   {
+    "n": 20,
+    "left": "490,00 €",
+    "task": "45 von 180 Kunden sind … %"
+   },
+   {
+    "n": 21,
+    "left": "3,00 €",
+    "task": "Preis 50 € → 40 €. Um wie viel Prozent reduziert?"
+   },
+   {
+    "n": 22,
+    "left": "60,00 €",
+    "task": "Ein Buch kostet 53,50 € brutto (7 %). Nettopreis?"
+   },
+   {
+    "n": 23,
+    "left": "50,00 €",
+    "task": "30 % sind 60 €. Wie viel sind 100 %?"
+   },
+   {
+    "n": 24,
+    "left": "100,00 €",
+    "task": "600 € im Verhältnis 1 : 2 verteilt. Der größere Teil?"
+   }
+  ],
+  "chain": "Kette der Kartennummern: 17 → 5 → 18 → 13 → 21 → 6 → 1 → 24 → 14 → 9 → 8 → 20 → 12 → 10 → 4 → 19 → 2 → 22 → 23 → 7 → 15 → 3 → 16 → 11 → (zurück zu 17)",
+  "sol": [
+   {
+    "n": 17,
+    "task": "3 kg kosten 5,70 €. Was kostet 1 kg?",
+    "res": "1,90 €"
+   },
+   {
+    "n": 5,
+    "task": "10 % von 84 €",
+    "res": "8,40 €"
+   },
+   {
+    "n": 18,
+    "task": "USt (19 %) in 119,00 €",
+    "res": "19,00 €"
+   },
+   {
+    "n": 13,
+    "task": "250 g Käse zu 12,00 € je kg",
+    "res": "3,00 €"
+   },
+   {
+    "n": 21,
+    "task": "Preis 50 € → 40 €. Um wie viel Prozent reduziert?",
+    "res": "20 %"
+   },
+   {
+    "n": 6,
+    "task": "Durchschnitt von 4, 6 und 8 Kunden",
+    "res": "6 Kunden"
+   },
+   {
+    "n": 1,
+    "task": "Nach 10 % Rabatt kostet ein Pulli 90 €. Preis vorher?",
+    "res": "100,00 €"
+   },
+   {
+    "n": 24,
+    "task": "600 € im Verhältnis 1 : 2 verteilt. Der größere Teil?",
+    "res": "400,00 €"
+   },
+   {
+    "n": 14,
+    "task": "1.260 Kunden in 7,5 Stunden. Kunden je Stunde?",
+    "res": "168 Kunden"
+   },
+   {
+    "n": 9,
+    "task": "25 % von 36 €",
+    "res": "9,00 €"
+   },
+   {
+    "n": 8,
+    "task": "Rechnung 500 € mit 2 % Skonto. Überweisung?",
+    "res": "490,00 €"
+   },
+   {
+    "n": 20,
+    "task": "45 von 180 Kunden sind … %",
+    "res": "25 %"
+   },
+   {
+    "n": 12,
+    "task": "netto 200 € + 19 % USt",
+    "res": "238,00 €"
+   },
+   {
+    "n": 10,
+    "task": "Bargeld 1.000 € + Abschöpfung 500 € − Wechselgeld 200 € + Karte 700 € =",
+    "res": "2.000,00 €"
+   },
+   {
+    "n": 4,
+    "task": "750 ml kosten 3,00 €. Grundpreis je Liter?",
+    "res": "4,00 €"
+   },
+   {
+    "n": 19,
+    "task": "Ist 495,00 €, Soll 500,00 €. Kassendifferenz?",
+    "res": "−5,00 €"
+   },
+   {
+    "n": 2,
+    "task": "20 € Prämie je 1.000 € Umsatz. Prämie bei 3.000 €?",
+    "res": "60,00 €"
+   },
+   {
+    "n": 22,
+    "task": "Ein Buch kostet 53,50 € brutto (7 %). Nettopreis?",
+    "res": "50,00 €"
+   },
+   {
+    "n": 23,
+    "task": "30 % sind 60 €. Wie viel sind 100 %?",
+    "res": "200,00 €"
+   },
+   {
+    "n": 7,
+    "task": "2 Stück zu 5 € und 3 Stück zu 10 €. Gewogener Ø-Preis?",
+    "res": "8,00 €"
+   },
+   {
+    "n": 15,
+    "task": "4 Tassen zu 6 € zurück, neue Tassen kosten 8 €. Wie viele ohne",
+    "res": "3 Stück"
+   },
+   {
+    "n": 3,
+    "task": "1 % von 1.250 €",
+    "res": "12,50 €"
+   },
+   {
+    "n": 16,
+    "task": "1.384 Bonuspunkte, 1 Punkt = 0,01 €",
+    "res": "13,84 €"
+   },
+   {
+    "n": 11,
+    "task": "125 € −20 % und danach noch einmal −20 %",
+    "res": "80,00 €"
+   }
+  ],
+  "note": "Merke: Alle Aufgaben sind selbst formuliert – Karten und Lösung dürfen auf itslearning. Tipp: Kartensätze auf farbiges Papier kopieren (eine Farbe je Gruppe), dann mischen sich die Sätze nicht."
+ }
+}
