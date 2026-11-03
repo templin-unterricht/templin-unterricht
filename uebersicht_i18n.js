@@ -71,3 +71,7 @@ window.UEB_I18N = {
   "uk"
  ]
 };
+window.UEB_I18N_PARTIAL = {
+ "materials/LF4_Module_1-11_-_Das_Erdbeer-Imperium.html": "Nur Menüs, Anleitung und Erfolge sind übersetzt, die Szenen bleiben deutsch.",
+ "materials/LF5_-_Countdown_Hafenstrasse.html": "Nur Menüs und Anleitung sind übersetzt, die Spielszenen bleiben deutsch."
+};

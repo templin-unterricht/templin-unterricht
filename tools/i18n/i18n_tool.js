@@ -318,7 +318,9 @@ function check(opts) {
       const langs = LANGS.filter(l => exists(path.join(I18N, 'pages', id, l + '.json')) && Object.keys(rd(path.join(I18N, 'pages', id, l + '.json'))).length);
       if (langs.length && found[id]) out[found[id]] = langs;
     }
-    fs.writeFileSync(path.join(ROOT, 'uebersicht_i18n.js'), '/* automatisch erzeugt: node tools/i18n/i18n_tool.js dashboard */\nwindow.UEB_I18N = ' + JSON.stringify(out, null, 1) + ';\n');
+    const pf = path.join(I18N, 'partial.json'), partial = {};
+    if (exists(pf)) { const pj = rd(pf); for (const id in pj) if (found[id]) partial[found[id]] = pj[id]; }
+    fs.writeFileSync(path.join(ROOT, 'uebersicht_i18n.js'), '/* automatisch erzeugt: node tools/i18n/i18n_tool.js dashboard */\nwindow.UEB_I18N = ' + JSON.stringify(out, null, 1) + ';\nwindow.UEB_I18N_PARTIAL = ' + JSON.stringify(partial, null, 1) + ';\n');
     console.log(Object.keys(out).length + ' Seiten im Dashboard markiert.');
   } else if (cmd === 'promote') {
     // Texte, die auf mehreren Seiten vorkommen (oder in --texts datei.txt stehen), nach i18n/common verschieben

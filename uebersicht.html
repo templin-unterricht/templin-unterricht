@@ -131,7 +131,7 @@ a.chip:hover{background:var(--pri);color:var(--priink)}
 <script src="uebersicht_mehrsprachig.js" charset="utf-8"></script>
 <script src="uebersicht_i18n.js" charset="utf-8"></script>
 <script>/* Seiten mit neuer Mehrsprachigkeit (i18n/) blau markieren: Sprachen zu m.lang hinzufügen */
-(function(){var M=window.UEB_I18N;if(!M||!window.UEB)return;function add(m){var l=M[m.u];if(!l)return;m.lang=m.lang||[];l.forEach(function(c){if(m.lang.indexOf(c)<0)m.lang.push(c);});}
+(function(){var M=window.UEB_I18N;if(!M||!window.UEB)return;function add(m){var l=M[m.u];if(!l)return;var P=window.UEB_I18N_PARTIAL;if(P&&P[m.u])m.part=P[m.u];m.lang=m.lang||[];l.forEach(function(c){if(m.lang.indexOf(c)<0)m.lang.push(c);});}
 window.UEB.groups.forEach(function(g){g.sections.forEach(function(s){(s.extras||[]).forEach(add);(s.modules||[]).forEach(function(m){(m.mats||[]).forEach(add);});});});})();</script>
 <script>
 (function(){
@@ -243,7 +243,7 @@ function langChips(m){
 }
 function matRow(m,icon,title,sub){
   var mu=isMulti(m);
-  var badges=(newish(m.mt)?'<span class="pill new">'+esc(t('isNew'))+'</span>':'')+langChips(m)+'<span class="pill">'+(m.t==='pdf'?'PDF':m.t==='ppt'?'PPT':esc(t('web')))+'</span>';
+  var badges=(newish(m.mt)?'<span class="pill new">'+esc(t('isNew'))+'</span>':'')+langChips(m)+(m.part?'<span class="pill" title="'+esc(m.part)+'">◐ teilweise</span>':'')+'<span class="pill">'+(m.t==='pdf'?'PDF':m.t==='ppt'?'PPT':esc(t('web')))+'</span>';
   return '<a class="mat '+(mu?'mu':'de')+'" href="'+m.u+'" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">'+icon+'</span><span class="mt"><b>'+esc(title)+'</b>'+(sub?'<small>'+esc(sub)+'</small>':'')+'</span><span class="mb">'+badges+'</span></a>';
 }
 var ML_NAMES={tr:'Türkçe',vi:'Tiếng Việt',ar:'العربية'};
