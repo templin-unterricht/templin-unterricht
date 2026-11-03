@@ -343,6 +343,11 @@ function normalize(j){
   for(let n=1;n<=18;n++)relabel('LF3.M'+n,'materials/LF3_M_'+n+'_Digitales_Arbeitsblatt.html','Arbeitsblatt online (DE · TR · AR · VI)');
   for(let n=1;n<=11;n++){relabel('LF4.M'+n,'materials/digital/LF4_M_'+n+'.html',A9);relabel('LF5.M'+n,'materials/digital/LF5_M_'+n+'.html',A9);}
  }
+ if(!o.seed11){ /* LF 4 Modul 2: Farb-Memory als Online-Spiel (8 Sprachen) einmalig eintragen */
+  o.seed11=true;
+  const e11=o.mat['LF4.M2']||(o.mat['LF4.M2']={pdf:'',links:[]});e11.links=(e11.links||[]).filter(l=>l.u||l.l);
+  if(!e11.links.some(x=>x.u==='materials/LF4_Farb-Memory_Spiel.html'))e11.links.push({l:'Farb-Memory (Online-Spiel, einzeln oder Klassenwettkampf, 8 Sprachen)',u:'materials/LF4_Farb-Memory_Spiel.html'});
+ }
  if(!o.seed3){ /* Englisch V25: neue Einträge ENG.E1–E12 einmalig ergänzen, nichts überschreiben */
   o.seed3=true;
   Object.keys(SEED_MAT).filter(k=>k.indexOf('ENG.E')===0).forEach(k=>{
