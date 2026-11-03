@@ -242,10 +242,10 @@ function matRow(m,icon,title,sub){
   var badges=(newish(m.mt)?'<span class="pill new">'+esc(t('isNew'))+'</span>':'')+langChips(m)+'<span class="pill">'+(m.t==='pdf'?'PDF':m.t==='ppt'?'PPT':esc(t('web')))+'</span>';
   return '<a class="mat '+(mu?'mu':'de')+'" href="'+m.u+'" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">'+icon+'</span><span class="mt"><b>'+esc(title)+'</b>'+(sub?'<small>'+esc(sub)+'</small>':'')+'</span><span class="mb">'+badges+'</span></a>';
 }
-var ML_NAMES={tr:'Türkçe',vi:'Tiếng Việt',ar:'العربية'};
+var ML_NAMES={tr:'Türkçe',vi:'Tiếng Việt',ar:'العربية',ti:'ትግርኛ',ru:'Русский',es:'Español',pt:'Português'};
 function mlLinks(m){ /* Sprach-Buttons TR · VI · AR zu den mehrsprachigen Fassungen (Daten: uebersicht_mehrsprachig.js) */
   var e=window.UEB_ML&&window.UEB_ML[m.u]; if(!e)return '';
-  return '<span class="mlx" role="group" aria-label="Mehrsprachige Fassung"><span aria-hidden="true">🌐</span>'+['tr','vi','ar'].filter(function(c){return e[c];}).map(function(c){
+  return '<span class="mlx" role="group" aria-label="Mehrsprachige Fassung"><span aria-hidden="true">🌐</span>'+['tr','vi','ar','ti','ru','es','pt'].filter(function(c){return e[c];}).map(function(c){
     return '<a class="mlb" lang="'+c+'" href="'+e[c]+'" target="_blank" rel="noopener" title="'+esc(ML_NAMES[c])+'" aria-label="'+esc(m.label)+' – '+esc(ML_NAMES[c])+'">'+c.toUpperCase()+'</a>';}).join('')+'</span>';
 }
 function sortMats(list){
