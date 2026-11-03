@@ -343,7 +343,7 @@ function viewModule(gid,sid,mid){
         var title=c==='weiteres'?x.label:t('c_'+c);
         if(c==='weiteres')sub='';
         else if(sub&&sub.toLowerCase()===title.toLowerCase())sub='';
-        return matRow(x,CI[c],title,sub);
+        return '<div><div class="matrow">'+matRow(x,CI[c],title,sub)+mlLinks(x)+'</div></div>';
       }).join('')+'</div>';
   });
   if(!shown)out+='<div class="empty">'+esc(m.mats.length?t('noneInLang'):t('noMat'))+'</div>';
