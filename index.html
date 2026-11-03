@@ -327,6 +327,14 @@ function normalize(j){
    const u8='materials/digital/LF5_M_'+n+'.html';
    if(!e8.links.some(x=>x.u===u8))e8.links.push({l:'Digitales Arbeitsblatt (DE/VI)',u:u8});}
  }
+ if(!o.seed9){ /* Digitale Arbeitsblaetter in allen Sprachen: LF 1 (M 1-13) und LF 3 (M 1-18) neu eintragen, Sprachangaben bei LF 4 und LF 5 aktualisieren (kein Doppeleintrag) */
+  o.seed9=true;
+  const addDig=(key,u,lbl)=>{const e=o.mat[key]||(o.mat[key]={pdf:'',links:[]});e.links=(e.links||[]).filter(l=>l.u||l.l);const ex=e.links.find(x=>x.u===u);if(ex)ex.l=lbl;else e.links.push({l:lbl,u:u});};
+  for(let n=1;n<=13;n++)addDig('LF1.M'+n,'materials/LF1_M_'+n+'_Digitales_Arbeitsblatt.html','Digitales Arbeitsblatt (DE · TR · AR · VI · TI · UK · RU · ES · PT)');
+  for(let n=1;n<=18;n++)addDig('LF3.M'+n,'materials/LF3_M_'+n+'_Digitales_Arbeitsblatt.html','Digitales Arbeitsblatt (DE · TR · AR · VI)');
+  for(let n=1;n<=11;n++)addDig('LF4.M'+n,'materials/digital/LF4_M_'+n+'.html','Digitales Arbeitsblatt (DE · TR · AR · VI · TI · UK · RU · ES · PT)');
+  for(let n=1;n<=11;n++)addDig('LF5.M'+n,'materials/digital/LF5_M_'+n+'.html','Digitales Arbeitsblatt (DE · TR · AR · VI · TI · UK · RU · ES · PT)');
+ }
  if(!o.seed3){ /* Englisch V25: neue Einträge ENG.E1–E12 einmalig ergänzen, nichts überschreiben */
   o.seed3=true;
   Object.keys(SEED_MAT).filter(k=>k.indexOf('ENG.E')===0).forEach(k=>{
