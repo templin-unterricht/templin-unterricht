@@ -4,6 +4,7 @@
  *
  *   node tools/i18n/i18n_tool.js extract <seite.html ...>   deutsche Texte der Seite(n) auslesen -> i18n/pages/<seite>/de.json
  *   node tools/i18n/i18n_tool.js extract --dry <seite...>   nur anzeigen, was neu/geändert/entfallen ist
+ *   node tools/i18n/i18n_tool.js extract --explore [--runs 6 --actions 120] <seite>   Spiel/Trainer automatisch durchklicken und alle Texte sammeln
  *   node tools/i18n/i18n_tool.js missing [--lang ar] [--out datei.json]   fehlende Übersetzungen auflisten
  *   node tools/i18n/i18n_tool.js check [--live]             Qualitätsprüfung (vor jedem Commit); --live liest die Seiten neu ein
  *
@@ -60,7 +61,7 @@ function looksForeign(t) {
   const other = (t.match(OTHER_HINT) || []).length;
   return other >= 2 && !GERMAN_HINT.test(t);
 }
-async function extractPages(files, dry) {
+async function extractPages(files, dry, opts = {}) {
   const { chromium } = playwright();
   const srv = await serve(), port = srv.address().port;
   const browser = await chromium.launch();
@@ -74,14 +75,23 @@ async function extractPages(files, dry) {
     await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
     const pg = await ctx.newPage();
     pg.on('dialog', d => d.dismiss());
+    await pg.addInitScript({ content: libJs }); // wirkt auch nach Neuladen; i18n.js startet nicht doppelt
     await pg.goto(`http://127.0.0.1:${port}/${rel}`, { waitUntil: 'load' });
     await pg.waitForTimeout(400);
-    if (!(await pg.evaluate(() => !!window.I18N))) await pg.addScriptTag({ content: libJs });
     const cfgFile = path.join(I18N, 'pages', id, 'config.json');
     if (exists(cfgFile)) await pg.evaluate(c => window.I18N.configure(c), rd(cfgFile));
     const seen = new Map();
     const grab = async () => { (await pg.evaluate(() => window.I18N.collect())).forEach(x => { if (!seen.has(x.id)) seen.set(x.id, x); }); };
     await grab();
+    if (opts.explore) await explore(pg, grab, opts);
+    if (opts.harvest) {
+      const scripts = await pg.evaluate(() => [...document.scripts].filter(s => !s.src).map(s => s.textContent));
+      const extra = path.join(I18N, 'pages', id, 'extra.txt');
+      const hs = harvestStrings(scripts);
+      if (exists(extra)) fs.readFileSync(extra, 'utf8').split('\n').map(s => s.trim()).filter(Boolean).forEach(s => hs.push(s));
+      const ids = await pg.evaluate(hs => hs.map(h => [window.I18N.hash(h)]), hs);
+      hs.forEach((h, i) => { const k = ids[i][0]; if (!seen.has(k)) seen.set(k, { id: k, text: h, kind: 'text', harvested: true }); });
+    }
     const stepsFile = path.join(I18N, 'pages', id, 'steps.json');
     if (exists(stepsFile)) {
       for (const s of rd(stepsFile)) {
@@ -93,20 +103,85 @@ async function extractPages(files, dry) {
       }
     }
     await ctx.close();
+    const igf = path.join(I18N, 'pages', id, 'ignore.txt');
+    const ignore = new Set(exists(igf) ? fs.readFileSync(igf, 'utf8').split('\n').map(s => s.trim()).filter(Boolean) : []);
     const out = {}, foreign = [];
+    // Zahlen-Varianten (≥3 Texte, die sich nur in Ziffern unterscheiden) -> eine Vorlage mit {1},{2}
+    const grp = new Map();
+    for (const [k, x] of seen) if (x.alt) { (grp.get(x.alt.id) || grp.set(x.alt.id, []).get(x.alt.id)).push(k); }
+    for (const [aid, ks] of grp) if (ks.length >= 3) { const x = seen.get(ks[0]); ks.forEach(k => seen.delete(k)); seen.set(aid, { id: aid, text: x.alt.text, kind: 'text' }); }
     for (const [k, x] of seen) {
       if (common[k] !== undefined) continue;
+      if (ignore.has(x.text)) continue;
       if (looksForeign(x.text)) { foreign.push(x.text); continue; }
       out[k] = x.text;
     }
     const dir = path.join(I18N, 'pages', id), f = path.join(dir, 'de.json');
     const old = exists(f) ? rd(f) : {};
+    if (opts.explore && !opts.prune) for (const k in old) if (!(k in out) && !ignore.has(old[k]) && !/^\{1\} kg = \{2\} €$/.test(old[k])) out[k] = old[k]; // Durchklicken ergänzt, löscht nicht
     const added = Object.keys(out).filter(k => !(k in old)), gone = Object.keys(old).filter(k => !(k in out));
     report.push({ id, n: Object.keys(out).length, added: added.length, gone: gone.length, foreign: foreign.length, addedTexts: added.map(k => out[k]), goneTexts: gone.map(k => old[k]) });
     if (!dry) { fs.mkdirSync(dir, { recursive: true }); fs.writeFileSync(f, JSON.stringify(out, null, 1) + '\n'); }
   }
   await browser.close(); srv.close();
   return report;
+}
+
+/* Texte aus den Skripten ernten: alle Zeichenketten, die wie deutscher Text aussehen */
+function harvestStrings(scripts) {
+  const out = new Set();
+  const re = /"((?:[^"\\\n]|\\.)*)"|'((?:[^'\\\n]|\\.)*)'|`((?:[^`\\]|\\.)*)`/g;
+  for (const src of scripts) {
+    let m;
+    while ((m = re.exec(src))) {
+      let s = m[1] !== undefined ? m[1] : m[2] !== undefined ? m[2] : m[3];
+      if (s === undefined || s.includes('${')) continue;
+      try { s = JSON.parse('"' + s.replace(/\\'/g, "'").replace(/\n/g, '\\n').replace(/"/g, '\\"') + '"'); } catch (e) { continue; }
+      s = s.replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
+      if (s.length < 2 || s.length > 600 || !/\p{L}{2}/u.test(s)) continue;
+      if (/^[a-z][A-Za-z0-9_\-]*$/.test(s) && !/[äöüß]/.test(s)) continue;           // Bezeichner wie click, div
+      if (/^(https?:|\.|#|[\w\-]+\/|[\w\-]+\.(js|css|png|svg|json|html|pdf))/i.test(s)) continue; // URLs, Dateinamen
+      if (/[{};=]|=>|function|\bvar\b|px\b|rgba?\(|#[0-9a-f]{3,6}\b/i.test(s)) continue;           // Code/CSS
+      if (/^[A-Z0-9_]+$/.test(s) && s.length < 12) continue;                           // KONSTANTEN
+      if (/[\]\[]|">|\)"|:checked/.test(s)) continue;                                      // Selektoren/HTML-Reste
+      out.add(s);
+    }
+  }
+  return [...out];
+}
+/* Durchklicker: spielt die Seite zufällig durch und sammelt alle neu erscheinenden Texte */
+async function explore(pg, grab, opts) {
+  const runs = opts.runs || 6, actions = opts.actions || 120, startUrl = pg.url();
+  for (let r = 0; r < runs; r++) {
+    if (r > 0) { await pg.goto(startUrl, { waitUntil: 'load' }).catch(() => {}); await pg.waitForTimeout(300); await grab(); }
+    for (let a = 0; a < actions; a++) {
+      let ok = false;
+      try {
+        ok = await pg.evaluate((seed) => {
+          const sel = 'button,[role=button],[onclick],label,summary,select,input:not([type=hidden]),textarea,.opt,.card,.choice,[tabindex="0"]';
+          const vis = e => { const b = e.getBoundingClientRect(); const cs = getComputedStyle(e); return b.width > 2 && b.height > 2 && cs.visibility !== 'hidden' && cs.display !== 'none' && !e.disabled && !e.closest('#i18n-fab,#i18n-panel,#i18n-bubble'); };
+          window.__clicked = window.__clicked || new Map();
+          let c = [...new Set([...document.querySelectorAll(sel), ...[...document.querySelectorAll('body *')].filter(e => getComputedStyle(e).cursor === 'pointer')])].filter(vis);
+          if (!c.length) return false;
+          const key = e => e.tagName + '|' + (e.id || '') + '|' + (e.textContent || '').trim().slice(0, 30);
+          const fresh = c.filter(e => !window.__clicked.has(key(e)));
+          const pool = fresh.length && Math.random() < 0.85 ? fresh : c;
+          const e = pool[Math.floor(Math.random() * pool.length)];
+          window.__clicked.set(key(e), 1);
+          e.scrollIntoView({ block: 'center' });
+          if (e.tagName === 'SELECT') { const o = e.options; e.selectedIndex = Math.floor(Math.random() * o.length); e.dispatchEvent(new Event('input', { bubbles: true })); e.dispatchEvent(new Event('change', { bubbles: true })); }
+          else if (e.tagName === 'INPUT' && /^(text|number|search|)$/.test(e.type)) { e.value = String(Math.floor(Math.random() * 90) + 1); e.dispatchEvent(new Event('input', { bubbles: true })); e.dispatchEvent(new Event('change', { bubbles: true })); e.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })); }
+          else if (e.tagName === 'TEXTAREA') { e.value = 'Test'; e.dispatchEvent(new Event('input', { bubbles: true })); }
+          else e.click();
+          return true;
+        });
+      } catch (e) { /* Seite hat navigiert o. ä. */ }
+      if (pg.url().split('?')[0] !== startUrl.split('?')[0]) { await pg.goto(startUrl, { waitUntil: 'load' }).catch(() => {}); }
+      await pg.waitForTimeout(opts.wait || 90);
+      try { await grab(); } catch (e) {}
+      if (!ok && a > 5) break;
+    }
+  }
 }
 
 /* ---------- Prüfungen ---------- */
@@ -116,9 +191,11 @@ function check(opts) {
   const errs = [], warns = [];
   const E = (m) => errs.push(m), W = (m) => warns.push(m);
   const de = loadDe();
-  let gl = [];
+  let gl = [], info = 0;
+  let glSorted = [];
   const gf = path.join(I18N, 'glossary.json');
   if (exists(gf)) gl = rd(gf).terms;
+  glSorted = gl.slice().sort((a, b) => (b.stem || b.de).length - (a.stem || a.de).length);
   const files = [];
   const cdir = path.join(I18N, 'common');
   const dirs = [['common', cdir]].concat(pagesWithDe().map(p => [p, path.join(I18N, 'pages', p)]));
@@ -154,24 +231,29 @@ function check(opts) {
         if (t.trim() === d.trim() && /\p{L}{4}/u.test(d) && d.split(' ').length > 1) W(`${tag}: identisch mit Deutsch ("${d.slice(0, 40)}")`);
         if (t.length > d.length * 4 + 20) W(`${tag}: Übersetzung auffällig lang`);
         if (RTL[l] && /[A-Za-z]{3}/.test(t) && !/\(/.test(t)) W(`${tag}: lateinischer Text ohne Klammer im RTL-Text`);
-        for (const g of gl) {
+        // Glossar: längere Begriffe zuerst (Umsatzsteuer vor Umsatz); jeder Treffer wird danach ausgeblendet
+        let masked = d.toLowerCase();
+        for (const g of glSorted) {
           if (!g[l]) continue;
           const stem = (g.stem || g.de).toLowerCase();
-          if (d.toLowerCase().includes(stem)) {
-            const tl = t.toLowerCase();
-            // jedes Wort des Glossar-Eintrags muss (mit Endungen/Fällen/Plural tolerant) vorkommen
-            const okTr = String(g[l]).toLowerCase().split(/[\s\-]+/).filter(w => w.length > 2).every(w => {
-              w = w.replace(/^ال/, ''); const s = w.length > 4 ? w.slice(0, -2) : w.length > 3 ? w.slice(0, -1) : w; return tl.includes(s);
-            });
-            const okDe = t.toLowerCase().includes(g.de.toLowerCase());
-            if (!okTr || !okDe) W(`${tag}: Glossar „${g.de}“ -> ${g[l]} (${g.de})  ${!okTr ? '[Übersetzung fehlt]' : ''}${!okDe ? '[dt. Begriff in Klammern fehlt]' : ''}`);
-          }
+          if (!masked.includes(stem)) continue;
+          masked = masked.split(stem).join(' ');
+          if (new RegExp('\\([^)]*' + stem.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[^)]*\\)', 'i').test(d)) continue; // Begriff steht im Deutschen selbst in Klammern
+          const lc = x => x.toLocaleLowerCase(l === 'tr' ? 'tr' : 'en');
+          const tl = lc(t);
+          // jedes Wort des Glossar-Eintrags muss (mit Endungen/Fällen/Plural tolerant) vorkommen
+          const okTr = lc(String(g[l])).split(/[\s\-]+/).filter(w => w.length > 2).every(w => {
+            w = w.replace(/^ال/, ''); const s = w.length > 4 ? w.slice(0, -2) : w.length > 3 ? w.slice(0, -1) : w; return tl.includes(s);
+          });
+          if (!okTr) W(`${tag}: Glossar „${g.de}“ -> ${g[l]}  [Übersetzung fehlt]`);
+          else if (!tl.includes(lc(g.de))) info++;
         }
       }
     }
   }
   // Glossar vollständig?
   gl.forEach(g => LANGS.forEach(l => { if (!g[l] || !String(g[l]).trim()) E(`glossary: „${g.de}“ ohne ${l}`); }));
+  if (info) console.log(`Hinweis: bei ${info} Glossar-Treffern fehlt der deutsche Begriff in Klammern (nur beim ersten Vorkommen pro Text nötig).`);
   return { errs, warns, total, filled };
 }
 
@@ -182,7 +264,7 @@ function check(opts) {
   const val = n => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
   if (cmd === 'extract') {
     const files = args.filter(a => /\.html?$/i.test(a));
-    const rep = await extractPages(files, flag('--dry'));
+    const rep = await extractPages(files, flag('--dry'), { explore: flag('--explore'), prune: flag('--prune'), harvest: flag('--harvest'), runs: parseInt(val('--runs') || '6', 10), actions: parseInt(val('--actions') || '120', 10) });
     rep.forEach(r => {
       console.log(`${r.id}: ${r.n} Texte (neu ${r.added}, entfallen ${r.gone}, fremdsprachig übersprungen ${r.foreign})`);
       if (flag('--dry')) { r.addedTexts.forEach(t => console.log('  + ' + t.slice(0, 80))); r.goneTexts.forEach(t => console.log('  - ' + t.slice(0, 80))); }
@@ -202,6 +284,27 @@ function check(opts) {
     }
     console.log(n ? `Insgesamt fehlen ${n} Einträge.` : 'Nichts fehlt.');
     if (val('--out')) fs.writeFileSync(val('--out'), JSON.stringify(out, null, 1));
+  } else if (cmd === 'coverage') {
+    // Spiel in einer Sprache durchklicken und alle angezeigten Texte ohne Übersetzung auflisten
+    const file = args.find(a => /\.html?$/i.test(a)), lang = val('--lang') || 'ar';
+    const { chromium } = playwright(); const srv = await serve(), port = srv.address().port, br = await chromium.launch();
+    const rel = path.relative(ROOT, path.resolve(file)).split(path.sep).map(encodeURIComponent).join('/');
+    const ctx = await br.newContext({ viewport: { width: 900, height: 900 } });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const pg = await ctx.newPage(); pg.on('dialog', d => d.dismiss());
+    await pg.addInitScript({ content: fs.readFileSync(path.join(I18N, 'i18n.js'), 'utf8') });
+    await pg.goto(`http://127.0.0.1:${port}/${rel}?lang=${lang}&mode=under`, { waitUntil: 'load' }); await pg.waitForTimeout(800);
+    const miss = new Map();
+    const grab = async () => { await pg.waitForTimeout(130); (await pg.evaluate(() => window.I18N.untranslated())).forEach(x => miss.set(x[0], x[1])); };
+    await grab();
+    await explore(pg, grab, { runs: parseInt(val('--runs') || '8', 10), actions: parseInt(val('--actions') || '150', 10), wait: 60 });
+    await br.close(); srv.close();
+    const known = new Set();
+    [path.join(I18N, 'common', 'de.json'), path.join(I18N, 'pages', pageId(file), 'de.json')].forEach(f => { if (exists(f)) Object.values(rd(f)).forEach(v => known.add(v)); });
+    const list = [...miss].filter(([x, alt]) => !known.has(x) && !(alt && known.has(alt)) && !looksForeign(x)).map(([x, alt]) => alt || x);
+    list.forEach(x => console.log('  ? ' + x.slice(0, 120)));
+    console.log(`${list.length} angezeigte Texte ohne Übersetzung (${lang}).`);
+    if (val('--out')) fs.writeFileSync(val('--out'), list.join('\n'));
   } else if (cmd === 'promote') {
     // Texte, die auf mehreren Seiten vorkommen (oder in --texts datei.txt stehen), nach i18n/common verschieben
     const min = parseInt(val('--min') || '0', 10), tf = val('--texts');

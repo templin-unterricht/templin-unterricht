@@ -210,6 +210,216 @@
    "ti": "ዋጋ ግዥ",
    "pt": "preço de custo",
    "uk": "закупівельна вартість"
+  },
+  {
+   "de": "Vollbedienung",
+   "tr": "tam servis",
+   "ar": "الخدمة الكاملة",
+   "vi": "phục vụ đầy đủ",
+   "ru": "полное обслуживание",
+   "es": "servicio completo",
+   "ti": "ምሉእ ኣገልግሎት",
+   "pt": "atendimento completo",
+   "uk": "повне обслуговування"
+  },
+  {
+   "de": "Vorwahl",
+   "tr": "ön seçim",
+   "ar": "الاختيار المسبق",
+   "vi": "tự chọn trước",
+   "ru": "предварительный выбор",
+   "es": "preselección",
+   "ti": "ቅድሚ ምርጫ",
+   "pt": "pré-seleção",
+   "uk": "попередній вибір"
+  },
+  {
+   "de": "Selbstbedienung",
+   "tr": "self servis",
+   "ar": "الخدمة الذاتية",
+   "vi": "tự phục vụ",
+   "ru": "самообслуживание",
+   "es": "autoservicio",
+   "ti": "ባዕሉ ምግልጋል",
+   "pt": "autosserviço",
+   "uk": "самообслуговування"
+  },
+  {
+   "de": "Verbundplatzierung",
+   "tr": "ilişkili ürün yerleştirme",
+   "ar": "التموضع المترابط",
+   "vi": "xếp hàng bổ trợ cạnh nhau",
+   "ru": "совместное размещение",
+   "es": "colocación conjunta",
+   "ti": "ሓቢሩ ምቕማጥ",
+   "pt": "colocação conjunta",
+   "uk": "спільне розміщення"
+  },
+  {
+   "de": "Sortimentspyramide",
+   "tr": "ürün yelpazesi piramidi",
+   "ar": "هرم التشكيلة",
+   "vi": "kim tự tháp danh mục hàng",
+   "ru": "пирамида ассортимента",
+   "es": "pirámide del surtido",
+   "ti": "ፒራሚድ ዓይነት ዕቃታት",
+   "pt": "pirâmide do sortimento",
+   "uk": "піраміда асортименту"
+  },
+  {
+   "de": "Kernsortiment",
+   "tr": "ana ürün yelpazesi",
+   "ar": "التشكيلة الأساسية",
+   "vi": "danh mục hàng cốt lõi",
+   "ru": "основной ассортимент",
+   "es": "surtido principal",
+   "ti": "ቀንዲ ዓይነት ዕቃታት",
+   "pt": "sortimento principal",
+   "uk": "основний асортимент"
+  },
+  {
+   "de": "Randsortiment",
+   "tr": "yan ürün yelpazesi",
+   "ar": "التشكيلة الإضافية",
+   "vi": "danh mục hàng bổ sung",
+   "ru": "дополнительный ассортимент",
+   "es": "surtido complementario",
+   "ti": "ተወሳኺ ዓይነት ዕቃታት",
+   "pt": "sortimento complementar",
+   "uk": "додатковий асортимент"
+  },
+  {
+   "de": "Saisonsortiment",
+   "tr": "sezonluk ürün yelpazesi",
+   "ar": "التشكيلة الموسمية",
+   "vi": "danh mục hàng theo mùa",
+   "ru": "сезонный ассортимент",
+   "es": "surtido de temporada",
+   "ti": "ወቕታዊ ዓይነት ዕቃታት",
+   "pt": "sortimento sazonal",
+   "uk": "сезонний асортимент"
+  },
+  {
+   "de": "Sortiment",
+   "stem": "Sortiment",
+   "tr": "ürün yelpazesi",
+   "ar": "التشكيلة",
+   "vi": "danh mục hàng",
+   "ru": "ассортимент",
+   "es": "surtido",
+   "ti": "ዓይነት ዕቃታት",
+   "pt": "sortimento",
+   "uk": "асортимент"
+  },
+  {
+   "de": "Reckzone",
+   "tr": "yüksek raf bölgesi",
+   "ar": "المنطقة العليا",
+   "vi": "vùng kệ trên cao",
+   "ru": "верхняя зона",
+   "es": "zona alta",
+   "ti": "ላዕለዋይ ዞባ",
+   "pt": "zona alta",
+   "uk": "верхня зона"
+  },
+  {
+   "de": "Sichtzone",
+   "tr": "göz hizası bölgesi",
+   "ar": "منطقة مستوى النظر",
+   "vi": "vùng ngang tầm mắt",
+   "ru": "зона на уровне глаз",
+   "es": "zona a la altura de los ojos",
+   "ti": "ዞባ ደረጃ ዓይኒ",
+   "pt": "zona ao nível dos olhos",
+   "uk": "зона на рівні очей"
+  },
+  {
+   "de": "Greifzone",
+   "tr": "el hizası bölgesi",
+   "ar": "منطقة مستوى اليد",
+   "vi": "vùng tầm tay",
+   "ru": "зона на уровне рук",
+   "es": "zona a la altura de las manos",
+   "ti": "ዞባ ደረጃ ኢድ",
+   "pt": "zona ao alcance das mãos",
+   "uk": "зона на рівні рук"
+  },
+  {
+   "de": "Bückzone",
+   "tr": "eğilme bölgesi",
+   "ar": "منطقة الانحناء",
+   "vi": "vùng cúi người",
+   "ru": "нижняя зона",
+   "es": "zona baja",
+   "ti": "ታሕተዋይ ዞባ",
+   "pt": "zona baixa",
+   "uk": "нижня зона"
+  },
+  {
+   "de": "Grundpreis",
+   "tr": "birim fiyat",
+   "ar": "سعر الوحدة",
+   "vi": "giá theo đơn vị",
+   "ru": "цена за единицу",
+   "es": "precio por unidad",
+   "ti": "ዋጋ ንሓደ ክፍሊ",
+   "pt": "preço por unidade",
+   "uk": "ціна за одиницю"
+  },
+  {
+   "de": "Mindesthaltbarkeitsdatum",
+   "tr": "tavsiye edilen son kullanma tarihi",
+   "ar": "تاريخ أفضل استهلاك قبله",
+   "vi": "hạn dùng tốt nhất",
+   "ru": "срок годности",
+   "es": "fecha de consumo preferente",
+   "ti": "ዕለት ዝሕሸ ጥቕሚ",
+   "pt": "data de validade mínima",
+   "uk": "термін придатності"
+  },
+  {
+   "de": "Verbrauchsdatum",
+   "tr": "son tüketim tarihi",
+   "ar": "تاريخ الاستهلاك",
+   "vi": "hạn sử dụng",
+   "ru": "дата «употребить до»",
+   "es": "fecha de caducidad",
+   "ti": "ዕለት መወዳእታ ምጥቃም",
+   "pt": "data limite de consumo",
+   "uk": "дата «спожити до»"
+  },
+  {
+   "de": "Prüfziffer",
+   "tr": "kontrol rakamı",
+   "ar": "رقم التحقق",
+   "vi": "chữ số kiểm tra",
+   "ru": "контрольная цифра",
+   "es": "dígito de control",
+   "ti": "ዓሞጽ ምርግጋጽ",
+   "pt": "dígito de verificação",
+   "uk": "контрольна цифра"
+  },
+  {
+   "de": "Zahlenschloss",
+   "tr": "şifreli kilit",
+   "ar": "قفل بالرقم السري",
+   "vi": "khóa số",
+   "ru": "кодовый замок",
+   "es": "candado de combinación",
+   "ti": "መቆለፊ ቁጽሪ",
+   "pt": "cadeado de combinação",
+   "uk": "кодовий замок"
+  },
+  {
+   "de": "Umsatzsteuer",
+   "tr": "katma değer vergisi",
+   "ar": "ضريبة القيمة المضافة",
+   "vi": "thuế giá trị gia tăng",
+   "ru": "налог на добавленную стоимость",
+   "es": "impuesto sobre las ventas",
+   "ti": "ግብሪ ተወሳኺ ዕቦ",
+   "pt": "imposto sobre vendas",
+   "uk": "податок на додану вартість"
   }
  ]
 }

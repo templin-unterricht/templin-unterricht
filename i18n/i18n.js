@@ -76,18 +76,26 @@
   /* Seitenspezifische Einstellungen (pages/<seite>/config.json):
      numeric = Selektoren, deren Zahlen als {1},{2} … zählen (für wechselnde Ergebnisse, z. B. Punktzahl)
      force   = Selektoren, die immer ein eigener Textblock sind (z. B. <span>richtig</span> in einer Zeile)
+     skip    = Selektoren, die ganz ignoriert werden (z. B. Zeitanzeige, Zähler)
      bag     = Wortlisten „Titel: a · b · c“ in zufälliger Reihenfolge (jedes Wort wird einzeln übersetzt) */
-  var CFG = { numeric: '', force: '', bag: '' };
+  var CFG = { numeric: '', force: '', bag: '', skip: '' };
   function configure(c) {
     CFG.numeric = (c && c.numeric || []).join(',');
     CFG.force = (c && c.force || []).join(',');
     CFG.bag = (c && c.bag || []).join(',');
+    CFG.skip = (c && c.skip || []).join(',');
   }
   function template(el, t) {
     if (!CFG.numeric || !el.matches(CFG.numeric)) return { text: t, vals: null };
     var vals = [];
     var text = t.replace(/\d+(?:[.,]\d+)*/g, function (m) { vals.push(m); return '{' + vals.length + '}'; });
     return { text: text, vals: vals };
+  }
+  /* Allgemeine Zahlen-Vorlage: „Punkte: 150“ -> „Punkte: {1}“. Wird nur benutzt, wenn der Text selbst nicht übersetzt ist, die Vorlage aber schon. */
+  function generic(t) {
+    var vals = [];
+    var text = t.replace(/\d+(?:[.,]\d+)*/g, function (m) { vals.push(m); return '{' + vals.length + '}'; });
+    return vals.length ? { text: text, vals: vals } : null;
   }
   function subst(tr, vals) {
     return vals ? tr.replace(/\{(\d+)\}/g, function (m, n) { return vals[n - 1] !== undefined ? vals[n - 1] : m; }) : tr;
@@ -107,7 +115,7 @@
     for (var n = el.firstChild; n; n = n.nextSibling) {
       if (n.nodeType === 3) s += n.nodeValue;
       else if (n.nodeType === 1) {
-        if (n.matches(SKIP_SEL)) continue;
+        if (n.matches(SKIP_SEL) || (CFG.skip && n.matches(CFG.skip))) continue;
         var t = n.tagName;
         if (t === 'BR') s += ' ';
         else if (t === 'SELECT') s += '___';
@@ -130,14 +138,18 @@
     h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
     return 't' + (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(36);
   }
-  function qualifies(t) { return t.length > 1 && /\p{L}{2}/u.test(t); }
+  var UNITS = /\b(kg|g|mg|ml|cl|dl|l|cm|mm|m|km|qm|ct|Std|h|min|Min|Sek|s|Stk|EUR|USD|MwSt|USt|PLZ|IBAN|GTIN)\b\.?/g;
+  function qualifies(t) { // braucht echte Wörter, nicht nur Zahlen, Einheiten und Symbole
+    if (t.length < 2 || !/\p{L}{2}/u.test(t)) return false;
+    return /\p{L}{2}/u.test(t.replace(/\{\d+\}|\d+(?:[.,]\d+)*/g, ' ').replace(UNITS, ' '));
+  }
 
   /* Liefert alle Einheiten der Seite: {el, id, text, kind} */
   function units() {
     var out = [], all = document.body.querySelectorAll('*');
     for (var i = 0; i < all.length; i++) {
       var el = all[i];
-      if (el.closest(SKIP_SEL)) continue;
+      if (el.closest(SKIP_SEL) || (CFG.skip && el.closest(CFG.skip))) continue;
       if (el.tagName === 'SELECT') {
         var opts = [], ok = false;
         for (var k = 0; k < el.options.length; k++) {
@@ -157,7 +169,8 @@
       }
       if (!qualifies(t)) continue;
       var tp = template(el, t);
-      out.push({ el: el, id: hash(tp.text), text: tp.text, vals: tp.vals, kind: 'text' });
+      var gn = tp.vals ? null : generic(t);
+      out.push({ el: el, id: hash(tp.text), text: tp.text, vals: tp.vals, kind: 'text', alt: gn ? { id: hash(gn.text), text: gn.text, vals: gn.vals } : null });
     }
     return out;
   }
@@ -168,7 +181,7 @@
       items.forEach(function (x) {
         if (seen[x.id]) return;
         seen[x.id] = 1;
-        res.push({ id: x.id, text: x.text, kind: u.kind === 'select' ? 'option' : u.kind === 'bag' ? 'bag' : 'text', tag: u.el.tagName.toLowerCase() });
+        res.push({ id: x.id, alt: x.alt ? { id: x.alt.id, text: x.alt.text } : null, text: x.text, kind: u.kind === 'select' ? 'option' : u.kind === 'bag' ? 'bag' : 'text', tag: u.el.tagName.toLowerCase() });
       });
     });
     return res;
@@ -250,9 +263,10 @@
         el.setAttribute('data-i18n-id', 'bag'); el.__i18nBag = html;
       }
     } else {
-      var tr = dict[u.id];
+      var tr = dict[u.id], vals = u.vals, aid = u.id;
+      if (!tr && u.alt && dict[u.alt.id]) { tr = dict[u.alt.id]; vals = u.alt.vals; aid = u.alt.id; }
       has = !!tr;
-      if (has) { html = fmt(subst(tr, u.vals)); el.setAttribute('data-i18n-id', u.id); el.__i18nVals = u.vals; }
+      if (has) { html = fmt(subst(tr, vals)); el.setAttribute('data-i18n-id', aid); el.__i18nVals = vals; }
     }
     if (!has) { clearOne(el); return; }
     if (mode === 'hover') {
@@ -430,7 +444,19 @@
     refresh();
   }
 
-  window.I18N = { collect: collect, configure: configure, hash: hash, setLang: setLang, setMode: setMode, page: PAGE, version: 1,
+  /* Für das Prüfwerkzeug: angezeigte Textblöcke ohne Übersetzung */
+  function untranslated() {
+    var res = {};
+    units().forEach(function (u) {
+      var items = u.kind === 'select' ? u.opts : u.kind === 'bag' ? u.parts : [u];
+      items.forEach(function (x) {
+        var ok = !!(dict && (dict[x.id] || (x.alt && dict[x.alt.id])));
+        if (!ok) res[x.text] = x.alt ? x.alt.text : '';
+      });
+    });
+    return Object.keys(res).map(function (k) { return [k, res[k]]; });
+  }
+  window.I18N = { collect: collect, untranslated: untranslated, configure: configure, hash: hash, setLang: setLang, setMode: setMode, page: PAGE, version: 1,
     state: function () { return { lang: lang, mode: mode, load: loadState }; } };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
