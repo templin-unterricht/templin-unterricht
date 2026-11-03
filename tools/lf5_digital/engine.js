@@ -28,6 +28,9 @@ const UI={
  done:{de:'bearbeitet',vi:'đã làm'},
  printhint:{de:'Tipp: Im Druckfenster „Als PDF sichern“ wählen.',vi:'Gợi ý: Trong cửa sổ in, chọn “Lưu dưới dạng PDF”.'}
 };
+UI.bonusw={de:'Bonus',vi:'Điểm thưởng'};UI.workph={de:'Rechenweg (aufschreiben)',vi:'Cách tính (viết ra)'};
+if(D.ui)for(const l in D.ui)for(const k in D.ui[l]){if(UI[k])UI[k][l]=D.ui[l][k]}
+const RTL={ar:1};
 const u=k=>UI[k][S.lang]||UI[k].de;
 const T=x=>x==null?'':typeof x==='string'?x:(x[S.lang]||x.de||'');
 function def(){return{lang:'de',level:'b',name:'',date:new Date().toLocaleDateString('de-DE'),ans:{},checked:{},shown:{},can:{},sub:false}}
@@ -77,16 +80,18 @@ function tokens(p){const out=[];let idx=0;let m;
 function allTokens(it){let g=0;return it.paras.map(p=>tokens(p).map(t=>({w:t.w,key:t.key,att:t.att,pu:t.pu,i:g++})))}
 function readKeys(it){const k=[];allTokens(it).forEach(ps=>ps.forEach(t=>{if(t.key)k.push(t.i)}));return k}
 /* ---------- Rendern ---------- */
-function ptsLabel(it){if(it.type==='read'||!it.pts)return'';return it.level==='v'?'+'+fmt(it.pts)+' '+(S.lang==='vi'?'điểm thưởng':'Bonus'):fmt(it.pts)+' '+(S.lang==='vi'?'điểm':(it.pts===1?'Punkt':'Punkte'))}
+function ptsLabel(it){if(it.type==='read'||!it.pts)return'';return it.level==='v'?'+'+fmt(it.pts)+' '+(S.lang==='de'?'Bonus':u('bonusw')):fmt(it.pts)+' '+(S.lang==='de'?(it.pts===1?'Punkt':'Punkte'):u('pts'))}
+function sum(it){return (it.sum&&it.sum[S.lang])||(S.lang==='vi'?it.vi:'')||''}
+function autoDir(){if(!RTL[S.lang])return;$$('p,h1,h2,h3,h4,li,summary,label,.info,.vis,.qt,.st,.instr,.opt span,.chip,.fb,.model,.sub,.cnt').forEach(e=>e.setAttribute('dir','auto'))}
 function tipBlock(it){return it.tip?`<details class="tip"><summary>💡 ${u('tip')}</summary><div>${rich(T(it.tip))}</div></details>`:''}
 function wg(it,i,p){if(!p.w&&!p.s)return'';const ch=(p.w||[]).concat(p.s||[]).map(x=>`<button type="button" class="chip" data-chip="${esc(x)}" data-for="${it.id}_${i}">${esc(x)}</button>`).join('');return`<details class="wg"><summary>✏️ ${u('words')}</summary><div class="chips">${ch}</div></details>`}
 const BODY={
- info(it){return`<div class="info">${it.html||''}</div>`+(it.vi&&S.lang==='vi'?`<div class="vis">${rich(it.vi)}</div>`:'')},
+ info(it){return`<div class="info">${it.html||''}</div>`+(sum(it)?`<div class="vis" lang="${S.lang}">${rich(sum(it))}</div>`:'')},
  read(it){const per=allTokens(it);const a=A(it.id);const sel=a.m||[];
   const ps=per.map(ts=>`<p class="rd${a.chk?' chk':''}" data-rd="${it.id}">`+ts.map(t=>t.pu&&t.att?esc(t.w):(t.att?'':' ')+`<span class="w${t.key?' key':''}${sel.indexOf(t.i)>=0?' sel':''}" data-w="${t.i}" role="button" tabindex="0">${esc(t.w)}</span>`).join('').trim()+'</p>').join('');
   const q=it.quiz;let quiz='';
   if(q&&a.chk){quiz=`<div class="q" data-part="0"><p class="qt">${rich(T(q.q))}</p><div class="opts">`+q.o.map((o,j)=>`<label class="opt"><input type="radio" name="${it.id}_q" data-k="q" value="${j}"${a.q!=null&&+a.q===j?' checked':''}><span>${rich(o)}</span></label>`).join('')+'</div></div>'}
-  return`<p class="vis">${u('tap')}</p>${ps}<div class="actions"><button type="button" class="primary" data-act="rdchk" data-id="${it.id}">${u('chkmark')}</button></div>${quiz}`+(it.vi&&S.lang==='vi'?`<p class="vis">${rich(it.vi)}</p>`:'')},
+  return`<p class="vis">${u('tap')}</p>${ps}<div class="actions"><button type="button" class="primary" data-act="rdchk" data-id="${it.id}">${u('chkmark')}</button></div>${quiz}`+(sum(it)?`<p class="vis" lang="${S.lang}">${rich(sum(it))}</p>`:'')},
  mc(it){const a=A(it.id);return it.qs.map((q,i)=>{const multi=Array.isArray(q.a);const cur=String(a['p'+i]==null?'':a['p'+i]).split(',');
   return`<div class="q" data-part="${i}"><p class="qt">${rich(T(q.q))}</p><div class="opts">`+q.o.map((o,j)=>`<label class="opt"><input type="${multi?'checkbox':'radio'}" name="${it.id}_${i}" data-k="p${i}" ${multi?'data-multi="1"':''} value="${j}"${cur.indexOf(String(j))>=0?' checked':''}><span>${rich(o)}</span></label>`).join('')+'</div></div>'}).join('')},
  tf(it){const a=A(it.id);return it.st.map((s,i)=>`<div class="tfrow" data-part="${i}"><div class="st">${rich(T(s.t))}</div><div class="opts">`+['t','f'].map(v=>`<label class="opt"><input type="radio" name="${it.id}_${i}" data-k="p${i}" value="${v}"${a['p'+i]===v?' checked':''}><span>${u(v==='t'?'richtig':'falsch')}</span></label>`).join('')+'</div></div>').join('')},
@@ -101,7 +106,7 @@ const BODY={
    if(c&&typeof c==='object'){const i=n++;const o=c.o||(it.colOpts||[])[ci];const v=a['p'+i]||'';const f=o?`<select data-k="p${i}"><option value="">${u('choose')}</option>`+o.map(x=>`<option${x===v?' selected':''}>${esc(x)}</option>`).join('')+'</select>':`<input class="in" type="text" data-k="p${i}" value="${esc(v)}" autocomplete="off">`;
     return`<div class="fld" data-part="${i}"><label>${esc(it.cols[ci])}</label>${f}</div>`}
    return`<div class="fld"><label>${esc(it.cols[ci])}</label><div>${rich(T(c))}</div></div>`}).join('')+'</div>'}).join('')},
- calc(it){const a=A(it.id);return it.parts.map((p,i)=>`<div class="crow" data-part="${i}"><p class="qt">${rich(T(p.q))}</p><input class="in" type="text" inputmode="decimal" data-k="p${i}" value="${esc(a['p'+i]||'')}" autocomplete="off" placeholder="0,00"><span class="u">${esc(p.u||'')}</span>${p.work?`<textarea class="in" data-k="p${i}w" rows="2" style="min-height:4rem" placeholder="${S.lang==='vi'?'Cách tính (viết ra)':'Rechenweg (aufschreiben)'}">${esc(a['p'+i+'w']||'')}</textarea>`:''}</div>`).join('')},
+ calc(it){const a=A(it.id);return it.parts.map((p,i)=>`<div class="crow" data-part="${i}"><p class="qt">${rich(T(p.q))}</p><input class="in" type="text" inputmode="decimal" data-k="p${i}" value="${esc(a['p'+i]||'')}" autocomplete="off" placeholder="0,00"><span class="u">${esc(p.u||'')}</span>${p.work?`<textarea class="in" data-k="p${i}w" rows="2" style="min-height:4rem" placeholder="${u('workph')}">${esc(a['p'+i+'w']||'')}</textarea>`:''}</div>`).join('')},
  free(it){const a=A(it.id);const sh=S.shown[it.id];return it.parts.map((p,i)=>`<div class="fpart"><p class="qt">${rich(T(p.q))}</p>${wg(it,i,p)}<textarea class="in" id="${it.id}_${i}" data-k="p${i}" rows="3" placeholder="…">${esc(a['p'+i]||'')}</textarea>`+(sh?`<div class="model"><div class="t">${u('model').replace(/ anzeigen| ?$/,'')}</div>${rich(T(p.m))}</div>`:'')+'</div>').join('')+(sh?`<div class="rate"><span style="flex:1 1 100%;font-weight:600">${u('rate')}</span>`+['y','p','n'].map(v=>`<button type="button" data-rate="${v}" data-k="r" class="${a.r===v?'on':''}">${u(v)}</button>`).join('')+'</div>':'')}
 };
 function actions(it){if(it.type==='info'||it.type==='read')return'';if(it.type==='free')return S.shown[it.id]?'':`<button type="button" class="primary" data-act="model" data-id="${it.id}">${u('model')}</button>`;return`<button type="button" class="primary" data-act="check" data-id="${it.id}">${u('check')}</button>`}
@@ -109,7 +114,7 @@ function cardHtml(it){const v=it.level==='v';
  return`<section class="card${v?' vert':''}" id="c_${it.id}" data-id="${it.id}"><header>${it.no?`<span class="no">${esc(it.no)}</span>`:''}<h2>${rich(T(it.title))}</h2><span class="pts">${ptsLabel(it)}</span></header>`+
  (it.instr?`<p class="instr">${rich(T(it.instr))}</p>`:'')+tipBlock(it)+`<div class="body">${BODY[it.type](it)}</div><div class="actions">${actions(it)}</div><div class="fb" aria-live="polite"></div></section>`}
 function renderAll(){
- document.documentElement.lang=S.lang==='vi'?'vi':'de';
+ document.documentElement.lang=S.lang;
  $('#cards').innerHTML=D.items.filter(visible).map(cardHtml).join('');
  $('#t_can').textContent=u('can');$('#l_name').textContent=u('name');$('#l_date').textContent=u('date');
  $('#cans').innerHTML=D.can.map((c,i)=>`<label><input type="checkbox" data-can="${i}"${S.can[i]?' checked':''}><span>${rich(T(c))}</span></label>`).join('');
@@ -119,7 +124,7 @@ function renderAll(){
  $('#cnt').textContent='';$('#m_ask').textContent=u('ask');$('#m_yes').textContent=u('yes');$('#m_no').textContent=u('no');
  D.items.filter(visible).forEach(it=>{if(S.checked[it.id])paint(it)});
  if(S.sub)renderResult();else $('#result').classList.add('hide');
- progress()}
+ autoDir();progress()}
 function progress(){const its=D.items.filter(it=>visible(it)&&counted(it));let n=0;its.forEach(it=>{if(grade(it).filled)n++});
  const pc=its.length?Math.round(n/its.length*100):0;$('#barfill').style.width=pc+'%';$('#cnt').textContent=n+' / '+its.length+' '+u('progress');
  $$('.card').forEach(c=>{const it=D.items.find(x=>x.id===c.dataset.id);c.classList.toggle('done',counted(it)&&grade(it).filled)});

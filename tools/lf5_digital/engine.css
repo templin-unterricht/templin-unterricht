@@ -8,7 +8,7 @@ button:active{transform:scale(.98)}
 .top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);padding:.5rem .75rem;padding-top:max(.5rem,env(safe-area-inset-top))}
 .top .row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;max-width:62rem;margin:0 auto}
 .top .ttl{font-weight:700;font-size:.95rem;flex:1 1 12rem}
-.pills{display:inline-flex;border:2px solid var(--pri);border-radius:12px;overflow:hidden}
+.pills{display:inline-flex;flex-wrap:wrap;border:2px solid var(--pri);border-radius:12px;overflow:hidden}
 .pills button{border:0;border-radius:0;min-height:44px;padding:.3rem .9rem}
 .pills button.on{background:var(--pri);color:#fff}
 .bar{height:12px;background:#e5e8f3;border-radius:8px;overflow:hidden;flex:1 1 8rem}
@@ -98,3 +98,6 @@ select.ok,.in.ok,select.bad,.in.bad{outline-offset:0}
  #result{border:0;padding:0;margin:0;display:block!important}.ritem{break-inside:avoid}
  .wrap{padding:0;max-width:none}
 }
+
+.pills button[data-lg]{min-width:2.6rem}
+[dir=rtl] .opt{text-align:right}
