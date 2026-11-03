@@ -420,6 +420,72 @@
    "ti": "ግብሪ ተወሳኺ ዕቦ",
    "pt": "imposto sobre vendas",
    "uk": "податок на додану вартість"
+  },
+  {
+   "de": "Impulskauf",
+   "tr": "plansız anlık alım",
+   "ar": "شراء اندفاعي",
+   "vi": "mua theo cảm hứng",
+   "ru": "импульсивная покупка",
+   "es": "compra impulsiva",
+   "ti": "ድንገተኛ ዕዳጋ",
+   "pt": "compra por impulso",
+   "uk": "імпульсивна покупка"
+  },
+  {
+   "de": "Grundbeleuchtung",
+   "tr": "genel aydınlatma",
+   "ar": "الإضاءة الأساسية",
+   "vi": "chiếu sáng nền",
+   "ru": "общее освещение",
+   "es": "iluminación general",
+   "ti": "መሰረታዊ ብርሃን",
+   "pt": "iluminação geral",
+   "uk": "загальне освітлення"
+  },
+  {
+   "de": "Warenwandbeleuchtung",
+   "tr": "duvar raf aydınlatması",
+   "ar": "إضاءة جدار البضائع",
+   "vi": "chiếu sáng tường hàng",
+   "ru": "подсветка пристенных стеллажей",
+   "es": "iluminación de la pared de mercancía",
+   "ti": "ብርሃን መንደቕ ዕቃታት",
+   "pt": "iluminação da parede de mercadorias",
+   "uk": "підсвітка пристінних стелажів"
+  },
+  {
+   "de": "Akzentbeleuchtung",
+   "tr": "vurgu aydınlatması",
+   "ar": "إضاءة التركيز",
+   "vi": "chiếu sáng điểm nhấn",
+   "ru": "акцентное освещение",
+   "es": "iluminación de acento",
+   "ti": "ብርሃን ምድማቕ",
+   "pt": "iluminação de destaque",
+   "uk": "акцентне освітлення"
+  },
+  {
+   "de": "Ruhezone",
+   "tr": "dinlenme alanı",
+   "ar": "منطقة الاستراحة",
+   "vi": "khu nghỉ ngơi",
+   "ru": "зона отдыха",
+   "es": "zona de descanso",
+   "ti": "ዞባ ዕረፍቲ",
+   "pt": "zona de descanso",
+   "uk": "зона відпочинку"
+  },
+  {
+   "de": "Wiedererkennungswert",
+   "tr": "tanınma değeri",
+   "ar": "قيمة التعرّف",
+   "vi": "giá trị nhận diện",
+   "ru": "узнаваемость",
+   "es": "valor de reconocimiento",
+   "ti": "ዋጋ ምልላይ",
+   "pt": "valor de reconhecimento",
+   "uk": "впізнаваність"
   }
  ]
 }

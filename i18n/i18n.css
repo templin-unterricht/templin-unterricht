@@ -53,3 +53,7 @@ select+.i18n-u,button>.i18n-u{font-size:.78em}
   .i18n-u{color:#333!important;break-inside:avoid}
   [data-i18n-id].i18n-hv{outline:none!important}
 }
+
+/* große Überschriften: Übersetzung kleiner, damit sie nicht riesig wird */
+h1>.i18n-u{font-size:.5em;margin-top:.2em}
+h2>.i18n-u{font-size:.65em}

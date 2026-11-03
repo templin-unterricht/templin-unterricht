@@ -77,19 +77,49 @@
      numeric = Selektoren, deren Zahlen als {1},{2} … zählen (für wechselnde Ergebnisse, z. B. Punktzahl)
      force   = Selektoren, die immer ein eigener Textblock sind (z. B. <span>richtig</span> in einer Zeile)
      skip    = Selektoren, die ganz ignoriert werden (z. B. Zeitanzeige, Zähler)
+     prefix  = Satzanfänge wie „Richtig!“, „Fachbegriff:“: Der Rest wird in Bausteine zerlegt (bei „→“ und „: “), die einzeln übersetzt und zusammengesetzt werden
      bag     = Wortlisten „Titel: a · b · c“ in zufälliger Reihenfolge (jedes Wort wird einzeln übersetzt) */
-  var CFG = { numeric: '', force: '', bag: '', skip: '' };
+  var CFG = { numeric: '', force: '', bag: '', skip: '', prefix: [] };
   function configure(c) {
     CFG.numeric = (c && c.numeric || []).join(',');
     CFG.force = (c && c.force || []).join(',');
     CFG.bag = (c && c.bag || []).join(',');
     CFG.skip = (c && c.skip || []).join(',');
+    CFG.prefix = (c && c.prefix) || [];
   }
   function template(el, t) {
     if (!CFG.numeric || !el.matches(CFG.numeric)) return { text: t, vals: null };
     var vals = [];
     var text = t.replace(/\d+(?:[.,]\d+)*/g, function (m) { vals.push(m); return '{' + vals.length + '}'; });
     return { text: text, vals: vals };
+  }
+  /* Zusammengesetzte Texte: <Präfix> <A> → <B>   oder   <Präfix> <A>: <B>.   Liefert Bausteine [{text, glue}] oder null. */
+  function composeSplit(t) {
+    if (!CFG.prefix.length) return null;
+    var pre = [], rest = t, again = true;
+    while (again) {
+      again = false;
+      for (var i = 0; i < CFG.prefix.length; i++) {
+        var p = CFG.prefix[i];
+        if (rest.indexOf(p) === 0 && rest.length > p.length) { pre.push({ text: p.replace(/\s+$/, ''), glue: ' ', pre: true }); rest = norm(rest.slice(p.length)); again = true; break; }
+      }
+    }
+    if (!pre.length) return null;
+    var parts = pre.slice();
+    rest.split(' → ').forEach(function (seg, i) {
+      var glue = i ? ' → ' : ' ';
+      var k = seg.indexOf(': ');
+      if (k > -1) { parts.push({ text: seg.slice(0, k), glue: glue }); parts.push({ text: seg.slice(k + 2), glue: ': ' }); }
+      else parts.push({ text: seg, glue: glue });
+    });
+    return parts;
+  }
+  function lookupPiece(x) {
+    var d = dict && dict[hash(x)];
+    if (d) return d;
+    var m = /^(.*?)([.!?])$/.exec(x);
+    d = m && dict && dict[hash(m[1])];
+    return d ? d + m[2] : null;
   }
   /* Allgemeine Zahlen-Vorlage: „Punkte: 150“ -> „Punkte: {1}“. Wird nur benutzt, wenn der Text selbst nicht übersetzt ist, die Vorlage aber schon. */
   function generic(t) {
@@ -169,6 +199,8 @@
       }
       if (!qualifies(t)) continue;
       var tp = template(el, t);
+      var cp = (!tp.vals && CFG.prefix.length) ? composeSplit(t) : null;
+      if (cp) { out.push({ el: el, kind: 'compose', parts: cp }); continue; }
       var gn = tp.vals ? null : generic(t);
       out.push({ el: el, id: hash(tp.text), text: tp.text, vals: tp.vals, kind: 'text', alt: gn ? { id: hash(gn.text), text: gn.text, vals: gn.vals } : null });
     }
@@ -177,6 +209,7 @@
   function collect() {
     var seen = {}, res = [];
     units().forEach(function (u) {
+      if (u.kind === 'compose') { u.parts.forEach(function (p) { var tx = p.pre ? p.text : p.text.replace(/[.!?]$/, ''); if (!seen[hash(tx)]) { seen[hash(tx)] = 1; res.push({ id: hash(tx), alt: null, text: tx, kind: 'text', tag: 'compose' }); } }); return; }
       var items = u.kind === 'select' ? u.opts : u.kind === 'bag' ? (u.label ? [u.label] : []).concat(u.parts) : [u];
       items.forEach(function (x) {
         if (seen[x.id]) return;
@@ -255,6 +288,13 @@
       has = !!html;
       el.__i18nSel = u;
       if (has) el.setAttribute('data-i18n-id', 'select');
+    } else if (u.kind === 'compose') {
+      var pieces = u.parts.map(function (p) { return lookupPiece(p.text); });
+      has = pieces.every(function (x) { return !!x; });
+      if (has) {
+        html = pieces.map(function (x, i) { return u.parts[i].glue + fmt(x); }).join('');
+        el.setAttribute('data-i18n-id', 'compose'); el.__i18nBag = html;
+      }
     } else if (u.kind === 'bag') {
       var all = u.parts.every(function (p) { return dict[p.id]; });
       has = all && u.parts.length > 0;
@@ -448,6 +488,7 @@
   function untranslated() {
     var res = {};
     units().forEach(function (u) {
+      if (u.kind === 'compose') { var okc = u.parts.every(function (p) { return !!lookupPiece(p.text); }); if (!okc) res[u.el.textContent.replace(/\s+/g, ' ').trim()] = ''; return; }
       var items = u.kind === 'select' ? u.opts : u.kind === 'bag' ? u.parts : [u];
       items.forEach(function (x) {
         var ok = !!(dict && (dict[x.id] || (x.alt && dict[x.alt.id])));
