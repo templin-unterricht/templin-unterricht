@@ -321,6 +321,28 @@ function normalize(j){
    const u7='materials/digital/LF4_M_'+n+'.html';
    if(!e7.links.some(x=>x.u===u7))e7.links.push({l:'Digitales Arbeitsblatt (interaktiv, mehrsprachig)',u:u7});}
  }
+ if(!o.seed8){ /* LF 5: Digitale Arbeitsblaetter (DE/VI) M 1-M 11 einmalig eintragen */
+  o.seed8=true;
+  for(let n=1;n<=11;n++){const e8=o.mat['LF5.M'+n]||(o.mat['LF5.M'+n]={pdf:'',links:[]});e8.links=(e8.links||[]).filter(l=>l.u||l.l);
+   const u8='materials/digital/LF5_M_'+n+'.html';
+   if(!e8.links.some(x=>x.u===u8))e8.links.push({l:'Digitales Arbeitsblatt (DE/VI)',u:u8});}
+ }
+ if(!o.seed9){ /* Digitale Arbeitsblaetter in allen Sprachen: LF 1 (M 1-13) und LF 3 (M 1-18) neu eintragen, Sprachangaben bei LF 4 und LF 5 aktualisieren (kein Doppeleintrag) */
+  o.seed9=true;
+  const addDig=(key,u,lbl)=>{const e=o.mat[key]||(o.mat[key]={pdf:'',links:[]});e.links=(e.links||[]).filter(l=>l.u||l.l);const ex=e.links.find(x=>x.u===u);if(ex)ex.l=lbl;else e.links.push({l:lbl,u:u});};
+  for(let n=1;n<=13;n++)addDig('LF1.M'+n,'materials/LF1_M_'+n+'_Digitales_Arbeitsblatt.html','Digitales Arbeitsblatt (DE · TR · AR · VI · TI · UK · RU · ES · PT)');
+  for(let n=1;n<=18;n++)addDig('LF3.M'+n,'materials/LF3_M_'+n+'_Digitales_Arbeitsblatt.html','Digitales Arbeitsblatt (DE · TR · AR · VI)');
+  for(let n=1;n<=11;n++)addDig('LF4.M'+n,'materials/digital/LF4_M_'+n+'.html','Digitales Arbeitsblatt (DE · TR · AR · VI · TI · UK · RU · ES · PT)');
+  for(let n=1;n<=11;n++)addDig('LF5.M'+n,'materials/digital/LF5_M_'+n+'.html','Digitales Arbeitsblatt (DE · TR · AR · VI · TI · UK · RU · ES · PT)');
+ }
+ if(!o.seed10){ /* Digitale Arbeitsblaetter LF 1/3/4/5: Bezeichnung auf "Arbeitsblatt online" mit Sprachen umstellen (gleiche Links, keine Doppeleintraege) */
+  o.seed10=true;
+  const relabel=(key,u,lbl)=>{const e=o.mat[key]||(o.mat[key]={pdf:'',links:[]});e.links=(e.links||[]).filter(l=>l.u||l.l);const ex=e.links.find(x=>x.u===u);if(ex)ex.l=lbl;else e.links.push({l:lbl,u:u});};
+  const A9='Arbeitsblatt online (DE · TR · AR · VI · TI · UK · RU · ES · PT)';
+  for(let n=1;n<=13;n++)relabel('LF1.M'+n,'materials/LF1_M_'+n+'_Digitales_Arbeitsblatt.html',A9);
+  for(let n=1;n<=18;n++)relabel('LF3.M'+n,'materials/LF3_M_'+n+'_Digitales_Arbeitsblatt.html','Arbeitsblatt online (DE · TR · AR · VI)');
+  for(let n=1;n<=11;n++){relabel('LF4.M'+n,'materials/digital/LF4_M_'+n+'.html',A9);relabel('LF5.M'+n,'materials/digital/LF5_M_'+n+'.html',A9);}
+ }
  if(!o.seed3){ /* Englisch V25: neue Einträge ENG.E1–E12 einmalig ergänzen, nichts überschreiben */
   o.seed3=true;
   Object.keys(SEED_MAT).filter(k=>k.indexOf('ENG.E')===0).forEach(k=>{
@@ -617,6 +639,9 @@ function matCls(l){
  if(/einstieg|live|popcorn|sockensortierer|verd[äa]e?chtigen|ladenwert|jahres-kassenbon/i.test(l))return 'c-pk';
  return 'c-gr';
 }
+/* Material, das fest an einem bestimmten Unterrichtstag hängt (unabhängig vom Modul) */
+const DAY_LINKS=[{date:'2026-11-03',klasse:'Fkl 26/1',fach:'Mathe',l:'Einstieg: Lager-Chaos (Dreisatz)',u:'materials/MATHE_M_3_Einstieg_Dreisatz.html'}];
+const dayBtns=o=>DAY_LINKS.filter(x=>x.date===o.date&&x.klasse===o.klasse&&x.fach===o.fach).map(x=>`<a class="btn sm ${matCls(x.l)}" href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.l)}</a>`).join('');
 function matButtons(u,lim,id){
  const pl=pdfLink(u),dl=digLinks(u),sh=lim?dl.slice(0,lim):dl;
  return (pl?`<a class="btn sm c-gr" href="${esc(pl)}" target="_blank" rel="noopener" title="Arbeitsblatt (PDF)">${kt('material')}</a>`:'')+
@@ -795,7 +820,7 @@ function lessonCard(o){
   const multi=o.segs.length>1;
   if(o.segs.some(g=>g.unit&&isLeistung(g.unit)))cls=' lk';
   body=o.segs.map(g=>segHtml(g,o,multi)).join('')+kvBox(o)+
-  `<div class="acts">${o.segs.filter(g=>g.unit).map(g=>matButtons(g.unit,multi?2:3,o.id)).join('')}
+  `<div class="acts">${o.segs.filter(g=>g.unit).map(g=>matButtons(g.unit,multi?2:3,o.id)).join('')}${dayBtns(o)}
   ${cp}${ent}</div>`;
  }else if(o.status==='klausur'){
   body=`<div class="topic">${kt('klausur')}</div><div class="sub">${kt('keinStoff')}</div>${kvBox(o)}<div class="acts">${cp}${ent}</div>`;
@@ -865,7 +890,7 @@ function renderVerlauf(){
   if(o.status==='unterricht'){
    const hd=o.segs.map(g=>g.unit?`<b>${esc(unitTag(g.unit))}${g.unit.item.lab?': '+trSpan(g.unit.item.name,o.klasse):' – '+trSpan(g.unit.item.name,o.klasse)}</b>${g.unit.total>1?' · DS '+g.unit.dsNo+'/'+g.unit.total:''}${o.segs.length>1?' · '+g.n*45+' min':''}`:`<b>${esc(g.ins.name)}</b>${o.segs.length>1?' · '+g.n*45+' min':''}`).join(' + ');
    inner=`${hd}<br>${trEntryHtml(o,entryText(o))}`;
-   acts=cp+o.segs.filter(g=>g.unit).map(g=>matButtons(g.unit)).join('');
+   acts=cp+o.segs.filter(g=>g.unit).map(g=>matButtons(g.unit)).join('')+dayBtns(o);
   }else if(o.status==='klausur'){inner=kt('klausurKein')+kvBox(o)+`<br>${trEntryHtml(o,entryText(o))}`;acts=cp;}
   else if(o.status==='exkursion'){inner=`<b>🚌 ${kt('exkursion')}: ${esc(o.ex.ziel||'')}</b><br>${trEntryHtml(o,entryText(o))}`;acts=cp;}
   else if(o.status==='puffer')inner=kt('puffer')+' – '+kt('wdh');
