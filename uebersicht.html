@@ -138,7 +138,7 @@ if(!D){app.innerHTML='<p style="padding:20px">uebersicht_daten.js fehlt.</p>';re
 
 /* ---------- Sprachen ---------- */
 var LANGS=['de','vi','ar','uk','ti','pt','es','ru'];
-var LN={de:['🇩🇪','Deutsch','DE'],vi:['🇻🇳','Tiếng Việt','VI'],ar:['🌐','العربية','AR'],uk:['🇺🇦','Українська','UK'],ti:['🌐','ትግርኛ','TI'],pt:['🇵🇹','Português','PT'],es:['🇪🇸','Español','ES'],ru:['🇷🇺','Русский','RU']};
+var LN={de:['🇩🇪','Deutsch','DE'],vi:['🇻🇳','Tiếng Việt','VI'],ar:['🌐','العربية','AR'],uk:['🇺🇦','Українська','UK'],ti:['🌐','ትግርኛ','TI'],pt:['🇵🇹','Português','PT'],es:['🇪🇸','Español','ES'],ru:['🇷🇺','Русский','RU'],tr:['🇹🇷','Türkçe','TR']};
 var TI=['vi','ar','uk','ti','pt','es','ru'];
 var UI={
 title:['Mein Lernstoff','Nội dung học của tôi','موادّي الدراسية','Мій навчальний матеріал','ናይ ዕዮይ ትምህርቲ','A minha matéria','Mi materia de estudio','Мой учебный материал'],
@@ -343,7 +343,7 @@ function viewModule(gid,sid,mid){
         var title=c==='weiteres'?x.label:t('c_'+c);
         if(c==='weiteres')sub='';
         else if(sub&&sub.toLowerCase()===title.toLowerCase())sub='';
-        return matRow(x,CI[c],title,sub);
+        return '<div><div class="matrow">'+matRow(x,CI[c],title,sub)+mlLinks(x)+'</div></div>';
       }).join('')+'</div>';
   });
   if(!shown)out+='<div class="empty">'+esc(m.mats.length?t('noneInLang'):t('noMat'))+'</div>';
