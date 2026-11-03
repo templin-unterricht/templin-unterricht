@@ -49,3 +49,6 @@ Einfache, kurze Sätze. Fachbegriffe aus dem Glossar übersetzen und den deutsch
 
 ## Qualitätshinweis
 Alle Übersetzungen sind **maschinell erstellt** und noch **nicht** von Muttersprachlerinnen/Muttersprachlern geprüft. Besonders bei **Tigrinya (Ge'ez-Schrift)** sollte eine Muttersprachlerin/ein Muttersprachler die Texte und das Glossar prüfen. Auch bei Arabisch, Vietnamesisch, Ukrainisch und Türkisch ist eine Stichprobe durch Muttersprachler empfehlenswert, vor allem bei Fachbegriffen.
+
+## Große Spiele: bewusst nur teilweise übersetzt
+Bei „Das Erdbeer-Imperium“ (LF 4) und „Countdown Hafenstraße“ (LF 5) sind Bedienung, Menüs, Anleitungen, Erfolge und Einstiegsseiten übersetzt. Die einzelnen Spielszenen, Aufgaben und Gästebeschreibungen bleiben deutsch (rund 1.000 bzw. 1.400 Textblöcke). Die Liste, was noch fehlt, liefert `coverage`.
