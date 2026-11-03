@@ -78,14 +78,16 @@
      force   = Selektoren, die immer ein eigener Textblock sind (z. B. <span>richtig</span> in einer Zeile)
      skip    = Selektoren, die ganz ignoriert werden (z. B. Zeitanzeige, Zähler)
      prefix  = Satzanfänge wie „Richtig!“, „Fachbegriff:“: Der Rest wird in Bausteine zerlegt (bei „→“ und „: “), die einzeln übersetzt und zusammengesetzt werden
+     split   = Trennzeichen wie " · " und " = ": Texte aus lauter einzeln übersetzten Teilen (z. B. „Plakat = Werbemittel · Litfaßsäule = Werbeträger.“)
      bag     = Wortlisten „Titel: a · b · c“ in zufälliger Reihenfolge (jedes Wort wird einzeln übersetzt) */
-  var CFG = { numeric: '', force: '', bag: '', skip: '', prefix: [] };
+  var CFG = { numeric: '', force: '', bag: '', skip: '', prefix: [], split: [] };
   function configure(c) {
     CFG.numeric = (c && c.numeric || []).join(',');
     CFG.force = (c && c.force || []).join(',');
     CFG.bag = (c && c.bag || []).join(',');
     CFG.skip = (c && c.skip || []).join(',');
     CFG.prefix = (c && c.prefix) || [];
+    CFG.split = (c && c.split) || [];
   }
   function template(el, t) {
     if (!CFG.numeric || !el.matches(CFG.numeric)) return { text: t, vals: null };
@@ -95,24 +97,39 @@
   }
   /* Zusammengesetzte Texte: <Präfix> <A> → <B>   oder   <Präfix> <A>: <B>.   Liefert Bausteine [{text, glue}] oder null. */
   function composeSplit(t) {
-    if (!CFG.prefix.length) return null;
     var pre = [], rest = t, again = true;
-    while (again) {
+    while (again && CFG.prefix.length) {
       again = false;
       for (var i = 0; i < CFG.prefix.length; i++) {
         var p = CFG.prefix[i];
         if (rest.indexOf(p) === 0 && rest.length > p.length) { pre.push({ text: p.replace(/\s+$/, ''), glue: ' ', pre: true }); rest = norm(rest.slice(p.length)); again = true; break; }
       }
     }
-    if (!pre.length) return null;
     var parts = pre.slice();
-    rest.split(' → ').forEach(function (seg, i) {
-      var glue = i ? ' → ' : ' ';
-      var k = seg.indexOf(': ');
-      if (k > -1) { parts.push({ text: seg.slice(0, k), glue: glue }); parts.push({ text: seg.slice(k + 2), glue: ': ' }); }
-      else parts.push({ text: seg, glue: glue });
-    });
-    return parts;
+    if (pre.length) {
+      rest.split(' → ').forEach(function (seg, i) {
+        var glue = i ? ' → ' : ' ';
+        var k = seg.indexOf(': ');
+        if (k > -1) { parts.push({ text: seg.slice(0, k), glue: glue }); parts.push({ text: seg.slice(k + 2), glue: ': ' }); }
+        else parts.push({ text: seg, glue: glue });
+      });
+      return { parts: parts, npre: pre.length, rest: rest };
+    }
+    if (CFG.split.length) {
+      var re = new RegExp('(' + CFG.split.map(function (x) { return x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }).join('|') + ')');
+      var bits = t.split(re);
+      if (bits.length < 3) return null;
+      for (var j = 0; j < bits.length; j += 2) if (bits[j]) parts.push({ text: bits[j], glue: j ? bits[j - 1] : '' });
+      return { parts: parts, npre: 0, rest: null };
+    }
+    return null;
+  }
+  function composeHtml(u) {
+    var pieces = [], i;
+    for (i = 0; i < u.npre; i++) { var x = lookupPiece(u.parts[i].text); if (!x) return null; pieces.push(u.parts[i].glue + fmt(x)); }
+    if (u.rest) { var whole = lookupPiece(u.rest); if (whole) return pieces.join('') + ' ' + fmt(whole); }
+    for (i = u.npre; i < u.parts.length; i++) { var y = lookupPiece(u.parts[i].text); if (!y) return null; pieces.push(u.parts[i].glue + fmt(y)); }
+    return pieces.join('');
   }
   function lookupPiece(x) {
     var d = dict && dict[hash(x)];
@@ -199,8 +216,8 @@
       }
       if (!qualifies(t)) continue;
       var tp = template(el, t);
-      var cp = (!tp.vals && CFG.prefix.length) ? composeSplit(t) : null;
-      if (cp) { out.push({ el: el, kind: 'compose', parts: cp }); continue; }
+      var cp = (!tp.vals && (CFG.prefix.length || CFG.split.length)) ? composeSplit(t) : null;
+      if (cp) { out.push({ el: el, kind: 'compose', parts: cp.parts, npre: cp.npre, rest: cp.rest, id: hash(t), text: t }); continue; }
       var gn = tp.vals ? null : generic(t);
       out.push({ el: el, id: hash(tp.text), text: tp.text, vals: tp.vals, kind: 'text', alt: gn ? { id: hash(gn.text), text: gn.text, vals: gn.vals } : null });
     }
@@ -289,12 +306,10 @@
       el.__i18nSel = u;
       if (has) el.setAttribute('data-i18n-id', 'select');
     } else if (u.kind === 'compose') {
-      var pieces = u.parts.map(function (p) { return lookupPiece(p.text); });
-      has = pieces.every(function (x) { return !!x; });
-      if (has) {
-        html = pieces.map(function (x, i) { return u.parts[i].glue + fmt(x); }).join('');
-        el.setAttribute('data-i18n-id', 'compose'); el.__i18nBag = html;
-      }
+      var ch = composeHtml(u);
+      if (!ch && dict[u.id]) ch = fmt(dict[u.id]);
+      has = !!ch;
+      if (has) { html = ch; el.setAttribute('data-i18n-id', 'compose'); el.__i18nBag = html; }
     } else if (u.kind === 'bag') {
       var all = u.parts.every(function (p) { return dict[p.id]; });
       has = all && u.parts.length > 0;
@@ -488,7 +503,7 @@
   function untranslated() {
     var res = {};
     units().forEach(function (u) {
-      if (u.kind === 'compose') { var okc = u.parts.every(function (p) { return !!lookupPiece(p.text); }); if (!okc) res[u.el.textContent.replace(/\s+/g, ' ').trim()] = ''; return; }
+      if (u.kind === 'compose') { if (!composeHtml(u) && !(dict && dict[u.id])) res[u.text] = ''; return; }
       var items = u.kind === 'select' ? u.opts : u.kind === 'bag' ? u.parts : [u];
       items.forEach(function (x) {
         var ok = !!(dict && (dict[x.id] || (x.alt && dict[x.alt.id])));

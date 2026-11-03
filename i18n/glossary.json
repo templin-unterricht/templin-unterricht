@@ -695,6 +695,94 @@
    "ti": "ካርድ ዓሚል",
    "pt": "cartão de cliente",
    "uk": "картка клієнта"
+  },
+  {
+   "de": "Werbeetat",
+   "tr": "reklam bütçesi",
+   "ar": "ميزانية الإعلان",
+   "vi": "ngân sách quảng cáo",
+   "ru": "рекламный бюджет",
+   "es": "presupuesto publicitario",
+   "ti": "በጀት ምልክታ",
+   "pt": "orçamento de publicidade",
+   "uk": "рекламний бюджет"
+  },
+  {
+   "de": "Warenwerbung",
+   "tr": "ürün reklamı",
+   "ar": "إعلان السلعة",
+   "vi": "quảng cáo sản phẩm",
+   "ru": "реклама товара",
+   "es": "publicidad de producto",
+   "ti": "ምልክታ ዕቃ",
+   "pt": "publicidade de produto",
+   "uk": "реклама товару"
+  },
+  {
+   "de": "Sortimentswerbung",
+   "tr": "ürün yelpazesi reklamı",
+   "ar": "إعلان التشكيلة",
+   "vi": "quảng cáo danh mục hàng",
+   "ru": "реклама ассортимента",
+   "es": "publicidad de surtido",
+   "ti": "ምልክታ ዓይነት ዕቃታት",
+   "pt": "publicidade de sortimento",
+   "uk": "реклама асортименту"
+  },
+  {
+   "de": "Firmenwerbung",
+   "tr": "firma reklamı",
+   "ar": "إعلان الشركة",
+   "vi": "quảng cáo doanh nghiệp",
+   "ru": "реклама фирмы",
+   "es": "publicidad de empresa",
+   "ti": "ምልክታ ድርጅት",
+   "pt": "publicidade da empresa",
+   "uk": "реклама фірми"
+  },
+  {
+   "de": "Aktionswerbung",
+   "tr": "kampanya reklamı",
+   "ar": "إعلان الحملة",
+   "vi": "quảng cáo khuyến mãi",
+   "ru": "рекламная акция",
+   "es": "publicidad de campaña",
+   "ti": "ምልክታ ዘመቻ",
+   "pt": "publicidade de campanha",
+   "uk": "рекламна акція"
+  },
+  {
+   "de": "Alleinwerbung",
+   "tr": "tek başına reklam",
+   "ar": "إعلان منفرد",
+   "vi": "quảng cáo riêng lẻ",
+   "ru": "самостоятельная реклама",
+   "es": "publicidad individual",
+   "ti": "ኣብ ባዕሉ ምልክታ",
+   "pt": "publicidade individual",
+   "uk": "самостійна реклама"
+  },
+  {
+   "de": "Gemeinschaftswerbung",
+   "tr": "ortak reklam",
+   "ar": "إعلان مشترك",
+   "vi": "quảng cáo chung",
+   "ru": "совместная реклама",
+   "es": "publicidad conjunta",
+   "ti": "ሓባራዊ ምልክታ",
+   "pt": "publicidade conjunta",
+   "uk": "спільна реклама"
+  },
+  {
+   "de": "Sammelwerbung",
+   "tr": "toplu reklam",
+   "ar": "إعلان جماعي للقطاع",
+   "vi": "quảng cáo tập thể của ngành",
+   "ru": "коллективная реклама",
+   "es": "publicidad colectiva",
+   "ti": "ጥርናፈ ምልክታ",
+   "pt": "publicidade coletiva",
+   "uk": "колективна реклама"
   }
  ]
 }

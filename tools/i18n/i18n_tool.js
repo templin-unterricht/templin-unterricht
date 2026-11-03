@@ -75,7 +75,7 @@ async function extractPages(files, dry, opts = {}) {
     await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
     const pg = await ctx.newPage();
     pg.on('dialog', d => d.dismiss());
-    await pg.addInitScript({ content: libJs }); // wirkt auch nach Neuladen; i18n.js startet nicht doppelt
+    if (!fs.readFileSync(abs, 'utf8').includes('i18n/i18n.js')) await pg.addInitScript({ content: libJs }); // Seiten ohne Script-Zeile: Bibliothek einspielen
     await pg.goto(`http://127.0.0.1:${port}/${rel}`, { waitUntil: 'load' });
     await pg.waitForTimeout(400);
     const cfgFile = path.join(I18N, 'pages', id, 'config.json');
@@ -292,10 +292,10 @@ function check(opts) {
     const ctx = await br.newContext({ viewport: { width: 900, height: 900 } });
     await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
     const pg = await ctx.newPage(); pg.on('dialog', d => d.dismiss());
-    await pg.addInitScript({ content: fs.readFileSync(path.join(I18N, 'i18n.js'), 'utf8') });
+    if (!fs.readFileSync(path.resolve(file), 'utf8').includes('i18n/i18n.js')) await pg.addInitScript({ content: fs.readFileSync(path.join(I18N, 'i18n.js'), 'utf8') });
     await pg.goto(`http://127.0.0.1:${port}/${rel}?lang=${lang}&mode=under`, { waitUntil: 'load' }); await pg.waitForTimeout(800);
     const miss = new Map();
-    const grab = async () => { await pg.waitForTimeout(130); (await pg.evaluate(() => window.I18N.untranslated())).forEach(x => miss.set(x[0], x[1])); };
+    const grab = async () => { await pg.waitForFunction(() => window.I18N && window.I18N.state().load !== 'loading' && window.I18N.state().load !== 'idle', null, { timeout: 5000 }).catch(() => {}); await pg.waitForTimeout(130); (await pg.evaluate(() => window.I18N.untranslated())).forEach(x => miss.set(x[0], x[1])); };
     await grab();
     await explore(pg, grab, { runs: parseInt(val('--runs') || '8', 10), actions: parseInt(val('--actions') || '150', 10), wait: 60 });
     await br.close(); srv.close();

@@ -36,6 +36,14 @@ Hinweis: Die Übersetzungen werden per `fetch` geladen – das funktioniert auf 
 5. Prüfen: `node tools/i18n/i18n_tool.js check` (vor jedem Commit; `--live` liest zusätzlich die Seiten neu ein und meldet geänderte deutsche Texte).
 6. Texte, die auf mehreren Seiten vorkommen, nach `common` verschieben: `node tools/i18n/i18n_tool.js promote --min 3`
 
+## Spiele, Trainer und Escape Rooms (Texte aus JavaScript)
+- `node tools/i18n/i18n_tool.js extract --explore --harvest <seite.html>` klickt das Spiel automatisch durch und liest zusätzlich alle deutschen Texte aus dem Programmcode.
+- `node tools/i18n/i18n_tool.js coverage --lang ar <seite.html>` spielt die Seite in einer Sprache durch und listet alle angezeigten Texte, die noch **keine** Übersetzung haben.
+- Sonderfälle pro Seite stehen in `pages/<seite>/`:
+  `config.json` (`numeric` wechselnde Zahlen · `force` Einzelteile · `skip` ignorieren · `bag` Wortlisten · `prefix` Satzanfänge wie „Richtig!“ · `split` Trennzeichen wie „ · “ und „ = “),
+  `steps.json` (Klickfolge), `extra.txt` (zusätzliche Texte), `ignore.txt` (Texte, die nie übersetzt werden sollen).
+- Texte mit wechselnden Zahlen werden automatisch zu Vorlagen: „Punkte: 150“ wird zu „Punkte: {1}“. Die Zahl wird beim Anzeigen wieder eingesetzt.
+
 ## Übersetzungsregeln
 Einfache, kurze Sätze. Fachbegriffe aus dem Glossar übersetzen und den deutschen Begriff in Klammern dahinter setzen („Einkaufspreis (Bezugspreis)“). Nicht übersetzen: Zahlen, Formeln, Eigennamen, Dateinamen, Marken, wörtlich zitierte IHK-Prüfungsfragen. Platzhalter `{1}` und Lücken `___` bleiben erhalten, Zahlen immer mit 0–9. Lösungen/Antwortoptionen werden nur 1:1 übersetzt, nie ergänzt. **Das Deutsche gilt.**
 
