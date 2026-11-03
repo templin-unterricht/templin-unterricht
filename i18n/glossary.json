@@ -1,0 +1,215 @@
+{
+ "_hinweis": "Zentrales Glossar. Fachbegriffe werden in allen Seiten gleich übersetzt; der deutsche Begriff steht in Klammern dahinter, z. B. „Einkaufspreis (Bezugspreis)“. Maschinell erstellt, bitte von Muttersprachlern prüfen lassen. „stem“ = Wortstamm, nach dem der Prüfer im deutschen Text sucht.",
+ "terms": [
+  {
+   "de": "Visual Merchandising",
+   "tr": "görsel ürün sunumu",
+   "ar": "العرض البصري للبضائع",
+   "vi": "trưng bày hàng hóa trực quan",
+   "ru": "визуальный мерчандайзинг",
+   "es": "presentación visual de la mercancía",
+   "ti": "ርኡይ ኣቀራርባ ዕቃታት",
+   "pt": "apresentação visual da mercadoria",
+   "uk": "візуальний мерчандайзинг"
+  },
+  {
+   "de": "Discountstrategie",
+   "tr": "indirim stratejisi",
+   "ar": "استراتيجية الأسعار المنخفضة",
+   "vi": "chiến lược giá rẻ",
+   "ru": "дисконтная стратегия",
+   "es": "estrategia de descuento",
+   "ti": "ስትራተጂ ትሑት ዋጋ",
+   "pt": "estratégia de desconto",
+   "uk": "дисконтна стратегія"
+  },
+  {
+   "de": "Erlebnisstrategie",
+   "tr": "deneyim stratejisi",
+   "ar": "استراتيجية التجربة",
+   "vi": "chiến lược trải nghiệm",
+   "ru": "стратегия впечатлений",
+   "es": "estrategia de experiencia",
+   "ti": "ስትራተጂ ተሞክሮ",
+   "pt": "estratégia de experiência",
+   "uk": "стратегія вражень"
+  },
+  {
+   "de": "Erlebniskauf",
+   "tr": "deneyimli alışveriş",
+   "ar": "التسوق كتجربة",
+   "vi": "mua sắm trải nghiệm",
+   "ru": "покупка-впечатление",
+   "es": "compra como experiencia",
+   "ti": "ዕዳጋ ተሞክሮ",
+   "pt": "compra como experiência",
+   "uk": "покупка-враження"
+  },
+  {
+   "de": "Verkaufsraumgestaltung",
+   "tr": "satış alanı tasarımı",
+   "ar": "تصميم منطقة البيع",
+   "vi": "thiết kế không gian bán hàng",
+   "ru": "оформление торгового зала",
+   "es": "diseño de la sala de ventas",
+   "ti": "ኣመዳድባ ቦታ መሸጣ",
+   "pt": "design do espaço de vendas",
+   "uk": "оформлення торгового залу"
+  },
+  {
+   "de": "Ladenumfeld",
+   "tr": "mağaza çevresi",
+   "ar": "محيط المتجر",
+   "vi": "khu vực xung quanh cửa hàng",
+   "ru": "окружение магазина",
+   "es": "entorno de la tienda",
+   "ti": "ኣከባቢ ድኳን",
+   "pt": "entorno da loja",
+   "uk": "оточення магазину"
+  },
+  {
+   "de": "Warenträger",
+   "tr": "ürün taşıyıcı",
+   "ar": "حامل البضائع",
+   "vi": "giá trưng bày hàng",
+   "ru": "торговое оборудование",
+   "es": "soporte de mercancía",
+   "ti": "መትሓዚ ዕቃታት",
+   "pt": "suporte de mercadoria",
+   "uk": "носій товару"
+  },
+  {
+   "de": "Verkaufshilfen",
+   "stem": "Verkaufshilfe",
+   "tr": "satış yardımcıları",
+   "ar": "وسائل مساعدة البيع",
+   "vi": "phương tiện hỗ trợ bán hàng",
+   "ru": "вспомогательные средства продажи",
+   "es": "ayudas de venta",
+   "ti": "ሓገዝቲ መሸጣ",
+   "pt": "auxiliares de venda",
+   "uk": "допоміжні засоби продажу"
+  },
+  {
+   "de": "Bedarfsbündel",
+   "tr": "ihtiyaç paketi",
+   "ar": "حزمة احتياجات",
+   "vi": "bộ hàng theo nhu cầu",
+   "ru": "набор товаров по потребности",
+   "es": "paquete de necesidades",
+   "ti": "ጠቕላላ ድልየታት",
+   "pt": "pacote de necessidades",
+   "uk": "набір товарів за потребою"
+  },
+  {
+   "de": "Verweildauer",
+   "tr": "kalış süresi",
+   "ar": "مدة البقاء",
+   "vi": "thời gian ở lại",
+   "ru": "время пребывания",
+   "es": "tiempo de permanencia",
+   "ti": "ዝጸንሕሉ ግዜ",
+   "pt": "tempo de permanência",
+   "uk": "тривалість перебування"
+  },
+  {
+   "de": "Point of Sale",
+   "tr": "satış noktası",
+   "ar": "نقطة البيع",
+   "vi": "điểm bán hàng",
+   "ru": "точка продаж",
+   "es": "punto de venta",
+   "ti": "ቦታ መሸጣ",
+   "pt": "ponto de venda",
+   "uk": "точка продажу"
+  },
+  {
+   "de": "Atmosphäre",
+   "tr": "atmosfer",
+   "ar": "الأجواء",
+   "vi": "không khí",
+   "ru": "атмосфера",
+   "es": "ambiente",
+   "ti": "ድባብ",
+   "pt": "atmosfera",
+   "uk": "атмосфера"
+  },
+  {
+   "de": "Dekoration",
+   "tr": "dekorasyon",
+   "ar": "ديكور",
+   "vi": "đồ trang trí",
+   "ru": "декор",
+   "es": "decoración",
+   "ti": "ጌጽ",
+   "pt": "decoração",
+   "uk": "декор"
+  },
+  {
+   "de": "Umsatz",
+   "tr": "ciro",
+   "ar": "المبيعات",
+   "vi": "doanh thu",
+   "ru": "оборот",
+   "es": "ventas",
+   "ti": "ኣታዊ ሽያጥ",
+   "pt": "faturamento",
+   "uk": "обіг"
+  },
+  {
+   "de": "Punktekonto",
+   "tr": "puan hesabı",
+   "ar": "حساب النقاط",
+   "vi": "tài khoản điểm",
+   "ru": "счёт баллов",
+   "es": "cuenta de puntos",
+   "ti": "ሕሳብ ነጥብታት",
+   "pt": "conta de pontos",
+   "uk": "рахунок балів"
+  },
+  {
+   "de": "Kaufvertrag",
+   "tr": "satış sözleşmesi",
+   "ar": "عقد البيع",
+   "vi": "hợp đồng mua bán",
+   "ru": "договор купли-продажи",
+   "es": "contrato de compraventa",
+   "ti": "ውዕል ሽያጥ",
+   "pt": "contrato de compra e venda",
+   "uk": "договір купівлі-продажу"
+  },
+  {
+   "de": "Mängelrüge",
+   "tr": "kusur bildirimi",
+   "ar": "إشعار بالعيب",
+   "vi": "thông báo lỗi hàng hóa",
+   "ru": "уведомление о дефекте",
+   "es": "reclamación por defectos",
+   "ti": "ምሕባር ጉድለት",
+   "pt": "notificação de defeitos",
+   "uk": "повідомлення про дефект"
+  },
+  {
+   "de": "Handelsspanne",
+   "tr": "ticari kâr marjı",
+   "ar": "هامش الربح التجاري",
+   "vi": "biên lợi nhuận thương mại",
+   "ru": "торговая наценка",
+   "es": "margen comercial",
+   "ti": "ዓቐን ረብሓ ንግዲ",
+   "pt": "margem comercial",
+   "uk": "торгова націнка"
+  },
+  {
+   "de": "Bezugspreis",
+   "tr": "alış maliyeti",
+   "ar": "تكلفة الشراء",
+   "vi": "giá nhập (giá vốn)",
+   "ru": "закупочная стоимость",
+   "es": "coste de adquisición",
+   "ti": "ዋጋ ግዥ",
+   "pt": "preço de custo",
+   "uk": "закупівельна вартість"
+  }
+ ]
+}
