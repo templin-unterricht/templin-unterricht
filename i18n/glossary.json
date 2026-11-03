@@ -486,6 +486,215 @@
    "ti": "ዋጋ ምልላይ",
    "pt": "valor de reconhecimento",
    "uk": "впізнаваність"
+  },
+  {
+   "de": "Werbemittel",
+   "tr": "reklam aracı",
+   "ar": "وسيلة الإعلان",
+   "vi": "phương tiện quảng cáo",
+   "ru": "рекламное средство",
+   "es": "medio publicitario",
+   "ti": "መሳርሒ ምልክታ",
+   "pt": "meio publicitário",
+   "uk": "рекламний засіб"
+  },
+  {
+   "de": "Werbeträger",
+   "tr": "reklam taşıyıcı",
+   "ar": "حامل الإعلان",
+   "vi": "phương tiện truyền tải quảng cáo",
+   "ru": "рекламоноситель",
+   "es": "soporte publicitario",
+   "ti": "ተሸካሚ ምልክታ",
+   "pt": "veículo publicitário",
+   "uk": "рекламоносій"
+  },
+  {
+   "de": "Streugebiet",
+   "tr": "yayılma bölgesi",
+   "ar": "منطقة الانتشار",
+   "vi": "khu vực phát quảng cáo",
+   "ru": "зона распространения",
+   "es": "área de difusión",
+   "ti": "ዞባ ምዝርጋሕ",
+   "pt": "área de difusão",
+   "uk": "зона поширення"
+  },
+  {
+   "de": "Streukreis",
+   "tr": "ulaşılan kişi çevresi",
+   "ar": "دائرة المستهدفين",
+   "vi": "nhóm đối tượng tiếp cận",
+   "ru": "круг адресатов",
+   "es": "círculo de destinatarios",
+   "ti": "ዓቐን ተቐበልቲ",
+   "pt": "círculo de destinatários",
+   "uk": "коло адресатів"
+  },
+  {
+   "de": "Streuzeit",
+   "tr": "yayılma süresi",
+   "ar": "مدة الانتشار",
+   "vi": "thời gian phát quảng cáo",
+   "ru": "время распространения",
+   "es": "período de difusión",
+   "ti": "ግዜ ምዝርጋሕ",
+   "pt": "período de difusão",
+   "uk": "час поширення"
+  },
+  {
+   "de": "Direktwerbung",
+   "tr": "doğrudan reklam",
+   "ar": "الإعلان المباشر",
+   "vi": "quảng cáo trực tiếp",
+   "ru": "прямая реклама",
+   "es": "publicidad directa",
+   "ti": "ቀጥታዊ ምልክታ",
+   "pt": "publicidade direta",
+   "uk": "пряма реклама"
+  },
+  {
+   "de": "Massenwerbung",
+   "tr": "kitlesel reklam",
+   "ar": "الإعلان الجماهيري",
+   "vi": "quảng cáo đại chúng",
+   "ru": "массовая реклама",
+   "es": "publicidad masiva",
+   "ti": "ህዝባዊ ምልክታ",
+   "pt": "publicidade de massa",
+   "uk": "масова реклама"
+  },
+  {
+   "de": "Verkaufsförderung",
+   "tr": "satış teşviki",
+   "ar": "تنشيط المبيعات",
+   "vi": "xúc tiến bán hàng",
+   "ru": "стимулирование сбыта",
+   "es": "promoción de ventas",
+   "ti": "ምምሕያሽ ሸጣ",
+   "pt": "promoção de vendas",
+   "uk": "стимулювання збуту"
+  },
+  {
+   "de": "Öffentlichkeitsarbeit",
+   "tr": "halkla ilişkiler",
+   "ar": "العلاقات العامة",
+   "vi": "quan hệ công chúng",
+   "ru": "связи с общественностью",
+   "es": "relaciones públicas",
+   "ti": "ርክብ ምስ ህዝቢ",
+   "pt": "relações públicas",
+   "uk": "зв’язки з громадськістю"
+  },
+  {
+   "de": "Kundenbindung",
+   "tr": "müşteri bağlılığı",
+   "ar": "ولاء العملاء",
+   "vi": "giữ chân khách hàng",
+   "ru": "удержание клиентов",
+   "es": "fidelización de clientes",
+   "ti": "ምትሓዝ ዓማዊል",
+   "pt": "fidelização de clientes",
+   "uk": "утримання клієнтів"
+  },
+  {
+   "de": "Mondpreis",
+   "tr": "şişirilmiş eski fiyat",
+   "ar": "سعر وهمي مرتفع",
+   "vi": "giá gốc ảo",
+   "ru": "завышенная «старая» цена",
+   "es": "precio de referencia inflado",
+   "ti": "ሓሶት ዋጋ",
+   "pt": "preço inflado",
+   "uk": "завищена «стара» ціна"
+  },
+  {
+   "de": "irreführende Werbung",
+   "tr": "yanıltıcı reklam",
+   "ar": "إعلان مضلِّل",
+   "vi": "quảng cáo gây hiểu lầm",
+   "ru": "вводящая в заблуждение реклама",
+   "es": "publicidad engañosa",
+   "ti": "ዘሳስት ምልክታ",
+   "pt": "publicidade enganosa",
+   "uk": "реклама, що вводить в оману"
+  },
+  {
+   "de": "Verpackungsgesetz",
+   "tr": "ambalaj yasası",
+   "ar": "قانون التغليف",
+   "vi": "luật bao bì",
+   "ru": "закон об упаковке",
+   "es": "ley de envases",
+   "ti": "ሕጊ ምጥቃል",
+   "pt": "lei de embalagens",
+   "uk": "закон про упаковку"
+  },
+  {
+   "de": "Spediteur",
+   "tr": "nakliye organizatörü",
+   "ar": "وكيل الشحن",
+   "vi": "công ty giao nhận",
+   "ru": "экспедитор",
+   "es": "transitario",
+   "ti": "ኣዳላዊ ምጓዓዝ",
+   "pt": "transitário",
+   "uk": "експедитор"
+  },
+  {
+   "de": "Frachtführer",
+   "tr": "taşıyıcı",
+   "ar": "الناقل",
+   "vi": "người vận chuyển",
+   "ru": "перевозчик",
+   "es": "transportista",
+   "ti": "ኣጓዓዚ",
+   "pt": "transportador",
+   "uk": "перевізник"
+  },
+  {
+   "de": "Werberendite",
+   "tr": "reklam getirisi",
+   "ar": "عائد الإعلان",
+   "vi": "tỷ suất sinh lời của quảng cáo",
+   "ru": "рентабельность рекламы",
+   "es": "rentabilidad de la publicidad",
+   "ti": "ረብሓ ምልክታ",
+   "pt": "retorno da publicidade",
+   "uk": "рентабельність реклами"
+  },
+  {
+   "de": "Werbeplan",
+   "tr": "reklam planı",
+   "ar": "خطة الإعلان",
+   "vi": "kế hoạch quảng cáo",
+   "ru": "рекламный план",
+   "es": "plan publicitario",
+   "ti": "መደብ ምልክታ",
+   "pt": "plano de publicidade",
+   "uk": "рекламний план"
+  },
+  {
+   "de": "Werbeerfolgskontrolle",
+   "tr": "reklam başarı kontrolü",
+   "ar": "قياس نجاح الإعلان",
+   "vi": "kiểm tra hiệu quả quảng cáo",
+   "ru": "контроль эффективности рекламы",
+   "es": "control del éxito publicitario",
+   "ti": "ቁጽጽር ዓወት ምልክታ",
+   "pt": "controle do sucesso publicitário",
+   "uk": "контроль ефективності реклами"
+  },
+  {
+   "de": "Kundenkarte",
+   "tr": "müşteri kartı",
+   "ar": "بطاقة الزبون",
+   "vi": "thẻ khách hàng",
+   "ru": "клиентская карта",
+   "es": "tarjeta de cliente",
+   "ti": "ካርድ ዓሚል",
+   "pt": "cartão de cliente",
+   "uk": "картка клієнта"
   }
  ]
 }
