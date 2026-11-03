@@ -305,6 +305,21 @@ function check(opts) {
     list.forEach(x => console.log('  ? ' + x.slice(0, 120)));
     console.log(`${list.length} angezeigte Texte ohne Übersetzung (${lang}).`);
     if (val('--out')) fs.writeFileSync(val('--out'), list.join('\n'));
+  } else if (cmd === 'dashboard') {
+    // schreibt uebersicht_i18n.js: Seiten mit Übersetzungen werden im Dashboard (Lernstoff) blau markiert, mit Sprachkürzeln
+    const found = {};
+    const walk = d => fs.readdirSync(d, { withFileTypes: true }).forEach(e => {
+      if (['.git', '_backup', 'node_modules', 'i18n', 'tools'].includes(e.name)) return;
+      const p = path.join(d, e.name); if (e.isDirectory()) walk(p); else if (e.name.endsWith('.html')) found[pageId(p)] = path.relative(ROOT, p).split(path.sep).join('/');
+    });
+    walk(ROOT);
+    const out = {};
+    for (const id of pagesWithDe()) {
+      const langs = LANGS.filter(l => exists(path.join(I18N, 'pages', id, l + '.json')) && Object.keys(rd(path.join(I18N, 'pages', id, l + '.json'))).length);
+      if (langs.length && found[id]) out[found[id]] = langs;
+    }
+    fs.writeFileSync(path.join(ROOT, 'uebersicht_i18n.js'), '/* automatisch erzeugt: node tools/i18n/i18n_tool.js dashboard */\nwindow.UEB_I18N = ' + JSON.stringify(out, null, 1) + ';\n');
+    console.log(Object.keys(out).length + ' Seiten im Dashboard markiert.');
   } else if (cmd === 'promote') {
     // Texte, die auf mehreren Seiten vorkommen (oder in --texts datei.txt stehen), nach i18n/common verschieben
     const min = parseInt(val('--min') || '0', 10), tf = val('--texts');

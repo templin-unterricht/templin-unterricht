@@ -52,3 +52,6 @@ Alle Übersetzungen sind **maschinell erstellt** und noch **nicht** von Muttersp
 
 ## Große Spiele: bewusst nur teilweise übersetzt
 Bei „Das Erdbeer-Imperium“ (LF 4) und „Countdown Hafenstraße“ (LF 5) sind Bedienung, Menüs, Anleitungen, Erfolge und Einstiegsseiten übersetzt. Die einzelnen Spielszenen, Aufgaben und Gästebeschreibungen bleiben deutsch (rund 1.000 bzw. 1.400 Textblöcke). Die Liste, was noch fehlt, liefert `coverage`.
+
+## Dashboard (Reiter „Lernstoff“)
+Seiten mit Übersetzungen erscheinen in `uebersicht.html` blau mit den Sprachkürzeln. Die Liste steht in `uebersicht_i18n.js` und wird nach jeder neuen Übersetzung so erneuert: `node tools/i18n/i18n_tool.js dashboard`

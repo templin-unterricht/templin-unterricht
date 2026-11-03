@@ -129,6 +129,10 @@ a.chip:hover{background:var(--pri);color:var(--priink)}
 <div id="app"></div>
 <script src="uebersicht_daten.js" charset="utf-8"></script>
 <script src="uebersicht_mehrsprachig.js" charset="utf-8"></script>
+<script src="uebersicht_i18n.js" charset="utf-8"></script>
+<script>/* Seiten mit neuer Mehrsprachigkeit (i18n/) blau markieren: Sprachen zu m.lang hinzufügen */
+(function(){var M=window.UEB_I18N;if(!M||!window.UEB)return;function add(m){var l=M[m.u];if(!l)return;m.lang=m.lang||[];l.forEach(function(c){if(m.lang.indexOf(c)<0)m.lang.push(c);});}
+window.UEB.groups.forEach(function(g){g.sections.forEach(function(s){(s.extras||[]).forEach(add);(s.modules||[]).forEach(function(m){(m.mats||[]).forEach(add);});});});})();</script>
 <script>
 (function(){
 'use strict';
@@ -138,7 +142,7 @@ if(!D){app.innerHTML='<p style="padding:20px">uebersicht_daten.js fehlt.</p>';re
 
 /* ---------- Sprachen ---------- */
 var LANGS=['de','vi','ar','uk','ti','pt','es','ru'];
-var LN={de:['🇩🇪','Deutsch','DE'],vi:['🇻🇳','Tiếng Việt','VI'],ar:['🌐','العربية','AR'],uk:['🇺🇦','Українська','UK'],ti:['🌐','ትግርኛ','TI'],pt:['🇵🇹','Português','PT'],es:['🇪🇸','Español','ES'],ru:['🇷🇺','Русский','RU']};
+var LN={tr:['🇹🇷','Türkçe','TR'],de:['🇩🇪','Deutsch','DE'],vi:['🇻🇳','Tiếng Việt','VI'],ar:['🌐','العربية','AR'],uk:['🇺🇦','Українська','UK'],ti:['🌐','ትግርኛ','TI'],pt:['🇵🇹','Português','PT'],es:['🇪🇸','Español','ES'],ru:['🇷🇺','Русский','RU']};
 var TI=['vi','ar','uk','ti','pt','es','ru'];
 var UI={
 title:['Mein Lernstoff','Nội dung học của tôi','موادّي الدراسية','Мій навчальний матеріал','ናይ ዕዮይ ትምህርቲ','A minha matéria','Mi materia de estudio','Мой учебный материал'],
