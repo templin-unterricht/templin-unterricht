@@ -360,6 +360,10 @@ function normalize(j){
   o.seed13=true;
   [['LF4.M2','materials/LF4_M_2_Arbeitsblatt_online_DE-TR-AR-VI-TI-UK-RU-ES-PT.html'],['LF4.M3','materials/LF4_M_3_Arbeitsblatt_online_DE-TR-AR-VI-TI-UK-RU-ES-PT.html'],['LF4.M4','materials/LF4_M_4_Arbeitsblatt_online_DE-TR-AR-VI-TI-UK-RU-ES-PT.html'],['LF4.M5','materials/LF4_M_5_Arbeitsblatt_online_DE-TR-AR-VI-TI-UK-RU-ES-PT.html'],['LF4.M6','materials/LF4_M_6_Arbeitsblatt_online_DE-TR-AR-VI-TI-UK-RU-ES-PT.html'],['LF4.M7','materials/LF4_M_7_Arbeitsblatt_online_DE-TR-AR-VI-TI-UK-RU-ES-PT.html'],['LF4.M8','materials/LF4_M_8_Arbeitsblatt_online_DE-TR-AR-VI-TI-UK-RU-ES-PT.html'],['LF4.M9','materials/LF4_M_9_Arbeitsblatt_online_DE-TR-AR-VI-TI-UK-RU-ES-PT.html'],['LF4.M11','materials/LF4_M_11_Arbeitsblatt_online_DE-TR-AR-VI-TI-UK-RU-ES-PT.html']].forEach(p=>{const e=o.mat[p[0]]||(o.mat[p[0]]={pdf:'',links:[]});e.links=(e.links||[]).filter(l=>l.u||l.l);const ex=e.links.find(x=>x.u===p[1]);if(ex)ex.l='Arbeitsblatt online (DE · TR · AR · VI · TI · UK · RU · ES · PT)';else e.links.push({l:'Arbeitsblatt online (DE · TR · AR · VI · TI · UK · RU · ES · PT)',u:p[1]});});
  }
+ if(!o.seed14){ /* LF 2 M5: Einstiegsmaterial mehrsprachig + Eisberg A3 einmalig eintragen (kein Doppeleintrag) */
+  o.seed14=true;
+  [['Einstiegsmaterial mehrsprachig (PDF, AR · TR · VI)','materials/LF2_M_5_Einstiegsmaterial_mehrsprachig.pdf'],['Eisberg A3 (PDF, AR · TR · VI)','materials/LF2_M_5_Eisberg_A3.pdf']].forEach(p=>{const e=o.mat['LF2.M5']||(o.mat['LF2.M5']={pdf:'',links:[]});e.links=(e.links||[]).filter(l=>l.u||l.l);const ex=e.links.find(x=>x.u===p[1]);if(ex)ex.l=p[0];else e.links.push({l:p[0],u:p[1]});});
+ }
  if(!o.seed3){ /* Englisch V25: neue Einträge ENG.E1–E12 einmalig ergänzen, nichts überschreiben */
   o.seed3=true;
   Object.keys(SEED_MAT).filter(k=>k.indexOf('ENG.E')===0).forEach(k=>{
