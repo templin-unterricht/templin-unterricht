@@ -135,5 +135,11 @@ window.UEB_ML={
   "ru": "materials/LF1_Escape_Room_2_-_Die_neue_Filiale_mehrsprachig.html?lang=ru",
   "es": "materials/LF1_Escape_Room_2_-_Die_neue_Filiale_mehrsprachig.html?lang=es",
   "pt": "materials/LF1_Escape_Room_2_-_Die_neue_Filiale_mehrsprachig.html?lang=pt"
+ },
+ "materials/LF1_Modul_1-12_-_Rettet_Kaje_7_mehrsprachig.html": {
+  "ti": "materials/LF1_Modul_1-12_-_Rettet_Kaje_7_mehrsprachig.html?lang=ti",
+  "ru": "materials/LF1_Modul_1-12_-_Rettet_Kaje_7_mehrsprachig.html?lang=ru",
+  "es": "materials/LF1_Modul_1-12_-_Rettet_Kaje_7_mehrsprachig.html?lang=es",
+  "pt": "materials/LF1_Modul_1-12_-_Rettet_Kaje_7_mehrsprachig.html?lang=pt"
  }
 };
