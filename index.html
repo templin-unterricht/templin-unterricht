@@ -370,6 +370,10 @@ function normalize(j){
   for(let i=1;i<=11;i++)add('LF5.M'+i,'Einstieg live (8 Sprachen)','materials/LF5_M_'+i+'_Einstieg_live.html');
   add('LF2','Einstiegsspiel - Dein erster Verkauf','materials/LF2%20Einstiegsspiel%20-%20Dein%20erster%20Verkauf.html');
  }
+ if(!o.seed16){ /* LF 2 M6: Fragearten (Plenum, Zuordnungsspiel) und Formulierungshilfen VI/AR/TR einmalig eintragen (kein Doppeleintrag) */
+  o.seed16=true;
+  [['Fragearten Plenum (PDF, mehrsprachig)','materials/LF2_M_6_Fragearten_Plenum_mehrsprachig.pdf'],['Fragearten Zuordnungsspiel Pinnwand (PDF)','materials/LF2_M_6_Fragearten_Zuordnungsspiel_Pinnwand.pdf'],['Formulierungshilfe DS1 und DS2 (PDF, Vietnamesisch)','materials/LF2_M_6_Formulierungshilfe_DS1_DS2_Vietnamesisch.pdf'],['Formulierungshilfe DS1 und DS2 (PDF, Arabisch)','materials/LF2_M_6_Formulierungshilfe_DS1_DS2_Arabisch.pdf'],['Formulierungshilfe DS1 und DS2 (PDF, Türkisch)','materials/LF2_M_6_Formulierungshilfe_DS1_DS2_Tuerkisch.pdf']].forEach(p=>{const e=o.mat['LF2.M6']||(o.mat['LF2.M6']={pdf:'',links:[]});e.links=(e.links||[]).filter(l=>l.u||l.l);const ex=e.links.find(x=>x.u===p[1]);if(ex)ex.l=p[0];else e.links.push({l:p[0],u:p[1]});});
+ }
  if(!o.seed3){ /* Englisch V25: neue Einträge ENG.E1–E12 einmalig ergänzen, nichts überschreiben */
   o.seed3=true;
   Object.keys(SEED_MAT).filter(k=>k.indexOf('ENG.E')===0).forEach(k=>{
