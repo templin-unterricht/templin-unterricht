@@ -14,10 +14,47 @@
   if(!(idx>=0&&idx<LG.length)) idx=-1;
   var HARVEST=window.__TR_HARVEST||null;
   var SKIP={SCRIPT:1,STYLE:1,SVG:1,CANVAS:1,INPUT:1,TEXTAREA:1,SELECT:1,OPTION:1,NOSCRIPT:1,IFRAME:1,svg:1,TITLE:1};
-  var BLOCKY={BUTTON:1,TD:1,TH:1,LI:1,LABEL:1,A:1,H1:1,H2:1,H3:1,H4:1,P:1,DIV:1,SPAN:1,B:1,STRONG:1,I:1,EM:1,SUMMARY:1,FIGCAPTION:1};
+  var BLOCKY={SMALL:1,BUTTON:1,TD:1,TH:1,LI:1,LABEL:1,A:1,H1:1,H2:1,H3:1,H4:1,P:1,DIV:1,SPAN:1,B:1,STRONG:1,I:1,EM:1,SUMMARY:1,FIGCAPTION:1};
   function norm(s){return s.replace(/\s+/g," ").trim();}
-  function tr(key){if(HARVEST){HARVEST[key]=1;return null;} var a=TRD[key]; return (a&&idx>=0)?a[idx]:null;}
+  // Zahlen-Platzhalter: Eintraege mit "§" gelten fuer beliebige Zahlen ("Woche § · Modul §"); die Zahlen werden der Reihe nach eingesetzt
+  var NUMRE=/\d{1,3}(?:[   ]\d{3})+(?:,\d+)?|\d+(?:[.,]\d+)*/g;
+  function look(key){
+    var a=TRD[key]; if(a) return a[idx];
+    if(/\d/.test(key)){
+      var nums=[], pat=key.replace(NUMRE,function(m){nums.push(m);return "§";});
+      a=TRD[pat];
+      if(a){ var n=0; return a[idx].replace(/§/g,function(){return n<nums.length?nums[n++]:"";}); }
+    }
+    return null;
+  }
+  function tr(key){
+    if(HARVEST){HARVEST[key]=1;return null;}
+    if(idx<0) return null;
+    var r=look(key); if(r!==null) return r;
+    // Aufzählungen "A · B · C" (z. B. Liste der Extras in beliebiger Reihenfolge): Teile einzeln übersetzen
+    if(key.indexOf(" · ")>0 && key.length<=300){
+      var ps=key.split(" · "), out=[];
+      if(ps.length<=8){
+        for(var i=0;i<ps.length;i++){ var q=look(ps[i]); if(q===null) break; out.push(q); }
+        if(out.length===ps.length) return out.join(" · ");   // nur wenn ALLE Teile bekannt sind
+      }
+    }
+    return null;
+  }
   function mk(txt){var s=document.createElement("span");s.className="trl";s.textContent=txt;s.setAttribute("data-trl","1");return s;}
+  // Hat el nur genau ein Kindelement mit Text und selbst keinen eigenen Text? Dann dieses Kind zurückgeben.
+  function soleTextChild(el){
+    var found=null;
+    for(var c=el.firstChild;c;c=c.nextSibling){
+      if(c.nodeType===3){ if(/\S/.test(c.nodeValue)) return null; }
+      else if(c.nodeType===1){
+        if(c.className==="trl"||c.hasAttribute("data-trl")||SKIP[c.tagName]||SKIP[c.nodeName]) continue;
+        if(!/\S/.test(c.textContent)) continue;
+        if(found) return null; found=c;
+      }
+    }
+    return (found&&BLOCKY[found.tagName]&&norm(found.textContent)===norm(el.textContent))?found:null;
+  }
   function hasOwnTrl(el){for(var c=el.firstChild;c;c=c.nextSibling){if(c.nodeType===1&&c.className==="trl")return true;}return false;}
   function walk(el){
     if(el.nodeType!==1) return;
@@ -30,7 +67,11 @@
     var key=norm(el.textContent||"");
     if(key.length>=2 && key.length<=800){
       var t=tr(key);
-      if(t && BLOCKY[el.tagName]){ el.setAttribute("data-trd","1"); el.appendChild(mk(t)); return; }
+      if(t && BLOCKY[el.tagName]){
+        var inner=soleTextChild(el);
+        if(inner){ walk(inner); return; }   // Übersetzung möglichst im innersten Element (nicht im Flex-/Karten-Container)
+        el.setAttribute("data-trd","1"); el.appendChild(mk(t)); return;
+      }
     }
     // mixed content: einzelne Textknoten
     var kids=Array.prototype.slice.call(el.childNodes);
