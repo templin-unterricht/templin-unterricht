@@ -1,0 +1,832 @@
+{
+"0": [
+"مجال التعلّم 3",
+"Lĩnh vực học 3",
+"Öğrenme Alanı 3"
+],
+"1": [
+"خدمة العملاء في منطقة الصندوق",
+"Phục vụ khách hàng tại khu vực quầy thu ngân",
+"Kasa bölümünde müşterilere hizmet vermek"
+],
+"2": [
+"الوحدة 6 – حساب الصندوق (Kassenabrechnung)",
+"Bài 6 – Quyết toán quầy thu ngân (Kassenabrechnung)",
+"Modül 6 – Kasa hesabı (Kassenabrechnung)"
+],
+"3": [
+"الوحدة 6: حساب الصندوق (Kassenabrechnung)",
+"Bài 6: Quyết toán quầy thu ngân (Kassenabrechnung)",
+"Modül 6: Kasa hesabı (Kassenabrechnung)"
+],
+"4": [
+"DS 9–10 · 8 نقاط · كتاب الدرس ص. 182–186 · كراسة التمارين ص. 152–155",
+"DS 9–10 · 8 điểm · Sách giáo khoa tr. 182–186 · Sách bài tập tr. 152–155",
+"DS 9–10 · 8 puan · Ders kitabı s. 182–186 · Çalışma defteri s. 152–155"
+],
+"5": [
+"اكتب إجاباتك في الدفتر أو على ورقة العمل.",
+"Em hãy viết câu trả lời vào vở hoặc vào phiếu bài tập.",
+"Cevaplarını deftere veya çalışma kâğıdına yaz."
+],
+"6": [
+"ما أستطيع فعله بعد ذلك",
+"Sau bài này em làm được",
+"Bundan sonra yapabileceklerim"
+],
+"7": [
+"أن أميّز بين إيراد النقد اليومي (Tageslosung) وإجمالي مبيعات اليوم (Tagesumsatz) وأحسبهما.",
+"Phân biệt và tính được doanh thu tiền mặt trong ngày (Tageslosung) và tổng doanh thu trong ngày (Tagesumsatz).",
+"Tageslosung (günlük nakit hasılat) ile Tagesumsatz (günlük ciro) arasındaki farkı ayırt etmek ve hesaplamak."
+],
+"8": [
+"أن أُعدّ تقرير الصندوق (Kassenbericht) وأحسب فرق الصندوق (Kassendifferenz).",
+"Lập được báo cáo quầy thu ngân (Kassenbericht) và tính được chênh lệch quầy (Kassendifferenz).",
+"Bir kasa raporu (Kassenbericht) hazırlamak ve kasa farkını (Kassendifferenz) hesaplamak."
+],
+"9": [
+"أن أذكر أسباب فروقات الصندوق.",
+"Nêu được các nguyên nhân gây ra chênh lệch quầy.",
+"Kasa farklarının nedenlerini sayabilmek."
+],
+"10": [
+"المهمة 1 – بداية الدرس: ماذا تتذكّر من الوحدة 5؟",
+"Bài tập 1 – Khởi động: Em còn nhớ gì từ Bài 5?",
+"Görev 1 – Başlangıç: Modül 5'ten neleri hatırlıyorsun?"
+],
+"11": [
+"أجب من الذاكرة.",
+"Hãy trả lời theo trí nhớ, không xem sách.",
+"Aklından cevapla."
+],
+"12": [
+"1.1 من أي عمر يُسمح بشراء البيرة – ومن أي عمر يُسمح بشراء المشروبات الكحولية القوية (Schnaps)؟",
+"1.1 Từ tuổi nào được mua bia – và từ tuổi nào được mua rượu mạnh (Schnaps)?",
+"1.1 Kaç yaşından itibaren bira satın alınabilir – ve kaç yaşından itibaren sert içki (Schnaps) satın alınabilir?"
+],
+"13": [
+"1.2 كم نقطة تُعطى في الامتحان على موقف فيه كلام مباشر (wörtliche Rede)؟",
+"1.2 Trong kỳ thi, một tình huống có lời nói trực tiếp (wörtliche Rede) được bao nhiêu điểm?",
+"1.2 Sınavda doğrudan konuşma (wörtliche Rede) içeren bir durum için kaç puan verilir?"
+],
+"14": [
+"1.3 اذكر إجراءً مريحاً للجسم (إرغونومي) عند الصندوق.",
+"1.3 Hãy nêu một biện pháp công thái học (ergonomisch) tại quầy thu ngân.",
+"1.3 Kasada ergonomik bir önlem söyle."
+],
+"15": [
+"المهمة 2 – نهاية الدوام: هل حساب الصندوق صحيح؟",
+"Bài tập 2 – Cuối ngày làm việc: Quầy thu ngân có khớp không?",
+"Görev 2 – Mesai sonu: Kasa tutuyor mu?"
+],
+"16": [
+"الموقف",
+"Tình huống",
+"Durum"
+],
+"17": [
+"الساعة الآن الثامنة مساءً.",
+"Bây giờ là 20 giờ.",
+"Saat akşam 20.00."
+],
+"18": [
+"عملت ميا طوال اليوم عند الصندوق 2.",
+"Mia đã làm việc cả ngày ở quầy thu ngân số 2.",
+"Mia bütün gün 2 numaralı kasada çalıştı."
+],
+"19": [
+"في الصباح وضعت في الصندوق 300,00 € كفكّة (Wechselgeld).",
+"Buổi sáng, cô ấy bỏ vào quầy 300,00 € tiền lẻ (Wechselgeld).",
+"Sabah kasaya 300,00 € bozuk para (Wechselgeld) koydu."
+],
+"20": [
+"وفي الظهر أخذ مشرف الصندوق 2.000,00 € من الصندوق (Abschöpfung).",
+"Buổi trưa, người giám sát quầy đã rút 2.000,00 € khỏi quầy (Abschöpfung).",
+"Öğlen kasa sorumlusu kasadan 2.000,00 € çekti (Abschöpfung)."
+],
+"21": [
+"الآن تعدّ ميا 1.845,60 € في الصندوق.",
+"Bây giờ Mia đếm được 1.845,60 € trong quầy.",
+"Şimdi Mia kasada 1.845,60 € sayıyor."
+],
+"22": [
+"وتم الدفع بالبطاقة بمبلغ 4.120,50 €.",
+"Khách thanh toán bằng thẻ tổng cộng 4.120,50 €.",
+"Kartla 4.120,50 € tutarında ödeme yapıldı."
+],
+"23": [
+"2.1 كم من النقود أخذت ميا اليوم نقداً؟",
+"2.1 Hôm nay Mia đã thu được bao nhiêu tiền mặt?",
+"2.1 Mia bugün ne kadar nakit gelir elde etti?"
+],
+"24": [
+"فكّروا معاً في مجموعات من اثنين – بدون قانون.",
+"Hai bạn cùng suy nghĩ – không dùng công thức.",
+"İkiniz birlikte düşünün – formül kullanmadan."
+],
+"25": [
+"2.2 كم يبلغ إجمالي مبيعات اليوم؟",
+"2.2 Doanh thu của cả ngày là bao nhiêu?",
+"2.2 Günün cirosu ne kadar?"
+],
+"26": [
+"للمراجعة: حساب الصندوق (Kassenabrechnung)",
+"Để đọc lại: Quyết toán quầy thu ngân (Kassenabrechnung)",
+"Tekrar okumak için: Kasa hesabı (Kassenabrechnung)"
+],
+"27": [
+"قائمة الكلمات",
+"Bảng từ vựng",
+"Kelime listesi"
+],
+"28": [
+"رصيد بداية الصندوق (Kassenanfangsbestand)",
+"số tiền trong quầy lúc bắt đầu (Kassenanfangsbestand)",
+"kasa açılış bakiyesi (Kassenanfangsbestand)"
+],
+"29": [
+"فكّة الصرف (Wechselgeld)",
+"tiền lẻ đầu ngày (Wechselgeld)",
+"bozuk para (Wechselgeld)"
+],
+"30": [
+"سحب النقود من الصندوق (Abschöpfung)",
+"rút tiền bớt khỏi quầy (Abschöpfung)",
+"kasadan para çekme (Abschöpfung)"
+],
+"31": [
+"رصيد نهاية الصندوق (Kassenschlussbestand)",
+"số tiền trong quầy lúc kết thúc (Kassenschlussbestand)",
+"kasa kapanış bakiyesi (Kassenschlussbestand)"
+],
+"32": [
+"إيراد النقد اليومي (Tageslosung)",
+"doanh thu tiền mặt trong ngày (Tageslosung)",
+"günlük nakit hasılat (Tageslosung)"
+],
+"33": [
+"إجمالي مبيعات اليوم (Tagesumsatz)",
+"tổng doanh thu trong ngày (Tagesumsatz)",
+"günlük ciro (Tagesumsatz)"
+],
+"34": [
+"تقرير الصندوق (Kassenbericht)",
+"báo cáo quầy thu ngân (Kassenbericht)",
+"kasa raporu (Kassenbericht)"
+],
+"35": [
+"الرصيد المطلوب (Soll-Bestand)",
+"số tiền lẽ ra phải có (Soll-Bestand)",
+"olması gereken tutar (Soll-Bestand)"
+],
+"36": [
+"الرصيد الفعلي (Ist-Bestand)",
+"số tiền thực tế có (Ist-Bestand)",
+"gerçek tutar (Ist-Bestand)"
+],
+"37": [
+"فرق الصندوق (Kassendifferenz)",
+"chênh lệch quầy (Kassendifferenz)",
+"kasa farkı (Kassendifferenz)"
+],
+"38": [
+"زيادة (Überschuss)",
+"thừa tiền (Überschuss)",
+"fazlalık (Überschuss)"
+],
+"39": [
+"عجز (Fehlbetrag)",
+"thiếu tiền (Fehlbetrag)",
+"eksik tutar (Fehlbetrag)"
+],
+"40": [
+"جرد الصندوق المفاجئ (Kassensturz)",
+"kiểm quỹ đột xuất (Kassensturz)",
+"ani kasa sayımı (Kassensturz)"
+],
+"41": [
+"1. أهم المصطلحات (الكتاب ص. 182)",
+"1. Các khái niệm quan trọng nhất (Sách tr. 182)",
+"1. En önemli kavramlar (Kitap s. 182)"
+],
+"42": [
+"المصطلح",
+"Khái niệm",
+"Kavram"
+],
+"43": [
+"المعنى",
+"Ý nghĩa",
+"Anlamı"
+],
+"44": [
+"فكّة الصرف (رصيد بداية الصندوق) – Wechselgeld (Kassenanfangsbestand)",
+"Tiền lẻ đầu ngày (số tiền trong quầy lúc bắt đầu) – Wechselgeld (Kassenanfangsbestand)",
+"Bozuk para (kasa açılış bakiyesi) – Wechselgeld (Kassenanfangsbestand)"
+],
+"45": [
+"نقود موجودة في الصندوق صباحاً حتى يمكن إعطاء الباقي للزبائن.",
+"Là tiền có sẵn trong quầy từ buổi sáng để trả lại tiền thừa cho khách.",
+"Sabah kasada bulunan paradır; para üstü verebilmek için vardır."
+],
+"46": [
+"وهي ليست مبيعات.",
+"Số tiền này không phải là doanh thu.",
+"Ciro değildir."
+],
+"47": [
+"سحب النقود من الصندوق (Abschöpfung)",
+"Rút tiền bớt khỏi quầy (Abschöpfung)",
+"Kasadan para çekme (Abschöpfung)"
+],
+"48": [
+"نقود تُؤخذ من الصندوق خلال اليوم (للأمان).",
+"Là tiền được lấy ra khỏi quầy trong ngày (để an toàn).",
+"Gün içinde kasadan alınan paradır (güvenlik için)."
+],
+"49": [
+"وهي تُحسب من المبيعات، لكنها لم تعد في الصندوق.",
+"Số tiền này vẫn tính là doanh thu, chỉ là không còn nằm trong quầy nữa.",
+"Ciroya dahildir, sadece artık kasada değildir."
+],
+"50": [
+"إيراد النقد اليومي (Tageslosung)",
+"Doanh thu tiền mặt trong ngày (Tageslosung)",
+"Günlük nakit hasılat (Tageslosung)"
+],
+"51": [
+"كل الإيرادات النقدية في يوم واحد",
+"toàn bộ tiền mặt thu được trong một ngày",
+"bir günün tüm nakit gelirleri"
+],
+"52": [
+"إجمالي مبيعات اليوم (Tagesumsatz)",
+"Tổng doanh thu trong ngày (Tagesumsatz)",
+"Günlük ciro (Tagesumsatz)"
+],
+"53": [
+"كل الإيرادات في يوم واحد: نقداً + بالبطاقة",
+"toàn bộ tiền thu được trong một ngày: tiền mặt + thẻ",
+"bir günün tüm gelirleri: nakit + kart"
+],
+"54": [
+"2. تقرير الصندوق (الكتاب ص. 182–183)",
+"2. Báo cáo quầy thu ngân (Sách tr. 182–183)",
+"2. Kasa raporu (Kitap s. 182–183)"
+],
+"55": [
+"خطوة الحساب",
+"Bước tính",
+"Hesaplama adımı"
+],
+"56": [
+"مثال ميا",
+"Ví dụ của Mia",
+"Mia'nın örneği"
+],
+"57": [
+"رصيد نهاية الصندوق (بعد العدّ) – Kassenschlussbestand",
+"Số tiền trong quầy lúc kết thúc (đã đếm) – Kassenschlussbestand",
+"Kasa kapanış bakiyesi (sayılmış) – Kassenschlussbestand"
+],
+"58": [
+"+ مبالغ السحب من الصندوق (Abschöpfung) والمصروفات المدفوعة نقداً",
+"+ Tiền rút bớt khỏi quầy (Abschöpfung) và các khoản chi trả bằng tiền mặt",
+"+ Kasadan çekilen paralar (Abschöpfung) ve nakit ödenen giderler"
+],
+"59": [
+"− فكّة الصرف (رصيد بداية الصندوق) – Wechselgeld (Kassenanfangsbestand)",
+"− Tiền lẻ đầu ngày (số tiền trong quầy lúc bắt đầu) – Wechselgeld (Kassenanfangsbestand)",
+"− Bozuk para (kasa açılış bakiyesi) – Wechselgeld (Kassenanfangsbestand)"
+],
+"60": [
+"= إيراد النقد اليومي (الإيرادات النقدية) – Tageslosung",
+"= Doanh thu tiền mặt trong ngày (Tageslosung)",
+"= Günlük nakit hasılat (nakit gelirler) – Tageslosung"
+],
+"61": [
+"+ المدفوعات بالبطاقة (Kartenzahlungen)",
+"+ Thanh toán bằng thẻ (Kartenzahlungen)",
+"+ Kartla yapılan ödemeler (Kartenzahlungen)"
+],
+"62": [
+"= إجمالي مبيعات اليوم (Tagesumsatz)",
+"= Tổng doanh thu trong ngày (Tagesumsatz)",
+"= Günlük ciro (Tagesumsatz)"
+],
+"63": [
+"قاعدة للحفظ:",
+"Điều cần nhớ:",
+"Ezberlenecek kural:"
+],
+"64": [
+"كل ما أُخذ من الصندوق يُجمع.",
+"Tất cả tiền đã lấy ra khỏi quầy thì được cộng vào.",
+"Kasadan alınan her şey toplanır."
+],
+"65": [
+"أما فكّة الصرف التي كانت في الصندوق منذ الصباح فتُطرح.",
+"Còn tiền lẻ đã có sẵn trong quầy từ buổi sáng thì bị trừ đi.",
+"Sabahtan beri kasada olan bozuk para ise çıkarılır."
+],
+"66": [
+"3. المطلوب والفعلي: فرق الصندوق (الكتاب ص. 185)",
+"3. Soll và Ist (số phải có và số thực tế): chênh lệch quầy (Sách tr. 185)",
+"3. Soll ve Ist (olması gereken ve gerçek tutar): kasa farkı (Kitap s. 185)"
+],
+"67": [
+"المصطلح",
+"Khái niệm",
+"Kavram"
+],
+"68": [
+"المعنى",
+"Ý nghĩa",
+"Anlamı"
+],
+"69": [
+"الرصيد المطلوب (Soll-Bestand)",
+"Số tiền lẽ ra phải có (Soll-Bestand)",
+"Olması gereken tutar (Soll-Bestand)"
+],
+"70": [
+"هذا هو المبلغ الذي يجب أن يكون في الصندوق: فكّة الصرف + الإيرادات النقدية حسب الصندوق − المرتجعات النقدية − مبالغ السحب من الصندوق",
+"Đây là số tiền lẽ ra phải có trong quầy: tiền lẻ đầu ngày + tiền mặt thu theo máy − tiền mặt trả lại cho khách − tiền rút bớt khỏi quầy",
+"Kasada olması gereken para miktarı: bozuk para + kasaya göre nakit gelirler − nakit iadeler − kasadan çekilen paralar"
+],
+"71": [
+"الرصيد الفعلي (Ist-Bestand)",
+"Số tiền thực tế có (Ist-Bestand)",
+"Gerçek tutar (Ist-Bestand)"
+],
+"72": [
+"هذا هو المبلغ الموجود فعلاً في الصندوق (بعد العدّ)",
+"Đây là số tiền thật sự đang có trong quầy (đã đếm)",
+"Kasada gerçekten bulunan para miktarı (sayılmış)"
+],
+"73": [
+"فرق الصندوق (Kassendifferenz)",
+"Chênh lệch quầy (Kassendifferenz)",
+"Kasa farkı (Kassendifferenz)"
+],
+"74": [
+"الفعلي − المطلوب.",
+"Thực tế − Phải có.",
+"Ist − Soll."
+],
+"75": [
+"زائد = زيادة (Überschuss: مال أكثر من اللازم)، ناقص = عجز (Fehlbetrag: مال أقل من اللازم)",
+"Dương = thừa tiền (Überschuss: nhiều tiền hơn), Âm = thiếu tiền (Fehlbetrag: ít tiền hơn)",
+"Artı = fazlalık (Überschuss: fazla para), Eksi = eksik tutar (Fehlbetrag: az para)"
+],
+"76": [
+"الأسباب:",
+"Nguyên nhân:",
+"Nedenler:"
+],
+"77": [
+"إعطاء باقٍ خاطئ (أكثر أو أقل من اللازم) · فكّة الصرف لم تكن صحيحة منذ الصباح · ورقتان نقديتان التصقتا ببعضهما · خطأ في الإدخال · نسيان الإلغاء (Storno) · سرقة.",
+"Trả lại tiền thừa sai (nhiều hoặc ít quá) · tiền lẻ đầu ngày đã không đúng ngay từ buổi sáng · hai tờ tiền dính vào nhau · nhập sai · quên hủy giao dịch (Storno) · trộm cắp.",
+"Yanlış para üstü (fazla veya az) · bozuk para sabahtan beri yanlıştı · iki banknot birbirine yapışmıştı · giriş hatası · iptal (Storno) unutuldu · hırsızlık."
+],
+"78": [
+"جرد الصندوق المفاجئ (Kassensturz) هو مقارنة مفاجئة بين المطلوب والفعلي خلال اليوم.",
+"Kiểm quỹ đột xuất (Kassensturz) là việc so sánh bất ngờ giữa số phải có và số thực tế trong ngày.",
+"Ani kasa sayımı (Kassensturz), gün içinde habersiz yapılan Soll-Ist karşılaştırmasıdır."
+],
+"79": [
+"تذكّر:",
+"Hãy nhớ:",
+"Unutma:"
+],
+"80": [
+"في الامتحان غالباً ما يُقال: „احسب إجمالي مبيعات اليوم (Tagesumsatz)! اذكر طريقة الحساب!“",
+"Trong kỳ thi thường có yêu cầu: „Hãy tính tổng doanh thu trong ngày! Hãy ghi rõ cách tính!“",
+"Sınavda sık sık şöyle sorulur: „Günlük ciroyu (Tagesumsatz) hesaplayın! Hesaplama yolunu yazın!“"
+],
+"81": [
+"عندها تحصل على نقطة لكل من: الجمع والطرح والنتيجة.",
+"Khi đó em được một điểm cho phép cộng, một điểm cho phép trừ và một điểm cho kết quả.",
+"O zaman toplama, çıkarma ve sonuç için birer puan verilir."
+],
+"82": [
+"اكتب العملية الحسابية دائماً في سطر واحد مع إشارتي الزائد والناقص.",
+"Hãy luôn viết phép tính trong một dòng, có dấu cộng và dấu trừ.",
+"Hesabı her zaman tek satıra, artı ve eksi işaretleriyle yaz."
+],
+"83": [
+"المهمة 3 – مثال محلول: إجمالي مبيعات اليوم بصيغة الامتحان",
+"Bài tập 3 – Làm mẫu: Tổng doanh thu trong ngày theo dạng đề thi",
+"Görev 3 – Örnek çözüm: Sınav biçiminde günlük ciro"
+],
+"84": [
+"المسألة",
+"Đề bài",
+"Soru"
+],
+"85": [
+"في نهاية عملكم عند الصندوق تقومون بالحساب الختامي: نقود ورقية 1.450,00 €؛ نقود معدنية 41,20 €؛ مدفوعات بالبطاقة 2.318,60 €؛ فكّة الصرف 250,00 €.",
+"Khi kết thúc ca làm ở quầy thu ngân, bạn quyết toán: tiền mặt là tiền giấy 1.450,00 €; tiền mặt là tiền xu 41,20 €; thanh toán bằng thẻ 2.318,60 €; tiền lẻ đầu ngày 250,00 €.",
+"Kasadaki görevinizin sonunda hesap çıkarıyorsunuz: banknot olarak nakit 1.450,00 €; madeni para olarak nakit 41,20 €; kartla ödemeler 2.318,60 €; bozuk para 250,00 €."
+],
+"86": [
+"احسبوا إجمالي مبيعات اليوم باليورو!",
+"Hãy tính tổng doanh thu trong ngày bằng euro!",
+"Günlük ciroyu euro cinsinden hesaplayın!"
+],
+"87": [
+"اذكروا طريقة الحساب!",
+"Hãy ghi rõ cách tính!",
+"Hesaplama yolunu yazın!"
+],
+"88": [
+"(نقطتان)",
+"(2 điểm)",
+"(2 puan)"
+],
+"89": [
+"خطوة التفكير",
+"Bước suy nghĩ",
+"Düşünme adımı"
+],
+"90": [
+"هكذا أتصرّف",
+"Cách em làm",
+"Böyle ilerliyorum"
+],
+"91": [
+"المطلوب",
+"Cần tìm",
+"İstenen"
+],
+"92": [
+"إجمالي مبيعات اليوم = نقداً + بالبطاقة.",
+"Tổng doanh thu trong ngày = tiền mặt + thẻ.",
+"Günlük ciro = nakit + kart."
+],
+"93": [
+"الترتيب",
+"Sắp xếp",
+"Sıralama"
+],
+"94": [
+"في الصندوق: الأوراق النقدية والقطع المعدنية ← زائد.",
+"Trong quầy: tiền giấy và tiền xu → cộng.",
+"Kasada: banknotlar ve madeni paralar → artı."
+],
+"95": [
+"البطاقة ← زائد.",
+"Thẻ → cộng.",
+"Kart → artı."
+],
+"96": [
+"فكّة الصرف كانت في الصندوق منذ الصباح ← ناقص.",
+"Tiền lẻ đầu ngày đã có sẵn trong quầy từ buổi sáng → trừ.",
+"Bozuk para sabahtan beri kasadaydı → eksi."
+],
+"97": [
+"الحساب",
+"Tính toán",
+"Hesaplama"
+],
+"98": [
+"المراجعة",
+"Kiểm tra",
+"Kontrol"
+],
+"99": [
+"هل كتبتُ الوحدة €؟",
+"Đã ghi đơn vị € chưa?",
+"Birim € yazıldı mı?"
+],
+"100": [
+"هل هناك خانتان بعد الفاصلة؟",
+"Có hai chữ số sau dấu phẩy không?",
+"Virgülden sonra iki basamak var mı?"
+],
+"101": [
+"هل طريقة الحساب في سطر واحد؟",
+"Cách tính có nằm trong một dòng không?",
+"Hesaplama yolu tek satırda mı?"
+],
+"102": [
+"عندها تحصل على الدرجة الكاملة.",
+"Như vậy em sẽ được điểm tối đa.",
+"O zaman tam puan alırsın."
+],
+"103": [
+"المهمة 4 – تمرين موجَّه",
+"Bài tập 4 – Luyện tập có hướng dẫn",
+"Görev 4 – Yönlendirmeli alıştırma"
+],
+"104": [
+"4.1 رصيد نهاية الصندوق 2.960,40 € · مبلغ السحب من الصندوق 1.500,00 € · فكّة الصرف 250,00 € · مدفوعات بالبطاقة 3.389,90 €.",
+"4.1 Số tiền trong quầy lúc kết thúc 2.960,40 € · Tiền rút bớt khỏi quầy 1.500,00 € · Tiền lẻ đầu ngày 250,00 € · Thanh toán bằng thẻ 3.389,90 €.",
+"4.1 Kasa kapanış bakiyesi 2.960,40 € · Kasadan çekilen para 1.500,00 € · Bozuk para 250,00 € · Kartla ödemeler 3.389,90 €."
+],
+"105": [
+"احسب إيراد النقد اليومي (Tageslosung) وإجمالي مبيعات اليوم (Tagesumsatz).",
+"Hãy tính doanh thu tiền mặt trong ngày (Tageslosung) và tổng doanh thu trong ngày (Tagesumsatz).",
+"Tageslosung (günlük nakit hasılat) ile Tagesumsatz'ı (günlük ciro) hesapla."
+],
+"106": [
+"4.2 على طاولة خاصة عند المدخل تُباع قمصان تي شيرت بسعر 9,95 € للقطعة.",
+"4.2 Ở một bàn bán hàng đặc biệt gần lối vào, áo phông được bán với giá 9,95 € một chiếc.",
+"4.2 Girişteki özel bir tezgâhta tişörtler tanesi 9,95 € fiyatla satılıyor."
+],
+"107": [
+"في المساء تم بيع 46 قميصاً.",
+"Đến tối đã bán được 46 chiếc áo phông.",
+"Akşama kadar 46 tişört satıldı."
+],
+"108": [
+"في الصباح كان في الصندوق 40,00 € فكّة صرف، والآن تعدّ 486,55 €.",
+"Buổi sáng trong quầy có 40,00 € tiền lẻ, bây giờ em đếm được 486,55 €.",
+"Sabah kasada 40,00 € bozuk para vardı, şimdi 486,55 € sayıyorsun."
+],
+"109": [
+"احسب فرق الصندوق باليورو.",
+"Hãy tính chênh lệch quầy bằng euro.",
+"Kasa farkını euro cinsinden hesapla."
+],
+"110": [
+"هل هو زيادة أم عجز؟",
+"Đó là thừa tiền hay thiếu tiền?",
+"Bu bir fazlalık mı, yoksa eksik tutar mı?"
+],
+"111": [
+"(امتحان منتصف التدريب – Zwischenprüfung)",
+"(Kỳ thi giữa khóa – Zwischenprüfung)",
+"(Ara sınav – Zwischenprüfung)"
+],
+"112": [
+"4.3 في الصباح كان يجب أن يكون في الصندوق 70,00 € من النقود المعدنية.",
+"4.3 Buổi sáng trong quầy lẽ ra phải có 70,00 € tiền xu.",
+"4.3 Sabah kasada 70,00 € madeni para olması gerekiyordu."
+],
+"113": [
+"أنت تعدّ: 20 × 2 € · 10 × 1 € · 20 × 0,50 € · 25 × 0,20 € · 20 × 0,10 € · 20 × 0,05 € · 25 × 0,02 € · 50 × 0,01 €.",
+"Em đếm được: 20 × 2 € · 10 × 1 € · 20 × 0,50 € · 25 × 0,20 € · 20 × 0,10 € · 20 × 0,05 € · 25 × 0,02 € · 50 × 0,01 €.",
+"Sayıyorsun: 20 × 2 € · 10 × 1 € · 20 × 0,50 € · 25 × 0,20 € · 20 × 0,10 € · 20 × 0,05 € · 25 × 0,02 € · 50 × 0,01 €."
+],
+"114": [
+"كم يبلغ الفرق؟",
+"Chênh lệch là bao nhiêu?",
+"Fark ne kadardır?"
+],
+"115": [
+"(امتحان منتصف التدريب – Zwischenprüfung)",
+"(Kỳ thi giữa khóa – Zwischenprüfung)",
+"(Ara sınav – Zwischenprüfung)"
+],
+"116": [
+"4.4 بعد الحساب الختامي يوجد في الصندوق 5,00 € زيادة.",
+"4.4 Sau khi quyết toán, trong quầy thừa 5,00 €.",
+"4.4 Hesap kapatıldıktan sonra kasada 5,00 € fazla para var."
+],
+"117": [
+"اذكر سببين محتملين.",
+"Hãy nêu 2 nguyên nhân có thể.",
+"2 olası neden söyle."
+],
+"118": [
+"(صيف 2023، 1.5.2)",
+"(Mùa hè 2023, câu 1.5.2)",
+"(Yaz 2023, 1.5.2)"
+],
+"119": [
+"المهمة 5 – تمرين حر: تقرير الصندوق لدى ليون (3 نقاط أداء)",
+"Bài tập 5 – Luyện tập tự do: Báo cáo quầy thu ngân của Leon (3 điểm thành tích)",
+"Görev 5 – Serbest alıştırma: Leon'un kasa raporu (3 başarı puanı)"
+],
+"120": [
+"زميلك ليون كتب أول تقرير صندوق له.",
+"Đồng nghiệp của em là Leon đã viết báo cáo quầy thu ngân đầu tiên của mình.",
+"Meslektaşın Leon ilk kasa raporunu yazdı."
+],
+"121": [
+"لقد ارتكب خطأين.",
+"Bạn ấy đã mắc hai lỗi.",
+"İki hata yaptı."
+],
+"122": [
+"اعثر على الخطأين واشرحهما واحسب الحساب الصحيح.",
+"Hãy tìm ra các lỗi, giải thích chúng và tính lại cho đúng.",
+"Hataları bul, açıkla ve doğru hesapla."
+],
+"123": [
+"تقرير الصندوق لدى ليون، الصندوق 2",
+"Báo cáo quầy thu ngân của Leon, quầy số 2",
+"Leon'un kasa raporu, kasa 2"
+],
+"124": [
+"المبلغ",
+"Số tiền",
+"Tutar"
+],
+"125": [
+"رصيد نهاية الصندوق (بعد العدّ) – Kassenschlussbestand",
+"Số tiền trong quầy lúc kết thúc (đã đếm) – Kassenschlussbestand",
+"Kasa kapanış bakiyesi (sayılmış) – Kassenschlussbestand"
+],
+"126": [
+"− سحب النقود من الصندوق (Abschöpfung)",
+"− Rút tiền bớt khỏi quầy (Abschöpfung)",
+"− Kasadan para çekme (Abschöpfung)"
+],
+"127": [
+"+ مصروف مدفوع نقداً (طوابع بريد)",
+"+ Khoản chi trả bằng tiền mặt (tem thư)",
+"+ Nakit ödenen gider (pul)"
+],
+"128": [
+"+ فكّة الصرف (Wechselgeld)",
+"+ Tiền lẻ đầu ngày (Wechselgeld)",
+"+ Bozuk para (Wechselgeld)"
+],
+"129": [
+"= إيراد النقد اليومي (Tageslosung)",
+"= Doanh thu tiền mặt trong ngày (Tageslosung)",
+"= Günlük nakit hasılat (Tageslosung)"
+],
+"130": [
+"+ المدفوعات بالبطاقة (Kartenzahlungen)",
+"+ Thanh toán bằng thẻ (Kartenzahlungen)",
+"+ Kartla yapılan ödemeler (Kartenzahlungen)"
+],
+"131": [
+"= إجمالي مبيعات اليوم (Tagesumsatz)",
+"= Tổng doanh thu trong ngày (Tagesumsatz)",
+"= Günlük ciro (Tagesumsatz)"
+],
+"132": [
+"التقييم:",
+"Chấm điểm:",
+"Değerlendirme:"
+],
+"133": [
+"العثور على الخطأين وشرحهما (نقطة أداء واحدة) · إيراد النقد اليومي صحيح (نقطة أداء واحدة) · إجمالي مبيعات اليوم صحيح (نقطة أداء واحدة).",
+"tìm ra cả hai lỗi và giải thích (1 điểm thành tích) · Tageslosung đúng (1 điểm thành tích) · Tagesumsatz đúng (1 điểm thành tích).",
+"iki hatayı bulup açıklamak (1 başarı puanı) · Tageslosung doğru (1 başarı puanı) · Tagesumsatz doğru (1 başarı puanı)."
+],
+"134": [
+"المهمة 6 – فحص الامتحان (9 نقاط · حوالي 10 دقائق)",
+"Bài tập 6 – Kiểm tra kiểu thi (9 điểm · khoảng 10 phút)",
+"Görev 6 – Sınav kontrolü (9 puan · yaklaşık 10 dakika)"
+],
+"135": [
+"الموقف",
+"Tình huống",
+"Durum"
+],
+"136": [
+"في نهاية ورديتكم تُعدّون الحساب الختامي للصندوق.",
+"Vào cuối ca làm việc, bạn lập bản quyết toán quầy thu ngân.",
+"Vardiyanızın sonunda kasa kapanışını yapıyorsunuz."
+],
+"137": [
+"6.1 احسبوا إجمالي مبيعات اليوم (Tagesumsatz) بالاعتماد على هذه البيانات!",
+"6.1 Hãy tính tổng doanh thu trong ngày dựa vào các số liệu sau!",
+"6.1 Bu verilere göre günlük ciroyu (Tagesumsatz) hesaplayın!"
+],
+"138": [
+"مدفوعات بالبطاقة 2.840,00 €؛ فكّة الصرف عند بداية الوردية 500,00 €؛ رصيد الصندوق عند نهاية الوردية 3.120,00 €؛ سحب نقود من الصندوق 1.800,00 €.",
+"Thanh toán bằng thẻ 2.840,00 €; tiền lẻ đầu ca 500,00 €; số tiền trong quầy cuối ca 3.120,00 €; tiền mặt rút bớt khỏi quầy 1.800,00 €.",
+"Kartla ödemeler 2.840,00 €; vardiya başındaki bozuk para 500,00 €; vardiya sonundaki kasa bakiyesi 3.120,00 €; kasadan nakit çekme 1.800,00 €."
+],
+"139": [
+"(3 نقاط)",
+"(3 điểm)",
+"(3 puan)"
+],
+"140": [
+"6.2 عند الحساب الختامي لاحظتم وجود فرق في الصندوق: يوجد في الصندوق 7,00 € زيادة.",
+"6.2 Khi quyết toán, bạn phát hiện có chênh lệch quầy: trong quầy thừa 7,00 €.",
+"6.2 Kasa kapanışında bir kasa farkı tespit ediyorsunuz: kasada 7,00 € fazla var."
+],
+"141": [
+"اذكروا سببين محتملين لذلك!",
+"Hãy nêu 2 nguyên nhân có thể!",
+"Bunun için 2 olası neden söyleyin!"
+],
+"142": [
+"(نقطتان)",
+"(2 điểm)",
+"(2 puan)"
+],
+"143": [
+"6.3 عند الحساب الختامي في المساء يوجد فرق في الصندوق.",
+"6.3 Khi quyết toán buổi tối, có chênh lệch quầy.",
+"6.3 Akşam kasa kapanışında bir kasa farkı var."
+],
+"144": [
+"أي عملية يمكن أن تكون قد تسبّبت به؟",
+"Giao dịch nào có thể đã gây ra chênh lệch đó?",
+"Hangi işlem buna neden olmuş olabilir?"
+],
+"145": [
+"(نقطتان)",
+"(2 điểm)",
+"(2 puan)"
+],
+"146": [
+"1 قمتم بتبديل بلوزة لزبونة ببلوزة أخرى بنفس السعر.",
+"1 Bạn đã đổi cho một khách nữ chiếc áo len này lấy chiếc áo len khác có cùng giá tiền.",
+"1 Bir müşteriye bir kazağı aynı fiyattaki başka bir kazakla değiştirdiniz."
+],
+"147": [
+"2 أدخلتم 3 بناطيل بدلاً من 4، وقبضتم ثمن 3 فقط.",
+"2 Bạn nhập 3 chiếc quần thay vì 4, và cũng chỉ thu tiền 3 chiếc.",
+"2 Dört pantolon yerine 3 pantolon girdiniz ve sadece 3 tanesinin parasını tahsil ettiniz."
+],
+"148": [
+"3 دفعت زبونة ثمن قميص تي شيرت بسعر 16,95 € بورقة 50 €، وأعطيتموها 23,05 € كباقٍ.",
+"3 Một khách nữ trả tiền chiếc áo phông giá 16,95 € bằng tờ 50 €, và bạn đã trả lại cô ấy 23,05 €.",
+"3 Bir müşteri 16,95 € değerindeki tişörtün parasını 50 €'luk banknotla ödedi ve siz ona 23,05 € para üstü verdiniz."
+],
+"149": [
+"4 بدلاً من 4 × 12,95 € سجّلتم البضاعة 5 × بسعر 10,36 €.",
+"4 Thay vì 4 × 12,95 €, bạn đã nhập hàng là 5 × 10,36 €.",
+"4 4 × 12,95 € yerine malı 5 × 10,36 € olarak kaydettiniz."
+],
+"150": [
+"6.4 الحساب الختامي: إجمالي المبيعات النقدية 4.780,00 € · إجمالي المبيعات بالبطاقة 3.120,00 € · مرتجعات نقدية 95,00 € · مبلغ سُحب من الصندوق 4.700,00 € · الرصيد المطلوب للصندوق (Soll-Bestand) 705,00 €.",
+"6.4 Quyết toán: tổng doanh thu tiền mặt 4.780,00 € · tổng doanh thu thẻ 3.120,00 € · tiền mặt trả lại khách 95,00 € · tiền lấy ra khỏi quầy 4.700,00 € · số tiền lẽ ra phải có trong quầy (Soll-Bestand) 705,00 €.",
+"6.4 Hesap: toplam nakit satış 4.780,00 € · toplam kartlı satış 3.120,00 € · nakit iade 95,00 € · kasadan alınan para 4.700,00 € · kasanın olması gereken tutarı (Soll-Bestand) 705,00 €."
+],
+"151": [
+"كم كان المبلغ الذي فُتح به الصندوق؟",
+"Số tiền lúc mở quầy là bao nhiêu?",
+"Kasa hangi tutarla açılmıştı?"
+],
+"152": [
+"(نقطتان)",
+"(2 điểm)",
+"(2 puan)"
+],
+"153": [
+"المهمة 7 – للمحترفين",
+"Bài tập 7 – Dành cho người giỏi",
+"Görev 7 – Profesyoneller için"
+],
+"154": [
+"للمحترفين",
+"Dành cho người giỏi",
+"Profesyoneller için"
+],
+"155": [
+"7.1 تريد إحدى الشركات أن تعوّض أمينات الصندوق العجز (Fehlbetrag) من مالهن الخاص.",
+"7.1 Một doanh nghiệp muốn nhân viên thu ngân tự bù khoản thiếu tiền (Fehlbetrag) bằng tiền túi của mình.",
+"7.1 Bir işletme, kasiyerlerin eksik tutarları (Fehlbetrag) kendi ceplerinden ödemesini istiyor."
+],
+"156": [
+"قيّموا ذلك.",
+"Hãy đánh giá việc này.",
+"Bunu değerlendirin."
+],
+"157": [
+"(كلمة مفتاحية: تعويض العجز – Mankogeld)",
+"(Từ khóa: tiền bồi thường thiếu hụt – Mankogeld)",
+"(Anahtar kelime: eksik tutar tazminatı – Mankogeld)"
+],
+"158": [
+"7.2 اشرحوا لماذا يتم جرد الصندوق (Kassensturz) بشكل مفاجئ.",
+"7.2 Hãy giải thích vì sao kiểm quỹ (Kassensturz) được tiến hành một cách đột xuất.",
+"7.2 Kasa sayımının (Kassensturz) neden habersiz yapıldığını açıklayın."
+],
+"159": [
+"المهمة 8 – قدّر، اختبر، سجّل",
+"Bài tập 8 – Ước lượng, kiểm tra, ghi lại",
+"Görev 8 – Tahmin et, dene, yaz"
+],
+"160": [
+"كم نقطة من 16 ستحصل عليها في الاختبار الذاتي؟",
+"Em sẽ đạt được bao nhiêu điểm trong 16 điểm khi tự kiểm tra?",
+"Kendini test ederken 16 puanın kaçını alacaksın?"
+],
+"161": [
+"انقل النقاط إلى حساب النقاط، وضع علامة على إشارة المرور „بعد“ في قائمة „أستطيع“.",
+"Hãy chuyển điểm vào bảng tích điểm và đánh dấu đèn tín hiệu „sau“ trong danh sách „Em làm được“.",
+"Puanları puan hesabına aktar ve „Yapabilirim“ listesinde „sonra“ trafik ışığını işaretle."
+],
+"162": [
+"تقديري",
+"Dự đoán của em",
+"Tahminim"
+],
+"163": [
+"نتيجتي",
+"Kết quả của em",
+"Sonucum"
+],
+"164": [
+"الفرق",
+"Chênh lệch",
+"Fark"
+],
+"165": [
+"نقاط الأداء (الحد الأقصى 2)",
+"Điểm thành tích (tối đa 2)",
+"Başarı puanı (en fazla 2)"
+]
+}
