@@ -13,6 +13,19 @@ Vorlage (Design, Leiste, Tooltip-Technik) = materials/LF2_M_1_Arbeitsblatt_onlin
 """
 import json, os, re, sys, html
 
+LANGNAMES = {'ar': 'العربية', 'vi': 'Tiếng Việt', 'tr': 'Türkçe', 'ti': 'ትግርኛ', 'uk': 'Українська', 'ru': 'Русский', 'es': 'Español', 'pt': 'Português'}
+LF_LANGS = {3: ['ar', 'vi', 'tr']}                 # Reihenfolge der Übersetzungen je Eintrag in tr/*.json
+ALL8 = ['tr', 'ar', 'vi', 'ti', 'uk', 'ru', 'es', 'pt']
+
+
+def langs_of(lf):
+    return LF_LANGS.get(lf, ALL8)
+
+
+def suffix(lf):
+    return 'DE-TR-AR-VI' if lf == 3 else 'DE-' + '-'.join(l.upper() for l in langs_of(lf))
+
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TPL = os.path.join(ROOT, 'materials', 'LF2_M_1_Arbeitsblatt_online_DE-AR-VI.html')
 SPAN = re.compile(r'<span class="tr( chip)?" tabindex="0">(.*?)</span>', re.S)
@@ -22,7 +35,7 @@ def paths(lf, n):
     d = os.path.join(ROOT, 'tools', 'online')
     base = f'LF{lf}_M_{n}'
     return (os.path.join(d, 'src', base + '.html'), os.path.join(d, 'segments', base + '.json'),
-            os.path.join(d, 'tr', base + '.json'), os.path.join(ROOT, 'materials', base + '_Arbeitsblatt_online_DE-TR-AR-VI.html'))
+            os.path.join(d, 'tr', base + '.json'), os.path.join(ROOT, 'materials', base + '_Arbeitsblatt_online_' + suffix(lf) + '.html'))
 
 
 def number(fragment):
@@ -50,7 +63,7 @@ def cmd_build(lf, n):
     frag = open(src, encoding='utf8').read()
     frag, segs = number(frag)
     tr = json.load(open(trf, encoding='utf8'))
-    miss = [k for k in segs if k not in tr or len(tr[k]) != 3 or not all(isinstance(x, str) and x.strip() for x in tr[k])]
+    miss = [k for k in segs if k not in tr or len(tr[k]) != len(langs_of(lf)) or not all(isinstance(x, str) and x.strip() for x in tr[k])]
     extra = [k for k in tr if k not in segs]
     if miss or extra:
         raise SystemExit(f'Fehler: fehlend/leer {miss[:10]} ({len(miss)}), überzählig {extra[:10]}')
@@ -60,8 +73,19 @@ def cmd_build(lf, n):
     title = re.search(r'<h1>.*?>(.*?)</span></h1>', frag, re.S)
     ttl = html.unescape(re.sub(r'<[^>]+>', '', title.group(1))) if title else f'Modul {n}'
     t = t[:a] + frag.rstrip() + t[b:]
-    t = re.sub(r'<title>.*?</title>', f'<title>Arbeitsblatt LF {lf} – Modul {n} online (Deutsch · Türkçe · العربية · Tiếng Việt)</title>', t, count=1, flags=re.S)
+    t = re.sub(r'<title>.*?</title>', f'<title>Arbeitsblatt LF {lf} – Modul {n} online (Deutsch · ' + ' · '.join(LANGNAMES[c] for c in (['tr', 'ar', 'vi'] if lf == 3 else langs_of(lf))) + ')</title>', t, count=1, flags=re.S)
     t = re.sub(r'var TR = \{.*?\};\n  var LANGNAME', lambda m: 'var TR = ' + json.dumps(tr, ensure_ascii=False) + ';\n  var LANGNAME', t, count=1, flags=re.S)
+    L = langs_of(lf)
+    if L != ['ar', 'vi', 'tr']:   # mehr als drei Sprachen: Auswahl, Sprachknöpfe und Zuordnung anpassen
+        btn = '\n'.join(f'      <button type="button" data-setlang="{c}" lang="{c}" aria-pressed="{"true" if i == 0 else "false"}">{LANGNAMES[c]}</button>' for i, c in enumerate(L))
+        t = re.sub(r'      <button type="button" data-setlang="ar".*?Türkçe</button></div>', lambda m: btn.lstrip('\n') + '</div>', t, count=1, flags=re.S)
+        t = t.replace('var LANGNAME = {ar:"العربية", vi:"Tiếng Việt", tr:"Türkçe"};', 'var LANGNAME = ' + json.dumps({c: LANGNAMES[c] for c in L}, ensure_ascii=False) + '; var LORDER = ' + json.dumps(L) + ';')
+        t = t.replace('var lang = "ar", mode = "tip";', f'var lang = "{L[0]}", mode = "tip";')
+        t = t.replace('return t ? (lang==="ar" ? t[0] : lang==="vi" ? t[1] : t[2]) : "";', 'return t ? t[LORDER.indexOf(lang)] : "";')
+        t = t.replace('if (s.lang==="ar"||s.lang==="vi"||s.lang==="tr") lang=s.lang;', 'if (LANGNAME[s.lang]) lang=s.lang;')
+        t = re.sub(r'(<div class="leiste"[^>]*aria-label=")[^"]*"', r'\1Übersetzung / Translation"', t, count=1)
+        t = t.replace('Sprache · اللغة · Ngôn ngữ · Dil', 'Sprache · Language')
+        t = t.replace('Anzeige · العرض · Hiển thị · Görünüm', 'Anzeige · Display')
     t = t.replace('lf2m1_ab', f'lf{lf}m{n}_ab')
     open(out, 'w', encoding='utf8').write(t)
     print('gebaut', out, len(segs), 'Segmente')
